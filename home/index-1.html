@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:image" content="이미지"/>
+<!-- <meta property="og:url" content="유알엘"/> -->
+<meta property="og:title" content="타이틀"/>
+<meta property="og:description" content="디스크립션"/>
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/mastar-1.css">
+
+<!-- sec2 css -->
+<link rel="stylesheet" href="css/sec2/slider-pro.css">
+
+<!-- menu slide -->
+<link rel="stylesheet" href="css/grt-responsive-menu.css">
+
+<!-- section2 slide link -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/sec2/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/sec2/jquery.sliderPro.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="section01" class="menu-container">
+	<nav>
+    <div class="menu_box grt-menu-logo">
+		<div class="logo">
+			<img src="images/menu-logo.png" alt="logo">
+		</div>
+		<div class="grt-menu-right">
+			<button class="grt-mobile-button">
+				<span class="line1"></span>
+				<span class="line2"></span>
+				<span class="line3"></span>
+			</button>
+        		<ul class="navi grt-menu">
+            		<li><a href="#section01">김포아트빌리지</a></li>
+            		<li><a href="#section02">한옥마을</a></li>
+            		<li><a href="#section03">창작스튜디오</a></li>
+            		<li><a href="#section04">전시공연장</a></li>
+					<li><a href="#section05">오시는 길</a></li>
+				</ul>
+		</div>
+	</div>
+	</nav>
+	<!-- menu end -->
+
+	<div class="main">
+		<div class="main_logo focus-in-contract-bck">
+			<img src="images/main-logo.png" alt="logo" class="logo-file">
+		</div>
+
+		<div class="main_title">
+			<h1>김포아트빌리지</h1>
+			<p class="main_txt">김포아트빌리지는 과거 김포시 운양동에 위치한 ‘샘재한옥마을’로 1980년대 초, 서울 북촌과
+			을지로가 재개발되면서 도시의 한옥을 이축하여 조성된 마을이었으며, 이 후 전통 자원의 리모델링을
+			통한 문화자산의 활용이라는 비전을 가지고 새로운 복합문화공간으로 재탄생되었다.</p>
+		</div>
+	
+	</div>
+</div>
+
+<!-- section01 end-->
+
+<div id="section02">
+	<div id="example1">
+		<ul class="bg-slide">
+			<li class=img-bg-1><img src="images/02-bg-1.jpg" alt="bg1"> </li>
+			<li class=img-bg-2><img src="images/02-bg-2.jpg" alt="bg2"></li>
+		</ul>
+	</div>
+
+
+</div>
+
+<!-- section02 -->
+
+<div id="section03" class="container">
+
+</div>
+
+<!-- section03 -->
+
+<div id="section04" class="container">
+
+</div>
+
+<!-- section04 -->
+
+<div id="section05" class="container">
+
+</div>
+
+<!-- section05 -->
+
+<script src="js/grt-responsive-menu.js"></script>
+
+<script>
+
+$( document ).ready(function( $ ) {
+		$( '#example1' ).sliderPro({
+			width: 960,
+			height: 500,
+			arrows: true,
+			buttons: false,
+			waitForLayers: true,
+			thumbnailWidth: 200,
+			thumbnailHeight: 100,
+			thumbnailPointer: true,
+			autoplay: false,
+			autoScaleLayers: false,
+			breakpoints: {
+				500: {
+					thumbnailWidth: 120,
+					thumbnailHeight: 50
+				}
+			}
+		});
+	});
+
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 100){ /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>

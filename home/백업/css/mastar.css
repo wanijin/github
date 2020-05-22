@@ -1,0 +1,224 @@
+/* @import url('reset.css')	 */
+
+#section01{
+	width:100%;
+	height:100vh;
+	position: relative;}
+	
+.video{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	/* relative 겹쳐지게...? 비디오 안에 포지션 주고 싶다면 
+	앱솔루트 포지션을 준다. */
+}
+
+.video-bg{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.video{
+	width: 1920px;
+}
+
+.main-txt{
+	position: absolute;
+	display: flex;
+	top: 50%;
+	left: 45%;
+}
+
+.main-txt h1{
+	font-size: 4em;
+	color: #fff;
+	z-index: 105;
+}
+
+.bg-black{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	z-index: 99;
+	top:0;
+}
+
+.navi{
+	display: flex;
+}
+
+.menu_box{
+	width:100%;
+
+	height:90px;
+	color:#FFF;
+	position:fixed;
+	transition:all
+	0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	z-index: 999;
+	justify-content: space-between;
+	display: flex;}
+
+
+/* section01 */
+	
+#section02{
+	width:100%;
+	height:1500px;
+	position: relative;}
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	  }
+	  .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+  
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	  }
+
+.slider1{
+	width: 100%;
+	height: 900px;
+	background: aquamarine;
+}
+
+.slider2{
+	width: 100%;
+	height: 900px;
+	background: palevioletred;
+}
+
+.slider3{
+	width: 100%;
+	height: 900px;
+	background: peachpuff;
+}
+
+.slider4{
+	width: 100%;
+	height: 900px;
+	background: yellowgreen;
+}
+
+.slider5{
+	width: 100%;
+	height: 900px;
+	background: palegreen;
+}
+
+/* section02 */
+	
+#section03{
+	width:100%;
+	height:1500px;
+	background:#9F0;
+}
+
+	.warp{
+		display: flex;
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+
+	.container1{
+		width: 33%;
+		background: pink;
+	}
+
+	.container2{
+		width: 33%;
+		background: plum;
+	}
+
+	.container3{
+		width: 33%;
+		background: salmon;
+	}
+
+	.warp h1{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		font-size: 30px;
+	}
+	
+
+/* section03 */
+
+#section04{
+	width:100%; height:1500px; background:#F33;}
+	
+#section05{
+	width:100%; height:1500px; background:#FC0;}
+
+	.fixed{
+		background:rgba(0,0,0,0.5);
+		transition:all 0.5s ease-in-out;
+		-webkit-transition:all 0.5s ease-in-out;}
+	
+		.logo a{
+			font-size:46px;
+			padding:15px 0 0 35px;
+			color:#FFF;
+			font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+			text-decoration:none;}
+			
+		.menu_box > ul{
+
+			padding:0 35px 0 0;}
+			
+			.menu_box li{
+			 text-align:center; width:100px; }
+				
+				.menu_box li a{
+					text-decoration:none;
+					color:#FFF;
+					line-height:100px;
+					font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+					font-size:14px;}
+					
+					/**메뉴부분 마우스 오버시 색상 **/
+					.menu_box li a:hover{
+						border-top:2px solid #FFF; padding-top:40px; color:#FFF;}
+						
+					.menu_box li:nth-child(2) a:hover{
+						border-top:2px solid #6FF; padding-top:40px; color:#6FF;}
+						
+					.menu_box li:nth-child(3) a:hover{
+						border-top:2px solid #9F0; padding-top:40px; color:#9F0;}
+						
+					.menu_box li:nth-child(4) a:hover{
+						border-top:2px solid #F33; padding-top:40px; color:#F33;}
+						
+					.menu_box li:nth-child(5) a:hover{
+						border-top:2px solid #FC0; padding-top:40px; color:#FC0;}
+
+
+
+
+@media (max-width:767px){
+	.navi{
+		display: none;
+	}
+
+	.menu_box{
+		display: block;
+	}
+}
