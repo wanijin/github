@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:image" content="이미지"/>
+<!-- <meta property="og:url" content="유알엘"/> -->
+<meta property="og:title" content="타이틀"/>
+<meta property="og:description" content="디스크립션"/>
+<title>Art Village</title>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<!-- css -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/mastar-2.css">
+
+<!-- font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- section2 slide link -->
+<script type="text/javascript" src="js/sec2/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/sec2/jquery.sliderPro.min.js"></script>
+
+</head>
+
+<div id="section01">
+	<!-- menu -->
+	<div class="menu_container">
+		<div class="menu_intro">
+			<div class="bg1_image"></div>
+				<div class="menu_title">
+					<div class="menu_logo">
+						<img src="images/intro-logo.png" alt="LOGO" class="intro_logo">
+					</div>
+					<div class="menu_intro_txt">
+						<h1 class="intro_txt">
+							Gimpo<br>Art Village
+						</h1>
+					</div>
+				</div>
+
+				<div class="menu_list">
+					<ul class="navi">
+            			<li><a href="#section01">김포아트빌리지</a></li>
+            			<li><a href="#section02">한옥마을</a></li>
+            			<li><a href="#section03">창작스튜디오</a></li>
+            			<li><a href="#section04">전시공연장</a></li>
+						<li><a href="#section05">오시는 길</a></li>
+					</ul>
+				</div>
+			
+		</div>
+	</div>
+	
+
+	<!-- menu_txt -->
+	<div class="main_container">
+		<div class="main_bg">
+			<div class="sub">
+				<p class="sub_txt">김포아트빌리지는 과거 김포시 운양동에 위치한 ‘샘재한옥마을’로 1980년대 초, 서울 북촌과 을지로가 재개발되면서 도시의 한옥을 이축하여 조성된 마을이었으며, 이 후 전통 자원의 리모델링을
+				통한 문화자산의 활용이라는 비전을 가지고 새로운 복합문화공간으로 재탄생되었다.</p>
+			</div>
+			<div class="main_bglogo">
+				<img src="images/main-logo.png" art="LOGO" class="main_logo">
+			</div>
+		</div>
+
+<!-- section01 end--------------------------------------------------------->
+
+<div id="section02">
+	
+
+<!-- section02 -->
+
+<div id="section03" class="container">
+
+</div>
+
+<!-- section03 -->
+
+<div id="section04" class="container">
+
+</div>
+
+<!-- section04 -->
+
+<div id="section05" class="container">
+
+</div>
+
+<!-- section05 -->
+
+<script src="js/js.js"></script>
+
+<script src="js/grt-responsive-menu.js"></script>
+
+<script>
+
+$( document ).ready(function( $ ) {
+		$( '#example1' ).sliderPro({
+			width: 1200,
+			height: 700,
+			arrows: false,
+			buttons: false,
+			waitForLayers: true,
+			thumbnailWidth: 300,
+			thumbnailHeight: 200,
+			thumbnailPointer: true,
+			autoplay: false,
+			autoScaleLayers: false,
+			breakpoints: {
+				600: {
+					thumbnailWidth: 120,
+					thumbnailHeight: 50
+				}
+			}
+		});
+	});
+
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 100){ /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>

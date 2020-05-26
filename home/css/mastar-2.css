@@ -1,0 +1,168 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&display=swap');
+
+
+@font-face {
+	font-family: 'Gyeonggi-do_Bold';
+	src: url('../fonts/Gyeonggi-do_Bold.eot');
+	src: url('../fonts/Gyeonggi-do_Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gyeonggi-do_Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  } 
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: inherit;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+/* section01 --------------------------------------------- */
+
+#section01{
+	width: 100%;
+	display: flex;
+}
+
+/* menu */
+
+	.menu_container{
+		width: 30%;
+	}
+
+	.bg1_image{
+		/* padding-top: 50%; */
+		width: 30%;
+		background-color: mediumpurple;
+		background: url(../images/menu1_bg.jpg);
+		background-position: center;
+    	background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.menu_intro{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		z-index: 99;
+	}
+
+	.menu_title{
+		padding-right: 20%;
+		/* padding-top: 15%; */
+	}
+
+	.menu_logo{
+		text-align: right;
+	}
+		
+	.intro_logo{
+		width: 30%;
+	}
+
+	.menu_intro_txt{
+		justify-content: flex-end;
+	}
+
+	.intro_txt{
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 4rem;
+		text-align: right;
+		font-weight: 700;
+		padding-top: 10%;
+	}
+
+	.menu_intro_txt{
+		display: flex;
+	}
+
+
+	.menu_list{
+		text-decoration: none;
+		list-style: none;
+		text-align: right;
+		padding-right: 20%;
+		padding-top: 10%;
+		line-height: 3;
+	}
+
+
+.main_container{
+	width: 70%;
+	background-color: mediumpurple;
+
+}
+	
+
+
+
+
+/* section02 --------------------------------------------- */
+
+#section02{
+	width:100%;
+	background-color: #fff;
+	
+}
+
+	
+#section03{
+	width:100%;
+	height:1500px;
+	background:#9F0;}
+	
+#section04{
+	width:100%;
+	height:1500px;
+	background:#F33;}
+
+	
+
+	
+#section05{
+	width:100%; height:1500px; background:#FC0;}
+
+
+
+/* media ------------------------------------------*/
+
+@media (max-width:768px){
+	
+	.navi>li{
+		display: none;
+	}
+
+	.menu_box{
+		width: 100%;
+	}
+
+	.logo img{
+		width: 70%;
+	}
+
+	.main_title>p{
+        width: 90%;
+        margin: 0 auto;
+	}
+
+	.logo-file{
+		width: 80%;
+		margin: 0 auto;
+		align-items: center;
+	}
+	
+}
+
