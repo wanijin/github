@@ -238,10 +238,34 @@ body{
 		line-height: 5;
 		font-weight: 400;
 		text-decoration: none;
+		list-style: none;
+	}
+
+	.sec02-button a{
+		list-style: none;
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.sec02-right{
+
+	}
+
+	.sec02_01_img>img{
+		width: 50%;
+		padding-top: 10%;
+
+	}
+
+	.sec02_slide_2{
 		
+		width: 100px;
+		height: 300px;
+	}
+
+	.sec02_background{
+		width: 500px;
+		height: 500px;
 	}
 
 	
