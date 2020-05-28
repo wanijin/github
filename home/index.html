@@ -9,27 +9,21 @@
 <meta property="og:title" content="타이틀"/>
 <meta property="og:description" content="디스크립션"/>
 <title>Art village</title>
-<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<!-- <script src="js/jq_ver/jquery-3.1.0.slim.min.js"></script> -->
+<script src="js/jq_ver/jquery-2.1.3.min.js"></script>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/mastar-1.css">
 
-<!-- sec2 css -->
-<link rel="stylesheet" href="css/sec2/slider-pro.css">
-
 <!-- menu slide -->
 <link rel="stylesheet" href="css/grt-responsive-menu.css">
-
-<!-- section2 slide link -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/sec2/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/sec2/jquery.sliderPro.min.js"></script>
 
 </head>
 
 <body>
 
-<div id="section01" class="menu-container">
+<div id="section01">
 	<nav>
     <div class="menu_box grt-menu-logo">
 		<div class="logo">
@@ -55,216 +49,80 @@
 
 	<div class="main">
 		<div class="main_logo focus-in-contract-bck">
-			<img src="images/main-logo.png" alt="logo" class="logo-file">
+			<img src="images/intro-logo.png" alt="logo" class="logo-file">
 		</div>
 
 		<div class="main_title">
 			<h1>김포아트빌리지</h1>
-			<p class="main_txt">김포아트빌리지는 과거 김포시 운양동에 위치한 ‘샘재한옥마을’로 1980년대 초, 서울 북촌과
-			을지로가 재개발되면서 도시의 한옥을 이축하여 조성된 마을이었으며, 이 후 전통 자원의 리모델링을
-			통한 문화자산의 활용이라는 비전을 가지고 새로운 복합문화공간으로 재탄생되었다.</p>
+			<p class="main_txt">김포아트빌리지는 과거 김포시 운양동에 위치한 ‘샘재한옥마을’로 1980년대 초, 서울 북촌과	을지로가 재개발되면서 도시의 한옥을 이축하여 조성된 마을이었으며, 이 후 전통 자원의 리모델링을 통한 문화자산의 활용이라는 비전을 가지고 새로운 복합문화공간으로 재탄생되었다.</p>
 		</div>
 	
 	</div>
 </div>
 
-<!-- section01 end--------------------------------------------------------->
+<!-- section01 end------------------------------------------>
 
 <div id="section02">
-	<div id="example1" class="slider-pro">
-		<div class="sp-slides">
-			<div class="sp-slide">
-				<img class="sp-image" src="images/sec2-img-01.jpg">
-				
-				<h3 class="sp-layer sp-black sp-padding" 
-					data-horizontal="40" data-vertical="10%" 
-					data-show-transition="left" data-hide-transition="left">
-					한옥마을 100% 즐기기
-				</h3>
+	<div class="sec02-left">
+		<div class="sec02-txt">
+			<div class="sec02-title">
+				<h2>01</h2>
+				<h1>한옥마을</h1>
+			</div>
+			<div class="sec02-line"></div>
+			<div class="sec02-button">
+				<ul>
+					<li id="tab-btn1">김포문화원</li>
+					<li id="tab-btn2">한옥카페 「다인」</li>
+					<li id="tab-btn2">밥집 「모담」</li>
+					<li id="tab-btn2">한옥스튜디오</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
+	<script>
+		$(function(){
+			$('#tab-btn1').click(function(){
+				$("#sec02_1").css("display","block");
+				$("#sec02_2").css("display","none");
+			});
+			$('#tab-btn2').click(function(){
+				$("#sec02_1").css("display","none");
+				$("#sec02_2").css("display","block");
+			});a
+		});
+	</script>
+	
+	<div class="sec02-right">
+		<div class="sec02_slide_1" id="sec02_1">
+			<div class="sec02_1_img">
+				<img src="images/sec02-01.jpg" alt="">
+			</div>
+			<div class="sec02_1_txt">
+				<h1>김포문화원</h1>
+				<p>김포문화원은 지역문화 활성화와 향토문화 보존을 위해 김포지역에 흩어져 있던 문화를 발굴해 기록하고 또 전통문화 재현을 위해 활동해 왔다.<br>
+				특히 김포 인물지, 설화, 금석문대관 등은 김포 연구에 중요한 기초자료가 되고 있다. 또한 지방문화원 콘텐츠 개발 사업을 통해 국비를 지원 받아 중봉관련 각종 콘텐츠를 개발한 바 있습니다.</p>
 			
-				<p class="sp-layer sp-white sp-padding hide-small-screen" 
-					data-horizontal="40" data-vertical="25%" data-width="350" 
-					data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
-					한복으로 멋내고 인생샷 하나쯤 건지고 싶은 분들을 위한 곳!  데이트 사진,가족사진, 커플사진, 돌 사진 등 한복을 입고 당신의 특별한날 특별한 추억을 선물합니다.
-
-
-				</p>
-			
-			</div>
-
-	        <div class="sp-slide">
-	        	<img class="sp-image" src="images/blank.gif"
-	        		data-src="http://bqworks.com/slider-pro/images/image2_medium.jpg"
-	        		data-retina="http://bqworks.com/slider-pro/images/image2_large.jpg"/>
-
-				<h3 class="sp-layer sp-black sp-padding" 
-					data-horizontal="40" data-vertical="10%" 
-					data-show-transition="left" data-hide-transition="left">
-					Lorem ipsum dolor sit amet
-				</h3>
-
-				<p class="sp-layer sp-white sp-padding hide-medium-screen" 
-					data-horizontal="40" data-vertical="22%" 
-					data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200">
-					consectetur adipisicing elit
-				</p>
-
-				<p class="sp-layer sp-black sp-padding hide-small-screen" 
-					data-horizontal="40" data-vertical="34%" data-width="350" 
-					data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image3_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image3_large.jpg"/>
-
-				<p class="sp-layer sp-white sp-padding" 
-					data-position="centerCenter" data-vertical="-50" 
-					data-show-transition="right" data-hide-transition="left" data-show-delay="500" >
-					Lorem ipsum dolor sit amet
-				</p>
-
-				<p class="sp-layer sp-black sp-padding hide-small-screen" 
-					data-position="centerCenter" data-vertical="50" 
-					data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">
-					consectetur adipisicing elit
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image4_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image4_large.jpg"/>
-
-				<p class="sp-layer sp-black sp-padding" 
-					data-position="bottomLeft"
-					data-show-transition="up" data-hide-transition="down">
-					Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image5_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image5_large.jpg"/>
-
-				<p class="sp-layer sp-white sp-padding" 
-					data-vertical="10" data-horizontal="2%" data-width="96%" 
-					data-show-transition="down" data-show-delay="400" data-hide-transition="up">
-					Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image6_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image6_large.jpg"/>
-
-				<p class="sp-layer sp-white sp-padding" 
-					data-horizontal="10" data-vertical="10" data-width="35%">
-					Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image7_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image7_large.jpg"/>
-
-				<p class="sp-layer sp-black sp-padding" 
-					data-position="bottomLeft" data-vertical="10" data-horizontal="2%" data-width="96%" 
-					data-show-transition="up" data-show-delay="400" data-hide-transition="down">
-					Lorem ipsum dolor sit amet <span class="hide-small-screen">, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> <span class="hide-medium-screen">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image8_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image8_large.jpg"/>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image9_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image9_large.jpg"/>
-
-				<p class="sp-layer sp-black sp-padding" 
-					data-position="bottomLeft" data-horizontal="50" data-vertical="100"
-					data-show-transition="down" data-show-delay="500" data-hide-transition="up">
-					Lorem ipsum dolor sit amet
-				</p>
-
-				<p class="sp-layer sp-white sp-padding hide-small-screen" 
-					data-position="bottomLeft" data-horizontal="50" data-vertical="50"
-					data-show-transition="up" data-show-delay="500" data-hide-transition="down">
-					consectetur adipisicing elit <span class="hide-medium-screen">, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-				</p>
-			</div>
-
-			<div class="sp-slide">
-				<img class="sp-image" src="images/blank.gif"
-					data-src="http://bqworks.com/slider-pro/images/image10_medium.jpg"
-					data-retina="http://bqworks.com/slider-pro/images/image10_large.jpg"/>
 			</div>
 		</div>
 
-		<div class="sp-thumbnails">
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Lorem ipsum</div>
-				<div class="sp-thumbnail-description">Dolor sit amet, consectetur adipiscing elit sed</div>
+		
+		<div class="sec02_slide_2" id="sec02_2">
+			<div class="sec02_2_img">
+				<img src="images/02-bg-2.jpg" alt="">
 			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Do eiusmod</div>
-				<div class="sp-thumbnail-description">Tempor incididunt ut labore et dolore magna aliqua</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Ut enim</div>
-				<div class="sp-thumbnail-description">Ad minim veniam, quis nostrud exercitation</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Ullamco oris</div>
-				<div class="sp-thumbnail-description">Nisi ut aliquip ex ea commodo consequat</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Duis aute</div>
-				<div class="sp-thumbnail-description">Irure dolor in reprehenderit in voluptate velit</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Esse cillum</div>
-				<div class="sp-thumbnail-description">Dolore eu fugiat nulla pariatur excepteur</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Sint occaecat</div>
-				<div class="sp-thumbnail-description">Cupidatat non proident, sunt in culpa qui officia</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Deserunt</div>
-				<div class="sp-thumbnail-description">Mollit anim id est laborum sed ut perspiciatis</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Unde omnis</div>
-				<div class="sp-thumbnail-description">Iste natus error sit voluptatem doloremque</div>
-			</div>
-
-			<div class="sp-thumbnail">
-				<div class="sp-thumbnail-title">Laudantium</div>
-				<div class="sp-thumbnail-description">Totam rem aperiam, eaque ipsa quae ab illo</div>
+			<div class="sec02_2_txt">
+				<h1>김포문화원</h1>
+				<p>김포문화원은 지역문화 활성화와 향토문화 보존을 위해 김포지역에 흩어져 있던 문화를 발굴해 기록하고 또 전통문화 재현을 위해 활동해 왔다.<br>
+				특히 김포 인물지, 설화, 금석문대관 등은 김포 연구에 중요한 기초자료가 되고 있다. 또한 지방문화원 콘텐츠 개발 사업을 통해 국비를 지원 받아 중봉관련 각종 콘텐츠를 개발한 바 있습니다.</p>
+			
 			</div>
 		</div>
-    </div>
+
+	</div>
+
+	</div>
 
 
 </div>
@@ -289,30 +147,12 @@
 
 <!-- section05 -->
 
+<!-- nav js -->
 <script src="js/grt-responsive-menu.js"></script>
 
 <script>
 
-$( document ).ready(function( $ ) {
-		$( '#example1' ).sliderPro({
-			width: 1200,
-			height: 600,
-			arrows: true,
-			buttons: false,
-			waitForLayers: true,
-			thumbnailWidth: 200,
-			thumbnailHeight: 100,
-			thumbnailPointer: true,
-			autoplay: false,
-			autoScaleLayers: false,
-			breakpoints: {
-				600: {
-					thumbnailWidth: 120,
-					thumbnailHeight: 50
-				}
-			}
-		});
-	});
+
 
 	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
 	if (jQuery(window).width() > 0) {
@@ -339,6 +179,8 @@ $( document ).ready(function( $ ) {
 		  return false;
 	   });
 	});
+
+
 </script>
 </body>
 </html>

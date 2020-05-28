@@ -20,7 +20,7 @@ header {
 }
 
 header.scrolled {
-	box-shadow: rgba(0, 0, 0, 0.2)rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
+	background: rgba(0, 0, 0, 0.2)rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
 }
 
 header nav {
@@ -88,7 +88,7 @@ ul.grt-menu li a {
 	display: inline-block;
 	color:#303030;
 	line-height: 1.1em;
-	box-shadow: inset 0 0 0 0 #FFF;
+	background: inset 0 0 0 0 #FFF;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
@@ -135,20 +135,31 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	}
 
 	ul.grt-menu li a:hover {
+		margin: 0;
 		color:#FFF;
-		box-shadow: inset 150px 0 0 0 #ee2b34;
+		background: #ee2b34;
+		font-size: 1em;
+		font-weight: bold;
 	}
 }
 
 /* Tablet only style */
 @media (min-width:768px) and (max-width:991px) {
+
 	ul.grt-menu li a {
 		font-size:18px;
 	}
+
+	ul.grt-menu li :hover{
+		background: #ee2b34;
 }
 
 /* Mobile only style */
 @media (max-width:767px) {
+	ul.grt-menu li{
+		width: 100% !important;
+		/* box-shadow: inset 150px 0 0 0 #ee2b34; */
+	}
 
 	.grt-mobile-button {
 		display:inline-block;
@@ -158,7 +169,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 		/* background:rgba(255,255,255,0); */
 		background-color: rgba(255, 255, 255, 0);
 		color:#3d3d3d;
-		margin:0;
+		margin: -10px;
 		padding:0;
 		cursor:pointer;
 		border: 0;
@@ -184,7 +195,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 		float: block;
 		position: fixed;
 		background: rgba(255, 255, 255, 0.7);
-		width: 30vw;
+		width: 40vw;
 		right: 0px;
 		top: 0;
 		height:100vh;
@@ -219,7 +230,11 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	ul.grt-menu li {
 		display: block;
 		line-height: 3.5em;
-		
+		width: 100%;
+	}
+
+	ul.grt-menu li :hover{
+		/* box-shadow: inset 150px 0 0 0 #ee2b34; */
 	}
 
 	ul.grt-menu li a {
@@ -231,5 +246,11 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	ul.grt-menu li a:hover {
 		font-weight: 700;
 		color:#FFF;
-		box-shadow: inset 150px 0 0 0 #ee2b34;
+		/* background: #ee2b34; */
+		color:#000;
+	}
+	ul.grt-menu li :hover{
+		background: #ee2b34;
+	}
 
+}

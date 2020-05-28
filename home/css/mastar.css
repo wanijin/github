@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&display=swap');
 
+@import url(@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
 	font-family: 'Gyeonggi-do_Bold';
@@ -11,6 +12,10 @@
 	font-weight: normal;
 	font-style: normal;
   } 
+
+html {
+	scroll-behavior: smooth;
+}
 
 body{
 	font-family: 'Nanum Gothic', sans-serif;
@@ -25,7 +30,6 @@ body{
 
 #section01{
 	width:100%;
-	height:970vh;
 	background:url(../images/01-bg.jpg) top center no-repeat;
 }
 
@@ -33,7 +37,6 @@ body{
 	
 	nav{
 		width: 100%;
-		height:95px;
 		background: rgba(255,255,255,0.5);
 		position: fixed;
 		display: inline-flex;
@@ -43,7 +46,6 @@ body{
 	.menu_box{
 		width:90%;
 		margin: 0 auto;
-		height:95px;
 		color:#FFF;
 		transition:all 0.5s ease-in-out;
 		-webkit-transition:all 0.5s ease-in-out;
@@ -53,9 +55,8 @@ body{
 	}
 
 	.logo>img{
-		width: 170px;
-		padding-top: 12px;
-		
+		width: 70%;
+		padding-top: 5%;
 	}
 
 	.navi{
@@ -70,7 +71,6 @@ body{
 	}
 
 		.menu_box{
-			margin: auto;
 			justify-content: space-between;
 		}
 				
@@ -80,26 +80,20 @@ body{
 		.menu_box .navi li a{
 			display: flex;
 			text-decoration:none;
-			color:#181818;
+			color:#000;
 			line-height:80px;
-			font-size: 17px;
+			font-size: 1em;
 			padding: 15px 20px 0 20px;
 		}
 	
-		/**메뉴부분 마우스 오버시 색상 **/
-			.menu_box li a:hover{
-				font-weight: 700;
-			}
-
-			
+					
 /* main-01 --------------------------------------------------- */
 
 .main{
+	padding-top: 5%;
     display: flex;
     width: 100%;
-    height: 95vh;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -108,9 +102,9 @@ body{
     letter-spacing: -2px;
     color: #181818;
     width: 100%;
-    font-size: 35pt;
-    padding-top: 5vh;
+    font-size: 3em;
 	text-align: center;
+	padding-top: 3%;
 }
 
 .main_title p{
@@ -120,16 +114,17 @@ body{
 	color: #181818;
     font-size: 0.9em;
     text-align: center;
-	padding-top: 30px;
+	padding-top: 2%;
 	line-height: 30px;
+	padding-bottom: 14%;
 }
 
-.main_logo>img{
+.logo-file{
     display: flex;
-    width: 193px;
-    height: 326px;
+    width: 100%;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	padding-top: 100%;
 	}
 
 	/* main-logo animation */
@@ -179,10 +174,149 @@ body{
 
 #section02{
 	width:100%;
-	height:1000px;
-	background-color: #fff;
+	height: 1000px;
+	display: flex;
 }
 
+	/* sec02-left */
+	.sec02-left{
+		width: 30%;
+		height: 1000px;
+		padding-top: 10%;
+		text-align: right;
+		justify-content: right;
+	}
+
+		.sec02-txt{
+			padding-right: 10%;
+		}
+
+		.sec02-title{
+			font-family: 'Gyeonggi-do_Bold';
+		}
+
+			.sec02-title h2{
+				font-size: 8em;
+				font-weight: 900;
+				color: #eeeeee;
+			}
+
+			.sec02-title h1{
+				font-size: 5em;
+				color: black;
+				letter-spacing: -8px;
+				margin-top: -10px;
+			}
+
+			.sec02-line{
+				border: #d52024 solid 1px;
+				width: 100%;
+				right: 0px;
+				margin-top: 5%;
+				margin: 0 auto;
+			}
+
+			.sec02-button{
+				padding-top: 10%;
+				line-height: 5;
+				font-weight: 400;
+				text-decoration: none;
+				list-style: none;
+			}
+		
+			.sec02-button a{
+				list-style: none;
+				text-decoration: none;
+				color: inherit;
+			}
+
+
+	/* sec02-right */
+	.sec02-right{
+		width: 70%;
+		background-color:lightblue;
+		position: relative;;
+		margin: 0;
+		padding: 0;
+	}
+
+		.sec02-button li{
+			cursor: pointer;
+		}
+
+		/* slide-1 */
+		.sec02_slide_1{
+			position: relative;
+			width: 100%;
+			height: 1000px;
+			background-color: #fff;		
+		}
+			.sec02_1_img{
+				display: flex;
+				width: 70%;
+				padding-top: 10%;
+				margin: 0 auto;
+			}
+			.sec02_1_img>img{
+				width: 100%;
+			}
+
+			.sec02_1_txt{
+				width: 70%;
+				padding-top: 2%;
+				margin: 0 auto;
+			}
+
+			.sec02_1_txt h1{
+				font-family: 'Noto Sans KR', sans-serif;
+				font-size: 2.5em;
+				font-weight: 900;
+			}
+
+			.sec02_1_txt>p{
+				font-size: 5em;
+				padding-top: 2%;
+				line-height: 10px;
+			}
+		
+		/* slide-2 */
+		.sec02_slide_2{
+			display: none;
+			position: relative;
+			width: 100%;
+			height: 1000px;
+			background-color: #fff;		
+		}
+			.sec02_2_img{
+				display: flex;
+				width: 70%;
+				padding-top: 10%;
+				margin: 0 auto;
+			}
+			.sec02_2_img>img{
+				width: 100%;
+			}
+
+			.sec02_2_txt{
+				width: 70%;
+				padding-top: 2%;
+				margin: 0 auto;
+			}
+
+			.sec02_2_txt h1{
+				font-family: 'Noto Sans KR', sans-serif;
+				font-size: 2.5em;
+				font-weight: 900;
+			}
+
+			.sec02_2_txt p{
+				padding-top: 2%;
+				line-height: 1vw;
+			}
+
+
+
+	
 	
 #section03{
 	width:100%; height:1500px; background:#9F0;}
@@ -202,36 +336,126 @@ body{
 
 /* media ------------------------------------------*/
 
-@media (max-width:767px){
+@media (max-width:768px){
+
 	.navi{
 		display: none;
 	}
-
-	.menu_box{
-		width: 100%;
+	
+	.logo-file{
+		width: 70%;
+		margin: 0 auto;
+		align-items: center;
 	}
-
+	
 	.main_title>p{
-        width: 90%;
-        margin: 0 auto;
+		font-size: 0.9em;
+		padding-top: 3%;
 	}
+	
+	.fixed{
+		background:rgba(255,255,255,0);
+		transition:all 0.5s ease-in-out;
+		-webkit-transition:all 0.5s ease-in-out;
+		width: 90%;
+	}
+
+		.menu_box{
+			margin: auto;
+			justify-content: space-between;
+		}
+				
+		.menu_box li{
+			text-align: right;}
+					
+		.menu_box .navi li a{
+			display: flex;
+			text-decoration:none;
+			color:#000;
+			line-height:80px;
+			font-size: 1em;
+			padding: 15px 10px 0 20px;
+		}
+	
+		/**메뉴부분 마우스 오버시 색상 **/
+			.menu_box li a:hover{
+				font-weight: 700;
+			}
+
+
 	
 }
 
 @media (max-width: 992px){
+
+	.menu_box{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.main_title h1{
+		font-size: 3em;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.main_title>p{
+        margin: 0 auto;
+        width: 70%;
+	}
+	
+	.logo-file{
+		width: 90%;
+	}
+
+	.fixed{
+		background:rgba(255,255,255,0);
+		transition:all 0.5s ease-in-out;
+		-webkit-transition:all 0.5s ease-in-out;
+		width: 100%;
+	}
+
+		.menu_box{
+			margin: auto;
+			justify-content: space-between;
+		}
+				
+		.menu_box li{
+			text-align: right;}
+					
+		.menu_box .navi li a{
+			display: flex;
+			text-decoration:none;
+			color:#000;
+			line-height:80px;
+			font-size: 1em;
+			padding: 15px 15px 0 15px;
+		}
+	
+		/**메뉴부분 마우스 오버시 색상 **/
+			.menu_box li a:hover{
+				display: flex;
+				text-decoration:none;
+				color:#fff;
+				line-height:80px;
+				font-size: 1em;
+				padding: 15px 15px 0px 15px;
+				}
+
+}
+
+@media (min-width: 375px){
     .navi{
 		display: none;
         max-width: 960px;
         margin: 0 auto;
 	}
 
-	.main_sub{
-		padding-top: 30%;
+	.logo>img{
+		width: 50%;
+		padding-left: 5%;
 	}
-	
-	.main_title>p{
-        margin: 0 auto;
-        width: 80%;
-    }
 
-}
+	.grt-mobile-button span{
+		padding-top:-30px;
+	}
