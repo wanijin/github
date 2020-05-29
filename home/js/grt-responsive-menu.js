@@ -16,9 +16,7 @@
 				$("ul.grt-menu").toggleClass("open-grt-menu ");
 				$("html, body").toggleClass("body-overflow");
 			});
-			$('li.grt-dropdown').on('click', function(e){
-				$(this).toggleClass("active-dropdown");
-			});
+		
 		}
 	}
 })( jQuery );
@@ -38,14 +36,10 @@ $(window).on('resize', function(e) {
 
 // Add shadow on scroll after 60px
 $(window).scroll(function(e){
-   if ($(this).scrollTop() > 60){
+   if ($(this).scrollTop() > 0){
        $('header').addClass('scrolled');
    } else {
        $('header').removeClass('scrolled');
    }
 });
 
-// Prevent a href clicks on dropdown category
-$('li.grt-dropdown > a').on('click', function(e){
-	e.preventDefault();
-});
