@@ -105,7 +105,7 @@ body{
 			font-size: 1em;
 			font-weight: bold;
 			animation-name: fadeIn;
-			animation-duration: 1s;
+			animation-duration: 2s;
 		}
 		
 		@keyframes fadeIn {
@@ -468,58 +468,180 @@ body{
 
 /* section03 --------------------------------------------- */
 	
-/* .wow:first-child {
-	visibility: hidden;
-  } */
-
 #section03{
 	width:100%;
-	height:1500px;
-	background:#9F0;
+	background: #eee;
 }
 
 
 .creation_space{
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 }
 
+.sec03_title{
+	width: 100%;
+	padding-top: 5%;
+}
+
+	/* .sec03_title h1{
+		font-family: 'Gyeonggi-do_Bold';
+		font-size: 5em;
+		color: black;
+		letter-spacing: -8px;
+	}
+
+	.sec03_title h2{
+		font-family: 'Gyeonggi-do_Bold';
+		font-size: 8em;
+		font-weight: 900;
+		color: #eeeeee;
+	}
+
+	.sec03-line{
+		position: absolute;
+		border: #d52024 solid 1px;
+		width: 530px;
+		left: 0px;
+		margin: 0 auto;
+	} */
+
 .sec03_box{
-	display: flex;
-	padding-top: 10%;
-	opacity:0;
-	
+	margin-top: 10%;
+	width: 100%;
+	padding-bottom: 20%;
+	position: relative;
 }
 
 	.sec03_box1{
-		width: 500px;
-		height: 300px;
-		background: #fff;
+		position: absolute;
+		display: block;
+		width: 300px;
+		height: 500px;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+		z-index: 20;
 	}
+
+	/* .box1_hover :hover{
+		width: 300px;
+		height: 500px;
+		background-color: rgba(0,0,0,1);
+		z-index: 50;
+	} */
+
+
+		.sec03_box1 img{
+			display: flex;
+			width: 90%;
+			margin: 15px auto;
+		}
+
+		.sec03_box1>h3{
+			font-size: 1.5em;
+			font-weight: 900;
+			text-align: right;
+			margin-right: 15px;
+		}
+
+		.sec03_box1>p{
+			font-size: 1em;
+			text-align: right;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
 
 	.sec03_box2{
-		width: 500px;
-		height: 300px;
-		background: #fff;
+		position: absolute;
+		display: block;
+		width: 300px;
+		height: 500px;
+		left: 25%;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	}
 
+		.sec03_box2 img{
+			display: flex;
+			width: 90%;
+			margin: 15px auto;
+		}
+
+		.sec03_box2>h3{
+			font-size: 1.5em;
+			font-weight: 900;
+			text-align: right;
+			margin-right: 15px;
+		}
+
+		.sec03_box2>p{
+			font-size: 1em;
+			text-align: right;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+	
 	.sec03_box3{
-		width: 500px;
-		height: 300px;
-		background: #fff;
+		position: absolute;
+		display: block;
+		left: 50%;
+		width: 300px;
+		height: 500px;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	}
+
+		.sec03_box3 img{
+			display: flex;
+			width: 90%;
+			margin: 15px auto;
+		}
+
+		.sec03_box3>h3{
+			font-size: 1.5em;
+			font-weight: 900;
+			text-align: right;
+			margin-right: 15px;
+		}
+
+		.sec03_box3>p{
+			font-size: 1em;
+			text-align: right;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+
 
 	.sec03_box4{
-		width: 500px;
-		height: 300px;
-		background: #fff;
+		position: absolute;
+		display: block;
+		left: 75%;
+		width: 300px;
+		height: 500px;
+		background-color: #fff;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	}
 
-	.sec03_box5{
-		width: 500px;
-		height: 300px;
-		background: #fff;
-	}
+		.sec03_box4 img{
+			display: flex;
+			width: 90%;
+			margin: 15px auto;
+		}
+
+		.sec03_box4>h3{
+			font-size: 1.5em;
+			font-weight: 900;
+			text-align: right;
+			margin-right: 15px;
+		}
+
+		.sec03_box4>p{
+			font-size: 1em;
+			text-align: right;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+
 
 
 /* section04 --------------------------------------------- */
@@ -532,10 +654,8 @@ body{
 	
 
 	
-#section05{
-	width:100%; height:1500px; background:#FC0;}
 
-
+	
 
 /* media ------------------------------------------*/
 

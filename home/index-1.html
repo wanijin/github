@@ -8,9 +8,8 @@
 <!-- <meta property="og:url" content="유알엘"/> -->
 <meta property="og:title" content="타이틀"/>
 <meta property="og:description" content="디스크립션"/>
-<title>Art village</title>
+<title>Art village-</title>
 
-<!-- <sc<link rel="stylesheet" href="css/libs/animate.css">ript src="js/jq_ver/jquery-3.1.0.slim.min.js"></script> -->
 <script src="js/jq_ver/jquery-2.1.3.min.js"></script>
 
 <link rel="stylesheet" href="css/reset.css">
@@ -18,8 +17,8 @@
 <link rel="stylesheet" href="css/kakao-map.css">
 
 
-<!-- sec03 wow -->
-  <link rel="stylesheet" href="css/wow/animate.css">
+<!-- sec03 aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -218,34 +217,64 @@
 <div id="section03" class="container">
 	<div class="creation_space">
 		<div class="sec03_title">
+			<!-- <h2>02</h2>
 			<h1>창작스튜디오</h1>
+			<div class="sec03-line"></div> -->
 		</div>
-		<div class="sec03_box span3 wow bounceInLeft" style="visibility: visible; animation-name: bounceInLeft;">
-			
-			
-			<div class="sec03_box1">
-				<h1>음???</h1>
-			</div>
-			<div class="sec03_box2">
-				<h1>음???</h1>
-			</div>
-			<div class="sec03_box3">
-				<h1>음???</h1>
-			</div>
-			<div class="sec03_box4">
-				<h1>음???</h1>
-			</div>
-			<div class="sec03_box5">
-				<h1>음???</h1>
-			</div>
-		</div>			
-	</div>
 
+		<div class="sec03_box ">
+			<ul>
+				<li class="sec03_box1" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400">
+			
+			</li>
+			</ul>
+				<div class="sec03_box1" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400">
+					<img src="images/sec03-01.jpg" art="누비공방">
+					<h3>손바느질 누비공방 「올」</h3>
+					<p>031-981-0741</p>
+				</div>
+
+				<div class="sec03_box2" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400"
+				data-aos-delay="100">
+					<img src="images/sec03-02.jpg" art="빈티지돌">
+					<h3>빈티지 ‘doll’</h3>
+					<p>010-2744-5449</p>
+				</div>
+
+				<div class="sec03_box3" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400"
+				data-aos-delay="200">
+					<img src="images/sec03-03.jpg" art="플레노">
+					<h3>한옥꽃집「플레노」</h3>
+					<p>010-2744-5449</p>
+				</div>
+
+				<div class="sec03_box4" data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400"
+				data-aos-delay="300">
+					<img src="images/sec03-04.jpg" art="플레노">
+					<h3>오늘도예공방</h3>
+					<p>031-997-3920</p>
+				</div>
+		</div>
+	
 </div>
 
 <!-- section03 end------------------------------------------>
 
 <div id="section04" class="container">
+
+	
+
+	
 
 </div>
 
@@ -253,11 +282,13 @@
 
 <div id="section05" class="container">
 	<div id="map" style="width:100%;height:500px;"></div>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9b9d7a1c7f0bf709683029603c9f62e7"></script>
     
     <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
         center: new kakao.maps.LatLng(37.645710, 126.695957), // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
@@ -310,14 +341,12 @@ var customOverlay = new kakao.maps.CustomOverlay({
 <script src="js/grt-responsive-menu.js"></script>
 
 <!-- sec03 aos -->
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-<script src="js/wow/wow.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
 
-	new WOW().init();
-
-
+	// aos
+	AOS.init();
 
 	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
 	if (jQuery(window).width() > 0) {
