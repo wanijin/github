@@ -217,7 +217,7 @@ a{
 	/* sec02-left */
 	.sec02-left{
 		width: 30%;
-		padding-top: 10%;
+		padding-top: 15%;
 		text-align: right;
 		justify-content: right;
 		background: url('../images/sec02_background.jpg');
@@ -245,7 +245,6 @@ a{
 				color: black;
 				letter-spacing: -8px;
 				margin-top: -10px;
-				background: #00bcd4;
 			}
 
 			.sec02-button{
@@ -254,7 +253,7 @@ a{
 				font-weight: 400;
 				text-decoration: none;
 				list-style: none;
-				padding-bottom: 50%
+				padding-bottom: 30%
 			}
 		
 			.sec02-button a{
@@ -263,34 +262,6 @@ a{
 				color: inherit;
 				cursor: pointer;
 			}
-
-div.brackets li> a:before, div.brackets li a:after{
-    position: absolute;
-    opacity: 0;
-    font-size: 1em;
-    top: 0px;
-    transition: all 0.3s;
-}
-
-div.brackets a:before
-{
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
-}
-
-div.brackets a:after
-{
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
-}
-
-div.brackets a:hover:before, div.brackets a:hover:after
-{
-    opacity: 1;
-    transform: translateX(0px);
-}
 
 	/* sec02-right */
 	.sec02-right{
@@ -812,12 +783,12 @@ div.brackets a:hover:before, div.brackets a:hover:after
 	
 #section04{
 	width:100%;
-	height:1500px;
 	background: #fff;
 }
 
 	.exhibit-performance{
 		display: flex;
+		padding-bottom: 10%;
 	}
 
 		/* left */
@@ -825,70 +796,178 @@ div.brackets a:hover:before, div.brackets a:hover:after
 			width: 25%;
 			display: flex;
 			flex-direction: column;
+			margin-left: 10%;
+			margin-top: 10%
 		}
 
 			.exhibit{
 				display: flex;
-				width: 100%;
-				height: 500px;
+				width: 70%;
+				height: 300px;
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
 				background-image: url("../images/sec04-01.jpg");
 				background-size: cover;
+				cursor: pointer;
 			}
 
 			.performance{
+				margin-top: 20%;
 				display: flex;
-				width: 100%;
-				height: 500px;
+				width: 70%;
+				height: 300px;
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
 				background-image: url("../images/sec04-02.jpg");
 				background-size: cover;
+				cursor: pointer;
 			}
 
-			.exhibit-performance_left span{
+			.exhibit-performance_left h3{
+				display: flex;
 				font-family: 'Gyeonggi-do_Bold';
-				font-size: 2.2em;
+				font-size: 2.5em;
 				font-weight: 900;
-				padding-top: 7%
+				letter-spacing: -1px;
+				position: relative;
+				z-index: 555;
+				color: #fff;
+				justify-content: center;
+				margin-top: 40%;
 			}
 
 			.exhibit-performance_left img{
 				width: 30%;
 			}
 
+			.snip1585 {
+				background-color: #000;
+				display: inline-block;
+				margin: 10px;
+				max-width: 315px;
+				min-width: 230px;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				width: 100%;
+			  }
+			  
+			  .snip1585 * {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition: all 0.45s ease;
+				transition: all 0.45s ease;
+			  }
+			  
+			  .snip1585:before,
+			  .snip1585:after {
+				background-color: rgba(0, 0, 0, 0.5);
+				border-top: 50px solid rgba(0, 0, 0, 0.5);
+				border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				content: '';
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				z-index: 1;
+				opacity: 0;
+			  }
+			  
+			  .snip1585:before {
+				-webkit-transform: scaleY(2);
+				transform: scaleY(2);
+			  }
+			  
+			  .snip1585:after {
+				-webkit-transform: scaleY(2);
+				transform: scaleY(2);
+			  }
+			  
+			  .snip1585 img {
+				vertical-align: top;
+				max-width: 100%;
+				backface-visibility: hidden;
+			  }
+			  
+			  .snip1585 div {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				align-items: center;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				line-height: 1.1em;
+				opacity: 0;
+				z-index: 2;
+				-webkit-transition-delay: 0s;
+				transition-delay: 0s;
+			  }
+			  
+			  
+			  .exhibit-performance_left h3:hover{
+				color: #fff;
+				display: block;
+				}
+			  
+			  .snip1585:hover > img,
+			  .snip1585.hover > img {
+				opacity: 0.7;
+			  }
+			  
+			  .snip1585:hover:before,
+			  .snip1585.hover:before,
+			  .snip1585:hover:after,
+			  .snip1585.hover:after {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+			  }
+			  
+			  .snip1585:hover div,
+			  .snip1585.hover div {
+				opacity: 1;
+				-webkit-transition-delay: 0.1s;
+				transition-delay: 0.1s;
+			  }
+
 		/* right */
 		.exhibit-performance_right{
 			width: 75%;
 			display: flex;
+			margin-top: 10%;
 		}
 
 			.exhibit_contents{
 				width: 100%;
 				display: flex;
 				align-items: center;
-				/* justify-content: center; */
-				
+				overflow: hidden;
 			}
 			
 				.exhibit_photo{
-					width: 50%;
+					width: 40%;
 					position: relative;
-					left: 150px;
+					left: 5%;
 				}
 
 					.exhibit_photo>img{
-						width: 500px;
+						width: 70%;
 						align-items: center;
 					}
 				
 				.exhibit_txt{
-					width: 40%;
+					width: 60%;
 					position: relative;
-					top: 0%;
+					margin-left: 0%;
 				}
 
 					.exhibit_txt h1{
@@ -902,7 +981,6 @@ div.brackets a:hover:before, div.brackets a:hover:after
 						font-family: 'Noto Sans KR', sans-serif;
 						font-size: 1.5em;
 						font-weight: 900;
-						color:lightseagreen;
 						padding-top: 30px;
 					}
 
@@ -928,18 +1006,18 @@ div.brackets a:hover:before, div.brackets a:hover:after
 				.performance_photo{
 					width: 50%;
 					position: relative;
-					left: 100px;
+					left: 0%;
 				}
 
 					.performance_photo>img{
-						width: 500px;
+						width: 60%;
 						align-items: center;
 					}
 				
 				.performance_txt{
-					width: 40%;
+					width: 50%;
 					position: relative;
-					left:150px;
+					left:50px;
 				}
 
 					.performance_txt h1{
@@ -953,7 +1031,6 @@ div.brackets a:hover:before, div.brackets a:hover:after
 						font-family: 'Noto Sans KR', sans-serif;
 						font-size: 1.5em;
 						font-weight: 900;
-						color:lightseagreen;
 						padding-top: 30px;
 					}
 
@@ -961,18 +1038,32 @@ div.brackets a:hover:before, div.brackets a:hover:after
 						font-weight: 900;
 					}
 		
-
 					.performance_txt p{
+						width: 80%;
 						font-size: 1em;
 						color:inherit;
 						padding-top: 50px;
 						line-height: 30px;
 					}
 
-		
-	
+#section05{
+	width:100%;
+	height: 1000px;
+	background: red;
+}
+	.map{
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+	}
 
-	
+		.map_navi{
+			width: 60%;
+		}
+
+		.map_txt{
+			width: 40%;
+		}
 
 /* media ------------------------------------------*/
 
@@ -986,8 +1077,6 @@ div.brackets a:hover:before, div.brackets a:hover:after
 		display: flex;
 	}
 
-	/* grt-mobile-button */
-	
 	.grt-mobile-button {
 		display:inline-block;
 		position:absolute;

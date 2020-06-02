@@ -4,21 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta property="og:image" content="이미지"/>
+<meta property="og:url" content="이미지"/>
+<!-- 카톡에 나오는 이미지 -->
 <!-- <meta property="og:url" content="유알엘"/> -->
-<meta property="og:title" content="타이틀"/>
+<meta property="og:Gimpo ArtVillage" content="Gimpo ArtVillage"/>
+<!-- 카톡 밑에 나오는 제목 -->
 <meta property="og:description" content="디스크립션"/>
-<title>Art village-</title>
+<!-- 카톡 밑에 나오는 설명 -->
+<title>Art village</title>
 
 <script src="js/jq_ver/jquery-2.1.3.min.js"></script>
 
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/mastar-2.css">
-<link rel="stylesheet" href="css/kakao-map.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- sec03 aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- sec05 navi -->
+<link rel="stylesheet" href="css/kakao-map.css">
 
 </head>
 
@@ -70,7 +75,7 @@
 				<h1>한옥마을</h1>
 			</div>
 			<div class="sec02-line"></div>
-			<div class="sec02-button container cyan brackets">
+			<div class="sec02-button">
 				<ul>
 					<li id="tab-btn1"><a>김포문화원</a></li>
 					<li id="tab-btn2"><a>한옥카페 「다인」</a></li>
@@ -287,18 +292,18 @@
 					</div>
 				</div>
 		</div>
+	</div>
 </div>
-
 <!-- section03 end------------------------------------------>
 
 <div id="section04" class="container">
 	<div class="exhibit-performance">
 		<div class="exhibit-performance_left">
-			<div class="exhibit">
-				<span>Art Center</span>
+			<div class="exhibit snip1585">
+				<h3><span>Art Center</span></h3>
 			</div>
-			<div class="performance">
-				<span>야외공연장</span>
+			<div class="performance snip1585">
+				<h3><span>야외공연장</span></h3>
 			</div>
 		</div>
 
@@ -331,25 +336,13 @@
 			<div class="performance_contents">
 					
 				<div class="performance_txt">
-					<h1>칸딘스키와 함께하는 색채여행 展</h1>
+					<h1>차이를 즐기자</h1>
 					<h3>"비대면 전시관람 서비스"</h3>
-					<p><strong>칸딘스키와 함께하는 색채여행은<br></strong>
-						김포문화재단 유튜브채널에서 감상하실 수 있습니다!<br>
-						<a href="https://www.youtube.com/watch?v=p_6BMlhqoxU">
-						https://www.youtube.com/watch?v=p_6BMlhqoxU
-						</a></p>
-					<p>
-						* 전시장소: 김포아트빌리지 아트센터 전시실<br>
-						* 전시기간: 5월 7일(목) ~ 7월 31일(금)<br>
-						* 관람시간: 10:00~18:00<br>
-						* 관람료 (현장결제 및 발권 가능)<br>
-						  - 일반 : 2,000원<br>
-						  - 미취학아동&65세이상&국가유공자&장애인 : 1,000원<br>
-						  - 48개월 이하 : 무료</p>
+					<p>문화다양성 주간행사 마음 두드림은 ‘차이를 즐기자’를 주제로 문화적 차이를 이해하고 즐기는 다양성 캠페인을 비롯해 춤 테라피, 통합예술표현, 공동미술 등 다채로운 체험이 선착순 무료로 운영되며, 지역 청년예술가들의 버스킹 공연과 ‘문화다양성 어린이 그리기대회’가 개최됩니다.</p>
 				</div>
 
 				<div class="performance_photo">
-					<img src="images/sec04_exhibit_contents_poster.png" alt="poster">
+					<img src="images/sec04-02-1.jpg" alt="poster">
 				</div>
 
 			</div>
@@ -357,23 +350,33 @@
 
 		<script>
 			$(function(){
-				$('.exhibit_contents').click(function(){
+				$('.exhibit').click(function(){
+					$(".exhibit_contents").stop().fadeIn();
 					$(".exhibit_contents").css("display","flex");
 					$(".performance_contents").css("display","none");
 				});
-				$('.performance_contents').click(function(){
+				$('.performance').click(function(){
+					$(".performance_contents").stop().fadeIn();
 					$(".exhibit_contents").css("display","none");
 					$(".performance_contents").css("display","flex");
 				});
 			});
 	
 		</script>
-			
-
+	</div>
+</div>
 <!-- section04 end------------------------------------------>
 
 <div id="section05" class="container">
-	<div id="map" style="width:100%;height:500px;"></div>
+	<div class="map">
+		<div class="map_navi">
+			<div id="map" style="width:100%;height:500px;"></div>
+		</div>
+		
+		<div class="map_txt">
+
+		</div>
+	</div>
 	
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9b9d7a1c7f0bf709683029603c9f62e7"></script>
     
@@ -434,7 +437,10 @@ var customOverlay = new kakao.maps.CustomOverlay({
 <!-- sec03 aos -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script src="js/js.js"></script>
+
 <script>
+	
 
 	// aos
 	AOS.init();
