@@ -21,6 +21,8 @@ body{
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
+.clearfix{clear: both;}
+
 *{
 	list-style:none;
 	margin:0;
@@ -147,67 +149,26 @@ a{
 .main_title p{
     margin: 0 auto;
     display: block;
-	width: 45%;
+	width: 40%;
 	color: #181818;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
 	padding-top: 2%;
 	line-height: 30px;
 	padding-bottom: 14%;
 }
 
+.main_logo{
+	display: flex;
+	justify-content: center;
+
+}
 .logo-file{
-    display: flex;
     width: 100%;
-    justify-content: center;
-	align-items: center;
-	padding-top: 100%;
+	margin-top: 80%;
 	}
 
-	/* main-logo animation */
-
-	.focus-in-contract-bck {
-		-webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.500, 0.460, 0.450, 0.940) both;
-		animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	}
-
-	@-webkit-keyframes focus-in-contract-bck {
-		0% {
-		  	letter-spacing: 1em;
-		  	-webkit-transform: translateZ(300px);
-			  transform: translateZ(300px);
-		  	-webkit-filter: blur(12px);
-			  filter: blur(12px);
-	 	 	opacity: 0;
-		}
-		100% {
-			-webkit-transform: translateZ(12px);
-			  transform: translateZ(12px);
-			-webkit-filter: blur(0);
-			  filter: blur(0);
-	 	 	opacity: 1;
-		}
-  	}
-  	@keyframes focus-in-contract-bck {
-		0% {
-	 	letter-spacing: 1em;
-	  	-webkit-transform: translateZ(300px);
-			  transform: translateZ(300px);
-	  	-webkit-filter: blur(12px);
-			  filter: blur(12px);
-	 	 opacity: 0;
-		}
-		100% {
-	 	 -webkit-transform: translateZ(12px);
-			  transform: translateZ(12px);
-	 	 -webkit-filter: blur(0);
-			  filter: blur(0);
-	 	 opacity: 1;
-		}
-  	}
-
-
-/* section02 --------------------------------------------- */
+	/* section02 --------------------------------------------- */
 
 #section02{
 	width:100%;
@@ -230,17 +191,8 @@ a{
 			padding-right: 10%;
 		}
 
-		.sec02-title{
-			font-family: 'Gyeonggi-do_Bold';
-		}
-
-			.sec02-title h2{
-				font-size: 8em;
-				font-weight: 900;
-				color: #eeeeee;
-			}
-
 			.sec02-title h1{
+				font-family: 'Gyeonggi-do_Bold';
 				font-size: 5em;
 				color: black;
 				letter-spacing: -8px;
@@ -249,36 +201,66 @@ a{
 
 			.sec02-button{
 				padding-top: 10%;
-				line-height: 5;
 				font-weight: 400;
 				text-decoration: none;
 				list-style: none;
 				padding-bottom: 30%
 			}
-		
+
 			.sec02-button a{
+				font-size: 17px;
+				color: #181818;
 				list-style: none;
 				text-decoration: none;
 				color: inherit;
 				cursor: pointer;
+				margin: 0px 10px;
+				position: relative;
+				z-index: 0;		
+				line-height: 5;
+			}
+
+			.brackets a:before, .brackets a:after
+			{
+				position: absolute;
+				opacity: 0;
+				font-size: 17px;
+				transition: all 0.3s;
+				font-weight: 700;
+			}
+
+			.brackets a:before
+			{
+				content: '(';
+				left: -15px;
+				font-weight: 700;
+				transform: translateX(20px);
+			}
+
+			.brackets a:after
+			{
+				content: ')';
+				right: -15px;
+				font-weight: 700;
+				transform: translateX(-20px);
+			}
+
+			div.brackets a:hover:before, div.brackets a:hover:after
+			{
+				opacity: 1;
+				transform: translateX(0px);
 			}
 
 	/* sec02-right */
 	.sec02-right{
 		width: 70%;
-		position: relative;;
 		margin: 0;
 		padding: 0;
 	}
 
-		.sec02-button li{
-			cursor: pointer;
-		}
-
 		/* slide_1 */
 
 		.sec02_slide_1{
-			position: relative;
 			width: 100%;
 			background-color: #fff;		
 		}
@@ -315,7 +297,6 @@ a{
 	
 		.sec02_slide_2{
 			display: none;
-			position: relative;
 			width: 100%;
 			background-color: #fff;		
 		}
@@ -392,7 +373,6 @@ a{
 		/* slide_3 */
 		.sec02_slide_3{
 			display: none;
-			position: relative;
 			width: 100%;
 			background-color: #fff;		
 			}
@@ -430,7 +410,6 @@ a{
 		/* slide_4 */
 		.sec02_slide_4{
 			display: none;
-			position: relative;
 			width: 100%;
 			background-color: #fff;		
 			}
@@ -471,6 +450,7 @@ a{
 	
 #section03{
 	width:100%;
+	height: 1000px;
 	background: #eee;
 }
 
@@ -478,40 +458,12 @@ a{
 .creation_space{
 	width: 80%;
 	margin: 0 auto;
+	padding-top: 10%;
 }
-
-.sec03_title{
-	width: 100%;
-	padding-top: 5%;
-}
-
-	/* .sec03_title h1{
-		font-family: 'Gyeonggi-do_Bold';
-		font-size: 5em;
-		color: black;
-		letter-spacing: -8px;
-	}
-
-	.sec03_title h2{
-		font-family: 'Gyeonggi-do_Bold';
-		font-size: 8em;
-		font-weight: 900;
-		color: #eeeeee;
-	}
-
-	.sec03-line{
-		position: absolute;
-		border: #d52024 solid 1px;
-		width: 530px;
-		left: 0px;
-		margin: 0 auto;
-	} */
 
 .sec03_box{
-	margin-top: 10%;
 	width: 100%;
-	padding-bottom: 50%;
-	position: relative;
+	display: flex;
 }
 
 	/* sec03_box1 */
@@ -826,7 +778,7 @@ a{
 			}
 
 			.exhibit-performance_left h3{
-				display: flex;
+				display: none;
 				font-family: 'Gyeonggi-do_Bold';
 				font-size: 2.5em;
 				font-weight: 900;
@@ -835,6 +787,7 @@ a{
 				z-index: 555;
 				color: #fff;
 				justify-content: center;
+				text-align: center;
 				margin-top: 40%;
 			}
 
@@ -913,9 +866,10 @@ a{
 			  }
 			  
 			  
-			  .exhibit-performance_left h3:hover{
+			  .snip1585:hover>h3{
 				color: #fff;
-				display: block;
+				display: flex;
+				transition: all 3s;
 				}
 			  
 			  .snip1585:hover > img,
@@ -1048,26 +1002,44 @@ a{
 
 #section05{
 	width:100%;
-	height: 1000px;
-	background: red;
+	background: lightskyblue;
 }
 	.map{
 		display: flex;
 		width: 90%;
 		margin: 0 auto;
 	}
+					
+	.map_navi{
+		width: 70%;
+		margin-top: 5%;	
+		margin-bottom: 5%;	
+	}
+					
+	.map_txt{
+		padding-left: 5%;
+		margin-top: 15%;
+		width: 30%;
+	}
 
-		.map_navi{
-			width: 60%;
-		}
+	.map_txt strong{
+		display: flex;
+		flex-direction: column;
+		line-height: 2em;
+		font-size: 1.2em;
+		font-weight: 700;
+	}
 
-		.map_txt{
-			width: 40%;
-		}
+	.map_txt p{
+		display: flex;
+		flex-direction: column;
+		line-height: 20px;
+	}
+
 
 /* media ------------------------------------------*/
 
-@media (max-width:768px){
+@media (max-width:997px){
 	
 	.navi{
 		display: none;
@@ -1142,4 +1114,180 @@ a{
 		width: 100%;
 	}
 
+	/* section02 */
+
+	.sec02-title h1{
+		font-size: 3em;
+		transition: all 1s;
+
+	}
+
+	.sec02_1_txt{
+		flex-direction: column;
+	}
+
+	.sec02_1_txt h1{
+		width: 100%;
+		transition: all 0.5s;
+	}
+
+	.sec02_1_txt p{
+		width: 100%;
+		transition: all 0.5s;
+	}
+
+
+@media (max-width:576px){
+
+	.logo>img{
+		width: 50%;
+		transition: all 0.5s;
+	}
+
+	/* section01 */
+
+	.main_logo>img{
+		width: 70%;
+		transition: all 1s;
+	}
+
+	.main_title h1{
+		font-size: 2em;
+		padding-top: 7%;
+	}
+
+	.main_title p{
+		width: 90%;
+		font-size: 0.9em;
+		line-height: 30px;
+		padding-top: 5%;
+		transition: all 1s;
+	}
+
+	/* section02 */
+
+	#section02{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+		.sec02-left{
+			width: 100%;
+			padding-top: 5%;
+		}
+
+		.sec02-txt{
+			padding: 0;
+		}
+
+		.sec02-title{
+			display: none;
+			text-align: center;
+		}
+
+		.sec02-button{
+			padding: 0 10px;
+			text-align: center;
+		}
+
+		.sec02-button ul{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.sec02-button a{
+			font-size: 17px;
+			line-height: 2;
+		}
+
+		/* sec02-right */
+
+		.sec02-right{
+			width: 100%;
+			padding-bottom: 50px;
+		}
+
+			.sec02_culture{
+				width: 100%;
+				padding: 0;
+			}
+
+			.sec02_1_txt{
+				width: 90%;
+				margin: 0 auto;
+			}
+
+				.sec02_1_txt h1{
+					margin-top: 5%;
+				}
+
+				.sec02_1_txt p{
+					margin-top: 5%;
+					padding-bottom: 10%;
+				}
+			
+			
+			.sec02_coffee{
+				width: 100%;
+				padding: 0;
+				flex-direction: column;
+			}
+
+			.sec02_2_txt{
+				flex-direction: column;
+				width: 90%;
+				margin: 0 auto;
+			}
+
+				.sec02_2_txt h1{
+					margin-top: 10px;
+					width: 100%;
+				}
+
+				.sec02_2_txt p{
+					margin-top: 10px;
+				}
+
+			.sec02_info{
+				flex-direction: column;
+				width: 100%;
+				padding-bottom: 10%
+			}
+
+				.sec02_call{
+					display: flex;
+					width: 100%;
+				}
+
+/* section03 */
+
+	.creation_space{
+		width: 100%;
+		flex-direction: column;
+		display: block;
+	}
+
+	.sec03_box{
+		width: 80%;
+		display: block;
+	}
+
+		.sec03_box1, .sec03_box2, .sec03_box3, .sec03_box4{
+			display: block;
+			width: 200px;
+			height: 300px;
+		}
+
+
+
+
+			
+		
+		
+
+
+
+}
+	
+	
 
