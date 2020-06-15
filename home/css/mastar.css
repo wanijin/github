@@ -1169,7 +1169,6 @@ a{
 	.sec02-title h1{
 		font-size: 3em;
 		transition: all 1s;
-
 	}
 
 	.sec02_1_txt{
@@ -1399,12 +1398,6 @@ a{
 			line-height: 25px;
 		}
 
-
-		
-
-
-		
-
 @media (max-width:576px){
 
 	.logo>img{
@@ -1441,7 +1434,6 @@ a{
 	
 		.sec02-left{
 			width: 100%;
-			padding-top: 5%;
 		}
 
 		.sec02-txt{
@@ -1450,26 +1442,31 @@ a{
 
 		.sec02-title{
 			display: none;
-			text-align: center;
 		}
 
 		.sec02-button{
-			padding: 0 10px;
+			display: flex;
 			text-align: center;
+			margin: 0 auto;
 		}
 
 		.sec02-button ul{
-			width: 80%;
+			width: 100%;
 			display: flex;
 			justify-content: space-between;
-			margin: 0 auto;
-
+			margin: 5% auto;
+			text-align: center;
 		}
 
+		.sec02-button li{
+			width: 50%;
+			text-align: center;
+		}
 
 		.sec02-button a{
 			font-size: 17px;
 			line-height: 2;
+			text-align: center;
 		}
 
 		/* sec02-right */
