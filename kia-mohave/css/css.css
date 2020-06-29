@@ -27,22 +27,18 @@
     z-index: 1;
 }
 
-.sec01_title{
-    font-size: 17pt;
-}
-
 .sec01_title h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #c8c8c8;
-    font-size: 3.5rem;
+    font-size: 2.3em;
 }
 
 .sec01_title p{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #fff;
-    font-size: 4em;
+    font-size: 5em;
     letter-spacing: 8px;
 }
 
@@ -50,9 +46,9 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #c8c8c8;
-    font-size: 1em;
-    letter-spacing: 1.1px;
-    margin-top: -25px;
+    font-size: 1.5em;
+    letter-spacing: -1.5px;
+    margin-top: -20px;
 }
 
 .kar-icon{
@@ -98,15 +94,11 @@
     color: #fff;
     margin-top: 100px;
     font-family: 'Roboto', sans-serif;
-    font-size: 15pt;
+    font-size: 1.3em;
 }
 
 .maintxt1{
     display: block;
-}
-
-.maintxt2, .maintxt3, .maintxt4, .maintxt5{
-    display: none;
 }
 
 .sec01-right{margin: 0; padding: 0;}
@@ -133,7 +125,7 @@
 .main-info h1{
     margin-top: -5px;
     padding-bottom: 10px;
-    font-size: 20pt;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -177,10 +169,11 @@
     margin-top: 20px;
     list-style: none;
     text-decoration: none;
+    justify-content: right;
 }
 
 .tab-car-color-text h4{
-    font-size: 20pt;
+    font-size: 1.3em;
     margin-top: 30px;
     text-align: center;
 }
@@ -204,6 +197,7 @@
     background: url(../images/sec03-bg.jpg);
     background-position: 80% 43%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .sec03-title{margin-top: 5%;}
@@ -221,7 +215,7 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 .sec03-bottom-con{
     padding: 0;
-    width: 25%;
+    /* width: 25%; */
     margin: 0 auto;
     display: flex; justify-content: space-between;
 }
@@ -232,7 +226,7 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 
 .sec03-bottom-con-1{
-    width: 99%;
+    width: 100%;
     height: 30vh;
     position: relative;
     z-index: 50;
@@ -277,12 +271,16 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 
 .sec03-01-modal1{
-    width: 100%;
-    margin-left: 26%;
-    margin-top: 2%;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.sec03-01-modal1 img{
+.modal-txt{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-txt img{
     width: 100%;
 }
 
@@ -296,6 +294,169 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 
 .modal-txt>button{
+    width: 100px;
     margin: 2%;
-    margin-left: 90%;
+}
+
+/* section03 end */
+
+.sec04-bg{
+    padding: 0;
+    padding-bottom: 10%;
+}
+
+/* sec04-title */
+.sec04-title{
+    width: 100%;
+    height: 20vh;
+}
+
+.sec04-title>h1{
+    margin-top: 7%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sec04-border{
+    border-bottom: 5px solid rgb(202, 25, 25);
+    width: 100px;
+    margin: 0 auto;
+}
+
+.sec04-title>h4{
+    font-weight: 700;
+    margin-top: 1%;
+    
+}
+
+/* sec04-왼쪽 메뉴 */
+.sec04-outside-choice{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec04-outside-choice img{
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+.sec04-outside{
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 30;
+}
+
+.mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.mohave-outside-01{
+    display: block;
+}
+
+.mohave-outside-02{
+    display: none;
+}
+
+.mohave-outside-03{
+    display: none;
+}
+
+.mohave-outside-01>img{
+    width: 150%;
+    text-align: center;
+    position: relative;
+    left: -25%;
+    top: -30%;
+}
+
+.mohave-outside-02>img{
+    width: 130%;
+    text-align: center;
+    position: relative;
+    left: -17%;
+    top: -20%;
+}
+
+.mohave-outside-03>img{
+    width: 160%;
+    text-align: center;
+    position: relative;
+    left: -30%;
+    top: -35%;
+}
+
+.sec04-outdesign{
+    height: 50vh;
+    padding-right: 0;
+}
+
+.mohave-outdesign-fluid{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mohave-outdesign{
+    padding: 0;
+}
+
+.mohave-outdesign img{
+    width: 97%;
+    padding-bottom: 7%;
+
+}
+
+@media(max-width: 1200px){
+    
+}
+
+@media(max-width: 990px){
+    .kar-icon>img{
+        top: 20%;
+        left: 22%;
+    }
+
+    .sec03-bottom-con-1{
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px){
+    .kar-icon>img{
+        top: -12%;
+        left: 44%;
+    }
+
+    .sec01_title{
+        font-size: 0.9em;
+    }
+
+    .main_info{
+        width: 300px;
+    }
+
+    .tab-car-color{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px){
+    .sec01_title{
+        font-size: 0.8em;
+    }
+
+    .kar-icon>img{
+        top: -13%;
+        left: 40%;
+    }
+    
 }
