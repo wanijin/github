@@ -103,7 +103,7 @@
 
 .sec01-right{margin: 0; padding: 0;}
 
-/* section01 end */
+/* section01 end------------------------------------------------------- */
 .section02-1_bg{
     background-color: #fff;
 }
@@ -188,8 +188,7 @@
 
 .KLG{background-color: #626264;}
 
-
-/* section02 end */
+/* section02 end------------------------------------------------------- */
 
 .sec03-bg{
     width: 100%;
@@ -215,7 +214,6 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 .sec03-bottom-con{
     padding: 0;
-    /* width: 25%; */
     margin: 0 auto;
     display: flex; justify-content: space-between;
 }
@@ -298,11 +296,12 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
     margin: 2%;
 }
 
-/* section03 end */
+/* section03 end------------------------------------------------------- */
+
+.section04{overflow: hidden;}
 
 .sec04-bg{
     padding: 0;
-    padding-bottom: 10%;
 }
 
 /* sec04-title */
@@ -332,15 +331,23 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 
 /* sec04-왼쪽 메뉴 */
 .sec04-outside-choice{
-    height: 50vh;
-    display: flex;
+    height: 58.3vh;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer; */
 }
 
 .sec04-outside-choice img{
     width: 55%;
     margin-bottom: 40px;
+}
+
+.sec04-outside-choice img:hover{
+    width: 55%;
+    border: 3px solid rgb(202, 25, 25);
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
 .sec04-outside{
@@ -352,7 +359,7 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 
 .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
     width: 100%;
-    height: 50vh;
+    height: 58.3vh;
     overflow: hidden;
 }
 
@@ -373,7 +380,7 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
     text-align: center;
     position: relative;
     left: -25%;
-    top: -30%;
+    top: -20%;
 }
 
 .mohave-outside-02>img{
@@ -381,7 +388,7 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
     text-align: center;
     position: relative;
     left: -17%;
-    top: -20%;
+    top: -10%;
 }
 
 .mohave-outside-03>img{
@@ -389,11 +396,12 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
     text-align: center;
     position: relative;
     left: -30%;
-    top: -35%;
+    top: -25%;
 }
 
+/* section04 오른쪽 내용 */
+
 .sec04-outdesign{
-    height: 50vh;
     padding-right: 0;
 }
 
@@ -406,13 +414,182 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 }
 .mohave-outdesign{
     padding: 0;
+    width: 33%;
+    /* height: 25vh; */
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .mohave-outdesign img{
-    width: 97%;
-    padding-bottom: 7%;
-
+    width: 120%;
 }
+
+.mohave-outdesign h3{
+    position: absolute;
+    top: -50px;
+    left: 7%;
+}
+
+.mohave-outdesign:hover h3{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 7%;
+    color: #fff;
+    transition: linear 0.3s;
+}
+
+.mohave-outdesign:hover .outdesign-darkness{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 89;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: all .5s;
+}
+
+/* section04 modal */
+
+.sec04-modal img{
+    width: 100%;
+}
+
+.sec04-modal-body{
+    padding: 0;
+    margin: 0;
+}
+
+.sec04-modal h4{
+    font-weight: 700;
+}
+
+/* section04 end------------------------------------------------------- */
+
+.section05{overflow: hidden;}
+
+.sec05-bg{
+    padding: 0;
+    padding-bottom: 5%;
+}
+
+/* sec05-title */
+.sec05-title{
+    width: 100%;
+    height: 20vh;
+}
+
+.sec05-title>h1{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.sec05-border{
+    border-bottom: 5px solid rgb(202, 25, 25);
+    width: 100px;
+    margin: 0 auto;
+}
+
+.sec05-title>h4{
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+/* sec05-왼쪽 내용 */
+
+.sec05-inside{
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 30;
+}
+
+.mohave-sec05-inside{
+    width: 100%;
+    height: 57.5vh;
+    overflow: hidden;
+}
+
+.mohave-sec05-inside>img{
+    width: 140%;
+    text-align: center;
+    position: relative;
+    left: -25%;
+    top: -35%;
+}
+
+/* section04 오른쪽 내용 */
+
+.sec04-indesign{
+    padding-right: 0;
+}
+
+.mohave-indesign-fluid{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mohave-indesign{
+    padding: 0;
+    width: 33%;
+    /* height: 25vh; */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mohave-indesign img{
+    width: 120%;
+}
+
+.mohave-indesign h3{
+    position: absolute;
+    top: -80px;
+    left: 7%;
+}
+
+.mohave-indesign:hover h3{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 7%;
+    color: #fff;
+    transition: linear 0.3s;
+}
+
+.mohave-indesign:hover .indesign-darkness{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 89;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: all .5s;
+}
+
+/* section05 modal */
+
+.sec05-modal img{
+    width: 100%;
+}
+
+.sec05-modal-body{
+    padding: 0;
+    margin: 0;
+}
+
+.sec05-modal h4{
+    font-weight: 700;
+}
+
+.sec05-modal p{
+    margin-top: 15px;
+}
+
 
 @media(max-width: 1200px){
     

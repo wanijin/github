@@ -56,7 +56,7 @@ $(function(){
         $('.color-3').css('display','none').fadeOut();
         $('.color-4').fadeIn();
     });
-})
+});
 
 $(function(){
     $('#sec04-btn-01').click(function(){
