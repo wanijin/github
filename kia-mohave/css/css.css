@@ -173,7 +173,8 @@
 }
 
 .tab-car-color-text h4{
-    font-size: 1.3em;
+    font-size: 2em;
+    font-weight: 500;
     margin-top: 30px;
     text-align: center;
 }
@@ -331,15 +332,14 @@ border-top: 6px solid rgb(202, 25, 25); width: 50px;}
 
 /* sec04-왼쪽 메뉴 */
 .sec04-outside-choice{
-    height: 58.3vh;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer; */
+    cursor: pointer;
 }
 
 .sec04-outside-choice img{
-    width: 55%;
+    width: 55%!important;
     margin-bottom: 40px;
 }
 
