@@ -1,117 +1,211 @@
 @media(max-width: 1200px){
+
+    /* section01 */
+    .kar-icon>img{top: 23%; left: 45.5%;}
+    .sec01_title{text-align: center; margin-top: -5%;}
+    .sec01-right{margin-top: 5%;}
+    .sec01_title h1{font-size: 2.5em;}
+    .sec01_title p{font-size: 7em;}
+    .sec01_title p:last-child{font-size: 2em;}
+
+    .sec03-bottom-con-1{width: 100%;}
+
+    /* section02 */
+    .sec02-logo{margin-top: 0%;}
+    .sec02-logo>img{width: 20%;}
+    .tab-car-color>ul{display: flex; justify-content: center;}
+    .tab-car-img{padding: 0;}
+    .tab-car-color-choice{display: flex; padding-bottom: 3%;}
+
     /* section04 */
     /* section04 왼쪽 메뉴*/
+
+    .sec04-title{
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec04-title>h1{margin: 0; padding: 0;}
     .sec04-outside-choice{
         height: 40vh;
-        padding-top: 4%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
     }
-    
     .sec04-outside-choice img{
-        width: 40%;
-        margin-top: 10%;
+        width: 100%;
+        margin-bottom: 20%;
+        margin-top: 0;
     }
     
     .sec04-outside-choice img:hover{
-        width: 40%;
+        width: 100%;
     }
 
     /* sec04-center image */
+    .sec04-outside-bg{
+        height: 40vh;
+    }
+
+    .sec04-outdesign{height: 30vw;}
     .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
         height: 40vh;
         overflow: hidden;
     }
 
     .mohave-outside-01>img{
-        width: 180%;
-        left: -40%;
-        top: -25%;
+        width: 115%;
+        left: -7%;
+        top: -47%;
     }
 
     .mohave-outside-02>img{
-        left: -17%;
-        top: -5%;
+        width: 110%;
+        left: -8%;
+        top: -42%;
     }
 
     .mohave-outside-03>img{
-        width: 180%;
-        left: -40%;
-        top: -25%;
+        width: 110%;
+        left: -4%;
+        top: -45%;
     }
 
     /* section04 오른쪽 내용 */
 
     .sec04-outdesign{
-        height: 40vh;
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
     }
-
+    
     .sec04-outdesig-top{
-        margin-top: 5%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
     }
 
     .sec04-outdesig-bottom{
-        margin-top: 5%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
     }
 
+    .mohave-outdesign{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 22.5vh;
+    }
+    
+    .mohave-outdesign img{
+        width: 100%;
+    }
+    
     .mohave-outdesign h3{
-        font-size: 1.3em;
-        top: -80px;
+        top: -70px;
+    }
+    
+    .mohave-outdesign:hover h3{
+        top: 5%;
     }
 }
 
 @media(max-width: 990px){
-    .kar-icon>img{
-        top: 20%;
-        left: 22%;
+
+    /* section01 */
+    .kar-icon>img{top: 23%; left: 45.5%;}
+    .sec01_title{text-align: center;}
+
+    /* section02 */
+
+    .sec02-logo{margin-top: 7%;}
+    .sec02-logo>img{width: 30%;}
+    .tab-car-color>ul{margin-top: 0%;}
+
+    /* section03 */
+    .sec03-bottom-con-1{width: 100%;}
+    .sec03-title{text-align: center;}
+    .sec03-title-txt{margin: 0;}
+    .sec03-title-boder{margin: 0 auto;}
+
+    .sec03-bg{
+        height: 60vh;
+        background-position: 60%;
+        background-size: cover;
     }
 
     .sec03-bottom-con-1{
-        width: 100%;
+        height: 20vh;
     }
-
+    
     /* section04 */
     /* section04 왼쪽 메뉴*/
+    .sec04-border{
+        margin-top: 1%;
+    }
+
     .sec04-outside-choice{
-        padding-top: 4%;
+        height: 10vw;
+        flex-direction: row;
+        align-items: flex-start;
     }
     
     .sec04-outside-choice img{
-        width: 50%;
-        margin-top: 15%;
+        width: 80%;
+        margin-bottom: 0;
     }
-    
+        
     .sec04-outside-choice img:hover{
-        width: 50%;
+        width: 80%;
+    }
+
+    .outside-01 .outside-02 .outside-03{
+        margin-right: 10%;
     }
 
     /* sec04-center image */
+    
+    .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
+        height: 40vw;
+        overflow: hidden;
+    }
 
     .mohave-outside-01>img{
-        width: 180%;
-        left: -40%;
-        top: -15%;
+        width: 120%;
+        left: -9%;
+        top: -52%;
     }
 
     .mohave-outside-02>img{
-        width: 150%;
-        left: -27%;
-        top: 0%;
+        width: 100%;
+        left: 0%;
+        top: -32%;
     }
 
     .mohave-outside-03>img{
-        width: 180%;
-        left: -40%;
-        top: -15%;
+        width: 115%;
+        left: -6%;
+        top: -48%;
     }
 
     /* section04 오른쪽 내용 */
 
-
-    .sec04-outdesig-top{
-        margin-top: 10%;
-    }
-
-    .sec04-outdesig-bottom{
-        margin-top: 10%;
+    .sec04-outdesign{
+        height: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .mohave-outdesign h3{
@@ -121,18 +215,21 @@
 }
 
 @media(max-width: 767px){
+
+    /* section01 */
     .kar-icon>img{
+        position: absolute;
         top: -12%;
         left: 44%;
     }
 
-    .sec01_title{
-        font-size: 0.9em;
-    }
+    .sec01_title{font-size: 0.9em;}
 
-    .main_info{
-        width: 300px;
-    }
+    /* section02 */
+
+    .main_info{width: 300px;}
+
+    .sec02-logo{margin-top: 10%;}
 
     .tab-car-color{
         display: flex;
@@ -169,10 +266,6 @@
     .sec04-outside-choice{
         width: 100%;
         height: 15vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-top: 0;
     }
     
     .sec04-outside-choice img{
@@ -224,17 +317,43 @@
         font-size: 1em;
         top: -80px;
     }
+
+    /* sec05-title */
+    .sec05-title{
+        width: 100%;
+        height: 15vh;
+        margin-top: 3%;
+    }
+    
+    .sec05-title>h1{
+        font-size: 1.8em;
+    }
+    
+    .sec05-border{
+        border-bottom: 3px solid rgb(202, 25, 25);
+    }
+    
+    .sec05-title>h4{
+        font-size: 1.1em;
+    }
 }
 
 @media (max-width: 576px){
-    .sec01_title{
-        font-size: 0.8em;
-    }
 
-    .kar-icon>img{
-        top: -13%;
-        left: 40%;
-    }
+    /* section01 */
+    /* section01 */
+    .kar-icon>img{top: 23%; left: 45.5%;}
+    .sec01_title{text-align: center; margin-top: -5%;}
+    .sec01-right{margin-top: 5%;}
+    .sec01_title h1{font-size: 1.3em;}
+    .sec01_title p{font-size: 4em;}
+    .sec01_title p:last-child{font-size: 1.3em; letter-spacing: -1.2px;}
+
+    .sec03-bottom-con-1{width: 100%;}
+
+    .kar-icon>img{top: -10%; left: 38%;}
+
+    /* section02 */
 
     /* section03 */
     .sec03-bg{
@@ -264,7 +383,7 @@
     /* sec04-title */
 
     .sec04-title{
-        height: 10vh;
+        height: 10vw;
     }
     
     .sec04-title>h1{
@@ -277,7 +396,7 @@
     
     /* sec04-center image */
     .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
-        height: 35vh;
+        height: 65vw;
     }
 
     /* section04 오른쪽 내용 */
@@ -292,6 +411,20 @@
 
     .sec04-outdesig-bottom{
         margin-top: 0%;
+    }
+
+    /* sec05-title */
+
+    .sec05-title{
+        height: 10vh;
+    }
+    
+    .sec05-title>h1{
+        font-size: 1.3em;
+    }
+        
+    .sec05-title>h4{
+        font-size: 1em;
     }
     
 }

@@ -3,48 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-        .flow{display: flex;}
-
-        .bg-box{
-            width: 33.33%;
-            overflow: hidden;
-        }
-        
-        .bg{width: 100%;
-            height: 300px;
-            background: url(images/sec03-bg.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            transition: all .5s;
-        }
-
-        .bg:hover{
-            transform: scale(1.2);
-        }
-    </style>
+    <title>KIA-MOHAVE</title>
 </head>
+<script src="bootstrap/jquery.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="js/scrolloverflow.min.js"></script>
 <body>
-    <div class="flow">
-        <div class="bg-box">
-            <div class="bg">
-                <h1>이미지효과</h1>
-            </div>
-        </div>
-        <div class="bg-box">
-            <div class="bg">
-                <h1>이미지효과</h1>
-            </div>
-        </div>
-        <div class="bg-box">
-            <div class="bg">
-                <h1>이미지효과</h1>
-            </div>
-        </div>
-    </div>
+
+<section id="fullpage">
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+</section>
+<script>
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+            verticalCentered: true,
+            sectionsColor: ['#1bbc9b','#4bbfc3','#7baabe']
+        });
+    });
+</script>
+<script src="js/jquery.fullpage.min.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
