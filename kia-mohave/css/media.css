@@ -1,115 +1,127 @@
 @media(max-width: 1200px){
 
     /* section01 */
-    .kar-icon>img{top: 23%; left: 45.5%;}
+    .kar-icon{margin-top: 20%;}
+    .kar-icon>img{top: 72%; left: 46%;}
     .sec01_title{text-align: center; margin-top: -5%;}
-    .sec01-right{margin-top: 5%;}
-    .sec01_title h1{font-size: 2.5em;}
-    .sec01_title p{font-size: 7em;}
-    .sec01_title p:last-child{font-size: 2em;}
-
-    .sec03-bottom-con-1{width: 100%;}
+    .sec01_title h1{font-size: 1.5em;}
+    .sec01_title p{font-size: 4.5em;}
+    .sec01_title p:last-child{font-size: 1.4em;}
 
     /* section02 */
-    .sec02-logo{margin-top: 0%;}
-    .sec02-logo>img{width: 20%;}
-    .tab-car-color>ul{display: flex; justify-content: center;}
-    .tab-car-img{padding: 0;}
-    .tab-car-color-choice{display: flex; padding-bottom: 3%;}
+    .sec02-logo{margin-top: 2%;}
+    .sec02-logo>img{width: 20%; margin-top: 0;}
+    .tab-car-img{margin-top: 0; padding-bottom: 0;}
+    .tab-car-img img{width: 70%;}
+    .tab-car-color>ul{display: flex; justify-content: flex-start; margin-top: 0;}
+    .tab-car-color>ul>li{
+        width: 30px;
+        height: 30px;
+        margin: 25px 10px;
+    }
+    .tab-car-color-text h4{
+        font-size: 1.5em;
+        text-align: right;
+        margin-right: 15%;
+    }
+
+    /* section03 */
+    .sec03-bottom-con-1{width: 100%;}
+    .sec03-title-txt>h2{font-size: 1.3em;}
+    .sec03-title-txt>h1{font-size: 4em;}
+    .sec03-title-boder{
+    border-top: 4px solid rgb(202, 25, 25);}
 
     /* section04 */
-    /* section04 왼쪽 메뉴*/
-
+    /* sec04-title */
     .sec04-title{
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        height: 10vw;
+        margin-top: 5%;
+        margin-bottom: 1%;
     }
-    .sec04-title>h1{margin: 0; padding: 0;}
+
+    .sec04-title>h1{
+        font-size: 2em;
+        margin-top: 1%;
+    }
+
+    .sec04-title>h4{
+        font-size: 1em;
+        margin-top: 1%;        
+    }
+
+    /* section04 왼쪽메뉴 */
     .sec04-outside-choice{
-        height: 40vh;
+        height: 30vw;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         padding: 0;
     }
+
     .sec04-outside-choice img{
-        width: 100%;
-        margin-bottom: 20%;
+        width: 80%;
+        margin-bottom: 30%;
         margin-top: 0;
     }
     
     .sec04-outside-choice img:hover{
-        width: 100%;
+        width: 80%;
     }
 
     /* sec04-center image */
     .sec04-outside-bg{
-        height: 40vh;
+        height: 30vw;
     }
 
-    .sec04-outdesign{height: 30vw;}
     .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
-        height: 40vh;
+        height: 30vw;
         overflow: hidden;
     }
 
     .mohave-outside-01>img{
-        width: 115%;
-        left: -7%;
-        top: -47%;
+        width: 150%;
+        left: -25%;
+        top: -15%;
     }
 
     .mohave-outside-02>img{
-        width: 110%;
-        left: -8%;
-        top: -42%;
+        width: 120%;
+        left: -11%;
+        top: -5%;
     }
 
     .mohave-outside-03>img{
-        width: 110%;
-        left: -4%;
-        top: -45%;
+        width: 150%;
+        left: -23%;
+        top: -16%;
     }
 
     /* section04 오른쪽 내용 */
 
     .sec04-outdesign{
-        width: 100%;
-        height: 45vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        height: 30vw;
         padding: 0;
     }
     
     .sec04-outdesig-top{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
+        height: 15vw;
     }
 
     .sec04-outdesig-bottom{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
+        height: 15vw;
     }
 
     .mohave-outdesign{
         padding: 0;
         margin: 0;
         width: 100%;
-        height: 22.5vh;
+        height: 30vw;
     }
     
     .mohave-outdesign img{
-        width: 100%;
+        width: 170%;
     }
     
     .mohave-outdesign h3{
@@ -119,135 +131,220 @@
     .mohave-outdesign:hover h3{
         top: 5%;
     }
+
+    /* section05--------------------------------- */
+    /* sec05-title */
+    .sec05-title{
+        height: 10vw;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+    .sec05-title>h1{
+        font-size: 2em;
+        margin-top: 1%;
+    }
+
+    .sec05-title>h4{
+        font-size: 1em;
+        margin-top: 1%;        
+    }
+
+    .sec05-inside{height: 30vw;}
+    .sec05-indesign{height: 30vw; width: 100%;}
+    .sec05-indesign img{width: 100%}
+    .mohave-indesign-top{height: 15vw;}
+    .mohave-indesign-bottom{height: 15vw;}
 }
 
 @media(max-width: 990px){
 
     /* section01 */
-    .kar-icon>img{top: 23%; left: 45.5%;}
-    .sec01_title{text-align: center;}
+    .icon_bg{margin-top: 40%;}
+    .kar-icon>img{top: 84%; left: 44%;}
+    .sec01_title{text-align: center; margin-top: -5%;}
 
     /* section02 */
 
-    .sec02-logo{margin-top: 7%;}
-    .sec02-logo>img{width: 30%;}
-    .tab-car-color>ul{margin-top: 0%;}
+    .sec02-logo>img{
+        width: 30%;
+        padding-top: 10%;
+    }
+
+    .tab-car-img img{width:100%; margin-top: 5%;}
+    .tab-car-color-text{margin-top: 15%; padding: 0;}
+    .tab-car-color-text h4{margin: 0; font-size: 2em; text-align: center; margin-top: 5%;}
+    .tab-car-color>ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin: 0;
+        padding: 0;
+    }
 
     /* section03 */
-    .sec03-bottom-con-1{width: 100%;}
     .sec03-title{text-align: center;}
     .sec03-title-txt{margin: 0;}
     .sec03-title-boder{margin: 0 auto;}
+    .sec03-title-txt>h2{font-size: 1em;}
+    .sec03-title-txt>h1{font-size: 3em;}
 
     .sec03-bg{
         height: 60vh;
-        background-position: 60%;
-        background-size: cover;
+        background-position: 55% -128px;
     }
 
-    .sec03-bottom-con-1{
-        height: 20vh;
-    }
-    
+    .sec03-bottom-con-1{height: 20vh;}
+    .sec03-con-txt p{font-size: 1em;}
+    .sec03-con-icon{width: 30px; height: 30px;}
+    .sec03-con-icon>p{margin-left: 7px; line-height: 30px;}
+
     /* section04 */
-    /* section04 왼쪽 메뉴*/
-    .sec04-border{
-        margin-top: 1%;
-    }
-
-    .sec04-outside-choice{
-        height: 10vw;
-        flex-direction: row;
-        align-items: flex-start;
+    /* sec04-title */
+    .sec04-title{
+        height: 15vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     
-    .sec04-outside-choice img{
-        width: 80%;
-        margin-bottom: 0;
-    }
-        
-    .sec04-outside-choice img:hover{
-        width: 80%;
-    }
-
-    .outside-01 .outside-02 .outside-03{
-        margin-right: 10%;
+    /* sec04-왼쪽 메뉴 */
+    .sec04-outside-choice{
+        width: 100%;
+        height: 15vw;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
     }
 
     /* sec04-center image */
-    
-    .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
-        height: 40vw;
-        overflow: hidden;
-    }
 
+    .sec04-outside-bg{width: 100%; height: 35vh; margin: 0;}
+    .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
+        height: 35vh; width: 100%;
+    }
+    
     .mohave-outside-01>img{
-        width: 120%;
-        left: -9%;
-        top: -52%;
+        width: 130%;
+        left: -14%;
+        top: -35%;
     }
 
     .mohave-outside-02>img{
-        width: 100%;
-        left: 0%;
-        top: -32%;
+        width: 110%;
+        left: -8%;
+        top: -21%;
     }
 
     .mohave-outside-03>img{
-        width: 115%;
-        left: -6%;
-        top: -48%;
+        width: 130%;
+        left: -15%;
+        top: -35%;
     }
 
     /* section04 오른쪽 내용 */
 
     .sec04-outdesign{
-        height: 35vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 100%;
+        height: 35vh;
     }
 
-    .mohave-outdesign h3{
-        font-size: 1.3em;
-        top: -80px;
+    .sec04-outdesign img{
+        width: 110%;
+    }
+
+    .sec04-outdesig-top{
+        height: 17.5vh;
+    }
+
+    .sec04-outdesig-bottom{
+        height: 17.5vh;
+    }
+
+    /* section05 ------------------------------------- */
+    .sec05-title{
+        height: 15vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .sec05-inside{
+        height: 40vh;
+    }
+    .sec05-indesign{height: 30vh;}
+    .mohave-indesign{height: 30vh;}
+
+    .mohave-indesign-top{
+        height: 15vh;
+    }
+
+    .mohave-indesign-bottom{
+        height: 15vh;
     }
 }
 
 @media(max-width: 767px){
 
     /* section01 */
-    .kar-icon>img{
-        position: absolute;
-        top: -12%;
-        left: 44%;
-    }
-
-    .sec01_title{font-size: 0.9em;}
+    .kar-icon{margin-top: 45%;}
+    .kar-icon>img{top: -50%; left: 44%;}
+    .sec01_title{margin-top: -5%;}
+    .sec01_title h1{font-size: 2em;}
+    .sec01_title p{font-size: 5em;}
+    .sec01_title p:last-child{font-size:1.6em;}
 
     /* section02 */
 
-    .main_info{width: 300px;}
+    .sec02-logo>img{
+        width: 30%;
+        padding-top: 10%;
+    }
 
-    .sec02-logo{margin-top: 10%;}
-
-    .tab-car-color{
+    .tab-car-img img{width:90%; margin-top: 5%;}
+    .tab-car-color-text{padding: 0;}
+    .tab-car-color-text h4{margin: 0; font-size: 1.7em; text-align: center; margin-top: 5%;}
+    .tab-car-color>ul {
         display: flex;
         justify-content: center;
+        padding-left: 0;
     }
 
-    /* section04 */
-    .sec04-bg{
-        padding: 0;
-        width: 100%;
-        height: 150vh;
+    /* section03 */
+    .sec03-title{
+        text-align: center;
+        height: 20vw;
+        display: flex;
+        align-items: center;
     }
-    
+    .sec03-title-txt{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec03-title-txt>h2{font-size: 1.2em; padding: 0;}
+    .sec03-title-txt>h1{font-size: 3.5em;}
+
+    .sec03-bg{
+        height: 80vw;
+        background-position: 60% -144px;
+    }
+
+    .sec03-bottom-con-1{height: 26.5vw;}
+    .sec03-con-txt p{font-size: 1.3em;}
+    .sec03-con-icon>p{margin-left: 10%; line-height: 30px;}
+
+    /* section04 */
     /* sec04-title */
     .sec04-title{
         width: 100%;
-        height: 15vh;
-        margin-top: 3%;
+        height: 10vw;
+        margin-top: 5%;
     }
     
     .sec04-title>h1{
@@ -265,64 +362,59 @@
     /* sec04-왼쪽 메뉴 */
     .sec04-outside-choice{
         width: 100%;
-        height: 15vh;
-    }
-    
-    .sec04-outside-choice img{
-        width: 100%;
-    }
-    
-    .sec04-outside-choice img:hover{
-        width: 100%;
+        height: 15vw;
+        margin: 0;
+        padding-top: 2%;
     }
 
     /* sec04-center image */
-    .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
-        height: 50vh;
-    }
 
+    .sec04-outside-bg{height: 50vw;}
+    .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
+        height: 50vw;
+    }
+    
     .mohave-outside-01>img{
-        width: 150%;
-        left: -25%;
-        top: -25%;
+        width: 130%;
+        left: -14%;
+        top: -35%;
     }
 
     .mohave-outside-02>img{
-        width: 120%;
-        left: -15%;
-        top: -10%;
+        width: 110%;
+        left: -8%;
+        top: -21%;
     }
 
     .mohave-outside-03>img{
-        width: 150%;
-        left: -25%;
-        top: -25%;
+        width: 130%;
+        left: -15%;
+        top: -35%;
     }
 
     /* section04 오른쪽 내용 */
 
     .sec04-outdesign{
-        height: 60vh;
+        height: 56vw;
     }
 
     .sec04-outdesig-top{
-        margin-top: 5%;
+        height: 28vw;
     }
 
     .sec04-outdesig-bottom{
-        margin-top: 5%;
+        height: 28vw;
     }
 
-    .mohave-outdesign h3{
-        font-size: 1em;
-        top: -80px;
+    .mohave-outdesign{
+        height: 28vw;
     }
 
     /* sec05-title */
     .sec05-title{
         width: 100%;
-        height: 15vh;
-        margin-top: 3%;
+        height: 10vw;
+        margin-top: 10%;
     }
     
     .sec05-title>h1{
@@ -336,36 +428,56 @@
     .sec05-title>h4{
         font-size: 1.1em;
     }
+
+    /* 섹션5 세부사항 */
+    .sec05-indesign {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .sec05-inside{
+        height: 50vw;
+    }
+
+    .mohave-indesign-top{
+        height: 25vw;
+    }
+
+    .mohave-indesign-bottom{
+        height: 25vw;
+    }
 }
 
 @media (max-width: 576px){
 
     /* section01 */
-    /* section01 */
-    .kar-icon>img{top: 23%; left: 45.5%;}
-    .sec01_title{text-align: center; margin-top: -5%;}
-    .sec01-right{margin-top: 5%;}
-    .sec01_title h1{font-size: 1.3em;}
-    .sec01_title p{font-size: 4em;}
-    .sec01_title p:last-child{font-size: 1.3em; letter-spacing: -1.2px;}
-
-    .sec03-bottom-con-1{width: 100%;}
-
-    .kar-icon>img{top: -10%; left: 38%;}
+    .kar-icon{margin-top: 45%;}
+    .kar-icon>img{top: -60%; left: 42%;}
 
     /* section02 */
+    .sec02-logo>img{margin-top: 10%;}
+    .tab-car-color-text h4{margin-top: 10%;}
+    .tab-car-color>ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .sec03-bottom-con-1{height: 32vw;}
+    .sec03-con-txt>p{font-size: 1em;}
+
 
     /* section03 */
     .sec03-bg{
-        width: 100%;
-        height: 70vh;
-        background: url(../images/sec03-bg.jpg);
-        background-position: 60% 43%;
-        background-size: cover;
-        background-attachment: fixed;
+        height: 100vw;
+        background-position: 50% -90px;
     }
 
-    .sec03-title{margin-top: 15%;}
+    .sec03-title{
+        margin-top: 10%;
+        height: 30vw;
+        align-items: center;
+    }
 
     .sec03-title>h2{font-size: 1.5em; color: #fff;}
     .sec03-title>h2>strong{color: rgb(202, 25, 25);}
@@ -374,57 +486,45 @@
     border-top: 5px solid rgb(202, 25, 25); width: 50px;}
 
     /* section04 */
-    .sec04-bg{
-        padding: 0;
-        width: 100%;
-        height: 120vh;
-    }
-    
     /* sec04-title */
-
-    .sec04-title{
-        height: 10vw;
-    }
-    
-    .sec04-title>h1{
-        font-size: 1.3em;
-    }
-        
-    .sec04-title>h4{
-        font-size: 1em;
+    .sec04-title{margin-top: 10%;}
+    .sec04-outside-choice{
+        margin-top: 10%;
     }
     
     /* sec04-center image */
+
+    .sec04-outside-bg{height: 60vw;}
     .mohave-outside-01, .mohave-outside-02, .mohave-outside-03{
-        height: 65vw;
-    }
-
-    /* section04 오른쪽 내용 */
-
-    .sec04-outdesign{
         height: 60vw;
     }
-
-    .sec04-outdesig-top{
-        margin-top: 0%;
-    }
-
-    .sec04-outdesig-bottom{
-        margin-top: 0%;
-    }
-
-    /* sec05-title */
-
-    .sec05-title{
-        height: 10vh;
-    }
     
-    .sec05-title>h1{
-        font-size: 1.3em;
+    .mohave-outside-01>img{
+        width: 130%;
+        left: -14%;
+        top: -22%;
     }
-        
-    .sec05-title>h4{
-        font-size: 1em;
+
+    .mohave-outside-02>img{
+        width: 110%;
+        left: -8%;
+        top: -11%;
     }
+
+    .mohave-outside-03>img{
+        width: 130%;
+        left: -15%;
+        top: -22%;
+    }
+
+    .mohave-outdesign img {width: 110%;}
+
+    .sec04-modal{
+        top: 5%;
+        left: 0;
+    }
+
+    /* section05*/
+
     
 }
