@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/media.css">
 <link rel="shortcut icon" href="images/kia-logo-pa.ico">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="js/scrolloverflow.min.js"></script>
 
 <script>
@@ -23,7 +23,7 @@
             verticalCentered: false,
             css3:false
         });
-    });
+    }); -->
 </script>
 <body>
 <section id="fullpage">
@@ -580,21 +580,168 @@
     <!--section05 end-->
 </div>
 <!-- fullpage05 end ------------------------------------------------------>
-<div class="section06">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>AAAA</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="tab"></div>
+<div class="section">
+    <div class="section06">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 sec06-title text-center">
+                    <h1>파워풀하고 민첩한 드라이브</h1>
+                </div>
+                <div class="col-sm-12">
+                    <button class="tablink" onclick="openPage('Performance', this, 'rgb(202, 25, 25)')">PERFORMANCE</button>
+                    <button class="tablink" onclick="openPage('Convenience', this, 'rgb(202, 25, 25)')" id="defaultOpen">CONVENIENCE</button>
+                    <button class="tablink" onclick="openPage('Space', this, 'rgb(202, 25, 25)')">SPACE</button>
+
+                    <div id="Performance" class="tabcontent text-center">
+                        <!-- Performance -->
+                        <div class="performance">
+                            <!-- 퍼포먼스 1 -->
+                            <div class="mySlides per-con">
+                                <img src="images/sec06-Performance-01.webp" style="width:100%" class="per-img-1">
+                                <div class="per-txt-1 text-left">
+                                    <div class="per-txt-border"></div>
+                                    <h4>PERFORMANCE</h4>
+                                    <h1>파워풀하고 민첩한 주행 성능</h1>
+                                    <h3>프리미엄 SUV에 걸맞는 여유롭고 풍부한 가속감</h3>
+                                </div>
+                            </div>
+                            <!-- 퍼포먼스 2 -->
+                            <div class="mySlides per-con">
+                                <img src="images/sec06-Performance-02.webp" style="width:100%" class="per-img-2">
+                                <div class="per-txt-2 text-left">
+                                    <div class="per-txt-border"></div>
+                                    <h1>V6 3.0 디젤 엔진</h1>
+                                </div>
+                            </div>
+                            <!-- 퍼포먼스 3 -->
+                            <div class="mySlides per-con">
+                                <img src="images/sec06-Performance-03.jpg" style="width:100%" class="per-img-3">
+                                <div class="per-txt-3 text-left">
+                                    <div class="per-txt-border"></div>
+                                    <h1>프레임 바디</h1>
+                                </div>
+                            </div>
+                            <!-- 퍼포먼스 4 -->
+                            <div class="mySlides per-con">
+                                <img src="images/sec06-Performance-04.webp" style="width:100%" class="per-img-4">
+                                <div class="per-txt-4 text-left">
+                                    <div class="per-txt-border"></div>
+                                    <h1>주행모드 통합제어 (드라이브 모드 / 터레인 모드)</h1>
+                                    <p>터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.</p>
+                                </div>
+                            </div>
+                            <!-- 퍼포먼스 5 -->
+                            <div class="mySlides per-con">
+                                <img src="images/sec06-Performance-05.jpg" style="width:100%" class="per-img-5">
+                                <div class="per-txt-5 text-left">
+                                    <div class="per-txt-border"></div>
+                                    <h1>전자식 4WD – 저단 모드</h1>
+                                    <p>주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는</p>
+                                    <p>전자식 4WD가 기본적용 되어있으며 저단모드 시,</p>
+                                    <p>차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                                <div class="column-p">
+                                <img class="demo cursor" src="images/sec06-Performance-06.jpg" style="width:100%" onclick="currentSlide(1)" alt="파워풀하고 민첩한 주행 성능">
+                                </div>
+                                <div class="column-p">
+                                <img class="demo cursor" src="images/sec06-Performance-02.webp" style="width:100%" onclick="currentSlide(2)" alt="V6 3.0 디젤 엔진">
+                                </div>
+                                <div class="column-p">
+                                <img class="demo cursor" src="images/sec06-Performance-03.jpg" style="width:100%" onclick="currentSlide(3)" alt="프레임 바디">
+                                </div>
+                                <div class="column-p">
+                                <img class="demo cursor" src="images/sec06-Performance-04.webp" style="width:100%" onclick="currentSlide(4)" alt="터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.">
+                                </div>
+                                <div class="column-p">
+                                <img class="demo cursor" src="images/sec06-Performance-05.jpg" style="width:100%" onclick="currentSlide(5)" alt="주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는 전자식 4WD가 기본적용 되어있으며 저단모드 시, 차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Convenience -->
+                    <div id="Convenience" class="tabcontent">
+                        <!-- 편의성 1 -->
+                        <div class="mySlides conv-con">
+                            <img src="images/sec06-Convenience-01.jpg" style="width:100%" class="conv-img-1">
+                            <div class="conv-txt-1 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h4>CONVENIENCE</h4>
+                                <h1>오감 만족 하이테크 드라이빙 스페이스</h1>
+                                <h3>12.3” 대형 내비게이션 기반 첨단 커넥티비티 시스템</h3>
+                            </div>
+                        </div>
+                        <!-- 편의성 2 -->
+                        <div class="mySlides conv-con">
+                            <img src="images/sec06-Convenience-02.webp" style="width:100%" class="conv-img-2">
+                            <div class="conv-txt-2 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>V6 3.0 디젤 엔진</h1>
+                            </div>
+                        </div>
+                        <!-- 편의성 3 -->
+                        <div class="mySlides conv-con">
+                            <img src="images/sec06-Convenience-03.webp" style="width:100%" class="conv-img-3">
+                            <div class="conv-txt-3 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>프레임 바디</h1>
+                            </div>
+                        </div>
+                        <!-- 편의성 4 -->
+                        <div class="mySlides conv-con">
+                            <img src="images/sec06-Convenience-04.webp" style="width:100%" class="conv-img-4">
+                            <div class="conv-txt-4 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>주행모드 통합제어 (드라이브 모드 / 터레인 모드)</h1>
+                                <p>터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.</p>
+                            </div>
+                        </div>
+                        <!-- 편의성 5 -->
+                        <div class="mySlides conv-con">
+                            <img src="images/sec06-Convenience-05.webp" style="width:100%" class="conv-img-5">
+                            <div class="conv-txt-5 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>전자식 4WD – 저단 모드</h1>
+                                <p>주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는</p>
+                                <p>전자식 4WD가 기본적용 되어있으며 저단모드 시,</p>
+                                <p>차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Thumbnail images -->
+                        <div class="row">
+                            <div class="column-p">
+                            <img class="demo cursor" src="images/sec06-Convenience-01.jpg" style="width:100%" onclick="currentSlide(1)" alt="파워풀하고 민첩한 주행 성능">
+                            </div>
+                            <div class="column-p">
+                            <img class="demo cursor" src="images/sec06-Convenience-02.webp" style="width:100%" onclick="currentSlide(2)" alt="V6 3.0 디젤 엔진">
+                            </div>
+                            <div class="column-p">
+                            <img class="demo cursor" src="images/sec06-Convenience-03.webp" style="width:100%" onclick="currentSlide(3)" alt="프레임 바디">
+                            </div>
+                            <div class="column-p">
+                            <img class="demo cursor" src="images/sec06-Convenience-04.webp" style="width:100%" onclick="currentSlide(4)" alt="터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.">
+                            </div>
+                            <div class="column-p">
+                            <img class="demo cursor" src="images/sec06-Convenience-05.webp" style="width:100%" onclick="currentSlide(5)" alt="주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는 전자식 4WD가 기본적용 되어있으며 저단모드 시, 차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Space -->
+                    <div id="Space" class="tabcontent">
+                    <h3>Contact</h3>
+                    <p>Get in touch, or swing by for a cup of coffee.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!--section06 end-->
 </div>
-<!--section06 end-->
 </section>
 
 <script src="js/js.js"></script>

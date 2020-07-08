@@ -6,22 +6,46 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="buttom" onclick="loadDoc()">Request data</button>
+    
+    <button type="button" onclick="loadDoc()">Request data</button>
     <p id="demo"></p>
 
     <script>
-
-        function loadDoc(){
+        function loadDoc() {
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function(){
-                if(this.readyState == 4 && this.status == 200){
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("demo").innerHTML = this.responseText;
                 }
             };
             xhttp.open("POST", "abc.txt", true);
-            //post와 GET 차이점
             xhttp.send();
         }
+
     </script>
+
+    <!-- ------------------- -->
+
+        <h1>appendChild() 메소드</h1>
+        <h2 id="item">JavaScript</h2>
+        <div id="list">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JQuery</p>
+        </div>
+        <button onclick="appendNode()">노드 추가!</button>
+        
+        <script>
+            function appendNode(){
+                var parent = document.getElementById("list");
+                // 아이디가 "list"인 요소를 선택함.
+                var newItem = document.getElementById("item");
+                // 아이디가 "item"인 요소를 선택함.
+                parent.appendChild(newItem);
+                // 해당 요소의 맨 마지막 자식 노드로 추가함.
+            }
+        </script>
+
+        
 </body>
 </html>

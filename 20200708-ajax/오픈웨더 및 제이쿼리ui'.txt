@@ -1,0 +1,19 @@
+https://home.openweathermap.org/users/sign_up
+
+jeonsookjin
+
+wanijin@naver.com
+
+dark6861
+여행
+
+fcd8e55ab63dddb556ed042f51b901bc
+
+
+
+
+제이쿼리UI
+
+https://jqueryui.com/
+
+->  부트스트랩이라고 생각하면 된다고 함.
