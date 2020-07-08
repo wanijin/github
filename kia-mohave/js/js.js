@@ -97,34 +97,154 @@ function openPage(pageName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 
 
-// section06 slideshow
-var slideIndex = 1;
-showSlides(slideIndex);
 
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+//section06 contents
+$(function(){
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  // 섹션6번 탭1 내용들
+  $('#thumb-p-1').click(function(){
+      $('.mySlides1-1').fadeIn();
+      $('.mySlides1-2').css('display','none').fadeOut();
+      $('.mySlides1-3').css('display','none').fadeOut();
+      $('.mySlides1-4').css('display','none').fadeOut();
+      $('.mySlides1-5').css('display','none').fadeOut();
+  });
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  // var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+  $('#thumb-p-2').click(function(){
+    $('.mySlides1-2').fadeIn();
+    $('.mySlides1-1').css('display','none').fadeOut();
+    $('.mySlides1-3').css('display','none').fadeOut();
+    $('.mySlides1-4').css('display','none').fadeOut();
+    $('.mySlides1-5').css('display','none').fadeOut();
+  });
+
+  $('#thumb-p-3').click(function(){
+    $('.mySlides1-3').fadeIn();
+    $('.mySlides1-2').css('display','none').fadeOut();
+    $('.mySlides1-1').css('display','none').fadeOut();
+    $('.mySlides1-4').css('display','none').fadeOut();
+    $('.mySlides1-5').css('display','none').fadeOut();
+  });
+  
+  $('#thumb-p-4').click(function(){
+    $('.mySlides1-4').fadeIn();
+    $('.mySlides1-2').css('display','none').fadeOut();
+    $('.mySlides1-3').css('display','none').fadeOut();
+    $('.mySlides1-1').css('display','none').fadeOut();
+    $('.mySlides1-5').css('display','none').fadeOut();
+  });
+
+  $('#thumb-p-5').click(function(){
+    $('.mySlides1-5').fadeIn();
+    $('.mySlides1-2').css('display','none').fadeOut();
+    $('.mySlides1-3').css('display','none').fadeOut();
+    $('.mySlides1-4').css('display','none').fadeOut();
+    $('.mySlides1-1').css('display','none').fadeOut();
+  });
+
+  // 섹션6번 탭2 내용들
+  $('#thumb-c-1').click(function(){
+    $('.mySlides2-1').fadeIn();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-2').click(function(){
+    $('.mySlides2-2').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-3').click(function(){
+    $('.mySlides2-3').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-4').click(function(){
+    $('.mySlides2-4').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-5').click(function(){
+    $('.mySlides2-5').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-6').click(function(){
+    $('.mySlides2-6').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-7').css('display','none').fadeOut();
+  });
+
+  $('#thumb-c-7').click(function(){
+    $('.mySlides2-7').fadeIn();
+    $('.mySlides2-1').css('display','none').fadeOut();
+    $('.mySlides2-2').css('display','none').fadeOut();
+    $('.mySlides2-3').css('display','none').fadeOut();
+    $('.mySlides2-4').css('display','none').fadeOut();
+    $('.mySlides2-5').css('display','none').fadeOut();
+    $('.mySlides2-6').css('display','none').fadeOut();
+  });
+
+  // 섹션6번 탭3 내용들
+  $('#thumb-s-1').click(function(){
+    $('.mySlides3-1').fadeIn();
+    $('.mySlides3-2').css('display','none').fadeOut();
+    $('.mySlides3-3').css('display','none').fadeOut();
+    $('.mySlides3-4').css('display','none').fadeOut();
+  });
+
+  $('#thumb-s-2').click(function(){
+    $('.mySlides3-2').fadeIn();
+    $('.mySlides3-1').css('display','none').fadeOut();
+    $('.mySlides3-3').css('display','none').fadeOut();
+    $('.mySlides3-4').css('display','none').fadeOut();
+  });
+
+  $('#thumb-s-3').click(function(){
+    $('.mySlides3-3').fadeIn();
+    $('.mySlides3-1').css('display','none').fadeOut();
+    $('.mySlides3-2').css('display','none').fadeOut();
+    $('.mySlides3-4').css('display','none').fadeOut();
+  });
+
+  $('#thumb-s-4').click(function(){
+    $('.mySlides3-4').fadeIn();
+    $('.mySlides3-1').css('display','none').fadeOut();
+    $('.mySlides3-2').css('display','none').fadeOut();
+    $('.mySlides3-3').css('display','none').fadeOut();
+  });
+
+});
+
+
+
+
+

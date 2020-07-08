@@ -9,7 +9,7 @@
 .section01{
     position: relative;
     background: #000;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -57,9 +57,11 @@
 }
 
 .kar-icon{
-    margin-top: 120px;
+    position: relative;
+    margin-left: 8%;
+    margin-top: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .icon_bg{
@@ -90,8 +92,8 @@
 .kar-icon>img{
     width: 90px;
     position: absolute;
-    top: 22%;
-    left: 38%;
+    top: -60%;
+    left: -1.5%;
     z-index: 10;
 }
 
@@ -106,9 +108,8 @@
     display: block;
 }
 
-.sec01-right{margin: 0; padding: 0;}
-
 /* section01 end------------------------------------------------------- */
+
 .section02-1_bg{
     background-color: #fff;
 }
@@ -125,6 +126,7 @@
 
 .section02{
     position: relative;
+    height: 100%;
 }
 
 .main-info img{
@@ -148,11 +150,11 @@
 }
 
 /* sec02-tab-car img */
-.tab-car-color-choice{padding-bottom: 40px;}
+.tab-car-color-choice{padding-bottom: 15%;}
 
 .sec02-logo>img{width: 30%; padding-top: 5%;}
 
-.tab-car-img{margin-top: 3%; padding-bottom: 5%;}
+.tab-car-img{margin-top: 1%; padding-bottom: 5%;}
 
 .tab-car-img img{width: 90%;}
 
@@ -200,7 +202,7 @@
 
 /* section02 end------------------------------------------------------- */
 
-.section03{position: relative;}
+.section03{position: relative; height: 100%;}
 
 .sec03-bg-padding{padding: 0;}
 .sec03-padding{padding: 0;}
@@ -340,7 +342,7 @@
 
 /* section03 end------------------------------------------------------- */
 
-.section04{overflow: hidden; width: 100%; height: 100vh; position: relative;}
+.section04{overflow: hidden; width: 100%; height: 100%; position: relative;}
 
 .sec04-bg{
     padding: 0;
@@ -661,6 +663,11 @@
     padding: 4% 0;
 }
 .sec06-title>h1{font-weight: 700;}
+.sec06-border{
+    border-bottom: 5px solid rgb(202, 25, 25);
+    width: 100px;
+    margin: 0 auto;
+}
   
 /* section06-tab */
 .tablink {
@@ -690,14 +697,21 @@ transition: all 0.5s;
   
 #Performance {background-color: white;}
 #Convenience {background-color: white;}
-#Space {background-color: blue;}
+#Space {background-color: white;}
 
 
 /* section06-slide */
-.mySlides {
+.mySlides1-1{
+    display: block;
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+
+.mySlides1-2, .mySlides1-3, .mySlides1-4, .mySlides1-5{
     display: none;
     width: 100%;
-    height: 45vh;
+    height: 45%;
     overflow: hidden;
 }
 
@@ -807,19 +821,37 @@ transition: all 0.5s;
     .per-txt-5>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
     .per-txt-5>p{margin-left: 5%;}
 
+    /* 퍼포먼스 썸네일 */
+    .pside {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .pside:hover {
+        opacity: 1;
+        transition: all 0.5s;
+      }
+
 /* 편의성 ------ */
 .conv-con{position: relative;}
-.mySlides{
+.mySlides2-1{
     display: block;
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     overflow: hidden;
 }
 
-    /* 퍼포먼스-1 */
+.mySlides2-2, .mySlides2-3, .mySlides2-4, .mySlides2-5, .mySlides2-6, .mySlides2-7{
+    display: none;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+    /* 편의성-1 */
     .conv-img-1{
         position: relative;
-        top: -25%;
+        top: -35%;
         left: 0;
     }
 
@@ -839,6 +871,249 @@ transition: all 0.5s;
     .conv-txt-1>h4{margin-left: 5%; margin-top: 1.5%; font-weight: 700;}
     .conv-txt-1>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
     .conv-txt-1>h3{margin-left: 5%; font-size: 1em;}
+
+    /* 편의성-2 */
+    .conv-img-2{
+        position: relative;
+        top: -55%;
+        left: 0;
+    }
+
+    .conv-txt-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-2>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-2>p{margin-left: 5%;}
+
+    /* 편의성-3 */
+    .conv-img-3{
+        position: relative;
+        top: -55%;
+        left: 0;
+    }
+
+    .conv-txt-3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-3>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-3>p{margin-left: 5%;}
+
+    /* 편의성-4 */
+    .conv-img-4{
+        position: relative;
+        top: -55%;
+        left: 0;
+    }
+
+    .conv-txt-4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-4>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-4>p{margin-left: 5%;}
+
+    /* 편의성-5 */
+    .conv-img-5{
+        position: relative;
+        top: -25%;
+        left: 0;
+    }
+
+    .conv-txt-5{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-5>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-5>p{margin-left: 5%;}
+
+    /* 편의성-6 */
+    .conv-img-6{
+        position: relative;
+        top: -85%;
+        left: 0;
+    }
+
+    .conv-txt-6{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-6>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-6>p{margin-left: 5%;}
+
+    /* 편의성-7 */
+    .conv-img-7{
+        position: relative;
+        top: -40%;
+        left: 0;
+    }
+
+    .conv-txt-7{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+    
+    .conv-txt-7>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    .conv-txt-7>p{margin-left: 5%;}
+
+/* 공간 ------ */
+.space-con{position: relative;}
+.mySlides3-1{
+    display: block;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.mySlides3-2, .mySlides3-3, .mySlides3-4{
+    display: none;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+
+    /* 공간-1 */
+    .space-img-1{
+        position: relative;
+        top: -23%;
+        left: 0;
+    }
+
+    .space-txt-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .space-txt-border{width: 3%; border-bottom: 3px solid rgb(202, 25, 25); margin-left: 5%; margin-top: 1.5%; }
+    .space-txt-1>h4{margin-left: 5%; margin-top: 1.5%; font-weight: 700;}
+    .space-txt-1>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    /* 공간-2 */
+    .space-img-2{
+        position: relative;
+        top: -10%;
+        left: 0;
+    }
+
+    .space-txt-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .space-txt-2>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+
+    /* 공간-3 */
+    .space-img-3{
+        position: relative;
+        top: -47%;
+        left: 0;
+    }
+
+    .space-txt-3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .space-txt-3>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+    .space-txt-3>p{margin-left: 5%;}
+
+    /* 공간-4 */
+    .space-img-4{
+        position: relative;
+        top: -85%;
+        left: 0;
+    }
+
+    .space-txt-4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    .space-txt-4>h1{margin-left: 5%; font-size: 2.5em; font-weight: 700;}
+    .space-txt-4>p{margin-left: 5%;}
+
   
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
@@ -858,14 +1133,23 @@ transition: all 0.5s;
     float: left;
     width: 20%;
   }
+
+  .column-c{
+    float: left;
+    width: 14.2%;
+  }
   
-  /* Add a transparency effect for thumnbail images */
-  .demo {
+  .column-s{
+    float: left;
+    width: 20%;
+  }
+
+  .cside {
     opacity: 0.6;
   }
   
   .active,
-  .demo:hover {
+  .cside:hover {
     opacity: 1;
     transition: all 0.5s;
   }

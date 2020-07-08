@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/media.css">
 <link rel="shortcut icon" href="images/kia-logo-pa.ico">
 
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="js/scrolloverflow.min.js"></script>
 
 <script>
@@ -23,7 +23,7 @@
             verticalCentered: false,
             css3:false
         });
-    }); -->
+    });
 </script>
 <body>
 <section id="fullpage">
@@ -35,24 +35,18 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-2"></div>
-                        <div class="col-sm-12 col-md-12 col-lg-4 sec01_title">
+                        <div class="col-sm-12 col-md-12 col-lg-10 sec01_title">
                             <h1>나를 지켜주는 너를 만나다.</h1>
                             <p>MOHAVE</p>
                             <p>최고의 프리미엄 SUV 모하비 더 마스터</p>
                         </div>
-                        <div class="col-lg-4"></div>
-                        <div class="col-sm-12 col-md-12 col-lg-2 text-center sec01-right">
+                        <div class="col-lg-2"></div>
+                        <div class="col-sm-12 col-md-12 col-lg-10 text-center">
                             <div class="kar-icon text-center">
                                 <div class=icon_bg></div>
                                 <img src="images/kar-icon.png" alt="kar-icon" class="kar-iconimg">
                             </div>
-                            <!-- <div class="sec01_maintxt">
-                                <p>FROM 차량기본가격</p>
-                                <h1>￦46,470,000</h1>
-                                <h4>(개별소비세 1.5%기준)</h4>
-                            </div> -->
-                            
-                        </div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -586,6 +580,7 @@
             <div class="row">
                 <div class="col-sm-12 sec06-title text-center">
                     <h1>파워풀하고 민첩한 드라이브</h1>
+                    <div class="sec06-border"></div>
                 </div>
                 <div class="col-sm-12">
                     <button class="tablink" onclick="openPage('Performance', this, 'rgb(202, 25, 25)')">PERFORMANCE</button>
@@ -596,7 +591,7 @@
                         <!-- Performance -->
                         <div class="performance">
                             <!-- 퍼포먼스 1 -->
-                            <div class="mySlides per-con">
+                            <div class="mySlides1-1 per-con">
                                 <img src="images/sec06-Performance-01.webp" style="width:100%" class="per-img-1">
                                 <div class="per-txt-1 text-left">
                                     <div class="per-txt-border"></div>
@@ -606,7 +601,7 @@
                                 </div>
                             </div>
                             <!-- 퍼포먼스 2 -->
-                            <div class="mySlides per-con">
+                            <div class="mySlides1-2 per-con">
                                 <img src="images/sec06-Performance-02.webp" style="width:100%" class="per-img-2">
                                 <div class="per-txt-2 text-left">
                                     <div class="per-txt-border"></div>
@@ -614,7 +609,7 @@
                                 </div>
                             </div>
                             <!-- 퍼포먼스 3 -->
-                            <div class="mySlides per-con">
+                            <div class="mySlides1-3 per-con">
                                 <img src="images/sec06-Performance-03.jpg" style="width:100%" class="per-img-3">
                                 <div class="per-txt-3 text-left">
                                     <div class="per-txt-border"></div>
@@ -622,7 +617,7 @@
                                 </div>
                             </div>
                             <!-- 퍼포먼스 4 -->
-                            <div class="mySlides per-con">
+                            <div class="mySlides1-4 per-con">
                                 <img src="images/sec06-Performance-04.webp" style="width:100%" class="per-img-4">
                                 <div class="per-txt-4 text-left">
                                     <div class="per-txt-border"></div>
@@ -631,7 +626,7 @@
                                 </div>
                             </div>
                             <!-- 퍼포먼스 5 -->
-                            <div class="mySlides per-con">
+                            <div class="mySlides1-5 per-con">
                                 <img src="images/sec06-Performance-05.jpg" style="width:100%" class="per-img-5">
                                 <div class="per-txt-5 text-left">
                                     <div class="per-txt-border"></div>
@@ -645,19 +640,19 @@
                             <!-- Thumbnail images -->
                             <div class="row">
                                 <div class="column-p">
-                                <img class="demo cursor" src="images/sec06-Performance-06.jpg" style="width:100%" onclick="currentSlide(1)" alt="파워풀하고 민첩한 주행 성능">
+                                <img class="pside cursor" id=thumb-p-1 src="images/sec06-Performance-06.jpg" style="width:100%" alt="파워풀하고 민첩한 주행 성능">
                                 </div>
                                 <div class="column-p">
-                                <img class="demo cursor" src="images/sec06-Performance-02.webp" style="width:100%" onclick="currentSlide(2)" alt="V6 3.0 디젤 엔진">
+                                <img class="pside cursor" id=thumb-p-2 src="images/sec06-Performance-02.webp" style="width:100%" lt="V6 3.0 디젤 엔진">
                                 </div>
                                 <div class="column-p">
-                                <img class="demo cursor" src="images/sec06-Performance-03.jpg" style="width:100%" onclick="currentSlide(3)" alt="프레임 바디">
+                                <img class="pside cursor" id=thumb-p-3 src="images/sec06-Performance-03.jpg" style="width:100%" alt="프레임 바디">
                                 </div>
                                 <div class="column-p">
-                                <img class="demo cursor" src="images/sec06-Performance-04.webp" style="width:100%" onclick="currentSlide(4)" alt="터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.">
+                                <img class="pside cursor" id=thumb-p-4 src="images/sec06-Performance-04.webp" style="width:100%" alt="주행모드 통합제어 (드라이브 모드 / 터레인 모드)">
                                 </div>
                                 <div class="column-p">
-                                <img class="demo cursor" src="images/sec06-Performance-05.jpg" style="width:100%" onclick="currentSlide(5)" alt="주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는 전자식 4WD가 기본적용 되어있으며 저단모드 시, 차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.">
+                                <img class="pside cursor" id=thumb-p-5 src="images/sec06-Performance-05.jpg" style="width:100%" alt="전자식 4WD – 저단 모드">
                                 </div>
                             </div>
                         </div>
@@ -665,7 +660,7 @@
                     <!-- Convenience -->
                     <div id="Convenience" class="tabcontent">
                         <!-- 편의성 1 -->
-                        <div class="mySlides conv-con">
+                        <div class="mySlides2-1 conv-con">
                             <img src="images/sec06-Convenience-01.jpg" style="width:100%" class="conv-img-1">
                             <div class="conv-txt-1 text-left">
                                 <div class="conv-txt-border"></div>
@@ -675,66 +670,142 @@
                             </div>
                         </div>
                         <!-- 편의성 2 -->
-                        <div class="mySlides conv-con">
+                        <div class="mySlides2-2 conv-con">
                             <img src="images/sec06-Convenience-02.webp" style="width:100%" class="conv-img-2">
                             <div class="conv-txt-2 text-left">
                                 <div class="conv-txt-border"></div>
-                                <h1>V6 3.0 디젤 엔진</h1>
+                                <h1>내비게이션 자동 무선 업데이트</h1>
+                                <p>소프트웨어 무선 다운로드를 통해 내비게이션을 업데이트하는 똑똑한 기능입니다.</p>
                             </div>
                         </div>
                         <!-- 편의성 3 -->
-                        <div class="mySlides conv-con">
+                        <div class="mySlides2-3 conv-con">
                             <img src="images/sec06-Convenience-03.webp" style="width:100%" class="conv-img-3">
                             <div class="conv-txt-3 text-left">
                                 <div class="conv-txt-border"></div>
-                                <h1>프레임 바디</h1>
+                                <h1>카투홈</h1>
+                                <p>차에서도 집에 있는 IoT 기기를 편리하게 제어할 수 있는 기능입니다.</p>
                             </div>
                         </div>
                         <!-- 편의성 4 -->
-                        <div class="mySlides conv-con">
+                        <div class="mySlides2-4 conv-con">
                             <img src="images/sec06-Convenience-04.webp" style="width:100%" class="conv-img-4">
                             <div class="conv-txt-4 text-left">
                                 <div class="conv-txt-border"></div>
-                                <h1>주행모드 통합제어 (드라이브 모드 / 터레인 모드)</h1>
-                                <p>터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.</p>
+                                <h1>카카오 i</h1>
+                                <p>길찾기, 날씨, 증시 등 실용적인 정보를 음성으로 손쉽게 검색할 수 있습니다.</p>
                             </div>
                         </div>
                         <!-- 편의성 5 -->
-                        <div class="mySlides conv-con">
+                        <div class="mySlides2-5 conv-con">
                             <img src="images/sec06-Convenience-05.webp" style="width:100%" class="conv-img-5">
                             <div class="conv-txt-5 text-left">
                                 <div class="conv-txt-border"></div>
-                                <h1>전자식 4WD – 저단 모드</h1>
-                                <p>주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는</p>
-                                <p>전자식 4WD가 기본적용 되어있으며 저단모드 시,</p>
-                                <p>차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.</p>
+                                <h1>운전석 자동 쾌적제어 시스템</h1>
+                                <p>기온에 따라 실내 공조/시트/스티어링 휠을 자동으로 컨트롤해줍니다.</p>
+                            </div>
+                        </div>
+                        <!-- 편의성 6 -->
+                        <div class="mySlides2-6 conv-con">
+                            <img src="images/sec06-Convenience-06.webp" style="width:100%" class="conv-img-6">
+                            <div class="conv-txt-6 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>운전석 자동 쾌적제어 시스템</h1>
+                                <p>기온에 따라 실내 공조/시트/스티어링 휠을 자동으로 컨트롤해줍니다.</p>
+                            </div>
+                        </div>
+                        <!-- 편의성 7 -->
+                        <div class="mySlides2-7 conv-con">
+                            <img src="images/sec06-Convenience-07.webp" style="width:100%" class="conv-img-7">
+                            <div class="conv-txt-7 text-left">
+                                <div class="conv-txt-border"></div>
+                                <h1>운전석 자동 쾌적제어 시스템</h1>
+                                <p>기온에 따라 실내 공조/시트/스티어링 휠을 자동으로 컨트롤해줍니다.</p>
                             </div>
                         </div>
                         
                         <!-- Thumbnail images -->
                         <div class="row">
-                            <div class="column-p">
-                            <img class="demo cursor" src="images/sec06-Convenience-01.jpg" style="width:100%" onclick="currentSlide(1)" alt="파워풀하고 민첩한 주행 성능">
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-1 src="images/sec06-Convenience-08.jpg" style="width:100%" alt="오감 만족 하이테크 드라이빙 스페이스">
                             </div>
-                            <div class="column-p">
-                            <img class="demo cursor" src="images/sec06-Convenience-02.webp" style="width:100%" onclick="currentSlide(2)" alt="V6 3.0 디젤 엔진">
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-2 src="images/sec06-Convenience-02.webp" style="width:100%" alt="내비게이션 자동 무선 업데이트">
                             </div>
-                            <div class="column-p">
-                            <img class="demo cursor" src="images/sec06-Convenience-03.webp" style="width:100%" onclick="currentSlide(3)" alt="프레임 바디">
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-3 src="images/sec06-Convenience-03.webp" style="width:100%" alt="카투홈">
                             </div>
-                            <div class="column-p">
-                            <img class="demo cursor" src="images/sec06-Convenience-04.webp" style="width:100%" onclick="currentSlide(4)" alt="터레인 모드는 Mud, Sand, Snow(진흙/모래/눈)등 거친 주행환경도 자신있게 돌파할 수 있게 해줍니다.">
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-4 src="images/sec06-Convenience-04.webp" style="width:100%" alt="카카오 i">
                             </div>
-                            <div class="column-p">
-                            <img class="demo cursor" src="images/sec06-Convenience-05.webp" style="width:100%" onclick="currentSlide(5)" alt="주행 환경에 따라 능동적으로 전/후륜에 최적의 구동력을 배분하는 전자식 4WD가 기본적용 되어있으며 저단모드 시, 차량의 구동력을 극대화하여 안정감있는 주행성능을 발휘합니다.">
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-5 src="images/sec06-Convenience-05.webp" style="width:100%" alt="주운전석 자동 쾌적제어 시스템">
+                            </div>
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-6 src="images/sec06-Convenience-06.webp" style="width:100%" alt="주운전석 자동 쾌적제어 시스템">
+                            </div>
+                            <div class="column-c">
+                                <img class="cside cursor" id=thumb-c-7 src="images/sec06-Convenience-07.webp" style="width:100%" alt="주운전석 자동 쾌적제어 시스템">
                             </div>
                         </div>
                     </div>
 
                     <!-- Space -->
                     <div id="Space" class="tabcontent">
-                    <h3>Contact</h3>
-                    <p>Get in touch, or swing by for a cup of coffee.</p>
+                        <!-- Space -->
+                        <div class="space">
+                            <!-- 스페이스 1 -->
+                            <div class="mySlides3-1 space-con">
+                                <img src="images/sec06-Space-01.webp" style="width:100%" class="space-img-1">
+                                <div class="space-txt-1 text-left">
+                                    <div class="space-txt-border"></div>
+                                    <h4>SPACE</h4>
+                                    <h1>여유로운 탑승 공간의 편리한 사용 (6인승)</h1>
+                                </div>
+                            </div>
+                            <!-- 스페이스 2 -->
+                            <div class="mySlides3-2 space-con">
+                                <img src="images/sec06-Space-02.webp" style="width:100%" class="space-img-2">
+                                <div class="space-txt-2 text-left">
+                                    <div class="space-txt-border"></div>
+                                    <h1>여유로운 탑승 공간의 편리한 사용 (5인승)</h1>
+                                </div>
+                            </div>
+                            <!-- 스페이스 3 -->
+                            <div class="mySlides3-3 space-con">
+                                <img src="images/sec06-Space-03.webp" style="width:100%" class="space-img-3">
+                                <div class="space-txt-3 text-left">
+                                    <div class="space-txt-border"></div>
+                                    <h1>스마트 원터치 워크인(2열 독립시트)</h1>
+                                    <p>2열 시트 상하단에 설치된 워크인 버튼을 누르면 2열 등받이 시트가 전방으로 접히면서 앞으로 이동하여 3열에 원활하게 승하차할 수 있도록 도와줍니다.</p>
+                                </div>
+                            </div>
+                            <!-- 스페이스 4 -->
+                            <div class="mySlides3-4 space-con">
+                                <img src="images/sec06-Space-04.webp" style="width:100%" class="space-img-4">
+                                <div class="space-txt-4 text-left">
+                                    <div class="space-txt-border"></div>
+                                    <h1>스마트 원터치 폴딩(2열 독립시트)</h1>
+                                    <p>러기지 사이드에 적용된 전자식 원터치 폴딩 스위치로 다양한 적재 및 수납이 원활할 수 있도록 도와줍니다.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                                <div class="column-s">
+                                    <img class="pside cursor" id=thumb-s-1 src="images/sec06-Space-05.jpg" style="width:100%" alt="여유로운 탑승 공간의 편리한 사용 (5인승)">
+                                </div>
+                                <div class="column-s">
+                                    <img class="pside cursor" id=thumb-s-2 src="images/sec06-Space-06.jpg" style="width:100%" alt="여유로운 탑승 공간의 편리한 사용 (5인승)">
+                                </div>
+                                <div class="column-s">
+                                    <img class="pside cursor" id=thumb-s-3 src="images/sec06-Space-03.webp" style="width:100%" alt="스마트 원터치 워크인(2열 독립시트)">
+                                </div>
+                                <div class="column-s">
+                                    <img class="pside cursor" id=thumb-s-4 src="images/sec06-Space-04.webp" style="width:100%" alt="스마트 원터치 폴딩(2열 독립시트)">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
