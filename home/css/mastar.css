@@ -11,7 +11,36 @@
 		url('../fonts/Gyeonggi-do_Bold.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
-  } 
+  }
+@font-face {
+	font-family: 'GmarketSansLight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal;
+	font-style: normal; }
+
+  .material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
 
 html {
 	scroll-behavior: smooth;
@@ -19,6 +48,7 @@ html {
 
 body{
 	font-family: 'Nanum Gothic', sans-serif;
+	/* font-family: 'GmarketSansLight'; */
 }
 
 .clearfix{clear: both;}
@@ -59,7 +89,7 @@ a{
 		-webkit-transition:all 0.5s ease-in-out;
 		display: flex;
 		justify-content: space-between;
-		font-family: 'Nanum Gothic', sans-serif;
+		font-family: 'GmarketSansLight';
 	}
 
 	.logo>img{
@@ -138,13 +168,15 @@ a{
   }
 
 .main_title h1{
-    font-family: 'Gyeonggi-do_Bold';
+	font-family: 'GmarketSansBold';
+    /* font-family: 'Gyeonggi-do_Bold'; */
     letter-spacing: -2px;
     color: #181818;
     width: 100%;
     font-size: 3em;
 	text-align: center;
 	padding-top: 3%;
+	font-weight: 700;
 }
 
 .main_title p{
@@ -194,11 +226,13 @@ a{
 		}
 
 			.sec02-title h1{
-				font-family: 'Gyeonggi-do_Bold';
-				font-size: 5em;
+				font-family: 'GmarketSansBold';
+				/* font-family: 'Gyeonggi-do_Bold'; */
+				font-size: 3em;
 				color: black;
-				letter-spacing: -8px;
+				letter-spacing: 0;
 				margin-top: -10px;
+				font-weight: 700;
 			}
 
 			.sec02-button{
@@ -283,10 +317,11 @@ a{
 
 				.sec02_1_txt h1{
 					width: 30%;
-					font-family: 'Noto Sans KR', sans-serif;
+					font-family: 'GmarketSansBold';
+					/* font-family: 'Noto Sans KR', sans-serif; */
 					font-size: 2.5em;
-					font-weight: 900;
 					padding-top: 2%;
+					font-weight: 700;
 				}
 
 				.sec02_1_txt p{
@@ -315,14 +350,13 @@ a{
 				.sec02_2_txt{
 					width: 100%;
 					display: flex;
-					height: 120px;
 				}
 
 				.sec02_2_txt h1{
 					width: 40%;
-					font-family: 'Noto Sans KR', sans-serif;
+					font-family: 'GmarketSansBold';
+					font-weight: 700;
 					font-size: 2.5em;
-					font-weight: 900;
 					padding-top: 2%;
 					line-height: 50px;
 				}
@@ -337,7 +371,6 @@ a{
 				.sec02_info{
 					width: 100%;
 					display: flex;
-					height: 100px;
 					padding-top: 5%;
 				}
 
@@ -391,14 +424,13 @@ a{
 			
 				.sec02_3_txt{
 					display: flex;
-					height: 100px;
 				}
 			
 					.sec02_3_txt h1{
 						width: 40%;
-						font-family: 'Noto Sans KR', sans-serif;
+						font-family: 'GmarketSansBold';
+						font-weight: 700;
 						font-size: 2.5em;
-						font-weight: 900;
 						padding-top: 2%;
 						line-height: 50px;
 					}
@@ -437,16 +469,12 @@ a{
 							align-items: center;
 						}
 	
-						.sec03_time>img{
-							width: 70px;
-						}
-	
-						.sec03_time>p{
+						.sec03_time_txt>p{
+							width: 100%;
 							font-size: 1em;
-							margin-left: 10px;
+							margin-left: 3%;
 							line-height: 25px;
 						}
-					}
 		
 		/* slide_4 */
 		.sec02_slide_4{
@@ -468,14 +496,13 @@ a{
 			
 				.sec02_4_txt{
 					display: flex;
-					height: 100px;
 				}
 			
 					.sec02_4_txt h1{
 						width: 40%;
-						font-family: 'Noto Sans KR', sans-serif;
+						font-family: 'GmarketSansBold';
+						font-weight: 700;
 						font-size: 2.5em;
-						font-weight: 900;
 						padding-top: 2%;
 						line-height: 50px;
 					}
@@ -797,7 +824,8 @@ a{
 			display: flex;
 			flex-direction: column;
 			margin-left: 10%;
-			margin-top: 10%
+			margin-top: 10%;
+			height: 100%;
 		}
 
 			.exhibit{
@@ -828,7 +856,7 @@ a{
 			.exhibit-performance_left h3{
 				display: none;
 				font-family: 'Gyeonggi-do_Bold';
-				font-size: 2.5em;
+				font-size: 2.5em;	
 				font-weight: 900;
 				letter-spacing: -1px;
 				position: relative;
@@ -1001,7 +1029,6 @@ a{
 				align-items: center;
 			}
 			
-
 				.performance_photo{
 					width: 50%;
 					position: relative;
@@ -1047,7 +1074,7 @@ a{
 
 #section05{
 	width:100%;
-	background: lightskyblue;
+	background: #eee;
 }
 	.map{
 		display: flex;
@@ -1169,9 +1196,9 @@ a{
 	.sec02-title h1{
 		font-size: 3em;
 		transition: all 1s;
-
 	}
 
+	/* 김포문화원 */
 	.sec02_1_txt{
 		flex-direction: column;
 	}
@@ -1179,12 +1206,46 @@ a{
 	.sec02_1_txt h1{
 		width: 100%;
 		transition: all 0.5s;
+		padding-bottom: 3%;
 	}
 
 	.sec02_1_txt p{
 		width: 100%;
 		transition: all 0.5s;
 	}
+
+	/* 한옥카페 다인 */
+	.sec02_2_txt{flex-direction: column;}
+
+	.sec02_2_txt h1{width: 100%;}
+
+	.sec02_2_txt p{width: 100%;}
+
+	.sec02_info{flex-direction: column;}
+
+	.sec02_call{width: 100%;}
+
+	.sec02_time{
+		margin-top: 5%;
+		width: 100%;
+	}
+
+	.sec02_time p{width: 100%;}
+
+	/* 밥집모담 */
+	.sec02_3_txt{flex-direction: column;}
+
+	.sec02_3_txt h1{width: 100%;}
+
+	.sec02_3_txt p{width: 100%; }
+	.sec02_time_txt p{width: 100%; line-height: 30px; margin-left: 5%;}
+
+	/* 한옥스튜디오 */
+	.sec02_4_txt{flex-direction: column;}
+
+	.sec02_4_txt h1{width: 100%;}
+
+	.sec02_4_txt p{width: 100%;}
 
 	/* section03 */
 
@@ -1292,14 +1353,16 @@ a{
 	.exhibit-performance{
 		display: flex;
 		padding-top: 10%;
-		padding-bottom: 10%
+		padding-bottom: 10%;
+		height: 50vh;
+		align-items: center;
+		justify-content: center;
 	}
 	.exhibit-performance_left{
 		width: 30%;
-		margin-left: 0;
-		margin-top: 0;
-		display: flex;
-		
+		margin: 0;
+		align-items: center;
+		justify-content: center;	
 	}
 
 	.exhibit-performance_right{
@@ -1309,20 +1372,20 @@ a{
 	}
 
 		.exhibit{
-			width: 50%;
-			height: 230px;
+			width: 20%;
+			height: 60%;
 		}
 
 		.performance{
-			width: 50%;
-			height: 230px;
+			width: 20%;
+			height: 60%;
 		}
 
 		.snip1585:hover>h3{
 			color: #fff;
 			display: flex;
 			transition: all 3s;
-			margin-top: 45%;
+			margin-top: 50%;
 		}
 
 	.exhibit_contents{
@@ -1334,7 +1397,6 @@ a{
 			display: flex;
 			width: 40%;
 			margin-left: 0;
-			margin-top: ;
 		}
 
 			.exhibit_photo>img{
@@ -1371,7 +1433,6 @@ a{
 		display: flex;
 		width: 40%;
 		margin-left: 0;
-		margin-top: ;
 	}
 
 		.performance_photo>img{
@@ -1399,11 +1460,6 @@ a{
 			line-height: 25px;
 		}
 
-
-		
-
-
-		
 
 @media (max-width:576px){
 
@@ -1463,10 +1519,8 @@ a{
 			display: flex;
 			justify-content: space-between;
 			margin: 0 auto;
-
 		}
-
-
+		
 		.sec02-button a{
 			font-size: 17px;
 			line-height: 2;
@@ -1476,7 +1530,7 @@ a{
 
 		.sec02-right{
 			width: 100%;
-			padding-bottom: 50px;
+			padding-bottom: 0;
 		}
 
 			.sec02_culture{
@@ -1491,6 +1545,7 @@ a{
 
 				.sec02_1_txt h1{
 					margin-top: 5%;
+					font-size: 2em;
 				}
 
 				.sec02_1_txt p{
@@ -1511,7 +1566,7 @@ a{
 			}
 
 				.sec02_2_txt h1{
-					margin-top: 10px;
+					margin-top: 2%;
 					width: 100%;
 				}
 
@@ -1520,7 +1575,7 @@ a{
 				}
 
 			.sec02_info{
-				flex-direction: row;
+				flex-direction: column;
 				width: 90%;
 				padding-bottom: 10%;
 				margin: 0 auto;
@@ -1529,7 +1584,7 @@ a{
 
 				.sec02_call{
 					display: flex;
-					width: 50%;
+					width: 100%;
 				}
 
 				.sec02_info img, .sec02_time img{
@@ -1538,7 +1593,7 @@ a{
 
 				.sec02_time{
 					display: flex;
-					width: 50%;
+					width: 100%;
 				}
 
 		.sec02_restaurant{
@@ -1588,9 +1643,19 @@ a{
 						display: flex;
 						width: 50%;
 					}
+		
+		.sec02_studio{
+			width: 100%;
+			padding: 0;
+		}			
+		.sec02_4_img{
+			width: 100%;
+		}			
 
-
-
+		.sec02_4_txt{
+			width: 90%;
+			margin: 0 auto;
+		}
 
 
 /* section03 */
@@ -1604,6 +1669,7 @@ a{
 
 	.sec03_box{
 		width: 100%;
+		padding-top: 5%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -1712,15 +1778,11 @@ a{
 	.exhibit-performance_left{
 		display: flex;
 		flex-direction: row;
-		width: 100%;
 		margin: 0 auto;
 	}
 
-	.exhibit-performance_left{
-		display: flex;
-		flex-direction: row;
+	.exhibit{
 		width: 100%;
-		margin: 0 auto;
 	}
 
 	.exhibit-performance_right{
@@ -1736,10 +1798,27 @@ a{
 
 .exhibit-performance{
 	padding-top: 0;
+	height: auto;
+}
+
+.exhibit-performance_left{
+	height: 60vh;
+}
+
+.exhibit{
+	width: 30%;
+	height: 70%;
+}
+
+.performance{
+	width: 30%;
+	height: 70%;
 }
 
 .snip1585:hover>h3{
-	top: -10%;
+	margin-top: 35%;
+	margin-left: 20%;
+	font-size: 1.5em;
 	}
 
 	.exhibit_contents{
