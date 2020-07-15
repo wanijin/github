@@ -707,6 +707,11 @@
         height: 100vw;
     }
 
+    .per-con img{width: 190%;}
+
+    .conv-con img{width: 190%;}
+
+    .space-con img{width: 190%;}
     /* Performance */
     .per-txt-1>h4, .per-txt-2>h4, .per-txt-3>h4, .per-txt-4>h4, .per-txt-5>h4{
         font-size: 1px;
@@ -726,35 +731,15 @@
         margin-top: 3%;
     }
 
-    .per-img-1{
-        width: 190%;
-        top: 0%;
-        left: -53%;
-    }
+    .per-img-1{top: 0%; left: -53%;}
 
-    .per-img-2{
-        width: 190%;
-        top: 0%;
-        left: -37%;
-    }
+    .per-img-2{top: 0%; left: -37%;}
 
-    .per-img-3{
-        width: 190%;
-        top: 0%;
-        left: -27%;
-    }
+    .per-img-3{top: 0%; left: -27%;}
 
-    .per-img-4{
-        width: 190%;
-        top: 0%;
-        left: -17%;
-    }
+    .per-img-4{top: 0%; left: -17%;}
 
-    .per-img-5{
-        width: 190%;
-        top: 0%;
-        left: -48%;
-    }
+    .per-img-5{top: 0%; left: -48%;}
 
     /* Convenience */
 
@@ -776,51 +761,21 @@
         margin-top: 3%;
     }
 
-    .conv-img-1{
-        width: 190%;
-        top: 0%;
-        left: -60%;
-    }
+    .conv-img-1{top: 0%; left: -60%;}
 
-    .conv-img-2{
-        width: 190%;
-        top: -10%;
-        left: -60%;
-    }
+    .conv-img-2{top: -10%; left: -60%;}
 
-    .conv-img-3{
-        width: 190%;
-        top: -10%;
-        left: -60%;
-    }
+    .conv-img-3{top: -10%; left: -60%;}
 
-    .conv-img-4{
-        width: 190%;
-        top: -10%;
-        left: -60%;
-    }
+    .conv-img-4{top: -10%; left: -60%;}
 
-    .conv-img-5{
-        width: 190%;
-        top: -10%;
-        left: -60%;
-    }
+    .conv-img-5{top: -10%; left: -60%;}
 
-    .conv-img-6{
-        width: 190%;
-        top: -10%;
-        left: -34%;
-    }
+    .conv-img-6{top: -10%; left: -34%;}
 
-    .conv-img-7{
-        width: 190%;
-        top: -10%;
-        left: -25%;
-    }
+    .conv-img-7{top: -10%; left: -25%;}
 
-    .column-c{
-        width: 25%;
-      }
+    .column-c{width: 25%;}
 
     /* space */
     .space-txt-1>h4, .space-txt-2>h4, .space-txt-3>h4, .space-txt-4>h4{
@@ -839,37 +794,17 @@
         margin-top: 3%;
     }
 
-    .space-img-1{
-        width: 190%;
-        top: 0%;
-        left: -40%;
-    }
+    .space-img-1{top: 0%; left: -40%;}
     
-    .space-img-2{
-        width: 190%;
-        top: 0%;
-        left: -60%;
-    }
+    .space-img-2{top: 0%; left: -60%;}
 
-    .space-img-3{
-        width: 190%;
-        top: 0%;
-        left: -25%;
-    }
+    .space-img-3{top: 0%; left: -25%;}
 
-    .space-img-4{
-        width: 190%;
-        top: 0%;
-        left: -25%;
-    }
+    .space-img-4{top: 0%; left: -25%;}
 
-    .column-s{
-        width: 25%;
-      }
+    .column-s{width: 25%;}
 
-    .tabbar{
-        padding-top: 20%;
-    }
+    .tabbar{padding-top: 20%;}
 
 
 }

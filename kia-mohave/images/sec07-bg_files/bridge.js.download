@@ -1,0 +1,387 @@
+/********************************************************
+ * version : 2015.04.01_17:00 =========================================>>>>>>>>>>>>>>>>>>>미반영 반영필요
+ * ******************************************************/
+var protocol = "http://";
+function check_cookieEnabled() {
+    var cookieEnabled = (navigator.cookieEnabled)?true:false;
+    if(typeof navigator.cookieEnabled=="undefined"&&!cookieEnabled){document.cookie="tempCookie";cookieEnabled=(document.cookie.indexOf("tempCookie")!=-1)?true:false;}
+    return (cookieEnabled);
+}
+var second_domain = "elead";
+var interact_api = "/InteractEventListenServlet";
+function errorCallback() {}
+function postEvent(event_id, menu_id, carType) {
+	
+	//이리드에서 노출 데이타 점검을 위한 팝업 노출 중지 2016-06-07 LYJ
+	console.log("stop Elead");
+	/*
+    var id = setTimeout(errorCallback, 1000);
+    var params = "callback=callback&eventId="+event_id+"&carType="+carType+"&command=POST_EVENT&menuId="+languageEncoding(menu_id);
+    if(check_cookieEnabled()) {
+        $.ajax({
+             data       : params,
+             dataType   : "jsonp",
+             url        : (check_protocol()=="s")?s_eLeB_URL:eLeB_URL,
+             jsonpCallback  :   "callback",
+//             timeout    : 1000,
+             success    :   function(data, textStatus, jqXHR) {
+                 clearTimeout(id);
+                 var offerCount = data.OFFER_COUNT;
+                 if ( offerCount == '0') {
+                 } else {
+                       var jsonObj = JSON.stringify(data.OFFERS);
+                       var offerAttributeArray = JSON.parse(jsonObj);
+                       var display_type_code = offerAttributeArray.display_type.split(":");
+
+                        if( 'D01'==display_type_code[0] || 'D02'==display_type_code[0] )       {
+
+                            $( "#D01_txt" ).text(offerAttributeArray.offer_desc);
+                            $( "#D01_img" ).attr("src", offerAttributeArray.contents_uri);
+                            $( "#D01_img" ).attr("alt", offerAttributeArray.offer_desc);
+                            $( "#D01_Atag" ).attr("href", offerAttributeArray.target_url);
+                            if( 'D02'==display_type_code[0]) {
+                                $( "#D01_Atag" ).attr("target", "_blank");
+                            }
+                            $( "#D01_Atag" ).bind('click',function(){
+                                acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code);
+                                closeEleadPopup('eleadLayer1');
+                            });
+                            document.getElementById('eleadLayer1').style.display="";
+                            document.getElementById('dimmed').style.display="";
+
+                            offerContact("POST_EVENT", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+
+                            var dimPop = new OpenDimPop($("#eleadLayer1"));
+                            dimPop.open();
+
+                        } else if( 'D03'==display_type_code[0])       {
+
+                            $( "#D02_txt" ).text(offerAttributeArray.offer_desc);
+                            $( "#D02_moviescript" ).text(offerAttributeArray.movie_desc);
+                            $( "#D02_movie" ).attr("src", offerAttributeArray.target_url);
+//                            $( "#D01_Atag" ).bind('play',function(){
+//                                acceptOffer(offerAttributeArray.offer_treatment_code);
+//                            });
+                            document.getElementById('eleadLayer2').style.display="";
+                            document.getElementById('dimmed').style.display="";
+
+                            offerContact("POST_EVENT", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+
+                            var dimPop = new OpenDimPop($("#eleadLayer2"));
+                            dimPop.open();
+
+                            acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code);//  유튜브 플레이 감지해서 acceptOffer 호출 구현대신 무조선 호출
+
+                        } else if( 'D04'==display_type_code[0])       {
+
+                            var targetCarDetailURL = offerAttributeArray.target_url+"&treatment_code="+offerAttributeArray.offer_treatment_code+"&carType="+offerAttributeArray.car_brand_cd;
+
+                            $( "#D03_txt" ).text(offerAttributeArray.offer_desc);
+                            $( "#D03_img" ).attr("src", offerAttributeArray.contents_uri);
+                            $( "#D03_img" ).attr("alt", offerAttributeArray.offer_desc);
+                            $( "#D03_Atag" ).attr("href", targetCarDetailURL);
+                            $( "#D03_Atag" ).bind('click',function(){
+                                acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code);
+                                closeEleadPopup('eleadLayer3');
+                            });
+                            document.getElementById('eleadLayer3').style.display="";
+                            document.getElementById('dimmed').style.display="";
+
+                            offerContact("POST_EVENT", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+
+                            var dimPop = new OpenDimPop($("#eleadLayer3"));
+                            dimPop.open();
+
+                        } else if( 'D07'==display_type_code[0])       {
+
+                            var targetCarDetailURL = offerAttributeArray.target_url+"&treatment_code="+offerAttributeArray.offer_treatment_code+"&carType="+offerAttributeArray.car_brand_cd;
+
+                            $( "#D05_txt" ).text(offerAttributeArray.offer_desc);
+                            $( "#D05_img" ).attr("src", offerAttributeArray.contents_uri);
+                            $( "#D05_img" ).attr("alt", offerAttributeArray.offer_desc);
+                            $( "#D05_Atag" ).attr("href", targetCarDetailURL);
+                            $( "#D05_Atag" ).bind('click',function(){
+                                acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code);
+                                closeEleadPopup('eleadLayer5');
+                            });
+                            document.getElementById('eleadLayer5').style.display="";
+                            document.getElementById('dimmed').style.display="";
+
+                            offerContact("POST_EVENT", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+
+                            var dimPop = new OpenDimPop($("#eleadLayer5"));
+                            dimPop.open();
+
+                        } else if( 'D06'==display_type_code[0])       {
+                            var id_benefit = setTimeout(errorCallback, 2000);
+                            var v_base_beneft_nm1 = "";
+                            var v_base_beneft_nm2 = "";
+                            var v_base_beneft_info1 = "";
+                            var v_base_beneft_info2 = "";
+
+                            $( "#D04_txt" ).text(offerAttributeArray.offer_desc);
+                            $( "#D04_img" ).attr("src", offerAttributeArray.contents_uri);
+                            $( "#D04_img" ).attr("alt", offerAttributeArray.offer_desc);
+                            $( "#D04_Atag_step1" ).on("click", function(e){
+
+                            acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code);
+
+                            e.stopPropagation();
+                            e.preventDefault();
+
+                            var params4 = "callback=callback&car_code="+offerAttributeArray.car_brand_cd;
+                            $.ajax({
+                                data       : params4,
+                                dataType   : "jsonp",
+                                url        : (check_protocol()=="s")?s_eLeB_Benefit_URL:eLeB_Benefit_URL,
+                                jsonpCallback  :   "callback",
+                                success    :   function(data, textStatus, jqXHR) {
+                                    clearTimeout(id_benefit);
+                                    var v_base_help_info = data.benefit_list[0].BASE_HELP_INFO;
+                                    var v_benefit_info = data.benefit_list[0].BENEFIT_INFO;
+
+                                    document.getElementById("base_help1").innerHTML = v_base_help_info.split("|")[0];
+                                    document.getElementById("base_help2").innerHTML = v_base_help_info.split("|")[1];
+
+                                    var benefit_info = v_benefit_info.split("^");
+                                    var s_inner_html = "";
+
+                                    for (var idx = 0; idx < benefit_info.length; idx++) {
+                                        var i_benefit_info = benefit_info[idx].split("|");
+                                        var s_benefit_info = i_benefit_info[1].substring(i_benefit_info[0].length);
+                                        if (s_benefit_info == "benefit1") {
+                                            v_base_beneft_nm1 =  i_benefit_info[2];
+                                            v_base_beneft_info1= i_benefit_info[3];
+                                        } else if (s_benefit_info == "benefit2") {
+                                            v_base_beneft_nm2 = i_benefit_info[2];
+                                            v_base_beneft_info2 = i_benefit_info[3];
+                                        } else if (s_benefit_info == "benefit3" || s_benefit_info == "benefit4" || s_benefit_info == "benefit5") {
+                                            if (i_benefit_info[3] != null && i_benefit_info[3] != "" && i_benefit_info[3] != "null") {    // 추가부분
+                                                s_inner_html += "<li>";
+                                                s_inner_html +=  i_benefit_info[2] ;
+                                                s_inner_html +=  " : " ;
+                                                s_inner_html +=  i_benefit_info[3];
+                                                s_inner_html +=  "</li>";
+                                            }
+                                        }
+                                    }
+                                    document.getElementById("benefitList").innerHTML = s_inner_html;
+                                },
+                                error      :   function(jqXHR,textStatus, errorThrown ) {
+                                }
+                            });
+
+                            setStep(1);
+                        });
+                        $( "#D04_Atag_step2" ).on("click", function(e){
+                            e.stopPropagation();
+                            e.preventDefault();
+                            if ($(".benefitChoice div").hasClassName("on") == "type1on") {
+                                s_benefit_value  = v_base_beneft_nm1;
+                                s_benefit_value  += ":";
+                                s_benefit_value  += v_base_beneft_info1;
+                            } else if ($(".benefitChoice div").hasClassName("on") == "type2on") {
+                                s_benefit_value  = v_base_beneft_nm2;
+                                s_benefit_value  += ":";
+                                s_benefit_value  += v_base_beneft_info2;
+                            }
+                            document.getElementById("basebenefit").innerHTML = s_benefit_value;
+                            if(!$(".benefitChoice div").hasClass("on")){
+                                alert("원하시는 구매혜택을 선택해 주세요");
+                            }else{
+                                setStep(2);
+                            }
+                        });
+                        $( "#D04_Atag_step3" ).on("click", function(e){
+                            e.stopPropagation();
+                            e.preventDefault();
+                            setStep(0);
+                        });
+                        $(".benefitChoice div a").on("click", function(e){
+                            e.stopPropagation();
+                            e.preventDefault();
+
+                            if($(this).parent().hasClass("on")){
+                                $(this).parent().removeClass("on");
+                            }else{
+                                $(".benefitChoice div").removeClass("on");
+                                $(this).parent().addClass("on");
+                            }
+                        });
+                        $.fn.extend({
+                            hasClassName :function(a){
+                            var uc= "/[\t\r\n\f]/g";
+                            for(var b=" "+a+" ",c=0,d=this.length;d>c;c++)
+                                if(1===this[c].nodeType&&(" "+this[c].className+" ").replace(uc," ").indexOf(b)>=0)
+                                    var rtnVal = (" "+ this[c].className +" ").replace(uc," ");
+                                    if (rtnVal != null) {
+                                        var rtnVal2 = rtnVal.replace(/\s/g, "");
+                                        return rtnVal2;
+                                    } else !1;
+                            return!1;
+                            }
+                        });
+
+                        document.getElementById('eleadLayer4').style.display="";
+                        document.getElementById('dimmed').style.display="";
+
+                        offerContact("POST_EVENT", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+
+                        var dimPop = new OpenDimPop($("#eleadLayer4"));
+                        dimPop.open();
+                    }
+                 }
+             },
+             error      :   function(jqXHR,textStatus, errorThrown ) {
+             }
+         });
+    } else {
+    }
+    */
+}
+var domain = ".kia.com";
+function check_protocol() {
+    return(window.location.protocol== "https:")?"s":"h";
+}
+var s_port = ":446";
+function acceptOffer(treatment_code, offeredCarType, offeredDegree, offerCode) {
+    var id = setTimeout(errorCallback, 1000);
+    var params = "callback=callback&treatmentCode="+treatment_code+"&command=OFFER_RESPONSE&offeredCarType="+offeredCarType+"&offeredDegree="+offeredDegree+"&offerCode="+offerCode;
+    if(check_cookieEnabled()) {
+        $.ajax({
+            data       : params,
+            dataType   : "jsonp",
+            url        : (check_protocol()=="s")?s_eLeB_URL:eLeB_URL,
+            jsonpCallback  :   "callback",
+//            timeout    : 1000,
+            success    :   function(data, textStatus, jqXHR) {
+                clearTimeout(id);
+//                    alert("acceptOffer success");
+                },
+            error      :   function(jqXHR,textStatus, errorThrown ) {
+            }
+        });
+    } else {
+
+    }
+}
+var port = ":9080";
+function acceptCall(treatment_code, carType, division, division_cd, webCarCode) {
+    var id = setTimeout(errorCallback, 1000);
+    var params = "callback=callback&treatmentCode="+treatment_code+"&offeredCarType="+carType+"&division="+division+"&division_cd="+division_cd+"&webCarCode="+webCarCode+"&crmTransferYN=Y&command=CALL_RESPONSE";
+    if(check_cookieEnabled()) {
+        $.ajax({
+            data       : params,
+            dataType   : "jsonp",
+            url        : (check_protocol()=="s")?s_eLeB_URL:eLeB_URL,
+            jsonpCallback  :   "callback",
+//            timeout    : 1000,
+            success    :   function(data, textStatus, jqXHR) {
+                clearTimeout(id);
+//                    alert("acceptCall success");
+                },
+            error      :   function(jqXHR,textStatus, errorThrown ) {
+            }
+        });
+    } else {
+    }
+}
+var Benefit_interact_api = "/BenefitHandler";
+function getOffer( aTagID, pictureTagID, text1, interactPoint, text2) {
+    var id = setTimeout(errorCallback, 1000);
+    var params = "callback=callback&interactPoint="+languageEncoding(interactPoint)+"&command=GET_OFFER";
+    if(check_cookieEnabled()) {
+        $.ajax({
+            data       : params,
+            dataType   : "jsonp",
+            url        : (check_protocol()=="s")?s_eLeB_URL:eLeB_URL,
+            jsonpCallback  :   "callback",
+            success    :   function(data, textStatus, jqXHR) {
+                clearTimeout(id);
+                var offerCount = data.OFFER_COUNT;
+                if ( offerCount == '0' ) {
+                } else {
+                    var jsonObj = JSON.stringify(data.OFFERS);
+                    var offerAttributeArray = JSON.parse(jsonObj);
+                    $( "#"+text1 ).text(offerAttributeArray.offer_desc);
+                    $( "#"+text2 ).text(offerAttributeArray.offer_desc2);
+                    var replaceHtml = "";
+                    replaceHtml += "<picture>";
+                    replaceHtml += "<!--[if IE 9]><video style=\"display: none;\"><![endif]-->";
+                    replaceHtml += "<source srcset=\""+offerAttributeArray.contents_uri+"\" media=\"(min-width: 1025px)\">";
+                    replaceHtml += "<source srcset=\""+offerAttributeArray.contents_uri+"\" media=\"(min-width: 768px)\">";
+                    replaceHtml += "<source srcset=\""+offerAttributeArray.contents_uri+"\" media=\"(min-width: 200px)\">";
+                    replaceHtml += "<!--[if IE 9]></video><![endif]-->";
+                    replaceHtml += "<img srcset=\""+offerAttributeArray.contents_uri+"\"  alt=\""+offerAttributeArray.offer_desc+"\">";
+                    replaceHtml += "</picture>";
+                    $( "#"+pictureTagID ).html(replaceHtml);
+                    $( "#"+aTagID ).bind('click',function(){ acceptOffer(offerAttributeArray.offer_treatment_code, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_code); });
+                    $( "#"+aTagID ).attr("href", offerAttributeArray.target_url);
+                    offerContact("GET_OFFER", offerAttributeArray.interaction_point, offerAttributeArray.car_brand_cd, offerAttributeArray.offeredDegree, offerAttributeArray.offer_treatment_code, offerAttributeArray.offer_code, offerAttributeArray.customerIdentifier);
+                }
+            },
+            error      :   function(jqXHR,textStatus, errorThrown ) {
+            }
+       });
+   } else {
+   }
+}
+var context = "/InteractService";
+function offerContact( sourceCommand, interactPoint, offeredCarType, offeredDegree, treatmentCode, offerCode, customerIdentifier) {
+    var id = setTimeout(errorCallback, 1000);
+    var params = "callback=callback&sourceCommand="+sourceCommand+"&offeredCarType="+offeredCarType+"&interactPoint="+languageEncoding(interactPoint)+"&offeredDegree="+offeredDegree+"&treatmentCode="+treatmentCode+"&offerCode="+offerCode+"&customerIdentifier="+customerIdentifier+"&command=OFFER_CONTACT";
+    $.ajax({
+        data       : params,
+        dataType   : "jsonp",
+        url        : (check_protocol()=="s")?s_eLeB_URL:eLeB_URL,
+        jsonpCallback  :   "callback",
+//        timeout    : 1000,
+        success    :   function(data, textStatus, jqXHR) {
+            clearTimeout(id);
+//            alert("**offer contact success");
+        },
+        error      :   function(jqXHR,textStatus, errorThrown ) {
+        }
+   });
+}
+var base_context = "/kr";
+/*
+ * 웹->eLead로 get방식 데이터 전달 시 한글 인코딩
+ */
+function languageEncoding(param) {
+    var encode ="";
+    for(i=0;i<param.length;i++) {
+        var len = ''+param.charCodeAt(i);
+        var token = ''+len.length;
+        encode += token+param.charCodeAt(i);
+    }
+    return encode;
+}
+var s_protocol = "https://";
+var eLeB_URL = protocol + second_domain + domain + port + base_context + context + interact_api;
+var s_eLeB_URL = s_protocol + second_domain + domain + s_port + base_context + context + interact_api;
+/*
+ * 이달의 구매 혜택 오퍼의 탭제어
+ */
+function setStep(idx){
+    $("ul.step li").removeClass("on");
+    $("ul.step li").removeClass("off");
+    if(idx == 1){
+        $("ul.step li").eq(0).addClass("off");
+    }else if(idx == 2){
+        $("ul.step li").eq(0).addClass("off");
+        $("ul.step li").eq(1).addClass("off");
+    }else if(idx == 0){
+        //초기화
+        $(".benefitChoice div").removeClass("on");
+    }
+    $("ul.step li").eq(idx).addClass("on");
+    $(".eleadBody").hide();
+    $(".eleadBody").eq(idx).show();
+}
+var eLeB_Benefit_URL = protocol + second_domain + domain + port + base_context + context + Benefit_interact_api;
+function closeEleadPopup(popupID) {
+    document.getElementById(popupID).style.display="none";
+    $('.dimmed').hide();
+}
+var s_eLeB_Benefit_URL = s_protocol + second_domain + domain + s_port + base_context + context + Benefit_interact_api;

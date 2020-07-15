@@ -1,0 +1,47 @@
+﻿/*
+ * Kia
+ * Do not modify.
+ * Do not include this js file with other page.
+ * cis21ckr@gmail.com(choiinsup)
+ */
+var kiacode;
+
+function getKiaCode() {
+    $.ajax({
+        url: 'https://www.newcarsvc.co.kr/kiasvc/kia_new_svc.aspx',
+        dataType: 'jsonp',
+        type: 'get',
+        contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+        jsonpCallback: 'callbackq',
+        data: {
+            pagecode: 'cmp0'
+        },
+        success: function (rr) {
+            kiacode = rr;
+        }
+    });
+}
+function fnCompare(cd) {
+  var caridx = "";
+  caridx = kiacode[cd];
+  var pagePath = location.pathname.split("/vehicles")[0];
+  if (typeof(kiacode[cd]) != "undefined" && kiacode[cd] != "undefined" && kiacode[cd] != null && kiacode[cd] != "" && caridx != "") {
+    location.href = pagePath + "/shopping-tools/comparisons/comparisons-select-korea01-01.html?caridx=" + caridx;
+  } else {
+    location.href = pagePath + "/shopping-tools/comparisons/comparisons-select-korea01-01.html";
+  }
+}
+$(document).ready(function () {
+    if ($(".gateCon").length > 0) {        
+        $(".gateCon").on("mouseenter", function () {
+            $(".gateCon").removeClass("on");
+            $(this).addClass("on");
+        });
+        $(".gateCon").on("mouseleave", function () {
+            $(".gateCon").removeClass("on");
+            $(".gateCon:eq(0)").addClass("on");
+        });
+    } else {
+      if ($(".build_link").length > 0) getKiaCode();
+    }
+});

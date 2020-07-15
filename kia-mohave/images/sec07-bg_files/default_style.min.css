@@ -1,0 +1,2254 @@
+@charset "utf-8";.shadowWhite{text-shadow:rgba(255,255,255,1)0 0 5px !important}
+.shadowBlack{text-shadow:rgba(0,0,0,1) 0 0 5px !important}
+.shadowNone{text-shadow:none !important}
+#content.pipContents img{max-width:none}
+.pipContents{overflow:hidden;max-width:1920px;margin:0 auto;background:#fff !important}
+.pipContents .webImg{display:block}
+.pipContents .mobileImg{display:none}
+.pipContents .tabletImg{display:none}
+.keyVisual02,.keyVisual03{display:none}
+.keyVisual01,.keyVisual02,.keyVisual03{position:absolute;top:0;left:0;width:100%}
+.keyVisual02 .bgArea{background:#fff}
+.keyVisual03 .textArea{display:none}
+.pipContents .popup_wrap{display:none;width:740px;margin:0 auto;left:50%;margin-left:-370px}
+.pipContents .popup_wrap img{width:100%}
+.pipContents .popup_wrap02 .youtube{height:100%}
+.pipContents .popup_wrap dl.img_more{padding:25px}
+.popup_viewer{border-top:2px solid #bb162b}
+.popup_viewer .pop_con{width:100%;height:100%}
+.popup_viewer>a.prev,.popup_viewer>a.next{position:absolute;top:calc(50% - 40px);margin-top:-30px;width:30px;height:60px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_popup_viewer.png) 0 0 no-repeat;text-indent:-9999px}
+.popup_viewer>a.prev{left:10px;background-position:0 -60px}
+.popup_viewer>a.next{right:10px}
+@media all and (max-width:767px){.popup_viewer>a.prev,.popup_viewer>a.next{background-size:15px auto;width:15px;height:30px;margin-top:-15px}
+.popup_viewer>a.prev{background-position:0 -30px}
+}
+.popup_viewer .pop_con .img_more{padding:20px 25px 30px;background:#fff}
+.popup_viewer .pop_con .img_more dt{margin-bottom:10px;font-size:23px;line-height:27px;font-family:'KiaB'}
+.popup_viewer .pop_con .img_more dt:before{content:"";display:block;border-top:2px solid #d5172e;width:33px;height:2px;margin-bottom:5px}
+.popup_viewer .pop_con .img_more dd{color:#666;font-size:14px}
+.pipContents .popup_wrap .pop_con img{width:100%}
+.pipContents .popup_wrap02{display:none;position:absolute;top:160px;left:50%;width:50%;height:auto;margin:0 0 0 -25%;z-index:1006}
+.pipContents .popup_wrap02 .closeBtn{position:absolute;top:-2px;right:-42px}
+.pipContents .popup_wrap02 .pop_con .youtube{position:relative;width:100%;height:0;padding:30px 0 50%}
+.pipContents .popup_wrap02 .pop_con .youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.pipContents .popup_wrap02 .pop_con .img_more{padding:0}
+.pipContents .popup_wrap02 .pop_con .img_more dt:before{display:none}
+.pipContents .popup_wrap02 .pop_con .img_more dd{height:120px;padding:20px;border:1px solid #e8e8e8;overflow-y:scroll}
+.pipContents .car_play a{position:absolute;left:50%;top:50%;z-index:99;margin:0 0 0 -33px}
+.pipContents .videoText{display:none}
+.keyVisualWrap{position:relative;height:850px;overflow:hidden}
+.keyVisualWrap .textArea{width:960px;position:absolute;top:70px;left:50%;margin-left:-480px;color:#000}
+.keyVisualWrap .textArea h3{font-size:45px;font-family:'KiaB';line-height:48px;margin-bottom:10px;letter-spacing:-0.05em;text-shadow:rgba(0,0,0,.4) 0 0 1px}
+.keyVisualWrap .keyVisual02 .textArea h3{color:#444;margin-bottom:30px}
+.keyVisualWrap .choice_area:after{content:"";clear:both;display:block}
+.keyVisualWrap .textArea p{padding-bottom:18px;line-height:25px;font-size:20px;font-family:'kiaB';text-shadow:rgba(0,0,0,.4) 0 0 1px}
+.keyVisualWrap .view_inout{position:relative;z-index:99;padding-top:5px;margin-right:20px}
+.keyVisualWrap .view_inout li{display:inline-block}
+.keyVisualWrap .view_inout li a{display:inline-block;width:40px;height:46px;text-indent:-9999px}
+.keyVisualWrap .view_inout li a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 -54px}
+.keyVisualWrap .view_inout li.on a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 0}
+.keyVisualWrap .view_inout li a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-60px -54px}
+.keyVisualWrap .view_inout li.on a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-60px 0}
+.keyVisualWrap .view_inout li:first-child a{border-left:0;padding-left:0;margin-left:0}
+.keyVisualWrap .view_inout li.on a{color:red}
+.keyVisualWrap .car_trim{position:absolute;left:103px;top:98px;z-index:99;text-align:left}
+.keyVisualWrap .car_trim.alone{left:60px}
+.keyVisualWrap .car_trim .current{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_choice_bar.gif) no-repeat 0 0;padding-left:20px}
+.keyVisualWrap .car_trim .select_trim{font-size:16px;font-family:'KiaB';color:#000;text-transform:uppercase}
+.keyVisualWrap .car_trim .select_trim span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_select.gif) no-repeat right 50%;padding-right:30px}
+.keyVisualWrap .car_trim .car_trim_list{display:inline-block;position:absolute;left:10px;top:30px;border:1px solid #c7c8c9;padding:15px;background:#fff;width:200px;max-height:110px;overflow-y:auto}
+.keyVisualWrap .car_trim .car_trim_list li{font-size:12px;margin-top:5px}
+.keyVisualWrap .car_trim .car_trim_list li:first-child{margin-top:0}
+.keyVisualWrap .car_trim .car_trim_list li a{color:#999}
+.keyVisualWrap .car_trim .car_trim_list li a:hover{color:#333}
+.keyVisualWrap .keyVisual02 .car_view{top:50px}
+.keyVisualWrap .keyVisual02 .car_view img{margin-top:0}
+.keyVisualWrap .choice_color_wr{text-align:center}
+.keyVisualWrap .choice_color_wr .body_color{display:inline-block}
+.keyVisualWrap .choice_color_wr .wheel_color{display:inline-block}
+.keyVisualWrap .color_tit{font-size:16px;line-height:20px;font-family:'KiaB';color:#222;margin-right:50px;vertical-align:middle}
+.keyVisualWrap .choice_color{margin:10px 0 0;position:relative;top:375px;z-index:9}
+.keyVisualWrap .choice_color:after{content:"";clear:both;display:block}
+.keyVisualWrap .choice_color .color_chip{width:26px;height:26px;border:2px solid #ccc}
+.keyVisualWrap .choice_color .color_chip.on{border:4px solid #ccc}
+.keyVisualWrap .color_info{font-size:16px;line-height:20px;color:#666;margin-left:20px;vertical-align:middle}
+.keyVisualWrap .carArea{width:100%;position:absolute;bottom:40px;left:50%;margin-left:-491px}
+.keyVisualWrap .awardArea{position:absolute;left:50%;bottom:52px;margin-left:-480px;width:960px;font-size:13px;font-family:'kiaM';color:#fff;line-height:16px;z-index:1}
+.keyVisualWrap .awardArea ul li{float:left;margin-right:40px}
+.keyVisualWrap .awardArea ul li img{float:left;height:32px}
+.keyVisualWrap .btnSmall_wr1{position:relative;z-index:99;margin-bottom:10px}
+.keyVisualWrap .btnSmall_wr2{position:relative;z-index:99}
+.keyVisualWrap .car_view{position:absolute;top:112px;left:0;margin-left:0}
+.keyVisualWrap .car_view img{margin-top:15px}
+.keyVisualWrap .car_refresh{position:absolute;left:50%;top:50%;margin:175px 0 0 -33px}
+.keyVisualWrap .notiTxt{padding-bottom:0 !important;color:#888;font-size:13px !important;line-height:17px !important;position:relative;top:390px;text-align:center}
+.keyVisualWrap .notiTxt span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_360noti.png) no-repeat 0 0;padding:0 0 0 20px;text-shadow:none}
+.keyVisualWrap .notiTxt.roomtxt{top:86px}
+.keyVisualWrap .exStillCut+.notiTxt{top:86px}
+.keyVisualWrap .paging{position:absolute;left:50%;bottom:200px;width:200px;margin-left:-100px;clear:both;z-index:10;text-align:center}
+.keyVisualWrap .paging ul{text-align:center;overflow:hidden;margin:9px auto 0}
+.keyVisualWrap .paging ul li{display:inline-block}
+.keyVisualWrap .paging ul li a{display:block;width:10px;height:10px;border:2px solid #cbcbcb;background:#fff;border-radius:50% 50%;text-indent:200%;overflow:hidden}
+.keyVisualWrap .paging ul li.on a{background:#bb162b;border-color:#bb162b}
+.keyVisualWrap .bgArea{height:710px}
+.keyVisualWrap .bgInner{width:100%;height:100%;position:absolute;top:auto;left:50%;margin-left:-960px;text-align:center}
+.keyVisualWrap .bgInner img{margin-top:-195px}
+.keyVisualWrap .carInfor{width:100%;position:absolute;bottom:0;height:139px;z-index:999;text-align:center;border-top:1px solid #e6e6e6;background:#fff}
+.keyVisualWrap .carInforInner{width:100%}
+.keyVisualWrap .carInforInner>ul{width:960px;border-right:1px solid #d1d1d1;margin:0 auto}
+.keyVisualWrap .carInforInner>ul li{float:left;background:#f7f7f7}
+.keyVisualWrap .carInforInner>ul li div{height:139px;border-left:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li img{display:block;margin:0 auto 6px;padding-top:20px}
+.keyVisualWrap .carInforInner>ul li span{display:block;word-break:break-all}
+.keyVisualWrap .carInforInner>ul li .inforTit{color:#666;font-size:14px}
+.keyVisualWrap .carInforInner>ul li .inforTxt{color:#333;font-size:23px;line-height:26px;font-family:kiaB}
+.keyVisualWrap .carInforInner>ul li a{display:block}
+.keyVisualWrap .carInforInner>ul li a .inforTxt{line-height:23px}
+.keyVisualWrap .carInforInner>ul li .inforEtc{padding-top:5px;color:#bb162b;font-size:13px;font-family:kiaM}
+.keyVisualWrap .carInforInner>ul li span.unit{display:inline}
+.keyVisualWrap .carInforInner>ul li.color{background:#efefef}
+.keyVisualWrap .carInforInner>ul.inforType5 li{width:20%}
+.keyVisualWrap .carInforInner>ul.inforType4 li{width:25%}
+.keyVisualWrap .carInforInner>ul.inforType3 li{width:33.33%}
+.keyVisualWrap .dots{display:none}
+.keyVisualWrap .exVrArea{width:960px}
+.keyVisualWrap .exVrArea img{width:100%}
+.keyVisualWrap .exStillCut{position:relative;top:0 !important}
+.keyVisualWrap .exVrArea2{position:relative;width:742px;margin:0 auto}
+.keyVisualWrap .exViewSteel ul li{display:none}
+.keyVisualWrap .exViewSteel ul li.on{display:block}
+.keyVisualWrap .roomView .car_view{position:relative;top:0}
+.keyVisualWrap .roomView .car_view img{margin-top:0}
+.keyVisualWrap .roomView .inVrArea{position:relative;width:742px;margin:0 auto}
+.keyVisualWrap .roomView .inVrArea .inViewSteel ul li{display:none}
+.keyVisualWrap .roomView .inVrArea .inViewSteel ul li.on{display:block}
+.keyVisualWrap .in360vr{display:none}
+.keyVisualWrap .roomView .car_refresh{margin:45px 0 0 -33px}
+.keyVisualWrap .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.keyVisualWrap .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.keyVisualWrap .keyBtnLeft{position:absolute;left:0;top:614px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_btn_key3.png) no-repeat 0 0;width:96px;height:96px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.keyVisualWrap .keyBtnLeft a,.keyVisualWrap .keyBtnRight a{display:block;width:96px;height:96px}
+.keyVisualWrap .keyBtnRight{position:absolute;right:0;top:614px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_btn_key4.png) no-repeat 0 0;width:96px;height:96px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.keyVisualWrap .keyBtnLeft{position:absolute;left:0;top:642px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_visual_left.png) no-repeat 0 0;width:68px;height:68px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.keyVisualWrap .keyBtnLeft a,.keyVisualWrap .keyBtnRight a{display:block;width:68px;height:68px}
+.keyVisualWrap .keyBtnRight{position:absolute;right:0;top:642px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_visual_right.png) no-repeat 0 0;width:68px;height:68px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.keyVisualWrap .keyVisual03 .dimmed{display:none}
+.keyVisualWrap .wheel_color{display:inline-block;margin-left:120px}
+.keyVisualWrap .wheel_tit{font-size:16px;font-family:'KiaB';color:#222;vertical-align:middle;margin-right:50px}
+.keyVisualWrap .linkArea{width:960px;position:absolute;left:50%;top:218px;margin-left:-457px}
+.keyVisualWrap .linkArea .btn_youtube{display:block;width:325px;height:92px}
+.keyVisualWrap .linkArea .btn_youtube span{font-size:0;line-height:0;text-indent:-9999px}
+.pipLayout{max-width:1920px;margin:0 auto;position:relative;background:#fff;overflow:hidden}
+.pipLayout .mainInner{position:relative;width:100%;height:850px;overflow:hidden}
+.pipLayout .screenBox{display:none;position:absolute;top:0;width:100%;height:auto;background:#fff;overflow:hidden}
+.pipLayout .screenBox.on{display:block}
+.pipLayout .screenBox1{z-index:1}
+.pipLayout .screenBox2{z-index:2}
+.pipLayout .screenBox3{z-index:3}
+.pipLayout .bgArea{height:850px;z-index:2}
+.pipLayout .bgArea .bgInner{width:100%}
+.pipLayout .bgArea img{width:100%;position:relative}
+.pipLayout .textArea{position:absolute;left:50%;top:0;z-index:10;width:960px;margin:0 0 0 -480px}
+.pipLayout .textArea h3{position:absolute;left:0;top:40px;z-index:10;color:#fff;font-family:kiaB;font-size:22px;text-transform:uppercase;padding:15px 0 0 10px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif) no-repeat 12px 0}
+.pipLayout .textArea h4{color:#fff;font-family:kiaB;font-size:45px;line-height:48px;padding:104px 10px 0 10px;text-shadow:rgba(0,0,0,.4) 0 0 1px}
+.pipLayout .textArea .subTxt{padding:18px 10px 20px 10px;color:#fff;font-family:kiaB;font-size:20px;line-height:25px;text-shadow:rgba(0,0,0,.4) 0 0 1px}
+.temp09 .keybtnSmall{margin-top:10px}
+.pipLayout .screenPaging{position:absolute;left:0;bottom:30px;margin:-30px 0 0 0;width:100%;z-index:5;text-align:center}
+.pipLayout .screenPaging ul{overflow:hidden;display:inline-block;margin:0 auto}
+.pipLayout .screenPaging ul li{float:left}
+.pipLayout .screenPaging ul li a{margin:0 6px}
+.pipLayout .screenPagingTxt{display:none}
+@media all and (max-width:767px){.pipLayout .screenPagingTxt{display:block;position:absolute;top:0;right:0;width:0;height:100%}
+.pipLayout .screenPagingTxt p{display:block;position:absolute;bottom:0;right:0;display:block;font-style:oblique;z-index:3}
+.pipLayout .screenPagingTxt p:after{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.3;filter:alpha(opacity=30);z-index:1}
+.pipLayout .screenPagingTxt p>span{position:relative;display:block;min-width:40px;padding:5px 10px;box-sizing:border-box;text-align:right;z-index:2;color:#909091}
+.pipLayout .screenPagingTxt p>span>span{color:#fff}
+}
+.pipLayout .subInner{position:relative}
+.pipLayout .imgList{position:relative;width:100%;background:#fff;overflow:hidden;margin:0 0 -2px 0}
+.pipLayout .imgList li{position:relative;float:left;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border-left:2px solid #fff;border-top:2px solid #fff}
+.pipLayout .imgList li a:after{content:"";display:block;position:absolute;top:50%;left:50%;width:52px;height:52px;margin:-26px 0 0 -26px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_imglist_bg.png) 0 0 no-repeat}
+.pipLayout .imgList.type6 li a:after,.pipLayout .imgList.type7 li a:after{margin:-70px 0 0 -26px}
+@media all and (max-width:767px){.pipLayout .imgList li a:after{width:40px;height:40px;margin:-20px 0 0 -20px;background-size:40px auto}
+.pipLayout .imgList.type6 li a:after,.pipLayout .imgList.type7 li a:after{margin:-30px 0 0 0;left:50px}
+}
+.pipLayout .imgList li:first-child{border-left:0;margin:0 -2px}
+.pipLayout .imgList li img{width:100%;height:auto}
+.pipLayout .imgList.type2 li{width:50%}
+.pipLayout .imgList.type3 li{width:33.33%}
+.pipLayout .imgList.type4 li{width:25%}
+.pipLayout .imgList.type5{margin-bottom:-3px}
+.pipLayout .imgList.type5 li.list1{width:33.33%}
+.pipLayout .imgList.type5 li.list2{width:33.33%}
+.pipLayout .imgList.type5 li.list3{width:33.33%}
+.pipLayout .imgList.type5 li.list4{width:66.66%}
+.pipLayout .imgList.type6{background:#fff;width:940px;padding:0 10px;margin:50px auto}
+.pipLayout .imgList.type6 li{width:48%;border-left:0}
+.pipLayout .imgList.type6 li.rightArea{float:right}
+.pipLayout .imgList.type6 li dl dd{height:96px;overflow:hidden}
+.pipLayout .imgList.type6+.imgList.type6{margin-top:-25px}
+.pipLayout .btmTextTit{color:#333;font-size:17px;font-weight:bold;margin-top:15px}
+.pipLayout .btmTextTxt{color:#666;font-size:13px;margin-top:10px}
+.pipLayout .imgList.type7{background:#fff;width:940px;padding:0 10px 30px 10px;margin:50px auto}
+.pipLayout .imgList.type7 li{width:280px;margin-right:50px;border-left:0}
+.pipLayout .imgList.type7 li+li+li{margin-right:0}
+.pipLayout .imgList.type7 li dl dd{height:96px;overflow:hidden}
+.pipLayout .imgList.type8{background:#fff;width:940px;margin:0 auto;padding:0 10px;margin-top:50px}
+.pipLayout .imgList.type8 li{width:220px;margin-right:20px;overflow:hidden;border-left:0}
+.pipLayout .imgList.type8 li.last{margin-right:0}
+.pipLayout .imgList.type8 li.web dl dt{color:#333;font-family:kiaM;font-size:26px;line-height:29px;margin-bottom:10px}
+.pipLayout .imgList.type8 li.web dl dt:before{content:"";display:block;width:30px;height:1px;background:#000;margin-bottom:15px}
+.pipLayout .imgList.type8 li.web dl dd{color:#666;font-size:13px}
+.pipLayout .imgList.type8 li.bigImg{width:460px}
+.pipLayout .imgList.type8 .imgListTit{left:20px;bottom:20px;top:auto;font-family:'KiaB';font-size:18px;line-height:21px}
+.pipLayout .imgList.type8+.imgList.type8{margin:20px auto 50px}
+.pipLayout .snsInner{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_sns.gif) repeat-x 0 0}
+.pipLayout .snsWrap{width:940px;margin:0 auto;text-align:left;height:50px}
+.pipLayout .snsWrap .snsBtn{display:inline-block;background:#b8152a;font-size:12px;color:#fff;font-family:'kiaB';height:50px;line-height:50px;padding:0 20px;text-transform:uppercase}
+.pipLayout .snsWrap .snsBtn span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_search.png) no-repeat 0 50%;padding-left:12px}
+.pipLayout .snsWrap .con_share ul li{float:left;border-right:1px solid #ddd;height:50px}
+.pipLayout .snsWrap .con_share ul li:first-child{border-left:1px solid #ddd}
+.pipLayout .snsWrap .con_share a{display:inline-block;width:16px;height:50px;line-height:50px;cursor:pointer}
+.pipLayout .snsWrap .con_share a.snsIco1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_twitter.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_facebook.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_google.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_youtube.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_kiabuzz.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco6{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_fr.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco7{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_instagram.png) no-repeat 50% 50%;padding:0 17px}
+.pipLayout .snsWrap .con_share a.snsIco1:hover{background:#16c1d5 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_twitter_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco2:hover{background:#156cce url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_facebook_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco3:hover{background:#b33c17 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_google_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco4:hover{background:#d72525 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_youtube_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco5:hover{background:#bf2637 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_kiabuzz_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco6:hover{background:#0063db url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_fr_over.png) no-repeat 50% 50%}
+.pipLayout .snsWrap .con_share a.snsIco7:hover{background:#2a5b83 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_instagram_over.png) no-repeat 50% 50%}
+.pipLayout .imgListTit{position:absolute;left:30px;top:30px;z-index:10;font-family:kiaB;font-size:22px;line-height:26px}
+.pipLayout .imgListTit a{color:#fff}
+.pipLayout .imgListPaging{display:none}
+.pipLayout .pip_prev{display:none}
+.pipLayout .pip_next{display:none}
+.pipLayout .description{display:none}
+.pipLayout .v_comment{display:none}
+.temp360vr{position:relative;height:850px;overflow:hidden;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/360vr_bg.gif) 0 0 repeat-x}
+.temp360vr .textArea{width:960px;position:absolute;top:70px;left:50%;margin-left:-480px;color:#000}
+.temp360vr .textArea h3{position:relative;top:0;left:0;margin-bottom:136px}
+.temp360vr .choice_area:after{content:"";clear:both;display:block}
+.temp360vr .textArea p{padding-bottom:18px;line-height:25px;font-size:20px;font-family:'kiaB';text-shadow:rgba(0,0,0,.4) 0 0 1px}
+.temp360vr .view_inout{position:absolute;top:53px;left:0;z-index:99}
+.temp360vr .view_inout li{display:inline-block}
+.temp360vr .view_inout li a{display:inline-block;width:40px;height:46px;text-indent:-9999px}
+.temp360vr .view_inout li a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 -54px}
+.temp360vr .view_inout li.on a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 0}
+.temp360vr .view_inout li a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-60px -54px}
+.temp360vr .view_inout li.on a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-60px 0}
+.temp360vr .view_inout li:first-child a{border-left:0;padding-left:0;margin-left:0}
+.temp360vr .view_inout li.on a{color:red}
+.temp360vr .car_trim{position:absolute;top:510px;left:300px;padding-left:85px;z-index:99;text-align:left;max-width:75%}
+.temp360vr .roomView .car_trim{position:absolute;top:560px;left:355px;z-index:99;text-align:left}
+.temp360vr .car_trim.alone{left:60px}
+.temp360vr .car_trim .color_tit{position:absolute;top:-1px;left:0}
+.temp360vr .car_trim .select_trim{font-size:16px;font-family:'KiaB';color:#000;text-transform:uppercase}
+.temp360vr .car_trim .select_trim span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_select.gif) no-repeat right 50%;padding-right:30px}
+.temp360vr .car_trim .car_trim_list{display:inline-block;position:absolute;left:85px;top:30px;border:1px solid #c7c8c9;padding:15px;background:#fff;width:200px;max-height:110px;overflow-y:auto}
+.temp360vr .car_trim .car_trim_list li{font-size:12px;margin-top:5px}
+.temp360vr .car_trim .car_trim_list li:first-child{margin-top:0}
+.temp360vr .car_trim .car_trim_list li a{color:#999}
+.temp360vr .car_trim .car_trim_list li a:hover{color:#333}
+.temp360vr .choice_color_wr{text-align:center}
+.temp360vr .choice_color_wr .body_color{display:block;margin-left:300px;text-align:left}
+.temp360vr .choice_color_wr .wheel_color{display:none;text-align:center;margin-top:10px}
+.temp360vr .color_tit{font-size:16px;line-height:20px;font-family:'KiaB';color:#222;margin-right:50px;vertical-align:middle}
+.temp360vr .choice_color{margin:10px 0 0;position:relative;top:380px;z-index:9}
+.temp360vr .roomView .choice_color{visibility:hidden}
+.temp360vr .choice_color:after{content:"";clear:both;display:block}
+.temp360vr .choice_color .color_chip{width:26px;height:26px;border:2px solid #ccc}
+.temp360vr .choice_color .color_chip.on{border:4px solid #ccc}
+.temp360vr .color_info{font-size:16px;line-height:20px;color:#666;margin-left:20px;vertical-align:middle}
+.temp360vr .carArea{width:100%;position:absolute;bottom:40px;left:50%;margin-left:-491px}
+.temp360vr .awardArea{position:absolute;left:50%;bottom:52px;margin-left:-480px;width:960px;font-size:13px;font-family:'kiaM';color:#fff;line-height:16px;z-index:1}
+.temp360vr .awardArea ul li{float:left;margin-right:40px}
+.temp360vr .awardArea ul li img{float:left;height:32px}
+.temp360vr .btnSmall_wr1{position:relative;z-index:99;margin-bottom:10px}
+.temp360vr .btnSmall_wr2{position:relative;z-index:99}
+.temp360vr .car_view{position:absolute;top:50px;left:0;margin-left:0}
+.temp360vr .car_view img{margin-top:0}
+.temp360vr .car_refresh{position:absolute;left:50%;top:50%;margin:175px 0 0 -33px}
+.temp360vr .car_refresh .ainTxt{position:absolute;top:20px;left:82px;width:292px;height:26px;margin-left:-190px;opacity:0;filter:alpha(opacity=0);background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_pip_360Refresh_txt.png) 0 0 no-repeat;background-size:100% auto;text-indent:-9999px}
+@media all and (max-width:1024px){.temp360vr .car_refresh .ainTxt{top:20px;margin-left:-190px}
+}
+@media all and (max-width:767px){}
+.temp360vr .car_refresh .ainTxt.on{animation-duration:2.5s;animation-delay:.1s;animation-name:car-ain-txt;animation-fill-mode:forwards;animation-iteration-count:1;z-index:-1}
+.temp360vr .car_refresh a img{animation-play-state:paused}
+.temp360vr .car_refresh.ainOn a img{animation-play-state:running;animation-duration:.8s;animation-delay:.5s;animation-name:car-ain;animation-fill-mode:forwards;animation-iteration-count:2}
+.temp360vr .car_refresh.ainOn a:hover img,.temp360vr .car_refresh.ainOn a:focus img{animation-play-state:running;animation-duration:.8s;animation-delay:.5s;animation-name:car-ainH;animation-fill-mode:forwards;animation-iteration-count:1}
+@keyframes car-ain{0{transform:rotate(0);transform-origin:50% 50%}
+100%{margin-left:0;transform:rotate(-360deg);transform-origin:50% 50%}
+}
+@keyframes car-ainH{0{transform:rotate(0);transform-origin:50% 50%}
+100%{margin-left:0;transform:rotate(-360deg);transform-origin:50% 50%}
+}
+@keyframes car-ain-txt{0{z-index:1;opacity:0;filter:alpha(opacity=0);transform:scale(.8);transform-origin:50% 50%}
+40%{opacity:1;filter:alpha(opacity=100);transform:scale(1);transform-origin:50% 50%}
+60%{z-index:1;opacity:1;filter:alpha(opacity=100);transform:scale(1);transform-origin:50% 50%}
+100%{opacity:0;filter:alpha(opacity=0);transform:scale(.8);transform-origin:50% 50%}
+}
+.temp360vr .notiTxt{padding-bottom:0 !important;color:#888;font-size:13px !important;line-height:17px !important;position:relative;top:410px;text-align:center}
+.temp360vr .notiTxt span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_360noti.png) no-repeat 0 0;padding:0 0 0 20px;text-shadow:none}
+.temp360vr .notiTxt.roomtxt{top:84px}
+.temp360vr .exStillCut+.notiTxt{top:86px}
+.temp360vr .paging{position:absolute;left:50%;bottom:156px;width:200px;margin-left:-100px;clear:both;z-index:10;text-align:center}
+.temp360vr .paging ul{text-align:center;overflow:hidden;margin:9px auto 0}
+.temp360vr .paging ul li{display:inline-block}
+.temp360vr .paging ul li a{display:block;width:10px;height:10px;border:2px solid #cbcbcb;background:#fff;border-radius:50% 50%;text-indent:200%;overflow:hidden}
+.temp360vr .paging ul li.on a{background:#bb162b;border-color:#bb162b}
+.temp360vr .bgArea{height:710px}
+.temp360vr .bgInner{width:100%;height:100%;position:absolute;top:auto;left:50%;margin-left:-960px;text-align:center}
+.temp360vr .bgInner img{margin-top:-195px}
+.temp360vr .carInfor{width:100%;position:absolute;bottom:0;height:139px;z-index:999;text-align:center;border-top:1px solid #e6e6e6;background:#fff}
+.temp360vr .dots{display:none}
+.temp360vr .exVrArea{width:960px}
+.temp360vr .exVrArea img{width:100%}
+.temp360vr .exStillCut{position:relative;top:0 !important}
+.temp360vr .exVrArea2{position:relative;width:742px;margin:0 auto}
+.temp360vr .exViewSteel ul li{display:none}
+.temp360vr .exViewSteel ul li.on{display:block}
+.temp360vr .roomView{margin-top:-18px}
+.temp360vr .roomView .room_tab_btn{position:relative;width:100%;font-size:0}
+.temp360vr .roomView .room_tab_btn a{display:inline-block;width:30%;height:40px;line-height:40px;font-size:14px;font-family:'KiaB';color:#fff;margin-left:1px;text-align:center;background:#b6b6b6}
+.temp360vr .roomView .room_tab_btn a:first-chlid{margin-left:0}
+.temp360vr .roomView .room_tab_btn a.on{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/tab_btn_on.gif') 0 0 repeat-x}
+.vr360Arg{position:relative}
+.vr360Arg .vr-360{position:relative;width:70%;max-width:640px;max-height:320px;overflow:hidden;margin:0 auto;margin-top:22px;line-height:0;cursor:pointer}
+.vr360Arg .vr-360 .pic{border:0;width:80%;margin:0;padding:0;line-height:0;position:absolute;top:0;left:0;display:none}
+.vr360Arg .vr-360 .startArg{position:relative;width:100%;height:auto}
+.vr360Arg .vr-360 .startArg.out{margin-left:-100%}
+.vr360Arg .vr-360 .startArg img{width:100%}
+.vr360Arg .vr-360 .startArg .panoramaStart{position:absolute;top:50%;left:50%;margin:-34px 0 0 -34px;display:block;width:67px;height:67px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_start.png') 0 0 no-repeat;text-indent:-999999px}
+.vr360Arg .vr-360 .startArg.out .panoramaStart{display:none}
+.vr360Arg .vr-360 .vrindicator{position:absolute;top:0;left:0;width:100%;height:100%;display:none}
+.vr360Arg .vr-360 .vrindicator button{position:absolute;border:0;background:0;text-indent:-999999px}
+.vr360Arg .vr-360 .vrindicator .up{top:1%;left:50%;width:64px;height:28px;margin:0 0 0 -32px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_up.png') 0 0 no-repeat}
+.vr360Arg .vr-360 .vrindicator .down{bottom:1%;left:50%;width:64px;height:28px;margin:0 0 0 -32px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_down.png') 0 0 no-repeat}
+.vr360Arg .vr-360 .vrindicator .left{top:50%;left:1%;width:28px;height:64px;margin:-32px 0 0 0;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_left.png') 0 0 no-repeat}
+.vr360Arg .vr-360 .vrindicator .right{top:50%;right:1%;width:28px;height:64px;margin:-32px 0 0 0;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_right.png') 0 0 no-repeat}
+.panorama .vr360.choice_color{top:0 !important;margin-top:21px;visibility:hidden}
+.gallery .choice_color{visibility:hidden}
+.panorama .notiTxt.roomtxt{top:0 !important;margin-top:49px}
+.temp360vr .roomView .gallery{margin-top:-22px}
+.temp360vr .roomView .car_view{position:relative;top:0}
+.temp360vr .roomView .car_view img{margin-top:4px}
+.temp360vr .roomView .inVrArea{position:relative;width:742px;margin:0 auto}
+.temp360vr .roomView .inVrArea .inViewSteel ul li{display:none}
+.temp360vr .roomView .inVrArea .inViewSteel ul li.on{display:block}
+.temp360vr .in360vr{display:none}
+.temp360vr .roomView .car_refresh{margin:45px 0 0 -33px}
+.temp360vr .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.temp360vr .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.temp360vr .keyBtnLeft{position:absolute;left:0;top:614px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_btn_key3.png) no-repeat 0 0;width:96px;height:96px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.temp360vr .keyBtnLeft a,.temp360vr .keyBtnRight a{display:block;width:96px;height:96px}
+.temp360vr .keyBtnRight{position:absolute;right:0;top:614px;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_btn_key4.png) no-repeat 0 0;width:96px;height:96px;text-align:center;font-size:16px;font-family:'KiaB';text-transform:uppercase}
+.temp360vr .keyVisual03 .dimmed{display:none}
+.temp360vr .wheel_color{display:inline-block}
+.temp360vr .wheel_tit{font-size:16px;font-family:'KiaB';color:#222;vertical-align:middle;margin-right:50px}
+.pipLayout.temp01 .v_comment,.pipLayout.temp09 .v_comment{display:block !important}
+.pipLayout .btnCarPlay{display:block;position:absolute;left:50%;top:50%;z-index:99;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_pip_play.png) no-repeat 0 0;text-indent:-9999px;width:57px;height:57px;margin:-29px 0 0 -29px}
+.pipLayout.temp06 dl dt,.pipLayout.temp07 dl dt{position:relative}
+.pipLayout.temp08 .imgListImg{position:relative}
+.pipLayout.temp08 .imgList.type8:first-child li:first-child .imgListTit{display:none}
+.pipLayout .snsWrap .con_share .mSnsPrev{display:none}
+.pipLayout .snsWrap .con_share .mSnsNext{display:none}
+.indicator{position:absolute;top:380px;right:10px;z-index:1000;width:166px;margin-top:-109px;text-align:right}
+.indicator .indicator_inner{position:absolute;top:15px;right:2px;width:100%}
+.indicator .indicator_inner.other02{top:38px}
+.indicator .indicator_inner.other03{top:61px}
+.indicator .indicator_inner.other04{top:84px}
+.indicator .indicator_inner.other05{top:107px}
+.indicator .indicator_inner .text_step_wr{display:none}
+.indicator .indicator_inner .text_step{display:inline-block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_pip_btn_le02.png) left top no-repeat;height:21px}
+.indicator .indicator_inner .text_step span{display:inline-block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_pip_btn_ri02.png) right top no-repeat;height:19px;margin-left:8px;padding:1px 15px 1px 8px;font-size:14px;color:#fff}
+.indicator .indicator_inner ul{overflow:hidden}
+.indicator .indicator_inner ul li{position:relative;height:32px;line-height:32px;width:100%;margin-bottom:2px}
+.indicator .indicator_inner ul li a{display:block;width:32px;position:absolute;right:0;top:0;height:32px;color:#fff;font-family:'KiaB';font-size:14px;margin-bottom:2px}
+.indicator .indicator_inner ul li .indicatorNum{display:inline-block;position:absolute;right:0;top:0;z-index:2;width:32px;height:32px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicator_off.png) no-repeat 0 0;text-align:center}
+.indicator .indicator_inner ul li .indicatorTxt{display:inline-block;position:absolute;right:0;top:0;z-index:1;width:129px;height:32px;max-width:129px;max-height:32px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicatortxt_off.png) no-repeat 0 0;text-align:left;padding-left:16px;overflow:hidden;color:#fff;font-family:'KiaB';font-size:14px;margin-right:14px}
+.indicator .indicator_inner ul li.on .indicatorNum{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicator_on.png) no-repeat 0 0}
+.indicator .indicator_inner ul li.on .indicatorTxt{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicatortxt_on.png) no-repeat 0 0}
+.indicator .indicator_inner .masked{visibility:hidden;width:0}
+.indicator a.indicator_prev{display:inline-block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicator_top.png) no-repeat 50% 50%;width:32px;height:20px}
+.indicator a.indicator_next{display:inline-block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_indicator_bottom.png) no-repeat 50% 50%;width:32px;height:20px}
+.indicator .topBtn{position:relative;right:-100px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_top_w.png) no-repeat 0 0;margin-top:20px}
+.indicator .topBtn a{display:block;width:68px;height:32px}
+.indicator .kdicBtn{position:relative;right:-100px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_kdic.png) no-repeat 0 0;margin-top:4px}
+.indicator .kdicBtn a{display:block;width:68px;height:32px}
+.m_indicator{display:none}
+#kdicLayer{margin-left:-182px;min-width:364px;width:auto}
+.popup_note .kdicpop{border-top:5px solid #bb162b;padding:35px 30px;background:#fff;position:relative}
+.popup_note .kdicpop .tit{font-size:18px;color:#464646;font-family:'KiaB';margin-bottom:20px}
+.popup_note .kdicpop .tit strong{font-size:28px;vertical-align:sub}
+.popup_note .kdicpop .tit strong span{color:#bb162b}
+.pipLayout .imgList li,.pipLayout.temp06 dl dt,.pipLayout.temp07 dl dt{overflow:hidden}
+.pipLayout .imgList li a img{-o-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.pipLayout .imgList li a:hover img{-o-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
+.pip_build{width:100%;padding-top:90px;text-align:center}
+.pip_build .build_tit{font-size:40px;line-height:44px}
+.pip_build .build_txt{max-width:720px;margin:5px auto;padding:0 15px;font-size:15px;line-height:21px;color:#666}
+.pip_build .build_btn{margin-top:20px}
+.pip_build .build_spec{margin-top:35px;font-size:15px;color:#666}
+.pip_build .build_spec .spec_li{display:inline-block;text-align:left;margin:0 20px;padding-left:50px;position:relative;vertical-align:top}
+.pip_build .build_spec .spec_li .spec_img{position:absolute;top:0;left:-20px}
+.pip_build .build_spec .spec_li .info{display:block;font-size:29px;color:#333;font-family:kiaB;line-height:32px}
+.pip_build .build_spec .spec_li .unit{font-family:kiaM}
+.pip_build .build_spec .spec_li em{display:block;font-size:13px;font-family:kiaM;line-height:1.5}
+.pip_build .build_car{max-width:1000px;margin:0 auto;position:relative}
+.pip_build .build_car img{width:100%}
+.pip_build .build_link{background:#7a7a7a;margin-top:-80px;padding:100px 15px 50px}
+.pip_build .build_link .link_lst{max-width:960px;margin:0 auto}
+.pip_build .build_link .link_li{display:inline-block;width:19%;vertical-align:top;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_feature_buildlink.png) center 0 no-repeat}
+.pip_build .build_link .link_li .bl_typeW_a{display:block;color:#fff;font-size:14px;margin:5px 0;font-family:kiaB;padding-top:125px;text-decoration:none}
+.pip_build .build_link .link_li.link1{background-position:center 0}
+.pip_build .build_link .link_li.link2{background-position:center -200px}
+.pip_build .build_link .link_li.link3{background-position:center -400px}
+.pip_build .build_link .link_li.link4{background-position:center -600px}
+.pip_build .build_link .link_li.link5{background-position:center -800px}
+.pip_gallery{position:relative;overflow:hidden;width:100%}
+.pip_gallery:after{content:"";clear:both;display:block}
+.pip_gallery .pip_inner{width:400%;overflow:hidden;position:relative}
+.pip_gallery .gallery_select{float:left;width:25%}
+.pip_gallery .gallery_select:after{content:"";clear:both;display:block}
+.pip_gallery .gallery_select img{display:block;width:100%;height:auto}
+.pip_gallery .gallery_ext{float:left;width:50%;position:relative}
+.pip_gallery .gallery_int{float:left;width:50%;position:relative}
+.pip_gallery .gallery_select a{color:#fff;text-align:center;font-size:17px;padding-top:127px}
+.pip_gallery .gallery_select a span{display:block;font-size:22px;font-family:kiaB;margin-bottom:4px}
+.pip_gallery .exterior{position:absolute;left:50%;top:50%;width:238px;height:111px;margin:-119px 0 0 -119px;border-radius:119px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_exterior.png) no-repeat 0 0}
+.pip_gallery .interior{position:absolute;left:50%;top:50%;width:238px;height:111px;margin:-119px 0 0 -119px;border-radius:119px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_interior.png) no-repeat 0 0}
+.pip_gallery .gallery_exterior{position:relative;float:left;width:25%}
+.pip_gallery .gallery_interior{position:relative;float:left;width:25%}
+.pip_gallery .gallery_video{position:relative;float:left;width:25%}
+.pip_gallery .width_wrap .screen_wrap{position:relative;width:auto;overflow:hidden;padding-left:269px}
+.pip_gallery .width_wrap .screen_wrap .screen_nav{position:absolute;left:0;top:0;width:270px;height:100%;line-height:1.1;background:#bb162b}
+.nav_fixed{position:fixed;top:135px;width:270px}
+.pip_gallery .width_wrap .title{display:block;position:relative;display:block;margin-top:50px;padding-left:50px;color:#fff;font-size:40px}
+.pip_gallery .width_wrap .title strong{display:block}
+.pip_gallery .width_wrap .title:before{content:'';display:block;width:30px;height:1px;margin-bottom:11px;background:#fff}
+.pip_gallery .width_wrap .btnLink{padding:100px 50px 0 50px}
+.pip_gallery .width_wrap .btnLink a{display:block;margin-bottom:14px;color:#fff}
+.pip_gallery .width_wrap .btnLink a span{display:block;position:relative;padding-left:20px;font-family:kiaB;color:#fff;font-size:24px;line-height:58px;border:1px solid #d67380;border-radius:5px}
+.pip_gallery .width_wrap .btnLink a:hover span{border-color:#e9e9e9;border-top-color:#bcbcbc;background:#fff}
+.pip_gallery .width_wrap .btnLink a span:after{content:'';display:inline-block;position:absolute;top:20px;right:13px;width:10px;height:19px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_gallery_w.png) no-repeat}
+.pip_gallery .width_wrap .gallery_exterior .btnLink a:hover span{color:#bb162b}
+.pip_gallery .width_wrap .gallery_exterior .btnLink a:hover span:after{background-position:0 -21px}
+.pip_gallery .width_wrap .gallery_interior .btnLink a span{border-color:#b8b8b8}
+.pip_gallery .width_wrap .gallery_interior .btnLink a:hover span{color:#888}
+.pip_gallery .width_wrap .gallery_interior .btnLink a:hover span:after{background-position:0 -42px}
+.pip_gallery .width_wrap .gallery_video .btnLink a:hover span{color:#ea7e00}
+.pip_gallery .width_wrap .gallery_video .btnLink a span{border-color:#f2b266}
+.pip_gallery .width_wrap .gallery_video .btnLink a:hover span:after{background-position:0 -63px}
+.pip_gallery .width_wrap .gallery_interior .screen_wrap .screen_nav{background:#888}
+.pip_gallery .width_wrap .mouse_evt{display:block;position:fixed;top:50%;left:50%;margin:-13px 0 0 18px;padding-top:91px;color:#fff;font-size:14px;text-align:center;text-shadow:0 1px 1px #000;z-index:2}
+.pip_gallery .width_wrap .mouse_evt:before{content:'';display:inline-block;position:absolute;top:0;left:50%;width:61px;height:81px;margin-left:-30px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_gallery_w.png) no-repeat -23px 0}
+.pip_gallery .width_wrap .gallery_interior .screen_link{border-color:#acacac}
+.pip_gallery .screen{position:relative;width:100%;margin:-1px 0 -2px;z-index:1}
+.pip_gallery .screen li{position:relative;display:block;float:left;width:33.33%}
+.pip_gallery .screen li a{display:block;padding:1px}
+.pip_gallery .screen li img{display:block;width:100%;height:auto}
+.pip_gallery .screen li .hover{position:absolute;width:100%;height:100%;cursor:pointer;background:rgba(0,0,0,0.5) url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_detail_view.png) center no-repeat;z-index:10;left:0;top:0}
+.pip_gallery .width_wrap{width:100%;overflow:hidden}
+.pip_gallery .gallery_video .img_wrap{background:#fff}
+.pip_gallery .width_wrap .gallery_video .screen_wrap .screen_nav{background:#ea7e00}
+.pip_gallery .width_wrap .gallery_video .btnLink a{border-color:#f0a54d}
+.pip_gallery .gallery_video .screen li .hover{background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_play.png)}
+.wide_gallery{position:absolute;width:100%;top:0;left:0;z-index:20}
+.wide_gallery h5{position:absolute;top:0;left:0;font-size:0;line-height:0;width:0;height:0;visibility:hidden;overflow:hidden}
+.wide_gallery .wide_wrap{position:relative;z-index:99}
+.wide_gallery .wide_wrap a{position:absolute;display:block;z-index:20;text-indent:-9999px}
+.wide_gallery .wide_wrap .wide_prev{left:100px;top:50%;margin-top:-39px;width:39px;height:78px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/wide_gallery_prev.png') no-repeat;cursor:pointer}
+.wide_gallery .wide_wrap .wide_next{right:100px;top:50%;margin-top:-39px;width:39px;height:78px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/wide_gallery_next.png') no-repeat;cursor:pointer}
+.wide_gallery .wide_wrap .wide_close{right:0;top:0;width:52px;height:57px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/wide_gallery_close_btn.gif') no-repeat}
+.wide_gallery .wide_wrap .img_wrap{width:100%;height:100%}
+.wide_gallery .wide_wrap .img_wrap img{width:100%;height:auto}
+.gallery_notice{width:960px;margin:0 auto;color:#999}
+.gallery_notice ul{padding:0 30px 0 0}
+.gallery_notice ul li{color:#666;font-family:'KiaM'}
+.galleryTxt{display:block;position:absolute;left:50%;top:50px;z-index:99999;margin-left:-480px;color:#000;width:960px}
+.galleryTxt strong{font-size:22px}
+.galleryTxt p{font-size:13px;margin-top:15px}
+.gallery_video h3{display:none}
+.gallery_video .screen li .play_video,.gallery_video .screen li .summary{display:none}
+.gallery_paging{display:none}
+.video_popup{display:none;position:absolute;top:150px;left:50%;width:50%;height:50%;margin:0 0 0 -25%;z-index:9999}
+.video_popup .pop_con{width:100%;height:100%}
+.video_popup .pop_con .youtube{position:relative;width:100%;height:0;padding:30px 0 50%}
+.video_popup .pop_con .youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.video_popup .pop_con .img_more{padding:0;background:#fff}
+.video_popup .pop_con .img_more dt:before{display:none}
+.video_popup .pop_con .img_more dd{height:120px;padding:20px;border:1px solid #e8e8e8;overflow-y:scroll}
+.video_popup .closeBtn{position:absolute;top:0;right:-50px;z-index:99999;padding:18px}
+.pip_spec .webImg{display:block}
+.pip_spec .mobileImg{display:none}
+.pip_spec .tabletImg{display:none}
+.spec_visual{position:relative;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_spec.jpg) no-repeat center center;height:727px}
+.spec_visual .spec_data{position:relative;width:940px;margin:0 auto;padding-top:87px}
+.spec_visual .spec_data h3{color:#000;font-size:50px;font-family:'kiaB';text-transform:uppercase}
+.spec_visual .spec_data ul{position:relative;z-index:999;margin-top:55px}
+.spec_visual .spec_data ul:after{content:"";clear:both;display:block}
+.spec_visual .spec_data ul li{float:left}
+.spec_visual .spec_data ul li a{display:inline-block;width:40px;height:43px;text-indent:-9999px}
+.spec_visual .spec_data ul li .btn_slide{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:0 -55px;margin-right:6px}
+.spec_visual .spec_data ul li .btn_slide.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:0 0}
+.spec_visual .spec_data ul li .btn_slide:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:0 0}
+.spec_visual .spec_data ul li .btn_allview{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:-60px -55px}
+.spec_visual .spec_data ul li .btn_allview.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:-60px 0}
+.spec_visual .spec_data ul li .btn_allview:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_spec_tab.png) no-repeat 0 0;background-position:-60px 0}
+.spec_visual .spec_slide_area{position:relative;top:-199px;width:940px;margin:0 auto;padding:0 10px}
+.spec_visual .spec_slide_area .spec_img{width:940px;overflow:visible}
+.spec_visual .spec_slide_area .spec_img ul{width:100000px;padding-bottom:19px;overflow:hidden}
+.spec_visual .spec_slide_area .spec_img ul li{float:left;width:940px;text-align:center}
+.spec_visual .spec_slide_area .spec_img ul li .imgArea{display:inline-block;text-align:center}
+.spec_visual a.spec_next{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_next.png) no-repeat;right:10px;top:50%;margin-top:-14px;cursor:pointer}
+.spec_visual a.spec_prev{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_prev.png) no-repeat;left:10px;top:50%;margin-top:-14px;cursor:pointer}
+.spec_visual .control{display:none}
+.spec_visual .spec_allview_area{width:940px;margin:0 auto;padding:0}
+.spec_visual .spec_allview_area ul li{float:left}
+.spec_visual .spec_allview_area ul:after{content:"";clear:both;display:block}
+.spec_visual .spec_allview_area .spec_img{position:absolute;left:50%;bottom:185px;margin-left:-470px}
+.spec_list{width:940px;margin:50px auto 0}
+.spec_note{width:940px;margin:0 auto 60px}
+.spec_list_title{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_list_title.gif');display:block;padding:0 20px;text-decoration:none}
+.spec_list_title a{text-decoration:none}
+.spec_list_title span{color:#fff;display:block;font-size:15px;text-transform:uppercase;line-height:38px}
+.spec_list.form1 .spec_view ul.type1{overflow:hidden;border-bottom:2px solid #7d7d7d}
+.spec_list.form1 .spec_view ul.type1 li{text-align:center}
+.spec_list.form1 .spec_view ul.type1 li.division{background:#f5f5f5;height:34px;line-height:34px;font-size:14px;font-family:'KiaB';text-transform:uppercase}
+.spec_list.form1 .spec_view ul.type1 li.division ul li{color:#333 !important}
+.spec_list.form1 .spec_view ul.type1 li:last-child{border-right:0}
+.spec_list.form1 .spec_view ul.type1 li ul li{float:left;width:50%;height:33px;line-height:33px;font-size:13px;border-left:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.spec_list.form1 .spec_view ul.type1 li ul li:first-child{border-left:0;color:#666}
+.spec_list.form1 .spec_notice .bl_type_note{color:#999}
+.spec_list.form2 .spec_view ul.type1 li{display:table;width:100%}
+.spec_list.form2 .spec_view ul.type1 li span{display:table-cell;width:50%;text-align:center;padding:8px 0;border-left:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;font-size:13px}
+.spec_list.form2 .spec_view ul.type1 li span:first-child{border-left:0;color:#666}
+.spec_list.form2 .spec_view ul.type1 li:last-child span{border-bottom:2px solid #7d7d7d}
+.spec_list.form2 .spec_view+.spec_list_title{margin-top:40px}
+.spec_list.form2 .spec_view h4{height:38px;line-height:38px;background:#f5f5f5;padding:0 20px;text-transform:uppercase}
+.spec_list.form2 .spec_view ul.type2{width:100%;overflow:hidden}
+.spec_list.form2 .spec_view ul.type2 li{text-align:center}
+.spec_list.form2 .spec_view ul.type2 li:last-child{border-left:0}
+.spec_list.form2 .spec_view ul.type2 li ul li{float:left;width:16.5%;height:33px;line-height:33px;font-size:13px;border-left:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.spec_list.form2 .spec_view ul.type2 li ul li:first-child{border-left:0;color:#666}
+.spec_list.form2 .spec_view ul.type2 li:last-child ul li{border-bottom:2px solid #7d7d7d}
+.business_tb+.spec_list.form2{margin-top:50px}
+.spec_list.form2 .spec_view ul.type3{width:100%;overflow:hidden;border-bottom:2px solid #7d7d7d}
+.spec_list.form2 .spec_view ul.type3 li{display:table}
+.spec_list.form2 .spec_view ul.type3 li span{display:table-cell;width:16.5%;font-size:13px;padding:10px 20px;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.spec_list.form2 .spec_view ul.type3 li span:last-child{width:17.5%;border-right:0}
+.spec_list.form2 .spec_view ul.type3 li:last-child span{border-bottom:0}
+.spec_list.form2 .spec_view+.business_title{margin-top:40px}
+.engine_visual{position:relative;height:726px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_engine.jpg) no-repeat center center}
+.engine_visual .engine_data{width:940px;margin:0 auto;position:relative;top:73px;left:0;z-index:2}
+.engine_visual .engine_data h3{color:#fff;font-size:50px;line-height:56px;font-family:'kiaB';text-transform:uppercase}
+.engine_visual .engine_data p{margin-top:16px;color:#666;font-size:15px;display:none}
+.engine_visual .engine_data ul{margin-top:17px}
+.engine_visual .engine_data ul:after{content:"";clear:both;display:block}
+.engine_visual .engine_data ul li{float:left}
+.engine_visual .engine_data ul li a{display:inline-block;width:40px;height:43px;text-indent:-9999px}
+.engine_visual .engine_data ul li .btn_slide{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:0 -55px;margin-right:6px}
+.engine_visual .engine_data ul li .btn_slide.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:0 0}
+.engine_visual .engine_data ul li .btn_slide:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:0 0}
+.engine_visual .engine_data ul li .btn_allview{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:-60px -55px}
+.engine_visual .engine_data ul li .btn_allview.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:-60px 0}
+.engine_visual .engine_data ul li .btn_allview:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_engine_tab.png) no-repeat 0 0;background-position:-60px 0}
+.engine_visual a.spec_next{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_next.png) no-repeat;right:10px;top:35%;margin-top:-14px;cursor:pointer}
+.engine_visual a.spec_prev{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_prev.png) no-repeat;left:10px;top:35%;margin-top:-14px;cursor:pointer}
+.engine_slide_area{position:relative;width:940px;margin:15px auto 0;padding:0 10px}
+.engine_slide_area .img_wrap{position:relative;width:940px;height:auto;overflow:hidden;margin:0 auto;text-align:center}
+.engine_slide_area .img_wrap>ul{display:inline-block;width:10000px}
+.engine_slide_area .img_wrap>ul>li{position:relative;float:left;width:940px}
+.engine_slide_area .img_wrap .title{font-size:40px;line-height:46px;font-family:'KiaB';color:#fff;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_engine_underline.gif') no-repeat;padding:9px 0 30px;text-transform:uppercase;word-break:break-word}
+.engine_slide_area .img_wrap .type span{display:block;color:#b6b6b6;font-size:14px;font-family:'kiaB';text-transform:uppercase;padding-bottom:3px}
+.engine_slide_area .img_wrap .type strong{display:block;color:#fff;font-size:19px;font-family:'kiaB';padding:0 0 28px;margin:0 0 0 4px}
+.engine_slide_area .img_wrap .engine_contents{position:absolute;left:544px;top:-15px;width:auto;text-align:left}
+.engine_slide_area .img_wrap .engine_contents ul{padding:36px 0 0;border-top:1px solid #d4d4d4;width:350px}
+.engine_slide_area .img_wrap .engine_contents ul li{clear:both;margin-bottom:15px}
+.engine_slide_area .img_wrap .engine_contents ul li div{float:left}
+.engine_slide_area .img_wrap .engine_contents ul li div.dataImg{margin:13px 10px 0 0}
+.engine_slide_area .img_wrap .engine_contents ul li div span{display:block;color:#b6b6b6;font-size:14px;padding:10px 0 5px}
+.engine_slide_area .img_wrap .engine_contents ul li div strong{display:block;color:#fff;font-size:19px;font-family:'kiaB'}
+.engine_slide_area .img_wrap .engine_contents ul li div strong span{display:none}
+.engine_slide_area .img_wrap .img{display:inline-block;text-align:center;padding:38px 0 0 0}
+.engine_allview_area{width:940px;margin:10px auto 0;padding:45px 10px 10px}
+.engine_allview_area ul:after{content:"";clear:both;display:block}
+.engine_allview_area ul li{position:relative;float:left;width:100%;text-align:center}
+.engine_allview_area ul li img{width:35%}
+.engine_allview_area.engineType02 ul li{width:50%}
+.engine_allview_area.engineType02 ul li img{width:60%}
+.engine_allview_area.engineType02 ul li ul li{width:100%;margin-bottom:0}
+.engine_allview_area.engineType03 ul li{width:33.3%}
+.engine_allview_area.engineType03 ul li img{width:80%}
+.engine_allview_area.engineType03 ul li ul li{width:100%;margin-bottom:0}
+.engine_allview_area.engineType04 ul li{width:50%;margin-bottom:30px}
+.engine_allview_area.engineType04 ul li img{width:50%}
+.engine_allview_area.engineType04 ul li ul li{width:100%;margin-bottom:0}
+.engine_allview_area.engineType05 ul li{width:50%;margin-bottom:30px}
+.engine_allview_area.engineType05 ul li.img01,.engine_allview_area.engineType05 ul li.img02,.engine_allview_area.engineType05 ul li.img03{width:33.3%;margin-bottom:30px}
+.engine_allview_area.engineType05 ul li.img04,.engine_allview_area.engineType05 ul li.img05{width:50%}
+.engine_allview_area.engineType05 ul li img{width:80%}
+.engine_allview_area.engineType05 ul li.img04 img,.engine_allview_area.engineType05 ul li.img05 img{width:55%}
+.engine_allview_area.engineType05 ul li ul li{width:100%;margin-bottom:0}
+.engine_allview_area ul li ul{margin-top:-40px}
+.engine_allview_area.engineType03 ul li ul{margin-top:-10px}
+.engine_allview_area ul li ul li{float:none;width:100%;color:#aaa;font-size:15px;margin-bottom:4px}
+.engine_allview_area ul li ul li strong{font-size:22px;line-height:25px;color:#fff;font-family:'kiaB'}
+.engine_visual .control{display:none}
+.wheel_visual{position:relative;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_wheel.jpg) no-repeat center center;height:726px}
+.wheel_visual .wheel_data{width:940px;margin:0 auto;position:relative;top:73px;left:0;z-index:2}
+.wheel_visual .wheel_data h3{color:#000;font-size:50px;line-height:56px;font-family:'kiaB';text-transform:uppercase}
+.wheel_visual .wheel_data p{margin-top:16px;color:#666;font-size:15px}
+.wheel_visual .wheel_data ul{margin-top:17px}
+.wheel_visual .wheel_data ul:after{content:"";clear:both;display:block}
+.wheel_visual .wheel_data ul li{float:left}
+.wheel_visual .wheel_data ul li a{display:inline-block;width:40px;height:43px;text-indent:-9999px}
+.wheel_visual .wheel_data ul li .btn_slide{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:0 -55px;margin-right:6px}
+.wheel_visual .wheel_data ul li .btn_slide.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:0 0}
+.wheel_visual .wheel_data ul li .btn_slide:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:0 0}
+.wheel_visual .wheel_data ul li .btn_allview{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:-60px -55px}
+.wheel_visual .wheel_data ul li .btn_allview.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:-60px 0}
+.wheel_visual .wheel_data ul li .btn_allview:hover{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_wheel_tab.png) no-repeat 0 0;background-position:-60px 0}
+.wheel_visual a.spec_next{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_next.png) no-repeat;right:10px;top:35%;margin-top:-14px;cursor:pointer}
+.wheel_visual a.spec_prev{position:absolute;z-index:999;display:inline-block;width:28px;height:56px;text-indent:-9999px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_spec_prev.png) no-repeat;left:10px;top:35%;margin-top:-14px;cursor:pointer}
+.wheel_slide_area{position:relative;width:940px;margin:15px auto 0;padding:0 10px}
+.wheel_slide_area .img_wrap{position:relative;width:940px;height:auto;overflow:hidden;margin:0 auto;text-align:center}
+.wheel_slide_area .img_wrap>ul{display:inline-block;width:10000px}
+.wheel_slide_area .img_wrap>ul>li{position:relative;float:left;width:900px}
+.wheel_slide_area .img_wrap .title{font-size:30px;line-height:35px;letter-spacing:-1px;font-family:'KiaB';color:#333;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_engine_underline.gif') no-repeat;padding:9px 0 0;text-transform:uppercase;word-break:break-word}
+.wheel_slide_area .img_wrap .wheel_contents{position:absolute;left:624px;top:190px;width:auto;text-align:left}
+.wheel_slide_area .img_wrap .img{display:inline-block;text-align:center;padding:60px 0 0 0}
+.wheel_allview_area{width:940px;margin:0 auto;padding:85px 10px 113px}
+.wheel_allview_area ul:after{content:"";clear:both;display:block}
+.wheel_allview_area ul li{position:relative;float:left;width:100%;text-align:center}
+.wheel_allview_area ul li p{font-size:19px;margin-top:3px}
+.wheel_allview_area ul li img{width:35%}
+.wheel_allview_area.wheelType02 ul li{width:50%}
+.wheel_allview_area.wheelType02 ul li img{width:60%}
+.wheel_allview_area.wheelType02 ul li ul li{width:100%;margin-bottom:0}
+.wheel_allview_area.wheelType03 ul li{width:33.3%}
+.wheel_allview_area.wheelType03 ul li img{width:80%}
+.wheel_allview_area.wheelType03 ul li ul li{width:100%;margin-bottom:0}
+.wheel_allview_area.wheelType04 ul li{width:50%;margin-bottom:30px}
+.wheel_allview_area.wheelType04 ul li img{width:50%}
+.wheel_allview_area.wheelType04 ul li ul li{width:100%;margin-bottom:0}
+.wheel_allview_area.wheelType05 ul li{width:50%;margin-bottom:30px}
+.wheel_allview_area.wheelType05 ul li.img01,.wheel_allview_area.wheelType05 ul li.img02,.wheel_allview_area.wheelType05 ul li.img03{width:33.3%;margin-bottom:30px}
+.wheel_allview_area.wheelType05 ul li.img04,.wheel_allview_area.wheelType05 ul li.img05{width:50%}
+.wheel_allview_area.wheelType05 ul li img{width:80%}
+.wheel_allview_area.wheelType05 ul li.img04 img,.wheel_allview_area.wheelType05 ul li.img05 img{width:55%}
+.wheel_allview_area.wheelType06 ul li{width:33.3%}
+.wheel_allview_area.wheelType06 ul li img{width:80%}
+.wheel_allview_area.wheelType06 ul li ul li{width:100%;margin-bottom:0}
+.wheel_allview_area.wheelType06 ul li.img01,.wheel_allview_area.wheelType06 ul li.img02,.wheel_allview_area.wheelType06 ul li.img03{margin-bottom:30px}
+.wheel_visual .control{display:none}
+.engine_slide_area.no_allview{margin-top:71px}
+.wheel_slide_area.no_allview{margin-top:16px}
+.pip_wheel .spec_list{width:940px;margin:50px auto 0}
+.pip_wheel .spec_note{width:940px;margin:0 auto 100px}
+.spec_list.form3 .spec_view .scroll_inner{width:940px;overflow-x:hidden}
+.spec_list.form3 .spec_view .scroll_inner table{width:940px;border-bottom:2px solid #7d7d7d}
+.spec_list.form3 .spec_view .scroll_inner table thead th{background:#f5f5f5;height:34px;line-height:34px;border-left:1px solid #d6d6d6}
+.spec_list.form3 .spec_view .scroll_inner table thead th:first-child{border-left:0}
+.spec_list.form3 .spec_view .scroll_inner table tbody td{text-align:center;padding:12px 0;vertical-align:top;border-bottom:1px solid #d6d6d6;border-left:1px solid #d6d6d6;font-size:13px;color:#666}
+.spec_list.form3 .spec_view .scroll_inner table tbody td.carName{text-transform:uppercase;padding:12px 20px;text-align:left;color:#333}
+.spec_list.form3 .spec_view .scroll_inner table tbody td:first-child{border-left:0}
+.spec_data .car_trim{position:absolute;left:103px;top:170px;z-index:999;text-align:left}
+.spec_data .car_trim.alone{left:60px}
+.spec_data .car_trim .current{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_choice_bar.gif) no-repeat 0 0;padding-left:20px}
+.spec_data .car_trim .select_trim{font-size:16px;font-family:'KiaB';color:#000;text-transform:uppercase}
+.spec_data .car_trim .select_trim span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_select.gif) no-repeat right 50%;padding-right:30px}
+.spec_data .car_trim .car_trim_list{display:inline-block;position:absolute;left:10px;top:30px;border:1px solid #c7c8c9;padding:15px 0 15px 15px;background:#fff;width:100%;min-width:140px;margin-top:0}
+.spec_data .car_trim .car_trim_list li{font-size:12px;margin-top:5px;float:none}
+.spec_data .car_trim .car_trim_list li:first-child{margin-top:0}
+.spec_data .car_trim .car_trim_list li a{color:#999;text-indent:0;display:block;width:auto;height:auto}
+.spec_data .car_trim .car_trim_list li a:hover{color:#333}
+.btnSpecWrap{padding-top:10px;text-align:right}
+.btnSpec{font:13px/24px 'kiaM';color:#8b8b8b}
+.btnSpec:before{content:"";display:inline-block;width:24px;height:24px;margin:0 5px 0 0;vertical-align:-7px;border-radius:12px;background:#c1c1c1}
+.btnSpec[class^=spec]:before{background:#c1c1c1 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_specbtn_icon.png) no-repeat 50% 6px}
+.btnSpec.spec1:before{background:#c1c1c1 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_specbtn_icon.png) no-repeat 50% 6px}
+.btnSpec.spec2:before{background:#c1c1c1 url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_specbtn_icon.png) no-repeat 50% -21px}
+.btnSpec+.btnSpec{margin-left:20px}
+.spec_list .spec_notice .bl_type_note p,.spec_list .spec_notice .btnSpecWrap a,.spec_list .spec_notice .bl_type_note li,.spec_list .spec_notice .bl_type_note div{font-family:YoonPro740}
+.spec_list .tableWrap table tbody th{font-family:YoonPro740}
+.spec_list .tableWrap table tbody td{font-family:YoonPro740}
+.spec_list .tableWrap table tbody th[class=tableTh]{font-weight:bold}
+.num{display:inline-block;overflow:hidden;margin:0 auto}
+.num li{float:left}
+.num li a{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:200%;white-space:nowrap;overflow:hidden;margin-left:4px}
+.num li:first-child a{margin-left:0}
+.num li.on a{background-position:0 0}
+.control{top:0}
+.review .review_visual .control .num{display:inline-block}
+.review a.roll{display:block;position:absolute;top:150px;text-indent:200%;white-space:nowrap;overflow:hidden;width:30px;height:58px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/spec_visual_roll_light.png') no-repeat;height:51px}
+.review a.next{background-position:-60px 0}
+.review a.prev{left:-50px}
+.review a.next{right:-50px}
+.btn_more{display:block;text-align:center}
+.btn_more a{background:url('../../../../content/dam/kwcms/kr/ko/images/about/history_more_btn.png') no-repeat;display:inline-block;padding:0 0 0 50px}
+.btn_more a span{display:inline-block}
+.btn_more a div{background:#fff url('../../../../content/dam/kwcms/kr/ko/images/about/history_more_btn.png') no-repeat 100% 0;display:inline-block;padding:0 20px 0 0;color:#fff;display:inline-block;font-size:18px;font-family:'kiaB';line-height:38px;text-transform:uppercase}
+.review .img img.web{display:inline-block}
+.review .img img.mobile,.review .img img.tablet{display:none}
+.review{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_review_visual.jpg') no-repeat center top;font-family:'kiaM'}
+.review .review_visual{padding:50px 15px 0}
+.review h3{margin-bottom:4px;padding:11px 0 0;text-transform:uppercase;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/spec_data_title_underline.gif') no-repeat 0 0;font-size:22px;font-family:'kiaB';color:#fff}
+.review .review_visual>h3,.review .review_visual>div{width:940px;margin:0 auto}
+.review .review_visual #slide_area{height:200px;margin:5%}
+.review .review_visual .review_interaction{padding:14px 0 0;position:relative}
+.review .review_visual .review_interaction .slide_wrap{overflow:hidden}
+.review .review_visual .review_interaction .img_wrap{width:10000px}
+.review .review_visual .review_interaction .img_wrap>li{background:#fff;float:left;display:inline-block;height:360px;overflow:hidden;position:relative}
+.review .review_visual .review_interaction .img{float:left;width:240px;height:auto;overflow:hidden;text-align:center;background:#fff}
+.review .review_visual .review_interaction .img .imgArea{display:block;width:auto;margin:0 -100%;text-align:center}
+.review .review_visual .review_interaction .control{position:relative;bottom:0;margin:10px 0 0;text-align:center}
+.review .review_visual .review_interaction .review_data{float:left;background:#fff;padding:15px 14px 0}
+.review .review_visual .review_interaction .review_data .item_title{font-size:21px;padding:13px 12px 7px;color:#333;font-family:'kiaB'}
+.review .review_visual .review_interaction .review_data .grade_star{margin:10px 12px;color:#f5a700;font-size:21px;font-family:'kiaB';font-style:italic}
+.review .review_visual .review_interaction .review_data .message{overflow:hidden;display:block;padding:15px 0 10px;font-size:15px;line-height:21px;margin:15px 12px 0;height:120px;border-top:1px dashed #bababa;color:#666}
+.review .review_visual .review_interaction .review_data .btn_review{padding:0;position:absolute;right:25px;bottom:25px}
+.review .review_visual .review_interaction .review_data .address{color:#333;display:block;font-size:13px;padding:13px 12px 0}
+.review .review_visual .review_interaction .review_data .address span{color:#999}
+.review .review_visual .review_interaction .review_data .btn_review{display:block;text-align:right;position:absolute;bottom:20px;right:10px}
+.review .review_visual .review_interaction .review_data .btn_review a{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/history_more_btn.png') no-repeat 0 -57px;display:inline-block;padding:0 0 0 15px}
+.review .review_visual .review_interaction .review_data .btn_review a span{display:inline-block}
+.review .review_visual .review_interaction .review_data .btn_review a div{background:#fff url('../../../../content/dam/kwcms/kr/ko/images/vehicles/history_more_btn.png') no-repeat 100% -57px;display:inline-block;color:#fff;display:inline-block;font-size:14px;font-family:'kiaB';line-height:30px;padding:0 37px 0 0;text-transform:uppercase}
+.review .review_visual .num li a{background-position:-28px 0}
+.review .review_visual .num li.on a{background-position:0 0}
+.review .media_review a.roll{display:block}
+.review .media_review a.roll{display:inline-block;position:absolute;top:210px}
+.review .media_review a.roll{display:block;text-indent:200%;white-space:nowrap;overflow:hidden;width:30px;height:58px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/spec_visual_roll_light.png') no-repeat;height:51px}
+.review .media_review a.next{background-position:-60px 0}
+.review .media_review a.prev{left:-50px}
+.review .media_review a.next{right:-50px}
+.review .media_review{position:relative;margin:0 auto;padding:50px 0 50px;width:940px}
+.review .media_review .mediaCon{overflow:hidden;width:940px;margin-bottom:10px}
+.review .media_review .mediaCon>ul{overflow:hidden;width:5000px;height:auto;padding:14px 0 0}
+.review .media_review .mediaCon>ul li{float:left;margin-left:9px;margin-top:0 !important}
+.review .media_review .mediaCon>ul li:first-child{margin-left:0}
+.review .media_review .mediaCon>ul li .img{text-align:center;height:245px;overflow:hidden}
+.review .media_review .mediaCon>ul li .img img{margin:0 -100%;width:auto;height:100%}
+.review .media_review .mediaCon>ul li .txt{padding:10px;height:auto}
+.review .media_review .mediaCon>ul li .txt strong{display:block;font-family:'kiaB';font-size:15px;text-transform:uppercase;margin:0 0 1px;padding:5px 0 4px}
+.review .media_review .mediaCon>ul li .txt span{color:#999;font-size:13px;line-height:19px;display:block;height:76px;overflow:hidden}
+.review .media_review .mediaCon>ul li .txt a{color:#e4e4e4 !important}
+.review .media_review .mediaCon>ul li .txt>a{margin-top:13px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_red.png') no-repeat 0 center;display:block;font-size:12px;font-family:'kiaB';text-transform:uppercase;padding:0 0 0 10px}
+.review .media_review .control{text-align:center;position:relative;bottom:20px;margin-bottom:16px}
+.review .media_review .num li a{background-position:-14px 0}
+.review .media_review .num li.on a{background-position:0 0}
+.review .btn_more{display:block;text-align:center;padding-bottom:49px}
+.review .btn_more a{background:url('../../../../content/dam/kwcms/kr/ko/images/about/history_more_btn.png') no-repeat;display:inline-block;padding:0 0 0 50px}
+.review .btn_more a span{display:inline-block}
+.review .btn_more a div{background:#fff url('../../../../content/dam/kwcms/kr/ko/images/about/history_more_btn.png') no-repeat 100% 0;display:inline-block;padding:0 20px 0 0;color:#fff;display:inline-block;font-size:18px;font-family:'kiaB';line-height:38px}
+.sns_wrap .sns_top{background:#b8b8b8;text-align:center;color:#fff;font-size:22px;font-family:'KiaB';border-top:1px solid #a5a5a5;border-bottom:1px solid #a5a5a5}
+.sns_wrap .sns_top span{display:inline-block;line-height:56px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_sns.png) no-repeat right center;padding-right:48px;vertical-align:middle}
+.sns_wrap .sns_list li{position:relative;float:left;width:20%;height:478px;border-right:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.sns_wrap .sns_list li.nLine{border-left:1px solid #fff}
+.sns_wrap .sns_list li span{display:block}
+.sns_wrap .sns_list li .sns_img{background:#000;width:100%;text-align:center;overflow:hidden}
+.sns_wrap .sns_list li.type1 .sns_img{position:relative;height:244px}
+.sns_wrap .sns_list li.type1 .sns_img img{height:100%;width:auto}
+.sns_wrap .sns_list li.type1 .sns_img .play_video{display:block;position:absolute;left:50%;top:50%;margin:-23px 0 0 -22px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_play.png) no-repeat 0 0;width:45px;height:45px}
+.sns_wrap .sns_list li.type3 .sns_img{display:block;width:100%;height:384px;overflow:hidden}
+.sns_wrap .sns_list li.type3 .play_video{display:block;position:absolute;left:50%;top:50%;margin:-45px 0 0 -22px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_play.png) no-repeat 0 0;width:45px;height:45px}
+.sns_wrap .sns_list .sns_txt{font-family:kiaM;font-size:14px;color:#666;margin-top:19px;overflow:hidden}
+.sns_wrap .sns_list li.type1 .sns_txt{height:56px}
+.sns_wrap .sns_list li.type2 .sns_txt{height:272px}
+.sns_wrap .sns_list li.type1 .sns_contents{position:relative;z-index:10;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_triangle.png) no-repeat center 0;padding:35px 30px 0;margin:-14px 0 0}
+.sns_wrap .sns_list li.type2 .sns_contents{background:0;padding:48px 30px 0;margin:0}
+.sns_wrap .sns_list li.type3 .sns_contents{position:relative;z-index:10;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_triangle.png) no-repeat center 0;padding:30px 30px 0;margin:-14px 0 0;height:20px;overflow:hidden}
+.sns_wrap .sns_list li.type3 .sns_contents .type3_tit{font-family:kiaB;font-size:15px}
+.sns_wrap .sns_list li.type3 .sns_contents .type3_txt{display:inline;font-family:kiaM;font-size:15px;color:#595959}
+.sns_wrap .sns_list .user_area{height:48px;overflow:hidden}
+.sns_wrap .sns_list .user_area:after{content:"";clear:both;display:block}
+.sns_wrap .sns_list .user_area a.thumLink{display:block;float:left;margin-right:20px;width:48px;height:48px}
+.sns_wrap .sns_list .user_area img{display:inline-block;float:left;width:48px;height:48px;margin-right:20px}
+.sns_wrap .sns_list .user_area .user_infor{display:inline-block;float:left;margin-top:5px;font-family:'KiaB';font-size:15px}
+.sns_wrap .sns_list .user_area .user_infor .time{font-family:'KiaM';margin-top:2px}
+.sns_wrap .sns_list .user_area .user_infor .sns_id{font-family:'KiaM';margin-top:2px}
+.sns_infor{position:absolute;left:0;bottom:25px;width:100%;padding:0 30px;font-family:kiaM;font-size:12px;color:#666;vertical-align:middle}
+.sns_infor span{display:inline-block;float:left;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_sns_icon.png) no-repeat;text-indent:-9999px}
+.sns_infor .facebook{background-position:0 0;width:16px}
+.sns_infor .google{background-position:0 -77px;width:21px}
+.sns_infor .twitter{background-position:0 -39px;width:23px}
+.sns_infor .youtube{float:left;background-position:0 -112px;width:41px}
+.sns_infor .youtube_share{float:right;background-position:0 -160px;width:26px;height:26px;margin:-8px 60px 0 0}
+.sns_infor .youtube_share a{display:block;width:26px;height:26px}
+.safety_wrap .safety_visual{width:100%;height:480px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_spec.jpg) no-repeat center center}
+.safety_wrap .safety_data{width:940px;margin:0 auto;padding:50px 10px 0}
+.safety_wrap .safety_data h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_redline_safety.gif) no-repeat 0 0;font-family:'KiaB';font-size:35px;line-height:35px;padding:18px 0 0 0}
+.safety_wrap .safety_data h3 strong{display:block;color:#bb162b;margin-top:11px}
+.safety_wrap .safety_data .year{margin-top:20px;font-size:15px;color:#333}
+.safety_wrap .safety_data .year img{margin-right:14px}
+.safety_wrap .safety_data .car_img{text-align:center;margin-top:-99px}
+.evaluation_info{margin-top:5px}
+.evaluation_info li{padding-top:10px}
+.evaluation_info li strong{display:inline-block;width:58px;font:normal 13px 'kiaM';color:#333}
+.evaluation_info li img{vertical-align:middle}
+.safety_wrap .safety_infor{margin:15px auto 0;width:940px}
+.safety_wrap .safety_infor ul li.bl_type_note{color:#999}
+.safety_wrap .safety_tab_contents .tab_type2{margin-bottom:0}
+.safety_wrap .safety_tab_contents .tab_type2.col8 li{min-width:117px}
+.safety_wrap .safety_tab_contents .tab_type2.col8 li:nth-child(even){min-width:118px}
+.safety_wrap .safety_tab_contents .tab_type2.col8 li a{padding:12px 0 12px 0}
+.safety_wrap .tab_area{width:940px;margin:0 auto}
+.safety_wrap .tab_contents_area{border-top:1px solid #d0d0d0;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_safety2.gif) repeat}
+.safety_wrap .tab_con{width:940px;margin:0 auto;padding:50px 0 100px}
+.safety_wrap .tab_con h4{padding:10px 0 27px 0;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_m_redline_safety_02.gif) no-repeat 0 0;font-family:'KiaB';font-size:22px;line-height:22px}
+.safety_wrap .tab_con h5{padding:0 0 15px 14px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bl_01.png) no-repeat 0 3px;font-family:'KiaB';font-size:16px;line-height:16px}
+.safety_contents{padding:0 0 50px}
+.safety_contents:after{content:"";clear:both;display:block}
+.fl{float:left}
+.fr{float:right}
+.mt15{margin-top:15px}
+.mt30{margin-top:30px}
+.vspace30{clear:both;height:30px}
+.safety_tit .fr{text-align:right}
+.safety_tit span{display:inline-block;padding-left:15px}
+.safety_tit img{display:inline-block;vertical-align:middle;padding-right:5px}
+.safety_tit:after{content:"";clear:both;display:block}
+.safety_contents .fl,.safety_contents .fr{width:50%;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.safety_contents .fr{padding-left:20px}
+.safety_wrap .assess_star{color:#000;font-family:'KiaB';font-size:16px;line-height:16px}
+.safety_wrap .assess_star img{margin-right:10px;vertical-align:-4px}
+.safety_wrap .assess_txt{color:#666;font-size:13px;line-height:22px;margin-top:13px}
+.safety_wrap .fr.s_result{position:relative;min-height:240px}
+.safety_wrap .fr.s_result:after{content:"";clear:both;display:block}
+.safety_wrap .sTxt{position:absolute;bottom:0;left:20px;font:normal 13px 'KiaM';color:#666}
+.safety_wrap .list_type01{margin-top:25px}
+.safety_wrap .list_type01 li{float:left;width:450px;padding:0 0 3px 7px;font:normal 13px 'KiaM';color:#666}
+.safety_wrap .list_type01 li:before{content:"";width:2px;height:2px;margin:7px 4px 0 -7px;background:#aeaeae;display:inline-block;vertical-align:top}
+.safety_wrap .t_notice{margin-top:20px;color:#666}
+.safety_wrap .t_notice dt{line-height:22px}
+.safety_wrap .t_notice dd{padding-left:10px;line-height:22px}
+.safety_wrap .t_notice02{margin-top:10px;color:#666;font-size:13px}
+.safety_wrap .safety_tb{table-layout:fixed;border-top:2px solid #bb162b;border-bottom:2px solid #7d7d7d}
+.safety_wrap .safety_tb table thead th{background:#e9e9e9;font-family:'KiaB';height:33px;line-height:33px;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6}
+.safety_wrap .safety_tb table thead th:last-child{border-right:0}
+.safety_wrap .safety_tb table thead .twoLine th{border-top:1px solid #eee;font-family:'KiaM'}
+.safety_wrap .safety_tb table thead .twoLine th:last-child{border-right:1px solid #d6d6d6}
+.safety_wrap .safety_tb table tbody td{height:33px;line-height:33px;border-left:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;text-align:center;color:#666;font-size:13px}
+.safety_wrap .safety_tb table tbody td:first-child{border-left:0}
+.safety_wrap .safety_tb table tbody td.img{padding-left:20px;text-align:left}
+.safety_wrap .safety_tb table tbody td.img img{vertical-align:-1px}
+.safety_wrap .safety_tb table tbody td.img_txt{padding:10px 0}
+.safety_wrap .safety_tb table tbody td.img_txt img{vertical-align:middle}
+.safety_wrap .safety_tb table tbody td.img_txt span{display:inline-block;padding-left:10px;text-align:left;line-height:18px;vertical-align:middle}
+.safety_wrap .safety_tb table tbody th{background:#e9e9e9;border-bottom:1px solid #d6d6d6;font-family:'KiaB';color:#333}
+.safety_wrap .safety_tb table tbody th.twoTh{border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;font-family:'KiaM'}
+.safety_wrap .safety_tb.brake table tbody th{background:0;border-right:1px solid #d6d6d6;font-family:'KiaM'}
+.safety_wrap .safety_tb.brake table tbody td{border-right:1px solid #d6d6d6;line-height:20px}
+.safety_wrap .safety_tb.brake table tbody td:last-child{border-right:0}
+.safety_wrap .safety_tb.tb_type02 th,.safety_wrap .safety_tb.tb_type02 td{text-align:left;padding-left:15px}
+.safety_wrap .safety_tb.tb_type02 td.img img{display:inline-block;margin-top:8px}
+.safety_wrap .safety_assessment{width:940px;margin:50px auto 0}
+.safety_wrap .safety_assessment .title{display:block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_list_title.gif);padding:10px 20px;font-size:15px;color:#fff;text-transform:uppercase}
+.safety_wrap .safety_box{padding:50px 0 0;border-top:1px solid #d1d1d1}
+.safety_wrap .safety_box dt{display:block;background:url(../../../../content/dam/kwcms/kr/ko/images/common/icon_question.gif) no-repeat 0 0;padding-left:30px;height:22px;line-height:22px;margin-bottom:15px;font-size:16px;color:#333}
+.safety_wrap .safety_box dd{color:#666;font-size:13px;line-height:20px}
+.tb_wrap{width:940px}
+.tb_wrap li{display:table}
+.tb_wrap li .stit{display:table-cell;background:#f5f5f5;vertical-align:middle;font-family:'KiaB';padding:10px 20px;border-bottom:1px solid #d6d6d6}
+.tb_wrap li .stxt{display:table-cell;vertical-align:middle;background:#fff;padding:10px 20px;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;font-size:13px;color:#666}
+.tb_wrap li .sstxt{display:block;color:#666;font-size:12px;font-family:'KiaM';padding:3px 0 0 0}
+.tb_wrap li .sstar{display:table-cell;min-width:180px;vertical-align:middle;padding:10px 20px;color:#666;font-size:14px;font-family:'KiaM';border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6}
+.tb_wrap li .sstar:last-child{border-right:0}
+.tb_wrap li .spoint{display:table-cell;min-width:180px;vertical-align:middle;padding:10px 20px;color:#666;font-size:20px;border-bottom:1px solid #d6d6d6}
+.tb_wrap li .sstop{display:table-cell;min-width:180px;vertical-align:middle;padding:10px 20px;color:#666;font-size:14px;font-family:'KiaM';border-bottom:1px solid #d6d6d6}
+.tb_wrap li .sstop span{display:block;float:none;width:auto;padding:0}
+.tb_wrap.carTest li.col1 .stit{min-width:90px}
+.tb_wrap.carTest li.col1 .stxt{min-width:770px;border-right:0}
+.tb_wrap.carTest li.col2 .stit{min-width:210px}
+.tb_wrap.carTest li.col3 .stit{min-width:90px}
+.tb_wrap.carTest li.col3 .stxt{min-width:143px}
+.tb_wrap.carTest li.col3 .stxt:last-child{border-right:0}
+.tb_wrap.carTest li strong{display:block}
+.table_safety{width:940px;margin:50px auto}
+.table_safety thead th{padding:12px 20px;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_table_safety.jpg') repeat 0 0;color:#fff;text-align:left;font:normal 15px 'kiaM'}
+.table_safety tbody th{padding:12px 20px;background:#f5f5f5;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;color:#343434;text-align:left;font:normal 14px 'kiaB'}
+.table_safety tbody th p{font-weight:normal;color:#666;font:normal 12px 'kiaM'}
+.table_safety tbody td{padding:12px 20px;border-bottom:1px solid #d6d6d6;color:#666;text-align:left;font:normal 13px 'kiaM'}
+.accessory{width:940px;margin:0 auto;padding-top:68px}
+.accessory h3{font-size:50px;line-height:56px;color:#000;font-family:'kiaB';text-transform:uppercase}
+.accessory .acc_box{margin-bottom:100px}
+.accessory .acc_box span{display:block}
+.accessory .acc_box ul{width:960px;overflow:hidden}
+.accessory .acc_box ul li{position:relative;float:left;width:229px;margin:0 8px 14px 0}
+.accessory .acc_box .box_wrap{overflow:hidden}
+.accessory .acc_box .acc_image img{margin:0 -100%}
+.accessory .acc_box .summary{background:#fff;border:1px solid #d7d7d7;border-top:0;padding:20px 10px 20px 20px;height:53px;overflow:hidden}
+.accessory .acc_box .summary .title{font-size:15px;font-family:'kiaB';text-transform:uppercase;width:200px;height:18px;overflow:hidden}
+.accessory .acc_box .summary .subTxt{display:none;font-size:13px;line-height:16px;height:34px;overflow:hidden;color:#666;margin-top:8px}
+.accessory .acc_box .btn_area span{display:inline-block}
+.accessory .acc_box .pop_con{padding:0}
+.accessory .acc_box .pop_con dl{padding:15px 25px}
+.accessory .acc_box .pop_con dl dt{margin-bottom:10px;font-size:15px}
+.accessory .acc_box .pop_con dl dd{color:#666}
+.accessory .acc_box .pop_con img{width:100%}
+.accessory .popup_wrap{display:none;top:0;left:50%;margin-left:-372px;width:745px;height:auto}
+.accessory .accVideoBtn{position:absolute;left:50%;top:50%;margin:-85px 0 0 20px}
+.accessory .popup_wrap02{display:none;position:absolute;top:0;left:50%;width:745px;height:auto;margin:0 0 0 -373px;min-width:290px;z-index:991;max-width:740px}
+.accessory .closeBtn{position:absolute;top:0;right:-50px}
+.business{width:940px;margin:50px auto 100px}
+.business h3{font-size:22px;margin-bottom:40px}
+.business h3:before{content:"";display:block;width:70px;height:2px;background:#bb162b;margin-bottom:13px}
+.business .business_title{background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_list_title.gif');padding:0 20px;color:#fff;height:38px;line-height:38px}
+.business .business_tb{width:100%;border-bottom:2px solid #7d7d7d}
+.business .business_tb thead th{background:#f5f5f5;padding:7px 0;border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6}
+.business .business_tb thead th:last-child{border-right:0}
+.business .business_tb thead tr.sub th{font-size:13px;font-family:'KiaM'}
+.business .business_tb tbody th{background:#f5f5f5;text-align:left;padding:7px 15px;border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6;font-size:13px;font-family:'KiaM'}
+.business .business_tb tbody td{padding:7px 0;border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6;text-align:center}
+.business .business_tb tbody td:last-child{border-right:0}
+.business .business_infor{margin:10px 0 50px}
+.business .business_infor .bl_type_note{font-size:12px;color:#999}
+.business .tab_type2 .tab_li{min-width:156px}
+.business .spec_list.form3{margin:50px auto 0}
+.business .form_wrp{margin-bottom:20px}
+.environment_cont .web_img{display:inline-block}
+.environment_cont .tablet_img{display:none}
+.environment_cont .mobile_img{display:none}
+.environment_cont h4{font-size:34px;line-height:38px;color:#000;text-align:center;margin-bottom:35px}
+.environment_cont h4:before{content:"";display:block;width:64px;height:2px;border-top:2px solid #bb162b;margin:0 auto 23px}
+.environment_cont .certificate:after{content:"";clear:both;display:block}
+.environment_cont .certificate .imgArea{float:left;width:240px;text-align:center}
+.environment_cont .certificate .imgArea a{display:block}
+.environment_cont .certificate .imgArea .thum_img{position:relative;display:inline-block;width:90px}
+.environment_cont .certificate .imgArea .thum_img img{width:100%}
+.environment_cont .certificate .imgArea .btn_zoom{position:absolute;right:0;bottom:0}
+.environment_cont .certificate .imgArea .title{display:block;color:#000;margin-top:10px}
+.environment_cont .certificate .txtArea{overflow:hidden;padding-right:80px}
+.environment_cont .certificate .txtArea .desc01{color:#666}
+.environment_cont .certificate .txtArea .desc02{color:#333;margin-top:20px}
+.environment_cont .certificate .txtArea strong{display:block;color:#bb162b;font-size:20px;line-height:24px;margin:20px 0}
+.environment_cont .stit{display:block;text-align:center;font-size:20px;line-height:24px;margin-top:-25px}
+.environment_cont .certificate.no_img .txtArea{overflow:hidden;text-align:center;padding-right:0 !important}
+.environment01{position:relative;background:#fff;height:517px;padding:50px 0 0}
+.environment01 .bgArea{position:absolute;left:50%;top:0;margin-left:-340px}
+.environment01 .txtArea{position:absolute;left:0;top:0;z-index:10;width:100%;height:100%}
+.environment01 .desc01{font-size:28px;line-height:32px;font-family:'KiaB';margin-bottom:56px}
+.environment01 .desc02{color:#666}
+.environment01 .desc03{color:#222;margin-top:15px}
+.environment02{position:relative;background:#f8f7f7;padding:60px 0 90px}
+.environment02 .img_area{text-align:center}
+.environment03{position:relative;background:#fff;padding:60px 0 90px}
+.environment04{position:relative;background:#f8f7f7;padding:60px 0 90px}
+.environment04 .warming{border-top:1px solid #d2d1d1;margin-top:30px;padding-top:40px;color:#666;text-align:center}
+.environment04 .warming .img_area{margin-top:45px}
+.environment04 .warming .gas{margin-top:50px}
+.environment04 .warming .gas:before{content:"";display:block;width:46px;height:1px;border-top:1px solid #666;margin:0 auto 20px}
+.environment05{position:relative;background:#fff;padding:60px 0 90px}
+.environment05 .evil{text-align:center}
+.environment05 .evil .morningTxt{font-size:16px}
+.environment05 .evil .morningTxt strong{font-size:20px;color:#bb162b}
+.environment05 .harmful{border-top:1px solid #d2d1d1;margin-top:30px;padding-top:40px}
+.environment06{position:relative;background:#f8f7f7;padding:60px 0 90px}
+.environment06 .recycling{margin-top:45px}
+.environment07{position:relative;background:#fff;padding:60px 0 90px}
+.environment07 .certificate .txtArea .desc01{margin:0;text-align:center}
+.environment07 .certificate .txtArea .desc02{margin:0;text-align:center}
+.environment07 .img_area{margin:30px 0 0 30px}
+.environment07 .definition{margin:15px 0 0 30px}
+.environment07 .definition dt{padding:0 0 0 5px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bl_definition.png) no-repeat 0 2px;background-size:5px 6px;font-family:'KiaB';color:#333}
+.environment07 .definition dd{padding:0 0 0 5px;color:#666}
+.coldtopContents .keyVisualWrap .textArea{width:940px;margin-left:-470px;z-index:99}
+.coldtopContents .keyVisualWrap .textArea h3{font-size:45px;line-height:48px}
+.coldtopContents .keyVisualWrap .textArea p{font-family:kiaB}
+.coldtopContents .keyVisualWrap .bgArea{width:100%;height:710px;overflow:hidden}
+.coldtopContents .keyVisualWrap .bgArea img{height:auto;margin-top:-195px}
+.topView{overflow:hidden;position:absolute;top:0;left:50%;width:940px;height:100%;margin-left:-470px}
+.topView button{overflow:hidden;display:block;text-indent:-9999px;position:absolute;top:50%;width:28px;height:56px;margin-top:45px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_topView_arr.png) no-repeat;z-index:100}
+.topView button.prev{left:0}
+.topView button.next{right:0;background-position:100% 0}
+.topView .sliderWrap{position:relative;overflow:hidden;width:940px;height:100%}
+.topView .slider{position:absolute;top:0;left:0;z-index:10}
+.topView .slider li{float:left}
+.topView .slider li .con_stit{margin:220px 0 0;color:#000;font-size:20px}
+.topView .slider li p{margin-top:-50px}
+.topView .slider li img{width:100%}
+.topView .paging{bottom:20px;z-index:99}
+.coldtopContents .indicator{position:fixed}
+.coldtopContents .keyVisualWrap .v_comment{right:30px;bottom:152px}
+.point_performance{width:860px;margin:44px auto 100px}
+.point_performance .brand_video{width:510px;margin:37px auto 0}
+.point_performance .video_player{width:100%;padding:30px 0 50%;position:relative}
+.point_performance .video_player img{width:100%}
+.point_performance .video_player iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.point_performance .video_desc{width:508px;height:98px;margin:0 auto;overflow-y:auto;overflow-x:hidden;border:1px solid #ddd;text-align:left;color:#666;font-size:11px}
+.point_performance .video_desc p{padding:5px}
+.point_performance.k9 h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_main_w.jpg) no-repeat center 0;height:560px}
+.point_performance.k9 .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_1_w.jpg) no-repeat center 0;height:200px}
+.point_performance.k9 .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_2_w.jpg) no-repeat center 0;height:228px}
+.point_performance.k9 .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_3_w.jpg) no-repeat center 0;height:530px}
+.point_performance.k9 .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_1_w.jpg) no-repeat center 0;height:221px}
+.point_performance.k9 .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_2_w.jpg) no-repeat center 0;height:617px}
+.point_performance.k9 .cont6{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_1_w.jpg) no-repeat center 0;height:220px}
+.point_performance.k9 .cont7{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_2_w.jpg) no-repeat center 0;height:286px}
+.point_performance.k9 .txt1{font-size:14px;color:#666;text-align:center}
+.point_performance.morning h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_main_w.jpg) no-repeat center 0;height:559px}
+.point_performance.morning .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_2_w.jpg) no-repeat center 0;height:263px}
+.point_performance.morning .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_3_w.jpg) no-repeat center 0;height:479px}
+.point_performance.morning .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_4_w.jpg) no-repeat center 0;height:441px}
+.point_performance.morning .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_5_w.jpg) no-repeat center 0;height:374px}
+.point_performance.morning .wImg{display:block}
+.point_performance.morning .tImg{display:none}
+.point_performance.morning .mImg{display:none}
+.point_performance.soulTest .cont1{margin-top:67px;text-align:center}
+.point_performance.soulTest .cont1 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_test_1_2.jpg) no-repeat center 0;height:52px}
+.point_performance.soulTest .stepImg{margin-top:23px}
+.point_performance.soulTest .cont_box{padding:44px 0 79px;border-left:1px solid #dedede;border-right:1px solid #dedede;border-bottom:1px solid #dedede;text-align:center}
+.point_performance.soulTest .cont_box p{color:#323232;font-size:17px;line-height:21px;margin-bottom:70px}
+.point_performance.soulTest .cont2{margin-top:70px}
+.point_performance.soulTest .cont2 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_test_2_1.jpg) no-repeat center 0;height:52px}
+.point_performance.soulTest .cont3{width:592px;margin:50px auto 0}
+.point_performance.soulTest .cont3Img{text-align:center}
+.point_performance.soulTest .etc{margin:24px 0 10px}
+.point_performance.soul{color:#000}
+.point_performance.soul h3{font-size:70px;font-family:kiaM;line-height:normal;text-align:center}
+.point_performance.soul h4{display:block;border-top:1px solid #d8d8d8;margin:25px 0;padding-top:35px;font-size:24px;font-family:kiaM;line-height:normal}
+.point_performance.soul .point{color:#d81622}
+.point_performance.soul .summary{font-size:20px;line-height:26px;text-align:center}
+.point_performance.soul .brand_story{margin-top:44px;text-align:center}
+.point_performance.soul .brand_story .pdf img{margin:0 -2px}
+.point_performance.soul .brand_story .ebook{margin-top:20px}
+.point_performance.soul .brand_story .ebook li{display:inline-block;margin:0 25px}
+.point_performance.soul .brand_story .ebook li img{display:block;margin-bottom:5px}
+.point_performance.soul .brand_history{text-align:left}
+.point_performance.soul .brand_history .intro{font-size:80px;line-height:76px;text-transform:uppercase;position:relative;letter-spacing:-2px}
+.point_performance.soul .brand_history .intro .point{display:inline-block;padding-right:40px;background:#fff}
+.point_performance.soul .brand_history .intro .desc{display:block;border-bottom:2px solid #000;font-size:26px;margin-top:-80px;padding-left:230px;line-height:72px;letter-spacing:0}
+.point_performance.soul .brand_history .history{margin-top:26px;font-size:12px;font-family:Dotum;line-height:22px}
+.point_performance.soul .brand_history .history .pic{float:left;margin-right:21px}
+.point_performance.soul .brand_history .history .bg{margin-bottom:24px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_history2.jpg) 231px bottom no-repeat}
+.point_performance.soul .brand_history .history .bg:after{content:"";display:block;clear:both}
+.point_performance.soul .brand_timeline{text-align:left}
+.point_performance.soul .brand_timeline .intro{font-size:50px;line-height:55px}
+.point_performance.soul .brand_timeline .timeline li{margin-top:25px}
+.point_performance.soul .brand_timeline .timeline li:after{content:"";display:block;clear:both}
+.point_performance.soul .brand_timeline .timeline .year{border-bottom:1px solid #000;font-size:80px;line-height:normal;letter-spacing:-6px}
+.point_performance.soul .brand_timeline .timeline .year strong{padding-right:3px;border-bottom:3px solid #000;position:relative;bottom:-1px}
+.point_performance.soul .brand_timeline .timeline .pic{float:right;background-position:0 0;background-repeat:no-repeat}
+.point_performance.soul .brand_timeline .timeline .desc1{margin-top:35px;font-size:20px;line-height:28px}
+.point_performance.soul .brand_timeline .timeline .desc1 strong{display:block;font-size:35px;font-family:kiaM;line-height:normal}
+.point_performance.soul .brand_timeline .timeline .desc2{margin-top:15px;font-size:12px;font-family:Dotum;line-height:20px}
+.point_performance.soul .brand_timeline .timeline li.r .year{text-align:right}
+.point_performance.soul .brand_timeline .timeline li.r .pic{float:left}
+.point_performance.soul .brand_timeline .timeline .pic.y2006{width:437px;height:300px;margin:-75px 0 0 0;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2006.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2008{width:231px;height:392px;margin:-75px 35px 0 0;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2008.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2009{width:280px;height:488px;margin:-75px 0 0 35px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2009.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2010{width:296px;height:340px;margin:-75px 35px 0 0;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2010.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2012{width:279px;height:443px;margin:-75px 0 0 35px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2012.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2013{width:452px;height:370px;margin:-75px 0 0 35px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2013.jpg)}
+.point_performance.ray .rayTop{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_main_car.jpg) no-repeat right bottom;height:305px}
+.point_performance.ray .titleCopy{margin-top:20px}
+.point_performance.ray .titleCopy strong{display:block;font-size:47px;line-height:51px}
+.point_performance.ray .subCopy{color:#010101;margin-top:20px;font-family:'KiaB'}
+.point_performance.ray .subTxt{color:#666;font-size:13px;line-height:17px;margin-top:35px}
+.point_performance.ray .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_1_1_w.jpg) no-repeat center 0;height:140px;margin-bottom:10px}
+.point_performance.ray .cont2{margin-top:50px}
+.point_performance.ray .cont2 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_2_1.jpg) no-repeat 0 0;height:16px}
+.point_performance.ray .txt{font-size:13px;line-height:17px;color:#555;margin-top:10px}
+.point_performance.ray .cont2Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_2_2.jpg) no-repeat center 0;height:430px;margin-top:25px}
+.point_performance.ray .cont3{margin-top:50px}
+.point_performance.ray .cont3 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_3_1.jpg) no-repeat 0 0;height:12px}
+.point_performance.ray .cont3Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_3_2.jpg) no-repeat center 0;height:515px;margin-top:25px}
+.point_performance.ray .cont4{margin-top:50px}
+.point_performance.ray .cont4 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_4_1.jpg) no-repeat 0 0;height:16px}
+.point_performance.ray .cont4Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_4_2.jpg) no-repeat center 0;height:514px;margin-top:25px}
+.point_performance.ray .cont5{margin-top:50px}
+.point_performance.ray .cont5 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_5_1.jpg) no-repeat 0 0;height:16px}
+.point_performance.ray .cont5Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_5_2.jpg) no-repeat center 0;height:562px;margin-top:25px}
+.point_performance.ray .cont6{margin-top:50px}
+.point_performance.ray .cont6 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_6_1.jpg) no-repeat 0 0;height:16px}
+.point_performance.ray .cont6Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_6_2.jpg) no-repeat center 0;height:251px;margin-top:25px}
+.point_performance.ray .cont7{margin-top:50px}
+.point_performance.ray .cont7 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_7_1.jpg) no-repeat 0 0;height:16px}
+.point_performance.ray .cont7Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_7_2.jpg) no-repeat center 0;height:215px;margin-top:25px}
+.v_comment{position:absolute;bottom:10px;right:30px;font:normal 12px 'KiaB';color:#666;z-index:10;line-height:18px;text-indent:-13px;margin-left:13px}
+.v_comment .v_pont{vertical-align:3px;color:#c02639}
+.v_comment br{display:none;display:block \9}
+.keyVisualWrap .v_comment{bottom:18px;left:85px;color:#fff;line-height:16px;text-indent:0;margin-left:0}
+.popup_viewer .pop_con .img_more dd.pop_comment{padding-top:20px;font:normal 12px 'KiaB';line-height:18px;text-indent:-13px;margin-left:13px}
+.popup_viewer .pop_con .img_more dd.pop_comment .v_pont{vertical-align:3px;color:#c02639}
+.popup_viewer .pop_con .img_more dd.pop_comment br{display:none}
+.wide_gallery .v_comment{bottom:28px;right:30px;color:#fff}
+.wide_gallery .v_comment p{font:normal 12px 'KiaB';margin:0;line-height:18px}
+@media all and (max-width:1400px){.keyVisualWrap .textArea h3{font-size:40px;line-height:43px}
+.keyVisualWrap .linkArea{top:300px;margin-left:-366px}
+.keyVisualWrap .linkArea .btn_youtube{display:block;width:260px;height:74px}
+.pipLayout .textArea h4{font-size:40px;line-height:44px}
+.pipLayout .imgListTit{font-size:18px;line-height:22px}
+.keyVisualWrap .car_trim{top:88px}
+.coldtopContents .keyVisualWrap .textArea h3{font-size:40px;line-height:43px}
+.coldtopContents .keyVisualWrap .textArea p{font-size:14px;line-height:18px}
+.topView .slider li .con_stit{margin:200px 0 0;color:#000;font-size:16px}
+.keyVisualWrap{height:850px}
+.keyVisualWrap .bgArea{height:880px}
+.keyVisualWrap .bgInner img{height:100%;margin-top:-30px}
+.keyVisualWrap .bgInner{margin-left:-768px}
+.keyVisualWrap .keyBtnLeft{top:642px}
+.keyVisualWrap .keyBtnRight{top:642px}
+.pip_build .build_car{width:750px}
+.pip_build .build_tit{font-size:30px;line-height:34px}
+.pip_build .build_spec .spec_li .info{font-size:20px;line-height:24px}
+.v_comment br{display:block}
+.keyVisualWrap .v_comment{bottom:188px}
+.wide_gallery .v_comment p br{display:none}
+}
+@media all and (max-width:1024px){.indicator,.awardArea{display:none}
+.m_indicator{display:block;width:100%;z-index:1000;height:36px;overflow:hidden}
+.m_indicator .tab{width:100%;border-bottom:1px solid #d4d4d4;overflow:hidden;overflow-x:scroll;background-color:#fff}
+.m_indicator .tab ul{width:auto}
+.m_indicator .tab ul:after{content:".";display:block;height:0;font:0/0 arial;clear:both;visibility:hidden}
+.m_indicator .tab ul li{float:left;width:auto;text-align:center;padding:7px 10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.m_indicator .tab ul li span{font-size:12px;color:#555}
+.m_indicator .tab ul li.on{box-sizing:border-box;font-weight:500;border-bottom:3px solid #bb162b}
+.m_indicator .tab ul li.on span{font-weight:bold;color:#010101}
+.pipContents .popup_wrap{width:600px;margin:0 auto;left:50%;margin-left:-300px}
+.pipContents .popup_wrap dl.img_more{padding:15px}
+.pipContents .popup_wrap02 .closeBtn{position:absolute;top:0;right:-34px;padding:10px}
+.keyVisualWrap{height:708px}
+.keyVisualWrap .textArea{width:95%;left:0;top:43px;margin:0 25px}
+.keyVisualWrap .carArea{width:834px;top:180px;left:50%;margin-left:-333px}
+.keyVisualWrap .carArea img{width:80%}
+.keyVisualWrap .car_view{position:absolute;top:130px;left:50%;margin-left:-300px}
+.keyVisualWrap .bgArea{height:708px}
+.keyVisualWrap .bgInner{margin-left:-618px;text-align:center}
+.keyVisualWrap .bgInner img{margin-top:-25px}
+.keyVisualWrap .bgArea img{width:auto;height:100%}
+.keyVisualWrap .carInforInner>ul{width:auto}
+.keyVisualWrap .exVrArea{width:600px}
+.keyVisualWrap .exVrArea img{margin-top:0}
+.keyVisualWrap .car_refresh{margin:90px 0 0 -33px}
+.keyVisualWrap .notiTxt{top:300px}
+.keyVisualWrap .keyBtnLeft{top:499px}
+.keyVisualWrap .keyBtnRight{top:499px}
+.keyVisualWrap .roomView .car_view{position:relative;top:0;left:auto;margin:0 auto}
+.keyVisualWrap .roomView .car_view img{margin-top:0}
+.keyVisualWrap .roomView .inVrArea{position:relative;width:550px;margin:0 auto}
+.keyVisualWrap .roomView .inVrArea img{width:450px}
+.keyVisualWrap .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.keyVisualWrap .inViewLeft img{width:20px !important;height:38px}
+.keyVisualWrap .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.keyVisualWrap .inViewRight img{width:20px !important;height:38px}
+.keyVisualWrap .exStillCut{position:relative;top:auto;left:auto;margin:0 auto}
+.keyVisualWrap .exVrArea2{width:550px;margin:20px auto 0}
+.keyVisualWrap .exVrArea2 img{width:450px;margin-top:0}
+.keyVisualWrap .exViewSteel ul li{display:none}
+.keyVisualWrap .exViewSteel ul li.on{display:block}
+.keyVisualWrap .carInforInner>ul li img{padding-top:20px}
+.keyVisualWrap .textArea h3{font-size:30px;line-height:34px;margin-bottom:15px}
+.keyVisualWrap .textArea p{font-size:14px;line-height:17px}
+.keyVisualWrap .textArea p br{display:none}
+.keyVisualWrap .carInforInner>ul li .inforTit{font-size:12px}
+.keyVisualWrap .carInforInner>ul li .inforTxt{font-size:18px}
+.keyVisualWrap .carInforInner>ul li img{margin:0 auto 10px}
+.keyVisualWrap .choice_color{top:265px;margin:0}
+.keyVisualWrap .car_trim{left:102px;top:79px}
+.keyVisualWrap .car_trim .select_trim{font-size:12px}
+.keyVisualWrap .car_trim .current{padding-left:15px}
+.keyVisualWrap .car_trim .select_trim span{padding-right:15px}
+.keyVisualWrap .view_inout{margin-right:15px}
+.keyVisualWrap .color_tit{margin-right:30px}
+.keyVisualWrap .wheel_color{display:inline-block;margin-left:60px}
+.keyVisualWrap .wheel_tit{font-size:16px;color:#222;vertical-align:middle;margin-right:30px}
+.keyVisualWrap .linkArea{left:206px;top:241px;margin-left:inherit}
+.keyVisualWrap .linkArea .btn_youtube{display:block;width:209px;height:59px}
+.temp360vr{height:650px}
+.pipLayout.temp360vr .textArea h3{top:0;font-size:18px}
+.temp360vr .textArea{width:95%;left:0;top:43px;margin:0 25px}
+.temp360vr .carArea{width:834px;top:180px;left:50%;margin-left:-333px}
+.temp360vr .carArea img{width:80%}
+.temp360vr .car_view{position:absolute;top:130px;left:50%;margin-left:-300px}
+.temp360vr .bgArea{height:708px}
+.temp360vr .bgInner{margin-left:-618px;text-align:center}
+.temp360vr .bgInner img{margin-top:-25px}
+.temp360vr .bgArea img{width:auto;height:100%}
+.temp360vr .paging{bottom:155px}
+.temp360vr .carInforInner>ul{width:auto}
+.temp360vr .exVrArea{width:600px}
+.temp360vr .exVrArea img{margin-top:0}
+.temp360vr .car_refresh{margin:130px 0 0 -33px}
+.temp360vr .notiTxt{top:300px}
+.temp360vr .keyBtnLeft{top:472px}
+.temp360vr .keyBtnRight{top:472px}
+.temp360vr .roomView .car_view{position:relative;top:0;left:auto;margin:0 auto}
+.temp360vr .roomView .car_view img{margin-top:0}
+.temp360vr .roomView .inVrArea{position:relative;width:550px;margin:0 auto}
+.temp360vr .roomView .inVrArea img{width:450px}
+.temp360vr .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.temp360vr .inViewLeft img{width:20px !important;height:38px}
+.temp360vr .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.temp360vr .inViewRight img{width:20px !important;height:38px}
+.temp360vr .exStillCut{position:relative;top:auto;left:auto;margin:0 auto}
+.temp360vr .exVrArea2{width:550px;margin:20px auto 0}
+.temp360vr .exVrArea2 img{width:450px;margin-top:0}
+.temp360vr .exViewSteel ul li{display:none}
+.temp360vr .exViewSteel ul li.on{display:block}
+.temp360vr .carInforInner>ul li img{padding-top:20px}
+.temp360vr .textArea h3{font-size:30px;line-height:34px;margin-bottom:120px}
+.temp360vr .textArea p{font-size:14px;line-height:17px}
+.temp360vr .carInforInner>ul li .inforTit{font-size:12px}
+.temp360vr .carInforInner>ul li .inforTxt{font-size:18px}
+.temp360vr .carInforInner>ul li img{margin:0 auto 10px}
+.temp360vr .choice_color{top:265px;margin:0}
+.temp360vr .car_trim{left:22%;top:405px}
+.temp360vr .car_trim .select_trim{font-size:12px}
+.temp360vr .car_trim .current{padding-left:15px}
+.temp360vr .car_trim .select_trim span{padding-right:15px}
+.temp360vr .view_inout{top:70px}
+.temp360vr .choice_color_wr .body_color{margin-left:22%}
+.temp360vr .roomView .car_trim{top:96%;left:30%}
+.panorama .vr360.choice_color{display:none}
+.panorama .notiTxt.roomtxt{top:30px !important}
+.gallery .notiTxt.roomtxt{top:40px}
+.temp360vr .color_tit{margin-right:30px}
+.temp360vr .wheel_color{display:inline-block;margin-left:60px}
+.temp360vr .wheel_tit{font-size:16px;color:#222;vertical-align:middle;margin-right:30px}
+.pipLayout .bgArea{height:568px}
+.pipLayout .textArea{width:100%;left:0;margin:0 25px;padding:60px 0 0 0}
+.pipLayout .textArea h3{top:40px;font-size:18px}
+.temp00.pipLayout .textArea{padding:0}
+.temp00.pipLayout .textArea h3{top:0}
+.pipLayout .textArea h4{color:#fff;font-family:kiaB;font-size:30px;line-height:34px;padding:30px 10px 0 10px}
+.pipLayout .textArea .subTxt{padding:14px 10px 10px 10px;font-size:14px;line-height:18px;width:90%}
+.pipLayout .textArea .subTxt br{display:none}
+.pipLayout .imgListTit{left:20px;top:20px;font-size:16px;line-height:19px}
+.pipLayout .imgList.type6{width:auto;margin:20px 0}
+.pipLayout .imgList.type6+.imgList.type6{margin-top:-10px}
+.pipLayout .imgList.type7{background:#fff;width:auto;margin:20px auto}
+.pipLayout .imgList.type7 li{width:32%;margin-right:2%}
+.pipLayout .imgList.type7 li+li+li{margin-right:0}
+.pipLayout .imgList.type8{width:auto;margin-top:20px}
+.pipLayout .imgList.type8 li{width:24.25%;margin-right:1%;height:auto}
+.pipLayout .imgList.type8 li.bigImg{width:49.5%}
+.pipLayout .imgList.type8 li img{width:100%;height:auto}
+.pipLayout .imgList.type8 .imgListTit{left:20px;bottom:20px;top:auto;font-family:'KiaB';font-size:15px;line-height:18px}
+.pipLayout .imgList.type8+.imgList.type8{margin:10px auto 20px}
+.pipLayout .imgList.type8 li.web dl dt{color:#333;font-family:kiaM;font-size:23px;line-height:26px;margin-bottom:10px}
+.pipLayout .snsWrap{background:#fafafa;width:auto;margin:0 auto;text-align:left}
+.pipLayout .btmTextTit{font-size:16px}
+.coldtopContents .keyVisualWrap{height:745px}
+.topView button{margin-top:0}
+.pip_build .build_link .link_li{width:18%;margin:0 5px}
+.pip_build .build_car{width:500px}
+.gallery_notice{width:90%;margin:30px 0 0;padding:0 0 0 40px}
+.pip_gallery .width_wrap .screen_wrap{padding-left:149px}
+.pip_gallery .width_wrap .screen_wrap .screen_nav{width:150px}
+.pip_gallery .width_wrap .title{margin-top:25px;padding-left:25px;font-size:23px}
+.pip_gallery .width_wrap .screen_link span{font-size:20px;line-height:45px}
+.pip_gallery .width_wrap .screen_link span:after{margin:0 0 -3px 8px}
+.pip_gallery .width_wrap .mouse_evt{display:none;margin-left:-42px}
+.nav_fixed{width:150px}
+.pip_gallery .width_wrap .btnLink{padding:50px 15px 0}
+.pip_gallery .width_wrap .btnLink a span{font-size:16px;line-height:45px}
+.pip_gallery .width_wrap .btnLink a span:after{top:13px}
+.video_popup .pop_con .youtube{padding-bottom:45%}
+.galleryTxt{left:0;margin:0 25px;width:95%}
+.galleryTxt strong{font-size:22px}
+.galleryTxt p{font-size:13px;margin-top:15px}
+.pip_spec .webImg{display:none}
+.pip_spec .mobileImg{display:none}
+.pip_spec .tabletImg{display:block}
+.spec_visual{height:600px}
+.spec_visual .spec_data{width:605px;margin:0;padding:73px 10px 0}
+.spec_visual .spec_data ul{margin-top:40px}
+.spec_visual .spec_slide_area{top:0;width:605px;margin:0 auto;padding:0 10px}
+.spec_visual .spec_slide_area .spec_img{width:605px;overflow:hidden}
+.spec_visual .spec_slide_area .spec_img ul{width:100000px;padding-bottom:19px;overflow:hidden}
+.spec_visual .spec_slide_area .spec_img ul li{display:inline-block;position:relative;float:left;width:605px;text-align:center}
+.spec_visual .spec_slide_area .spec_img ul li img{width:100%}
+.spec_visual a.spec_next{right:-50px}
+.spec_visual a.spec_prev{left:-50px}
+.spec_visual .control .num{display:none}
+.spec_visual .spec_allview_area{width:100%;margin:0;padding:120px 0 0}
+.spec_visual .spec_allview_area ul{width:685px;margin:0 auto}
+.spec_visual .spec_allview_area ul:after{content:"";clear:both;display:block}
+.spec_visual .spec_allview_area ul li{float:left;width:100%}
+.spec_visual .spec_allview_area ul li img{width:100%;display:inline-block;text-align:center}
+.spec_list{width:738px;margin:30px auto 0}
+.spec_note{width:738px;margin:0 auto 40px}
+.engine_visual{height:600px}
+.engine_visual .engine_data{width:605px;margin:0;top:63px;left:10px}
+.engine_visual .engine_data ul{margin-top:15px}
+.engine_visual a.spec_next{right:-50px}
+.engine_visual a.spec_prev{left:-50px}
+.engine_slide_area{width:605px;margin:0 auto}
+.engine_slide_area .img_wrap{position:relative;width:605px;height:400px;overflow:hidden}
+.engine_slide_area .img_wrap>ul>li{width:605px}
+.engine_slide_area .img_wrap .title{font-size:26px;line-height:30px}
+.engine_slide_area .img_wrap .type{padding:10px 0 13px}
+.engine_slide_area .img_wrap .type span{display:inline-block}
+.engine_slide_area .img_wrap .type strong{display:inline-block;font-size:14px;padding:0}
+.engine_slide_area .img_wrap .engine_contents{position:absolute;left:345px;top:0;width:auto;text-align:left}
+.engine_slide_area .img_wrap .engine_contents ul{padding:13px 0 0;width:260px}
+.engine_slide_area .img_wrap .img{text-align:left}
+.engine_slide_area .img_wrap .img img{width:100%}
+.engine_allview_area{width:100%;padding:25px 10px 0}
+.engine_allview_area ul{width:685px;margin:0 auto}
+.engine_allview_area ul li img{width:40%}
+.engine_allview_area.engineType03 ul li img{width:80%}
+.engine_allview_area.engineType04 ul li img{width:50%}
+.engine_allview_area.engineType05 ul li img{width:80%}
+.engine_allview_area ul li ul{width:100%}
+.engine_allview_area.engineType02 ul li ul{margin-top:-10px}
+.wheel_visual{height:600px}
+.wheel_visual .wheel_data{width:605px;margin:0;top:63px;left:10px}
+.wheel_visual .wheel_data ul{margin-top:15px}
+.wheel_visual a.spec_next{right:-50px}
+.wheel_visual a.spec_prev{left:-50px}
+.wheel_slide_area{width:605px;margin:0 auto}
+.wheel_slide_area .img_wrap{position:relative;width:605px;overflow:hidden}
+.wheel_slide_area .img_wrap>ul>li{width:605px}
+.wheel_slide_area .img_wrap .title br{display:none}
+.wheel_slide_area .img_wrap .wheel_contents{position:absolute;left:385px;top:113px;width:auto;text-align:left}
+.wheel_slide_area .img_wrap .img{text-align:left}
+.wheel_slide_area .img_wrap .img img{width:90%}
+.wheel_allview_area{width:100%;padding:70px 10px 0}
+.wheel_allview_area ul{width:685px;margin:0 auto}
+.wheel_allview_area ul li img{width:40%}
+.wheel_allview_area.wheelType03 ul li img{width:80%}
+.wheel_allview_area.wheelType04 ul li img{width:50%}
+.wheel_allview_area.wheelTypee05 ul li img{width:80%}
+.wheel_visual .control{display:none}
+.pip_wheel .spec_list{width:738px;margin:50px auto 0}
+.pip_wheel .spec_note{width:738px;margin:0 auto 100px}
+.spec_list.form3 .spec_view .scroll_inner{width:738px}
+.spec_list.form3 .spec_view .scroll_inner table{width:738px}
+.spec_visual .spec_allview_area .spec_img{position:absolute;left:50%;bottom:115px;margin-left:-343px}
+.spec_data .car_trim{left:120px;top:140px}
+.btnSpec.spec2{display:none}
+.review .img img.tablet{display:inline-block}
+.review .img img.mobile,.review .img img.web{display:none}
+.review .review_visual .control .roll li{top:-223px}
+.review .review_visual .control .roll{display:none}
+.review .media_review{padding:50px 15px 50px 15px}
+.review .media_review .mediaCon{width:100%}
+.review .media_review .mediaCon>ul li .txt strong{font-size:20px}
+.sns_wrap{padding-bottom:40px}
+.sns_wrap .sns_top{font-size:18px;font-family:'KiaB'}
+.sns_wrap .sns_list li{float:left;width:33.33%}
+.safety_wrap .safety_tab_contents{display:none}
+.safety_wrap .safety_data{width:768px}
+.safety_wrap .safety_data .car_img img{width:90%}
+.safety_wrap .safety_infor{width:738px;margin:15px auto 0}
+.safety_wrap .safety_infor ul li.bl_type_note{color:#999}
+.safety_wrap .safety_tab_contents .tab_type2{margin-bottom:0}
+.safety_wrap .tab_area{width:738px;margin:0 auto;padding:0}
+.safety_wrap .tab_type2 li{min-width:105px}
+.safety_wrap .tab_type2 li a{padding:12px 6px}
+.safety_wrap .tab_con{width:738px;padding-bottom:50px}
+.safety_wrap .safety_assessment{width:738px;margin:30px auto 0;padding:0 15px}
+.tb_wrap{width:738px;overflow:hidden}
+.tb_wrap.carTest li .sstar{display:table-cell;min-width:126px;vertical-align:middle;padding:10px 20px;color:#666;font-size:14px;font-family:'KiaM';border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6}
+.tb_wrap.carTest li .spoint{display:table-cell;min-width:126px;vertical-align:middle;padding:10px 20px;color:#666;font-size:20px;border-bottom:1px solid #d6d6d6}
+.tb_wrap.carTest li .sstop{display:table-cell;min-width:126px;vertical-align:middle;padding:10px 20px;color:#666;font-size:14px;font-family:'KiaM';border-bottom:1px solid #d6d6d6}
+.tb_wrap.carTest li.col1 .stit{min-width:60px}
+.tb_wrap.carTest li.col1 .stxt{min-width:598px;border-right:0}
+.tb_wrap.carTest li.col2 .stit{min-width:163px}
+.tb_wrap.carTest li.col3 .stit{min-width:60px}
+.tb_wrap.carTest li.col3 .stxt{min-width:104px}
+.safety_contents .fl img,.safety_contents .fr img{width:100%}
+.safety_wrap .assess_star img{width:108px}
+.safety_wrap .safety_tb table tbody td.pedestrianImg img{width:100%}
+.table_safety{width:738px;margin:30px auto;padding:0 15px}
+.accessory{width:730px;padding-top:50px}
+.accessory .acc_box{margin-bottom:50px}
+.accessory .acc_box ul{width:730px}
+.accessory .acc_box ul li{float:none;width:100%;margin:0 0 14px 0}
+.accessory .acc_box .acc_image img{margin:0}
+.accessory .popup_wrap{top:0;left:50%;margin-left:-300px;width:600px;height:auto}
+.accessory .accVideoBtn{position:absolute;left:50%;top:50%;margin:-57px 0 0 -28px}
+.accessory .popup_wrap02{width:600px;height:auto;margin:0 0 0 -300px}
+.accessory .closeBtn{position:absolute;top:0;right:-51px}
+.business{width:730px;margin:30px auto 80px}
+.environment_cont .web_img{display:none}
+.environment_cont .tablet_img{display:inline-block}
+.environment_cont .mobile_img{display:none}
+.environment_cont .certificate .imgArea{width:130px;margin-right:25px}
+.environment_cont .certificate .txtArea{padding-right:0}
+.environment01{position:relative;background:#fff;height:500px;padding:50px 0 20px}
+.environment01 .bgArea{position:absolute;left:50%;top:0;margin-left:-400px}
+.environment04 .warming p br{display:none}
+.coldtopContents .keyVisualWrap .textArea{width:auto;margin:0 15px}
+.coldtopContents .keyVisualWrap .textArea h3{font-size:30px;line-height:34px}
+.coldtopContents .keyVisualWrap .bgArea img{margin-top:-90px}
+.topView{width:100%;left:0;margin:0}
+.topView .slider li .con_stit{margin:175px 0 0}
+.topView .slider li p{text-align:center;margin-top:-30px}
+.topView .slider li img{width:606px}
+.topView .sliderWrap{width:auto;margin:0 15px}
+.topView .paging{bottom:20px;z-index:99}
+.point_performance{width:608px;margin:22px auto 80px}
+.point_performance .video_player{margin:22px auto 0}
+.point_performance .video_desc{width:510px}
+.point_performance.k9 h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_main_m.jpg) no-repeat center 0;height:500px}
+.point_performance.k9 .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_1_m.jpg) no-repeat center 0;height:250px}
+.point_performance.k9 .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_2_m.jpg) no-repeat center 0;height:252px}
+.point_performance.k9 .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_3_m.jpg) no-repeat center 0;height:556px}
+.point_performance.k9 .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_1_m.jpg) no-repeat center 0;height:247px}
+.point_performance.k9 .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_2_m.jpg) no-repeat center 0;height:529px}
+.point_performance.k9 .cont6{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_1_m.jpg) no-repeat center 0;height:247px}
+.point_performance.k9 .cont7{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_2_m.jpg) no-repeat center 0;height:595px}
+.point_performance.k9 .txt1{font-size:14px;color:#666;text-align:center}
+.point_performance.morning h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_main_m.jpg) no-repeat center 0;height:528px}
+.point_performance.morning .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_2_m.jpg) no-repeat center 0;height:264px}
+.point_performance.morning .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_3_m.jpg) no-repeat center 0;height:480px}
+.point_performance.morning .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_4_m.jpg) no-repeat center 0;height:464px}
+.point_performance.morning .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_5_m.jpg) no-repeat center 0;height:350px}
+.point_performance.morning .wImg{display:none}
+.point_performance.morning .tImg{display:block}
+.point_performance.morning .mImg{display:none}
+.point_performance.soulTest .cont1{width:590px;margin:0 auto}
+.point_performance.soulTest .cont1 img{width:100%}
+.point_performance.soulTest .stepImg{margin-top:23px}
+.point_performance.soulTest .cont_box p{font-size:14px;line-height:18px;width:80%;margin:0 auto 70px}
+.point_performance.soulTest .cont_box p br{display:none}
+.point_performance.soulTest .cont_box img{width:80%}
+.point_performance.soulTest .cont2{width:590px;margin:70px auto 0}
+.point_performance.soulTest .cont2 img{width:100%}
+.point_performance.soulTest .cont2 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_test_2_1.jpg) no-repeat center 0;height:52px}
+.point_performance.soulTest .cont3{width:590px}
+.point_performance.soulTest .cont3Img{text-align:center}
+.point_performance.soulTest .etc{margin:24px 0 10px}
+.point_performance.soul{width:auto;margin:22px 12px 80px}
+.point_performance.soul .brand_history .history .bg{background-size:65% auto}
+.point_performance.ray .rayTop{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_main_car.jpg) no-repeat right bottom;background-size:300px 250px;height:250px}
+.point_performance.ray .titleCopy{margin-top:20px}
+.point_performance.ray .subCopy br{display:none}
+.point_performance.ray .titleCopy strong{display:block;font-size:40px;line-height:44px}
+.point_performance.ray .subCopy{width:50%}
+.point_performance.ray .subTxt{width:50%;margin-top:15px}
+.point_performance.ray .subTxt br{display:none}
+.point_performance.ray .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_1_1_w.jpg) no-repeat center 0;background-size:608px 99px;height:99px;margin:25px 0 10px}
+.point_performance.ray .cont2{margin-top:50px}
+.point_performance.ray .txt{font-size:13px;line-height:17px;color:#555;margin-top:10px}
+.point_performance.ray .cont2Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_2_2.jpg) no-repeat center 0;background-size:608px 304px;height:304px;margin-top:25px}
+.point_performance.ray .cont3{margin-top:50px}
+.point_performance.ray .cont3Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_3_2.jpg) no-repeat center 0;background-size:608px 363px;height:363px;margin-top:25px}
+.point_performance.ray .cont4{margin-top:50px}
+.point_performance.ray .cont4Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_4_2.jpg) no-repeat center 0;background-size:608px 337px;height:337px;margin-top:25px}
+.point_performance.ray .cont5{margin-top:50px}
+.point_performance.ray .cont5Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_5_2.jpg) no-repeat center 0;background-size:608px 489px;height:489px;margin-top:25px}
+.point_performance.ray .cont6{margin-top:50px}
+.point_performance.ray .cont6Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_6_2.jpg) no-repeat center 0;background-size:608px 177px;height:177px;margin-top:25px}
+.point_performance.ray .cont7{margin-top:50px}
+.point_performance.ray .cont7Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_7_2.jpg) no-repeat center 0;background-size:608px 152px;height:152px;margin-top:25px}
+.v_comment br{display:block}
+.keyVisualWrap .v_comment{bottom:156px}
+.wide_gallery .v_comment p br{display:none}
+}
+@media all and (max-width:1024px){.keyVisualWrap .linkArea{width:959px;position:absolute;top:169px;left:50%;margin-left:-340px;color:#000}
+}
+@media all and (max-width:767px){.pipContents .webImg{display:none}
+.pipContents .mobileImg{display:block}
+.pipContents .tabletImg{display:none}
+.car_trim_list{font-family:kiaM,Hevetica;line-height:10px;color:#333}
+.pipContents .popup_wrap{width:320px;margin:0 auto;left:50%;margin-left:-160px}
+.pipContents .popup_wrap dl.img_more{padding:5px}
+.popup_viewer .pop_con .img_more{padding:10px 12px 15px}
+.popup_viewer .pop_con .img_more dt{font-size:16px;line-height:20px;margin-bottom:5px}
+.popup_viewer .pop_con .img_more dd{font-size:12px;line-height:16px}
+.pipContents .car_play a{margin:-57px 0 0 -33px}
+.pipContents .popup_wrap .closeBtn{padding:10px}
+.pipContents .popup_wrap02{width:250px;margin-left:-125px}
+.pipContents .popup_wrap02 .closeBtn{position:absolute;top:-34px;right:0;padding:10px}
+.keyVisualWrap{height:790px}
+.keyVisualWrap.etc3{height:650px}
+.keyVisualWrap.etc4{height:720px}
+.keyVisualWrap.etc3_1{height:615px}
+.keyVisualWrap.etc4_1{height:685px}
+.topView button{margin-top:-65px}
+.keyVisual01,.keyVisual02,.keyVisual03{overflow:visible}
+.keyVisualWrap .textArea{width:100%;top:44px;left:0;margin:0}
+.keyVisualWrap .keyVisual02 .textArea{top:25px;left:0}
+.keyVisualWrap .carArea{width:470px;top:160px;left:50%;margin-left:-160px}
+.keyVisualWrap .carArea img{width:68%}
+.keyVisualWrap .car_view{position:absolute;top:142px;left:0;margin-left:0}
+.keyVisualWrap .car_view img{width:85%;margin-top:15px}
+.keyVisualWrap .bgArea{height:440px;overflow:hidden}
+.keyVisualWrap .bgInner{margin-left:-384px;top:-102px}
+.keyVisualWrap .bgInner img{margin-top:102px}
+.keyVisualWrap .bgArea img{width:auto;height:100%}
+.keyVisualWrap .textArea h3{font-size:21px;font-weight:normal;line-height:26px;text-align:center;margin-bottom:15px;letter-spacing:-2px}
+.keyVisualWrap .keyVisual02 .textArea h3{text-align:left;padding-left:10px;margin-bottom:0}
+.keyVisualWrap .choice_area{padding-left:10px}
+.keyVisualWrap .textArea h3+p{display:none}
+.keyVisualWrap .paging{bottom:240px}
+.keyVisualWrap .paging_etc4{bottom:300px}
+.keyVisualWrap .keybtnSmall{text-align:center}
+.keyVisualWrap .keybtnSmall div{display:inline}
+.keyVisualWrap .keybtnSmall .btnType2{margin-bottom:5px}
+.keyVisualWrap .carInfor{position:absolute;left:0;bottom:0;z-index:99;height:auto;background:#f7f7f7;border-bottom:0}
+.keyVisualWrap .carInforInner{position:relative;width:100%;height:100%;overflow:hidden;margin:0 auto}
+.keyVisualWrap .carInforInner>ul{border:0;width:100%;height:auto}
+.keyVisualWrap .carInforInner>ul li{display:block;position:relative;height:70px;overflow:hidden;font-size:14px;font-family:'kiaM';color:#737373;background:#f7f7f7;border:0;box-sizing:border-box}
+.keyVisualWrap .carInforInner>ul li.on{display:block}
+.keyVisualWrap .carInforInner>ul li.infor1{width:100%;border-bottom:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li.infor2{width:100%;border-bottom:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li.infor3{width:100%;border-bottom:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li.infor4{width:100%;border-bottom:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li.infor5{width:100%;border-bottom:1px solid #d1d1d1}
+.keyVisualWrap .carInforInner>ul li div{border-left:0;width:240px;height:70px;padding:10px 0 0 70px;box-sizing:border-box;margin:0 auto;text-align:left}
+.keyVisualWrap .carInforInner>ul li img{position:absolute;margin-left:-50px;vertical-align:middle;padding:0;width:auto;height:30px;margin-top:4px}
+.keyVisualWrap .carInforInner>ul li.infor1 img{margin-left:-57px}
+.keyVisualWrap .carInforInner>ul li.infor2 img{margin-left:-68px}
+.keyVisualWrap .carInforInner>ul li.infor3 img{margin-left:-58px}
+.keyVisualWrap .carInforInner>ul li.infor4 img{margin-left:-58px}
+.keyVisualWrap .carInforInner>ul li.infor5 img{margin-left:-56px}
+.keyVisualWrap .carInforInner>ul li .inforTxt{font-size:20px;line-height:20px}
+.keyVisualWrap .dots{display:block;position:absolute;left:0;top:70px;width:100%;z-index:5;display:none}
+.keyVisualWrap .dots ul{overflow:hidden;margin-top:10px;display:block;text-align:center}
+.keyVisualWrap .dots ul li{display:inline-block;height:auto}
+.keyVisualWrap .dots ul li a{display:block;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:200%;overflow:hidden}
+.keyVisualWrap .dots ul li.on a{background-position:0 0}
+.keyVisualWrap .keyVisual02 .car_view{width:470px;left:50%;top:75px;margin-left:-230px}
+.keyVisualWrap .exVrArea{width:470px;margin:0 auto}
+.keyVisualWrap .exVrArea img{width:72%;margin-top:30px}
+#ex360vr_img-reel{width:470px;margin:0 auto}
+#ex360vr_img-reel .reel{width:72%;display:inline}
+.keyVisualWrap .car_refresh{width:66px;margin:80px 0 0 -33px}
+.keyVisualWrap .keyBtnLeft{top:361px;background-size:42px 42px;width:42px;height:42px}
+.keyVisualWrap .keyBtnLeft a,.keyVisualWrap .keyBtnRight a{width:42px;height:42px}
+.keyVisualWrap .keyBtnRight{top:361px;background-size:42px 42px;width:42px;height:42px}
+.keyVisualWrap .roomView .car_view{position:relative;top:0;left:auto;width:305px;margin:15px auto 0}
+.keyVisualWrap .roomView .car_view img{margin-top:0}
+.keyVisualWrap .roomView .inVrArea{width:100%;margin:0}
+.keyVisualWrap .roomView .inVrArea img{width:89%}
+.keyVisualWrap .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.keyVisualWrap .inViewLeft img{width:10px !important;height:19px}
+.keyVisualWrap .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.keyVisualWrap .inViewRight img{width:10px !important;height:19px}
+.keyVisualWrap .notiTxt{display:none}
+.keyVisualWrap .car_view.exStillCut{position:relative;top:-33px;left:auto;width:320px;margin:0 auto}
+.keyVisualWrap .car_view.exStillCut img{margin-top:0}
+.keyVisualWrap .exVrArea2{width:100%;margin:0 auto}
+.keyVisualWrap .exVrArea2 img{width:100%}
+.keyVisualWrap .choice_color{top:200px}
+.keyVisualWrap .choice_color .color_chip{width:20px;height:20px}
+.keyVisualWrap .view_inout li a{display:inline-block;width:30px;height:32px;text-indent:-9999px}
+.keyVisualWrap .view_inout li a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 -38px;background-size:75px 66px}
+.keyVisualWrap .view_inout li.on a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 0;background-size:75px 66px}
+.keyVisualWrap .view_inout li a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-45px -38px;background-size:75px 66px}
+.keyVisualWrap .view_inout li.on a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-45px 0;background-size:75px 66px}
+.keyVisualWrap .car_trim{left:90px;top:40px}
+.keyVisualWrap .car_trim .car_trim_list{padding:10px;width:190px}
+.keyVisualWrap .choice_color_wr .body_color{display:block}
+.keyVisualWrap .choice_color_wr .wheel_color{display:block;margin-top:5px}
+.keyVisualWrap .color_info{display:none}
+.keyVisualWrap .color_tit{font-size:12px;margin-right:5px}
+.keyVisualWrap .wheel_tit{font-size:12px;margin-right:5px}
+.keyVisualWrap .wheel_color{display:block;margin-left:0}
+.keyVisualWrap .roomView .car_refresh{margin:10px 0 0 -33px}
+.keyVisualWrap .linkArea{width:959px;position:absolute;top:135px;left:50%;margin-left:-175px}
+.keyVisualWrap .linkArea .btn_youtube{display:block;width:130px;height:37px}
+.temp00.pipLayout .textArea h3{top:15px}
+.temp360vr{height:365px;background:0}
+.temp360vr .roomView{margin-top:80px}
+.pipLayout.temp360vr .mainInner{height:506px;padding-bottom:0}
+.temp360vr .textArea{width:100%;top:0;left:0;margin:0}
+.temp360vr .keyVisual02 .textArea{top:25px;left:0}
+.temp360vr .carArea{width:470px;top:160px;left:50%;margin-left:-160px}
+.temp360vr .carArea img{width:68%}
+.temp360vr .car_view{position:absolute;top:100px;left:0;margin-left:0;width:100%}
+.temp360vr .car_view img{width:85%}
+.temp360vr .bgArea{height:440px;overflow:hidden}
+.temp360vr .bgInner{margin-left:-384px;top:-102px}
+.temp360vr .bgInner img{margin-top:102px}
+.temp360vr .bgArea img{width:auto;height:100%}
+.temp360vr .textArea h3{font-size:21px;font-weight:normal;line-height:26px;margin-bottom:15px;letter-spacing:-2px}
+.temp360vr .keyVisual02 .textArea h3{text-align:left;padding-left:10px;margin-bottom:0}
+.temp360vr .choice_area{padding-left:10px}
+.temp360vr .textArea h3+p{display:none}
+.temp360vr .paging{bottom:120px}
+.temp360vr .keybtnSmall{text-align:center}
+.temp360vr .keybtnSmall div{display:inline}
+.temp360vr .keybtnSmall .btnType2{margin-bottom:5px}
+.temp360vr .carInfor{position:absolute;left:0;bottom:0;z-index:99;height:102px;background:#efefef;border-bottom:0}
+.temp360vr .carInforInner{position:relative;width:245px;height:100%;overflow:hidden;margin:0 auto}
+.temp360vr .carInforInner>ul{border:0;width:500%;height:102px}
+.temp360vr .carInforInner>ul li{display:none;position:relative;width:20%;height:102px;overflow:hidden;font-size:14px;font-family:'kiaM';color:#737373;background:#efefef;border:0}
+.temp360vr .carInforInner>ul li.on{display:block}
+.temp360vr .carInforInner>ul li div{border-left:0;height:102px;padding-left:84px;text-align:left}
+.temp360vr .carInforInner>ul li img{position:absolute;margin-left:-50px;vertical-align:middle;padding:15px 0 0 0}
+.temp360vr .carInforInner>ul li .inforTit{padding:15px 0 0 0;width:155px}
+.temp360vr .carInforInner>ul li .inforTxt{font-size:20px;width:155px;line-height:20px}
+.temp360vr .carInforInner>ul li.infor2 img{margin-left:-70px}
+.temp360vr .carInforInner>ul li.infor3 img{margin-left:-59px}
+.temp360vr .carInforInner>ul.inforType5 li{width:auto}
+.temp360vr .carInforInner>ul.inforType4 li{width:auto}
+.temp360vr .carInforInner>ul.inforType3 li{width:auto}
+.temp360vr .dots{display:block;position:absolute;left:0;top:70px;width:100%;z-index:5}
+.temp360vr .dots ul{overflow:hidden;margin-top:10px;display:block;text-align:center}
+.temp360vr .dots ul li{display:inline-block;height:auto}
+.temp360vr .dots ul li a{display:block;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:200%;overflow:hidden}
+.temp360vr .dots ul li.on a{background-position:0 0}
+.temp360vr .exVrArea{width:100%;margin:0 auto}
+.temp360vr .exVrArea img{width:72%;max-width:400px !important;min-width:330px !important}
+#ex360vr_img-reel{width:100%;margin:0 auto}
+#ex360vr_img-reel .reel{width:72%;max-width:400px !important;min-width:330px !important;display:inline}
+.temp360vr .car_refresh{width:66px;margin:100px 0 0 -33px}
+.temp360vr .keyBtnLeft{top:355px;background-size:48px 48px;width:48px;height:48px}
+.temp360vr .keyBtnLeft a,.temp360vr .keyBtnRight a{width:48px;height:48px}
+.temp360vr .keyBtnRight{top:355px;background-size:48px 48px;width:48px;height:48px}
+.temp360vr .roomView .car_view{position:relative;top:0;left:auto;width:305px;margin:15px auto 0}
+.temp360vr .roomView .car_view img{margin-top:0}
+.temp360vr .roomView .inVrArea{width:100%;margin:0}
+.temp360vr .roomView .inVrArea img{width:89%}
+.temp360vr .roomView .car_trim{top:100%;margin-top:10px}
+.temp360vr .inViewLeft{position:absolute;left:0;top:50%;margin-top:-10px}
+.temp360vr .inViewLeft img{width:10px !important;height:19px}
+.temp360vr .inViewRight{position:absolute;right:0;top:50%;margin-top:-10px}
+.temp360vr .inViewRight img{width:10px !important;height:19px}
+.temp360vr .notiTxt{display:none}
+.temp360vr .car_view.exStillCut{position:relative;top:-33px;left:auto;width:320px;margin:0 auto}
+.temp360vr .car_view.exStillCut img{margin-top:0}
+.temp360vr .exVrArea2{width:100%;margin:0 auto}
+.temp360vr .exVrArea2 img{width:100%}
+.temp360vr .choice_color{top:235px}
+.temp360vr .choice_color .color_chip{width:20px;height:20px}
+.temp360vr .view_inout{top:60px;left:15px}
+.temp360vr .view_inout li a{display:inline-block;width:30px;height:32px;text-indent:-9999px}
+.temp360vr .view_inout li a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 -38px;background-size:75px 66px}
+.temp360vr .view_inout li.on a.btn_ex{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:0 0;background-size:75px 66px}
+.temp360vr .view_inout li a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-45px -38px;background-size:75px 66px}
+.temp360vr .view_inout li.on a.btn_in{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/icon_360_tab.png) no-repeat;background-position:-45px 0;background-size:75px 66px}
+.temp360vr .car_trim{left:22%;top:275px;padding-left:20px}
+.temp360vr .car_trim .car_trim_list{padding:5px;width:180px;left:30px;top:20px}
+.temp360vr .choice_color_wr .body_color{display:block}
+.temp360vr .choice_color_wr .wheel_color{display:block;margin-top:5px}
+.temp360vr .color_info{display:none}
+.temp360vr .color_tit{font-size:12px;margin-right:5px}
+.temp360vr .wheel_tit{font-size:12px;margin-right:5px}
+.temp360vr .wheel_color{display:block;margin-left:0}
+.temp360vr .roomView .car_refresh{margin:10px 0 0 -33px}
+.pipLayout .mainInner{height:auto;padding-bottom:0}
+.pipLayout .screenBox{display:none;position:static}
+.pipLayout .bgArea{position:relative;left:auto;top:auto;width:auto;height:auto}
+.pipLayout .bgArea .bgInner{width:100%;height:auto;position:static;left:0;top:0}
+.pipLayout .bgArea img{width:100%;position:static;left:0;top:0;bottom:0;right:0;margin:auto}
+.pipLayout .textArea{position:relative;margin:0;padding:0}
+.pipLayout .textArea h3{left:0;top:15px;z-index:10;color:#fff;font-family:kiaB;font-size:15px;text-transform:uppercase;padding:10px 0 0 15px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif) no-repeat 15px 0}
+.pipLayout .textArea h4{position:relative;z-index:1000;color:#333 !important;font-size:18px;line-height:21px;padding:14px 15px 0 15px;text-shadow:none}
+.pipLayout .textArea .subTxt{padding:12px 15px 30px 15px;color:#666 !important;font-size:13px;line-height:16px;font-family:'KiaM';text-shadow:none}
+.pipLayout .screenPaging{position:absolute;left:0;bottom:0;padding:0 0 10px 0;margin:0;background:#fff;z-index:11;display:none}
+.pipLayout .screenPaging ul li a{display:block;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;width:10px;height:10px;text-indent:200%;overflow:hidden;margin:2px}
+.pipLayout .screenPaging ul li.on a{background-position:0 0}
+.pipLayout .screenPaging ul li img{display:none}
+.pipLayout .imgList{background:#fff}
+.pipLayout .imgList li{display:none;float:none;border-left:0;border-top:0;margin:0}
+.pipLayout .imgList li.on{display:block}
+.pipLayout .imgList.type2 li{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type2 li img{margin:0 -100%}
+.pipLayout .imgList.type3 li{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type3 li img{margin:0 -100%}
+.pipLayout .imgList.type4 li{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type4 li img{margin:0 -100%}
+.pipLayout.temp01 .shadowWhite,.pipLayout.temp01 .shadowBlack,.pipLayout.temp08 .shadowWhite,.pipLayout.temp08 .shadowBlack,.pipLayout.temp09 .shadowWhite,.pipLayout.temp09 .shadowBlack,.pipLayout.temp10 .shadowWhite,.pipLayout.temp10 .shadowBlack{text-shadow:none !important}
+.pipLayout.temp06 .subInner,.pipLayout.temp07 .subInner{background:#e8e8e8;padding:15px}
+.pipLayout.temp06+.pipLayout.temp06,.pipLayout.temp07+.pipLayout.temp07{margin-top:-35px}
+.pipLayout.temp06+.pipLayout.temp06 .subInner,.pipLayout.temp07+.pipLayout.temp07 .subInner{background:#e8e8e8;padding:0 15px 20px}
+.pipLayout.temp06+.pipLayout.temp06 .imgList.type6,.pipLayout.temp07+.pipLayout.temp07 .imgList.type7{margin:0}
+.pipLayout.temp08 .subInner{background:#e8e8e8;padding:15px}
+.pipLayout.temp08 .imgList.type8:first-child li:first-child .imgListTit{display:table-cell}
+.pipLayout.temp06 .imgListPaging ul,.pipLayout.temp07 .imgListPaging ul,.pipLayout.temp08 .imgListPaging ul,{display:inline-block;margin:15px auto 0}
+.pipLayout .imgList.type6,.pipLayout .imgList.type7{background:#e8e8e8}
+.pipLayout .imgList.type6 li,.pipLayout .imgList.type7 li{display:block !important;float:none;width:100%;height:107px;margin:0 0 7px 0}
+.pipLayout .imgList.type6 li.rightArea{float:none}
+.pipLayout .imgList.type6 li dl dd{height:auto;overflow:hidden}
+.pipLayout .imgList.type7{padding-bottom:0}
+.pipLayout .imgListTit{left:15px;top:20px;font-size:15px;line-height:18px;text-align:left}
+.pipLayout .imgListPaging{display:block;text-align:center}
+.pipLayout .imgListPaging ul{display:inline-block;margin:15px auto 20px}
+.pipLayout .imgListPaging li{float:left;display:none}
+.pipLayout .imgListPaging li a{display:block;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;width:10px;height:10px;text-indent:200%;overflow:hidden;margin:2px}
+.pipLayout .imgListPaging li.on a{background-position:0 0}
+.pipLayout .imgList.type5 li.list1{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type5 li.list2{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type5 li.list3{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type5 li.list4{width:290px;margin:0 auto;text-align:center}
+.pipLayout .imgList.type6 li dl,.pipLayout .imgList.type7 li dl{display:table}
+.pipLayout .imgList.type6 li dl dt,.pipLayout .imgList.type7 li dl dt{float:none;display:table-cell;width:145px;height:107px;margin-right:15px}
+.pipLayout .imgList.type6 li dl dd,.pipLayout .imgList.type7 li dl dd{display:table-cell;height:auto;vertical-align:middle;padding-left:15px}
+.pipLayout .imgList.type6 li .btmTextTit,.pipLayout .imgList.type7 li .btmTextTit{margin-top:0;font-size:15px}
+.pipLayout .imgList.type6 li .btmTextTxt,.pipLayout .imgList.type7 li .btmTextTxt{display:none}
+.pipLayout .imgList.type8{background:#e8e8e8;margin-top:10px}
+.pipLayout .imgList.type8 li{display:table;width:100%;height:auto;margin-right:0;overflow:hidden;margin-bottom:7px}
+.pipLayout .imgList.type8 li:first-child{margin-left:0;margin-right:0}
+.pipLayout .imgList.type8 li.web{display:none}
+.pipLayout .imgList.type8 li.bigImg{width:auto}
+.pipLayout .imgList.type8 li .imgListImg{display:table-cell;width:145px;height:107px;overflow:hidden}
+.pipLayout .imgList.type8 li img{width:100%;height:100%}
+.pipLayout .imgList.type8 .imgListTit{position:relative;left:auto;bottom:auto;display:table-cell;vertical-align:middle;width:auto;padding:0 0 0 15px;height:auto;overflow:hidden;font-size:15px;line-height:18px;color:#000 !important}
+.pipLayout .imgList.type8 .imgListTit a{color:#333}
+.pipLayout .imgList.type8+.imgList.type8{margin:10px auto 0}
+.pipLayout.temp10 .car_play a{margin:-28px 0 0 -33px}
+.pipLayout .pip_prev{position:absolute;display:block;z-index:20;text-indent:-9999px;top:50%;left:15px;width:15px;height:28px;background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_left.png) no-repeat 0 0;background-size:15px 28px;margin-top:-14px}
+.pipLayout .pip_next{position:absolute;display:block;z-index:20;text-indent:-9999px;top:50%;right:15px;width:15px;height:28px;background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_right.png) no-repeat 0 0;background-size:15px 28px;margin-top:-14px}
+.pipLayout .off .pip_prev{background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_left_off.png) no-repeat 0 0;background-size:15px 28px}
+.pipLayout .off .pip_next{background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_right_off.png) no-repeat 0 0;background-size:15px 28px}
+.pipLayout .mInner{width:290px;margin:0 auto;position:relative}
+.pipLayout .snsWrap{width:auto;margin:0}
+.pipLayout .snsWrap .snsBtn{float:left;text-align:left;padding:0 8px;letter-spacing:-0.05em;min-width:100px}
+.pipLayout .snsWrap .snsBtn span{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_sns_search2.png) no-repeat 0 50%;background-size:7px 9px;padding-left:14px}
+.pipLayout .snsWrap .con_share{position:relative;width:154px;height:50px;overflow:hidden}
+.pipLayout .snsWrap .con_share ul{width:500px}
+.pipLayout .snsWrap .con_share .mSnsPrev{position:absolute;right:26px;top:0;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_sns_left.gif) no-repeat 0 0;background-size:26px 50px;width:26px}
+.pipLayout .snsWrap .con_share .mSnsNext{position:absolute;right:0;top:0;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_sns_right.gif) no-repeat 0 0;background-size:26px 50px;width:26px}
+.indicator .indicator_inner{width:auto}
+.indicator .topBtn{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_top_m.png) no-repeat 0 0;background-size:35px 50px;top:230px;right:0}
+.indicator .topBtn a{display:block;width:35px;height:50px}
+.pip_build{padding-top:25px}
+.pip_build .build_tit{font-size:18px;line-height:20px}
+.pip_build .build_txt{display:none}
+.pip_build .build_btn{margin-top:10px}
+.pip_build .build_spec{display:none}
+.pip_build .build_car{margin-top:30px;width:320px}
+.pip_build .build_car img{width:320px;margin:0 auto}
+.pip_build .build_link{text-align:left;margin-top:-45px;padding:55px 10px 12px}
+.pip_build .build_link .link_li{display:block;width:auto;background:0;padding-top:0}
+.pip_build .build_link .link_li .bl_typeW_a{font-size:15px;text-decoration:none;border-top:1px solid #666;padding:6px 4px 4px}
+.pip_build .build_link .link_li .bl_typeW_a:before{display:none}
+.pip_build .build_link .link_li:first-child .bl_typeW_a{border-top:0}
+.screen_nav{display:none}
+.screen{display:none}
+.wide_gallery .wide_wrap .wide_close,.screen{display:none}
+.wide_gallery{display:block !important;position:static}
+.wide_gallery h4{padding-top:8px;margin:20px 0 9px;text-transform:uppercase;display:block;color:#000;font-size:15px;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat}
+.wide_gallery h5{padding-top:8px;margin:20px 0 9px;text-transform:uppercase;display:block;color:#000;font-size:15px;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat;position:relative;top:auto;left:auto;font-size:15px;line-height:18px;width:auto;height:auto;visibility:visible;overflow:auto}
+.wide_gallery .width_wrap{width:100%;overflow:visible}
+.wide_gallery .wide_wrap .img_wrap{position:relative;width:auto;height:auto;padding:0 15px}
+.wide_gallery .wide_wrap .wide_prev{top:50%;width:15px;height:28px;background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_left.png) no-repeat 0 0;background-size:15px 28px;left:30px;margin-top:-14px}
+.wide_gallery .wide_wrap .wide_next{top:50%;width:15px;height:28px;background:url(../../../../content/dam/kwcms/kr/ko/images/common/btn_arrow_right.png) no-repeat 0 0;background-size:15px 28px;right:30px;margin-top:-14px}
+.pipContents{overflow:visible}
+.pip_gallery{overflow:visible;padding-bottom:30px}
+.pip_inner{width:100% !important;margin:10px 0 0 0 !important;overflow:visible !important}
+.pip_gallery .gallery_select{display:none}
+.pip_gallery .gallery_exterior{float:none;width:100%}
+.pip_gallery .gallery_interior{float:none;width:100%}
+.pip_gallery .gallery_video{float:none;width:100%}
+.gallery_paging{display:block;text-align:center;margin-top:15px}
+.gallery_paging ul{display:inline-block;margin:0 auto;padding:0 10px}
+.gallery_paging ul li{float:left}
+.gallery_paging ul li a{position:relative !important;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:-9999px;overflow:hidden;margin:2px}
+.gallery_paging ul li.on a{background-position:0 0}
+.gallery_notice{width:100%;margin-top:15px;padding:0}
+.gallery_notice ul{padding:0 15px}
+.galleryTxt{position:relative;top:10px;margin:0;width:100%;margin-bottom:20px}
+.galleryTxt strong{font-size:18px;color:#000 !important}
+.galleryTxt p{font-size:13px;margin-top:6px;color:#000 !important}
+.gallery_video{margin-top:20px}
+.gallery_video h3{display:block;margin:32px 0 0 15px;font-size:15px}
+.pip_gallery .width_wrap .gallery_video .screen_wrap{padding:0}
+.gallery_video .gallery_wrap{padding:0 15px}
+.gallery_video .screen{display:block;margin:9px 0 0 0}
+.gallery_video .screen li{float:none;width:100%;margin-bottom:7px}
+.gallery_video .screen li a{position:relative;overflow:hidden;display:block;min-height:75px;padding:15px 0 15px 160px;border:1px solid #d7d7d7;background:#fff}
+.gallery_video .screen li a picture{overflow:hidden;position:absolute;top:0;left:0;width:145px;z-index:1}
+.gallery_video .screen li .play_video{display:block;position:absolute;left:50px;top:50%;margin:-22px 0 0 0;z-index:10;width:45px;height:45px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_play.png) no-repeat;text-indent:-9999px}
+.gallery_video .screen li a .summary{display:block}
+.gallery_video .screen li a .summary .title{margin:0;padding:0;color:#000;font-size:15px;font-family:kiaB}
+.gallery_video .screen li a .summary .title:before{display:none}
+.gallery_video .screen li a .summary .overview{display:none}
+.video_popup{width:250px;margin-left:-125px}
+.video_popup .pop_con .img_more dt{font-size:16px}
+.video_popup .pop_con .img_more dd{font-size:12px}
+.video_popup .closeBtn{padding:7px;right:-28px}
+.pip_spec .webImg{display:none}
+.pip_spec .tabletImg{display:none}
+.pip_spec .mobileImg{display:block}
+.m_none{display:none}
+.spec_visual{height:414px}
+.spec_visual .spec_data{width:100%;margin:0;padding:25px 0 0 0}
+.spec_visual .spec_data h3{margin:0 15px 9px;padding:8px 0 0;text-transform:uppercase;display:block;color:#000;font-size:15px;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat}
+.spec_visual .spec_slide_area{width:auto;margin:0 auto;padding:0 15px}
+.spec_visual .spec_slide_area .spec_img{width:290px;margin:0 auto;overflow:hidden}
+.spec_visual .spec_slide_area .spec_img ul{width:100000px;padding-bottom:20px;overflow:hidden;margin-top:60px}
+.spec_visual .spec_slide_area .spec_img ul li{display:inline-block;position:relative;float:left;width:290px;text-align:center}
+.spec_visual .spec_slide_area .spec_img ul li img{width:100%;vertical-align:middle}
+.spec_visual a.spec_next{display:none !important}
+.spec_visual a.spec_prev{display:none !important}
+.spec_visual .control{display:block;text-align:center}
+.spec_visual .control .num{display:inline-block;margin:0 auto}
+.spec_visual .control .num li{float:left}
+.spec_visual .control .num li a{position:relative !important;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:-9999px;overflow:hidden;margin:2px}
+.spec_visual .control .num li.on a{background-position:0 0}
+.spec_visual .spec_allview_area{display:none}
+.spec_list{width:auto;margin:0 auto}
+.spec_note{width:auto;margin:0 auto 30px}
+.spec_list_title{padding:0 15px}
+.pip_spec .spec_list .spec_list_title a{display:block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_down.png) no-repeat right 50%;background-size:9px 6px}
+.pip_spec .spec_list .spec_list_title a.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_up.png) no-repeat right 50%;background-size:9px 6px}
+.pip_spec .spec_list .spec_list_title span{line-height:35px}
+.spec_list.form1 .spec_view ul.type1 li.division{height:auto;line-height:normal}
+.spec_list.form1 .spec_view ul.type1 li ul li{float:left;text-align:left;height:auto;line-height:16px;font-size:13px;border-right:0;border-left:0;border-top:1px solid #d6d6d6;border-bottom:0;padding:6px 15px}
+.spec_list.form1 .spec_view ul.type1 li ul li:first-child{border-right:1px solid #d6d6d6}
+.spec_list.form1 .spec_view ul.type1 li ul li:last-child{text-align:right;border-right:0;color:#666;padding:6px 15px}
+.pip_engine .spec_list h4{padding:0 15px}
+.pip_engine .spec_list .spec_view+.spec_list_title{margin-top:1px}
+.spec_list.form2 .spec_list_title a{display:block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_down.png) no-repeat right 50%;background-size:9px 6px}
+.spec_list.form2 .spec_list_title a.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_up.png) no-repeat right 50%;background-size:9px 6px;border-top:0}
+.spec_list.form2 .spec_list_title span{line-height:35px}
+.spec_list.form2 .spec_view ul.type1 li{display:table}
+.spec_list.form2 .spec_view ul.type1 li span{display:table-cell;width:50%;text-align:left;border-right:0;border-bottom:1px solid #d6d6d6;font-size:13px;padding:8px 0 8px 25px}
+.spec_list.form2 .spec_view ul.type1 li span:last-child{border-right:0;color:#666;text-align:right;padding:8px 25px 8px 0}
+.spec_list.form2 .spec_view ul.type2{width:100%;overflow:hidden}
+.spec_list.form2 .spec_view ul.type2 li{text-align:center}
+.spec_list.form2 .spec_view ul.type2 li:last-child{border-right:0}
+.spec_list.form2 .spec_view ul.type2 li ul li{float:left;width:50%;height:33px;text-align:left;line-height:33px;font-size:13px;border-right:0;border-bottom:1px solid #d6d6d6;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.spec_list.form2 .spec_view ul.type2 li ul li:last-child{border-right:0;width:50%}
+.spec_list.form2 .spec_view ul.type2 li:last-child ul li{border-bottom:1px solid #d6d6d6}
+.spec_list.form2 .spec_view ul.type2 li ul li:nth-child(2n+1){text-align:left;padding:0 0 0 25px}
+.spec_list.form2 .spec_view ul.type2 li ul li:nth-child(2n){text-align:right;padding:0 25px 0 0}
+.spec_list.form2 .spec_view ul.type3{width:100%;overflow:hidden}
+.spec_list.form2 .spec_view ul.type3 li{display:block}
+.spec_list.form2 .spec_view ul.type3 li span{display:block;width:50%;float:left;vertical-align:middle;padding:10px 0 10px 20px;border-right:0;border-bottom:0;border-top:1px solid #d6d6d6}
+.spec_list.form2 .spec_view ul.type3 li:first-child span:nth-of-type(1),.spec_list.form2 .spec_view ul.type3 li:first-child span:nth-of-type(2){border-top:0}
+.spec_list.form2 .spec_view ul.type3 li span:last-child{width:50%}
+.spec_notice{padding:0 15px}
+.engine_visual{height:auto;overflow:hidden}
+.engine_visual .engine_data{width:100%;margin:0;top:25px;left:0}
+.engine_visual .engine_data h3{margin:0 15px 9px;padding:8px 0 0;text-transform:uppercase;display:block;color:#fff;font-size:15px;line-height:normal;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat}
+.engine_visual .engine_data h3:after{content:"";display:block;width:auto;height:0;margin-top:0}
+.engine_visual .engine_data p{display:none}
+.engine_visual a.spec_next{display:none !important}
+.engine_visual a.spec_prev{display:none !important}
+.engine_slide_area{width:100%;height:353px;margin:0 auto;padding:0 15px}
+.engine_slide_area .img_wrap{position:relative;width:290px;height:315px;margin:0 auto;overflow:hidden}
+.engine_slide_area .img_wrap>ul>li{width:290px;text-align:center}
+.engine_slide_area .img_wrap .title{font-size:15px;padding:9px 0 0;line-height:normal;background:0;text-align:center}
+.engine_slide_area .img_wrap .type{display:none}
+.engine_slide_area .img_wrap .engine_contents{position:absolute;top:174px;left:-15px;width:100%}
+.engine_slide_area .img_wrap .engine_contents ul{border:0;padding:8px 0 0;width:100%}
+.engine_slide_area .img_wrap .engine_contents ul li{margin-bottom:5px;padding:0;text-align:center;line-height:normal;margin-bottom:-8px}
+.engine_slide_area .img_wrap .engine_contents ul li div{float:none}
+.engine_slide_area .img_wrap .engine_contents ul li div.dataImg{display:none}
+.engine_slide_area .img_wrap .engine_contents ul li div span{display:none}
+.engine_slide_area .img_wrap .engine_contents ul li div strong{color:#ccc;font-size:13px;font-family:'kiaM'}
+.engine_slide_area .img_wrap .engine_contents ul li div strong span{display:inline-block;color:#ccc}
+.engine_slide_area .img_wrap .img{text-align:center;padding:30px 0 0 0}
+.engine_slide_area .img_wrap .img img{width:100%;margin-right:-50px}
+.engine_visual .control{display:block;text-align:center;margin-left:-20px}
+.engine_visual .control .num{display:inline-block;margin:0 auto}
+.engine_visual .control .num li{float:left}
+.engine_visual .control .num li a{position:relative !important;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:-9999px;overflow:hidden;margin:2px}
+.engine_visual .control .num li.on a{background-position:0 0}
+.engine_allview_area{display:none}
+.wheel_visual{height:auto;overflow:hidden}
+.wheel_visual .wheel_data{width:100%;margin:0;top:25px;left:0}
+.wheel_visual .wheel_data h3{margin:0 15px 9px;padding:8px 0 0;text-transform:uppercase;display:block;color:#000;font-size:15px;line-height:normal;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat}
+.wheel_visual .wheel_data h3:after{content:"";display:block;width:auto;height:0;margin-top:0}
+.wheel_visual .wheel_data p{display:none}
+.wheel_visual a.spec_next{display:none !important}
+.wheel_visual a.spec_prev{display:none !important}
+.wheel_slide_area{width:100%;height:353px;margin:0 auto;padding:0 15px}
+.wheel_slide_area .img_wrap{position:relative;width:290px;height:315px;margin:0 auto;overflow:hidden}
+.wheel_slide_area .img_wrap>ul>li{width:290px;text-align:center}
+.wheel_slide_area .img_wrap .title{font-size:15px;line-height:normal;background:0;text-align:center}
+.wheel_slide_area .img_wrap .wheel_contents{position:absolute;top:255px;left:-15px;width:100%}
+.wheel_slide_area .img_wrap .img{text-align:center;padding:30px 0 0 0}
+.wheel_slide_area .img_wrap .img img{width:150%;margin-left:-45px}
+.wheel_visual .control{display:block;text-align:center;margin-left:-20px}
+.wheel_visual .control .num{display:inline-block;margin:0 auto}
+.wheel_visual .control .num li{float:left}
+.wheel_visual .control .num li a{position:relative !important;background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/btn_list_dot.png') no-repeat -14px 0;display:block;width:10px;height:10px;text-indent:-9999px;overflow:hidden;margin:2px}
+.wheel_visual .control .num li.on a{background-position:0 0}
+.wheel_allview_area{display:none}
+.pip_wheel .spec_list{width:auto;margin:0 auto}
+.pip_wheel .spec_note{width:auto;margin:0 auto 30px}
+.pip_wheel .spec_list .spec_list_title a{display:block;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_down.png) no-repeat right 50%;background-size:9px 6px}
+.pip_wheel .spec_list .spec_list_title a.on{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/ico_arrow_up.png) no-repeat right 50%;background-size:9px 6px;border-top:0}
+.pip_wheel .spec_list .spec_list_title span{line-height:35px}
+.spec_list.form3 .spec_view .scroll_inner{width:320px;overflow-x:scroll}
+.spec_list.form3 .spec_view .scroll_inner table{width:730px;border-bottom:2px solid #7d7d7d}
+.spec_list.form3 .spec_view .scroll_inner table thead th{background:#f5f5f5;height:34px;line-height:34px;border-right:1px solid #d6d6d6}
+.spec_list.form3 .spec_view .scroll_inner table thead th:last-child{border-right:0}
+.spec_list.form3 .spec_view .scroll_inner table tbody td{text-align:center;padding:12px 0;vertical-align:top;border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6;font-size:13px;color:#666}
+.spec_list.form3 .spec_view .scroll_inner table tbody td.carName{text-transform:uppercase;padding:12px 20px;text-align:left;color:#333}
+.spec_list.form3 .spec_view .scroll_inner table tbody td:last-child{border-right:0}
+.spec_data .car_trim{left:15px;top:60px}
+.spec_data .car_trim .select_trim{font-size:12px}
+.spec_data .car_trim .current{padding-left:15px;background:0;padding-left:0}
+.spec_data .car_trim .select_trim span{padding-right:15px}
+.spec_data .car_trim .car_trim_list{left:0;padding:10px;width:auto}
+.btnSpecWrap{padding-top:13px;text-align:center}
+.btnSpec.spec1{display:inline-block;padding:0 13px;font:12px/25px 'kiaB';color:#fff;border-radius:15px;background:#7e8083}
+.btnSpec.spec1:before{width:10px;background-color:transparent;background-size:9px 40px;background-position:50% -22px}
+.review .img img.mobile{display:inline-block}
+.review .img img.tablet,.review .img img.web{display:none}
+.review h3{font-size:15px;padding-top:8px}
+.review .review_visual a.roll,.review .media_review a.roll{display:none}
+.review .review_visual{overflow:hidden;padding:50px 15px 0}
+.review .review_visual .review_interaction .img_wrap>li{height:419px}
+.review .review_visual .review_interaction .img{width:100%;height:120px}
+.review .review_visual .review_interaction .img img{height:100%}
+.review .review_visual .review_interaction .review_data .item_title{font-size:17px;padding:0 0 2px}
+.review .review_visual .review_interaction .review_data .grade_star{margin:0}
+.review .review_visual .review_interaction .review_data .message{font-size:13px;line-height:19px;padding:9px 0 0;margin:10px 0 0;height:114px}
+.review .review_visual .review_interaction .review_data .address{padding:8px 0 0}
+.review .media_review{overflow:hidden;padding:20px 15px 40px}
+.review .media_review .mediaCon{width:100%}
+.review .media_review .mediaCon>ul{max-height:420px}
+.review .media_review .mediaCon>ul li{margin-bottom:50px}
+.review .media_review .mediaCon ul li .txt{padding:10px 10px 30px;height:auto}
+.review .media_review .mediaCon>ul li .txt strong{font-size:17px;margin:12px 0 2px}
+.review .btn_more{padding:20px 0 9px}
+.review .media_review .num{display:inline-block;margin:0 auto;overflow:hidden}
+.review .media_review .control{margin-bottom:0}
+.sns_wrap{padding-bottom:40px;margin:0}
+.sns_wrap .sns_top{font-size:18px;font-family:'KiaB'}
+.sns_wrap .sns_list li{float:none;width:100%;height:auto;border:0;border-bottom:1px solid #d8d8d8}
+.sns_wrap .sns_list li.nLine{border-left:0}
+.sns_wrap .sns_list li .sns_img{width:100%;height:100%;width:auto;overflow:hidden}
+.sns_wrap .sns_list li.type1 .sns_img{height:auto}
+.sns_wrap .sns_list li.type1 .sns_img img{width:100%}
+.sns_wrap .sns_list li.type3 .sns_img{height:auto}
+.sns_wrap .sns_list li.type3 .sns_img img{width:100%}
+.sns_wrap .sns_list li.type2 .sns_txt{height:200px}
+.sns_wrap .sns_list li.type1 .sns_contents{padding:29px 15px 0}
+.sns_wrap .sns_list li.type2 .sns_contents{padding:15px 15px 0}
+.sns_wrap .sns_list li.type3 .sns_contents{padding:30px 15px 0}
+.sns_wrap .sns_list .user_area img{margin-right:15px}
+.sns_infor{position:relative;left:0;bottom:0;padding:20px 0}
+.sns_infor span{margin-left:15px}
+.sns_infor .youtube_share{margin:-8px 15px 0 0}
+.safety_wrap .safety_visual{height:auto;padding-bottom:25px}
+.safety_wrap .safety_data{width:100%;padding:25px 0 0}
+.safety_wrap .safety_data h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_m_redline_safety.gif) no-repeat 15px 0;font-size:20px;line-height:20px;padding:10px 15px 0}
+.safety_wrap .safety_data h3 strong{margin-top:5px}
+.safety_wrap .safety_data .year{margin-top:15px;padding-left:15px;font-size:15px;color:#333}
+.safety_wrap .safety_data .year img{margin-right:14px}
+.safety_wrap .safety_data .car_img{text-align:center;margin-top:20px}
+.safety_wrap .safety_infor{width:100%}
+.safety_wrap .safety_infor ul{padding:0 15px}
+.safety_wrap .safety_tab_contents{display:none}
+.evaluation_info{padding-left:15px}
+.safety_wrap .safety_assessment{width:auto;margin:25px auto 0;padding:0 15px}
+.safety_wrap .safety_assessment .title{padding:0 0 0 16px;margin-bottom:12px;color:#333;font-size:15px;background:url(../../../../content/dam/kwcms/kr/ko/images/common/bl_red_triangle.png) no-repeat 0 center;background-size:8px 10px}
+.tb_wrap{width:auto;border-top:3px solid #bb162b;border-bottom:2px solid #bb162b}
+.tb_wrap.carTest li{display:block;background:#f5f5f5}
+.tb_wrap.carTest li .stit{display:block;float:left;font-size:12px;padding:10px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border-bottom:0;border-top:1px solid #d6d6d6}
+.tb_wrap.carTest li .stxt{display:block;float:left;font-size:11px;border-left:1px solid #d6d6d6;border-top:1px solid #d6d6d6;border-right:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tb_wrap.carTest li .first{border-top:0}
+.tb_wrap.carTest li .sstxt{display:block;font-size:11px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tb_wrap.carTest li .sstar{display:block;float:left;min-width:0;width:34%;padding:22px 10px 10px 10px;font-size:11px;text-align:center;border-top:1px solid #d6d6d6;border-bottom:0;border-right:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tb_wrap.carTest li .sstar img{width:84px}
+.tb_wrap.carTest li .sstar:last-child{border-right:0}
+.tb_wrap.carTest li .spoint{display:block;float:left;width:34%;min-width:0;vertical-align:middle;font-size:11px;text-align:center;padding:22px 10px 10px 10px;border-top:1px solid #d6d6d6;border-bottom:0;border-right:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tb_wrap.carTest li .sstop{display:block;float:left;width:34%;min-width:0;vertical-align:middle;font-size:11px;padding:10px 0 10px 10px;border-top:1px solid #d6d6d6;border-bottom:0;border-right:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tb_wrap.carTest li .sstop span{display:block;float:none;width:auto;padding:0}
+.tb_wrap.carTest li.col2{background:0}
+.tb_wrap.carTest li.col1 .stit{width:30%}
+.tb_wrap.carTest li.col1 .stxt{width:70%;min-width:0;border-right:0;border-bottom:0;padding:10px}
+.tb_wrap.carTest li.col2 .stit{width:66%;min-width:0;padding:10px 0 10px 10px}
+.tb_wrap.carTest li.col3 .stit{width:30%;min-width:0;padding:10px}
+.tb_wrap.carTest li.col3 .stxt{width:70%;min-width:0;padding:10px;border-bottom:0}
+.tb_wrap.carTest li.col3 .stxt:last-child{border-right:0}
+.tb_wrap.carTest li strong{display:block}
+.table_safety{width:auto;margin:25px auto;padding:0 15px}
+.accessory{width:auto;margin:0 auto;padding:25px 15px 0}
+.accessory h3{margin:0 0 9px;padding:8px 0 0;text-transform:uppercase;display:block;color:#000;font-size:15px;line-height:normal;font-family:'KiaB';background:url('../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_title_redline.gif') left top no-repeat}
+.accessory .acc_box{margin-bottom:40px}
+.accessory .acc_box ul{width:100%;overflow:hidden}
+.accessory .acc_box ul li{position:relative;float:none;width:100%;margin:0 0 7px 0}
+.accessory .acc_box .box_wrap{overflow:hidden;border:1px solid #d7d7d7;background:#fff}
+.accessory .acc_box .acc_image{position:relative;float:left;width:50%;overflow:hidden}
+.accessory .acc_box .acc_image img{width:auto;height:100%;margin:0 -100%;vertical-align:middle}
+.accessory .acc_box .acc_image span.acc_image_inner{display:block;background:#000;height:107px;width:auto;text-align:center;overflow:hidden}
+.accessory .acc_box .summary{float:left;width:50%;height:auto;background:#fff;border:0;padding:20px 0}
+.accessory .acc_box .summary .title{width:auto;height:auto;font-size:15px;font-family:'kiaB';text-transform:uppercase;overflow:hidden;padding:0 7px}
+.accessory .acc_box .summary .subTxt{padding:0 7px}
+.accessory .acc_box .btn_area{margin-top:5px}
+.accessory .acc_box .btn_area span{display:inline-block}
+.accessory .popup_wrap{top:0;left:50%;margin-left:-135px;width:270px;min-width:270px;height:auto}
+.accessory .accVideoBtn{position:absolute;left:50%;top:50%;margin:-12px 0 0 -15px;width:28px;height:28px}
+.accessory .accVideoBtn img{margin:0 !important}
+.accessory .popup_wrap02{width:600px;height:auto;margin:0 0 0 -300px}
+.accessory .closeBtn{padding:7px;position:absolute;top:0;right:-28px}
+.business{width:auto;margin:25px auto 50px;padding:0 15px}
+.business h3{font-size:15px;margin-bottom:20px}
+.business h3:before{content:"";display:block;width:28px;height:2px;margin-bottom:7px}
+.business .form_box{margin-right:26px}
+.business .form_wrp{width:100%}
+.business .business_tb thead th{font-size:13px}
+.business .business_tb thead tr.sub th{font-size:12px}
+.business .business_tb tbody th{font-size:12px}
+.business .business_tb tbody th.npd{padding:7px 0 7px 15px}
+.business .business_tb tbody td{font-size:12px}
+.business .btn_areaR{display:none}
+.business .spec_view .scroll_inner{width:320px;overflow-x:scroll}
+.business .spec_view .scroll_inner table{width:730px}
+.business .spec_list .business_infor{margin:10px 0 0 0}
+.environment_cont .web_img{display:none}
+.environment_cont .tablet_img{display:none}
+.environment_cont .mobile_img{display:inline-block}
+.environment_cont h4{font-size:17px;line-height:21px;margin-bottom:15px}
+.environment_cont h4:before{content:"";display:block;width:32px;height:1px;border-top:1px solid #bb162b;margin:0 auto 15px}
+.environment_cont .certificate .imgArea{float:none;width:auto}
+.environment_cont .certificate .imgArea img{width:45px}
+.environment_cont .certificate .imgArea a{display:inline-block}
+.environment_cont .certificate .imgArea .thum_img{width:45px}
+.environment_cont .certificate .imgArea .btn_zoom{width:17px}
+.environment_cont .certificate .txtArea{margin-top:25px}
+.environment_cont .certificate .txtArea .desc02{margin-top:15px}
+.environment_cont .certificate .txtArea strong{font-size:14px;line-height:18px;margin:0 0 10px}
+.environment_cont .stit{font-size:14px;line-height:18px;margin-top:-10px}
+.environment01{position:relative;background:#fff;height:auto;padding:25px 0}
+.environment01 .bgArea{position:static;left:auto;top:auto;width:320px;margin:0 auto;text-align:center}
+.environment01 .bgArea img{width:100%}
+.environment01 .txtArea{position:static}
+.environment01 .desc01{font-size:16px;line-height:20px;margin-bottom:10px}
+.environment01 .desc01 br{display:none}
+.environment01 .desc02{font-size:12px}
+.environment01 .desc02 br{display:none}
+.environment01 .desc03{font-size:12px;margin-top:10px}
+.environment01 .desc03 br{display:none}
+.environment02{padding:25px 0 30px}
+.environment02 .img_area{width:300px;margin:0 auto}
+.environment02 .img_area img{width:100%}
+.environment03{padding:25px 0 30px}
+.environment04{padding:25px 0 30px}
+.environment04 .warming{margin-top:20px;padding-top:20px}
+.environment04 .warming .img_area{margin:20px auto 0;width:240px}
+.environment04 .warming .img_area img{width:100%}
+.environment04 .warming .gas{margin-top:25px;font-size:11px;line-height:15px}
+.environment04 .warming .gas:before{content:"";display:block;width:23px;height:1px;border-top:1px solid #666;margin:0 auto 15px}
+.environment05{padding:25px 0 30px}
+.environment05 .evil .img_area{width:300px;margin:0 auto}
+.environment05 .evil .img_area img{width:100%}
+.environment05 .harmful .certificate br{display:none}
+.environment06{padding:25px 0 30px}
+.environment06 .recycling{margin-top:25px}
+.environment07 .certificate .txtArea .desc01{margin:0;text-align:left}
+.environment07 .certificate .txtArea .desc02{margin:20px 0 0 0;text-align:left}
+.environment07 .img_area{width:300px;margin:30px auto 0}
+.environment07 .img_area img{width:100%}
+#pop_environment .pop_con img{width:100%}
+.coldtopContents .keyVisualWrap .bgArea{height:404px;overflow:hidden}
+.coldtopContents .keyVisualWrap .textArea h3{font-size:21px;line-height:26px;text-align:left}
+.coldtopContents .keyVisualWrap .textArea h3 br{display:block}
+.topView button{width:14px;height:28px;background-size:29px auto}
+.topView .slider li .con_stit{margin:135px 0 0;font-size:16px}
+.topView .slider li img{width:290px}
+.topView .slider li p{margin-top:20px}
+.topView .paging{bottom:20px}
+.point_performance{width:296px;margin:15px auto 50px}
+.point_performance .brand_video{width:296px;margin:22px auto 0}
+.point_performance .video_desc{display:none}
+.point_performance.k9 h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_main_m.jpg) no-repeat center 0;background-size:296px 243px;height:243px}
+.point_performance.k9 .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_1_m.jpg) no-repeat center 0;background-size:296px 121px;height:121px}
+.point_performance.k9 .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_2_m.jpg) no-repeat center 0;background-size:296px 126px;height:126px}
+.point_performance.k9 .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_1_3_m.jpg) no-repeat center 0;background-size:296px 278px;height:278px}
+.point_performance.k9 .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_1_m.jpg) no-repeat center 0;background-size:296px 120px;height:120px}
+.point_performance.k9 .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_2_2_m.jpg) no-repeat center 0;background-size:296px 265px;height:265px}
+.point_performance.k9 .cont6{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_1_m.jpg) no-repeat center 0;background-size:296px 120px;height:120px}
+.point_performance.k9 .cont7{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_k9_3_2_m.jpg) no-repeat center 0;background-size:296px 289px;height:289px}
+.point_performance.k9 .txt1{font-size:12px;margin:0 auto}
+.point_performance.k9 .txt1 br{display:none}
+.point_performance.morning h3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_main_m.jpg) no-repeat center 0;background-size:296px 244px;height:244px}
+.point_performance.morning .cont1{width:296px}
+.point_performance.morning .cont1 img{width:100%}
+.point_performance.morning .cont2{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_2_m.jpg) no-repeat center 0;background-size:296px 122px;height:122px}
+.point_performance.morning .cont3{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_3_m.jpg) no-repeat center 0;background-size:296px 222px;height:222px}
+.point_performance.morning .cont4{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_4_m.jpg) no-repeat center 0;background-size:296px 215px;height:215px}
+.point_performance.morning .cont5{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_morning_1_5_m.jpg) no-repeat center 0;background-size:296px 162px;height:162px}
+.point_performance.morning .wImg{display:none}
+.point_performance.morning .tImg{display:none}
+.point_performance.morning .mImg{display:block}
+.point_performance.soulTest .cont1 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_test_1_2_m.png) no-repeat center 0;background-size:296px 34px;height:34px;margin-top:33px}
+.point_performance.soulTest .cont1{width:296px;margin:0 auto}
+.point_performance.soulTest .cont1 img{width:100%}
+.point_performance.soulTest .stepImg{margin-top:23px}
+.point_performance.soulTest .cont_box{padding:20px 0}
+.point_performance.soulTest .cont_box p{font-size:12px;line-height:16px;width:90%;margin:0 auto 30px}
+.point_performance.soulTest .cont_box img{width:90%}
+.point_performance.soulTest .cont2{width:296px;margin:0 auto}
+.point_performance.soulTest .cont2 img{width:100%}
+.point_performance.soulTest .cont2 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_test_2_1_m.png) no-repeat center 0;background-size:296px 34px;height:34px;margin-top:33px}
+.point_performance.soulTest .cont3{width:296px}
+.point_performance.soulTest .cont3Img img{width:100%}
+.point_performance.soulTest .etc{margin:24px 0 10px}
+.point_performance.soulTest ul li{font-size:12px;line-height:16px}
+.point_performance.soul h3{font-size:40px;line-height:38px}
+.point_performance.soul h4{margin:25px 0 5px;padding-top:25px;font-size:14px}
+.point_performance.soul .summary{margin-top:10px;font-size:14px;line-height:17px}
+.point_performance.soul .brand_story{display:none}
+.point_performance.soul .brand_history .intro{font-size:40px;line-height:38px}
+.point_performance.soul .brand_history .intro .point{padding-right:20px}
+.point_performance.soul .brand_history .intro .desc{border-bottom-width:1px;font-size:13px;margin-top:-40px;padding-left:115px;line-height:36px}
+.point_performance.soul .brand_history .history{line-height:18px}
+.point_performance.soul .brand_history .history .pic{display:none}
+.point_performance.soul .brand_history .history .bg{margin-bottom:12px;padding-bottom:25%;background-position:right bottom}
+.point_performance.soul .brand_timeline .intro{font-size:35px;line-height:40px}
+.point_performance.soul .brand_timeline .intro .point{display:block}
+.point_performance.soul .brand_timeline .timeline li{margin-top:20px}
+.point_performance.soul .brand_timeline .timeline li:after{content:"";display:block;clear:both}
+.point_performance.soul .brand_timeline .timeline .year{font-size:25px;letter-spacing:-2px}
+.point_performance.soul .brand_timeline .timeline .year strong{border-bottom-width:2px}
+.point_performance.soul .brand_timeline .timeline .pic{background-size:100% auto}
+.point_performance.soul .brand_timeline .timeline .desc1{margin-top:10px;font-size:13px;line-height:16px}
+.point_performance.soul .brand_timeline .timeline .desc1 strong{margin-bottom:5px;font-size:20px}
+.point_performance.soul .brand_timeline .timeline .desc2{margin-top:20px}
+.point_performance.soul .brand_timeline .timeline li.r .year{text-align:left}
+.point_performance.soul .brand_timeline .timeline li.r .pic{float:right}
+.point_performance.soul .brand_timeline .timeline .pic.y2006{width:203px;height:185px;margin:-30px -12px 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2006m.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2008{width:140px;height:215px;margin:-53px 0 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2008m.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2009{width:156px;height:240px;margin:-34px 0 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2009m.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2010{width:175px;height:164px;margin:-20px 0 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2010m.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2012{width:156px;height:240px;margin:-36px 0 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2012m.jpg)}
+.point_performance.soul .brand_timeline .timeline .pic.y2013{width:186px;height:157px;margin:-41px -12px 0 15px;background-image:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_soul_y2013m.jpg)}
+.point_performance.ray h3 img{width:40%}
+.point_performance.ray .rayTop{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_main_car_m.jpg) no-repeat center top;background-size:159px 150px;height:auto;padding-top:150px}
+.point_performance.ray .titleCopy{font-size:11px;line-height:15px;letter-spacing:-1px}
+.point_performance.ray .titleCopy strong{font-size:23px;line-height:27px}
+.point_performance.ray .subCopy{width:auto;font-size:11px;line-height:15px}
+.point_performance.ray .subTxt{width:auto;margin-top:15px;font-size:11px;line-height:15px}
+.point_performance.ray .subTxt br{display:none}
+.point_performance.ray .cont1{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_1_1_m.jpg) no-repeat center 0;background-size:296px 121px;height:121px;margin:25px 0 10px}
+.point_performance.ray .bl_type2{font-size:11px;line-height:15px}
+.point_performance.ray .cont2{margin-top:30px}
+.point_performance.ray .txt{font-size:11px;line-height:15px}
+.point_performance.ray .cont2 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_2_1_m.jpg) no-repeat 0 0;background-size:96px 14px;height:14px}
+.point_performance.ray .cont2Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_2_2_m.jpg) no-repeat center 0;background-size:296px 329px;height:329px;margin-top:12px}
+.point_performance.ray .cont3{margin-top:30px}
+.point_performance.ray .cont3 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_3_1_m.jpg) no-repeat 0 0;background-size:76px 11px;height:11px}
+.point_performance.ray .cont3Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_3_2_m.jpg) no-repeat center 0;background-size:296px 512px;height:512px;margin-top:12px}
+.point_performance.ray .cont4{margin-top:30px}
+.point_performance.ray .cont4 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_4_1_m.jpg) no-repeat 0 0;background-size:101px 14px;height:14px}
+.point_performance.ray .cont4Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_4_2_m.jpg) no-repeat center 0;background-size:294px 446px;height:446px;margin-top:12px}
+.point_performance.ray .cont5{margin-top:30px}
+.point_performance.ray .cont5 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_5_1_m.jpg) no-repeat 0 0;background-size:114px 14px;height:14px}
+.point_performance.ray .cont5Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_5_2_m.jpg) no-repeat center 0;background-size:294px 464px;height:464px;margin-top:12px}
+.point_performance.ray .cont6{margin-top:30px}
+.point_performance.ray .cont6 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_6_1_m.jpg) no-repeat 0 0;background-size:269px 14px;height:14px}
+.point_performance.ray .cont6Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_6_2_m.jpg) no-repeat center 0;background-size:295px 335px;height:335px;margin-top:12px}
+.point_performance.ray .cont7{margin-top:30px}
+.point_performance.ray .cont7 .title{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_7_1_m.jpg) no-repeat 0 0;background-size:269px 14px;height:14px}
+.point_performance.ray .cont7Img{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/img_point_ray_7_2_m.jpg) no-repeat center 0;background-size:287px 184px;height:184px;margin-top:12px}
+.v_comment{position:relative;top:0;left:0;line-height:18px;text-indent:-13px;margin:0 0 20px 13px;padding:0 15px;font-family:kiaM}
+.v_comment p{color:#666 !important}
+.v_comment .v_pont{vertical-align:3px;color:#c02639}
+.v_comment br{display:none}
+.popup_viewer .pop_con .img_more dd.pop_comment{padding-top:20px;font:normal 11px 'KiaM';line-height:18px;text-indent:-13px;margin-left:13px}
+.popup_viewer .pop_con .img_more dd.pop_comment .v_pont{vertical-align:3px;color:#c02639}
+.popup_viewer .pop_con .img_more dd.pop_comment br{display:none}
+.keyVisualWrap .v_comment{display:none}
+.temp01 .v_comment{margin-bottom:0;padding-bottom:50px}
+.temp09 .textArea .subTxt{padding-bottom:10px}
+.wide_gallery .v_comment{padding:0;color:#666}
+}
+.tempNewGallery{position:relative;height:850px;overflow:hidden;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/new_gallery_bg.gif) 0 0 repeat-x #ededed}
+.tempNewGallery .mainInner .textArea .btnSmall{margin:20px 0 0 10px}
+.tempNewGallery .mainInner .visualImg{margin:230px 0 0 0;text-align:center}
+.tempNewGallery .mainInner .gallery{max-width:940px;margin:30px auto}
+.tempNewGallery .mainInner .gallery a .imgListTit,.tempNewGallery .mainInner .gallery a .description{display:none}
+.tempNewGallery .mainInner .gallery a picture img{width:100%}
+.tempNewGallery .mainInner .gallery .swiper-button-next,.tempNewGallery .mainInner .gallery .swiper-button-prev{top:0;margin:0;display:block;text-indent:-9999px;width:50px;height:100%;background:0}
+.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:0;filter:alpha(opacity=0)}
+.tempNewGallery .mainInner .gallery .swiper-button-next:before,.tempNewGallery .mainInner .gallery .swiper-button-prev:before{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.3;filter:alpha(opacity=30)}
+.tempNewGallery .mainInner .gallery .swiper-button-prev:after{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/swiper-button-prev.png) center center no-repeat}
+.tempNewGallery .mainInner .gallery .swiper-button-next:after{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/swiper-button-next.png) center center no-repeat}
+.tempNewGallery .mainInner .gallery .swiper-button-prev{left:0}
+.tempNewGallery .mainInner .gallery .swiper-button-next{right:0}
+@media all and (max-width:1024px){.tempNewGallery,.tempNewGallery .mainInner{height:auto}
+.tempNewGallery .mainInner .gallery{margin:60px 35px 30px}
+.tempNewGallery .mainInner .textArea .btnSmall{margin:10px 0 0 10px}
+.tempNewGallery .mainInner .visualImg{margin:210px 0 0 0}
+.tempNewGallery .mainInner .visualImg img{width:100% !important;max-width:550px !important}
+}
+@media all and (max-width:767px){.tempNewGallery .textArea h4{padding-top:60px}
+.tempNewGallery .mainInner .visualImg{display:none}
+.tempNewGallery .mainInner .gallery{margin:60px 0 30px}
+.tempNewGallery .mainInner .gallery .swiper-slide{box-sizing:border-box;padding:0 40px}
+.tempNewGallery .mainInner .gallery .swiper-button-prev{left:0}
+.tempNewGallery .mainInner .gallery .swiper-button-next{right:0}
+.tempNewGallery .mainInner .gallery .swiper-button-next,.tempNewGallery .mainInner .gallery .swiper-button-prev{width:40px}
+.tempNewGallery .mainInner .gallery .swiper-button-next:before,.tempNewGallery .mainInner .gallery .swiper-button-prev:before{display:none}
+.tempNewGallery .mainInner .gallery .swiper-button-prev:after{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/m-swiper-button-prev.png) center center no-repeat}
+.tempNewGallery .mainInner .gallery .swiper-button-next:after{background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/m-swiper-button-next.png) center center no-repeat}
+.tempNewGallery .mainInner .gallery .swiper-button-prev:after,.tempNewGallery .mainInner .gallery .swiper-button-next:after{background-size:15px auto}
+}
+.mScrollPos{display:none}
+@media all and (max-width:767px){.mScrollPos{display:block;position:fixed;bottom:0;left:0;width:100%;height:4px;z-index:20}
+.mScrollPos span.gr{position:absolute;top:0;left:0;display:block;width:0;height:4px;background:#bb162b;z-index:1}
+.mScrollPos span.gr:after{content:"";display:block;position:absolute;bottom:4px;right:0;width:47px;height:18px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_mscroll.png) 0 0 no-repeat}
+.mScrollPos span.txt{position:absolute;bottom:16px;right:47px;width:40px;height:22px;line-height:20px;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg_mscroll2.png) 0 0 no-repeat;color:#fff;font-size:11px;text-align:center;z-index:2}
+}
+.tempNewSns{position:relative;width:100%;overflow:hidden}
+.tempNewSns.itm1 .textArea{display:block}
+.tempNewSns.itm2 .textArea,.tempNewSns.itm3 .textArea{display:none}
+.tempNewSns .list{width:100%;border-bottom:2px solid #fff}
+.tempNewSns.itm2 .list u:after,.tempNewSns.itm3 .list u:after{content:".";display:block;height:0;font:0/0 arial;clear:both;visibility:hidden}
+.tempNewSns.itm2 .list ul li{float:left;width:50%;box-sizing:border-box}
+.tempNewSns.itm2 .list ul li:first-child{border-right:1px solid #fff}
+.tempNewSns.itm2 .list ul li:last-child{border-left:1px solid #fff}
+.tempNewSns.itm3 .list ul li{float:left;width:33.33%;border-left:2px solid #fff;box-sizing:border-box}
+.tempNewSns.itm3 .list ul li:first-child{margin-left:-2px}
+.tempNewSns .list ul li .itm{position:relative;display:block}
+.tempNewSns .list ul li .itm img{width:100%}
+.tempNewSns .list ul li .itm a.txtPos{position:absolute;display:block;bottom:40px;width:100%}
+.tempNewSns .list ul li .itm a.txtPos .box{position:relative;width:100%;max-width:940px;margin:0 auto;padding:20px 30px;box-sizing:border-box}
+.tempNewSns.itm2 .list ul li .itm a.txtPos .box,.tempNewSns.itm3 .list ul li .itm a.txtPos .box{width:auto;margin:0 40px}
+.tempNewSns .list ul li .itm a.txtPos .box:after{content:"";position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:#000;opacity:.6;filter:alpha(opacity=60);z-index:1}
+.tempNewSns .list ul li .itm a.txtPos .box p{position:relative;z-index:2;color:#fff}
+.tempNewSns .list ul li .itm a.txtPos .box p.tit{padding-bottom:10px;font-size:22px;color:#00fcff}
+.tempNewSns .list ul li .itm a.txtPos .box p.txt{display:-webkit-box;max-height:64px;font-size:28px;line-height:32px;white-space:normal;overflow:hidden;text-overflow:ellipsis;word-wrap:break-word;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.tempNewSns .list ul li a.txtPos:hover .box p,.tempNewSns .list ul li a.txtPos:active .box p,.tempNewSns .list ul li a.txtPos:focus .box p{text-decoration:underline}
+@media all and (max-width:1024px){.tempNewSns .list ul li .itm a.txtPos .box{width:auto;margin:0 30px}
+.tempNewSns .list ul li .itm a.txtPos .box p.tit{padding-bottom:6px;font-size:14px}
+.tempNewSns .list ul li .itm a.txtPos .box p.txt{font-size:18px;line-height:22px;max-height:44px}
+}
+@media all and (max-width:767px){.tempNewSns .textArea{display:none !important}
+.tempNewSns .list{border-bottom:0}
+.tempNewSns.itm3 .list ul{margin:0}
+.tempNewSns .list ul li{border-bottom:1px solid #d1d1d1}
+.tempNewSns.itm2 .list ul li,.tempNewSns.itm3 .list ul li{width:100%;border-left:0 !important;border-right:0 !important;border-bottom:1px solid #d1d1d1}
+.tempNewSns.itm3 .list ul li:first-child{margin-left:0}
+.tempNewSns .list ul li .itm{width:100%;height:104px;background:#f7f7f7;overflow:hidden}
+.tempNewSns .list ul li .itm:after{content:".";display:block;height:0;font:0/0 arial;clear:both;visibility:hidden}
+.tempNewSns .list ul li .itm picture{float:left;width:144px}
+.tempNewSns .list ul li .itm img{width:100%}
+.tempNewSns .list ul li .itm a.txtPos{position:relative;float:right;bottom:0;width:calc(100% - 144px);height:100%}
+.tempNewSns .list ul li .itm a.txtPos .box{position:relative;width:100%;max-width:940px;margin:0;padding:10px 15px;box-sizing:border-box}
+.tempNewSns.itm2 .list ul li .itm a.txtPos .box,.tempNewSns.itm3 .list ul li .itm a.txtPos .box{width:100%;margin:0}
+.tempNewSns .list ul li .itm a.txtPos .box:after{display:none}
+.tempNewSns .list ul li .itm a.txtPos .box p{color:#333}
+.tempNewSns .list ul li .itm a.txtPos .box p.tit{padding-bottom:4px;font-size:12px;color:#00b0f0}
+.tempNewSns .list ul li .itm a.txtPos .box p.txt{font-size:13px;line-height:22px;max-height:66px;-webkit-line-clamp:3}
+}
+.keyVisualWrap .carInfor ul li .inforTxt em{display:block;font-size:14px;font-family:kiaM;line-height:2}
+@media(max-width:1024px){.keyVisualWrap .carInfor ul li .inforTxt em{font-size:13px;line-height:1.5}
+}
+@media all and (max-width:767px){.keyVisualWrap .carInfor ul li .inforTxt em{font-size:12px}
+}
+.tempVideo{width:100%;min-height:100%;background:url(../../../../content/dam/kwcms/kr/ko/images/vehicles/bg.jpg) 0 0 repeat !important}
+.pipLayout.tempVideo{min-height:910px}
+.tempVideo .countVideo{position:relative;max-width:960px;min-height:780px;padding:110px 0 0 20px;margin:0 auto}
+.tempVideo .countVideo .subTitle{color:#fff}
+.tempVideo .countVideo .subTitle h4{font-family:kiaB;font-size:50px;line-height:50px}
+.tempVideo .countVideo .subTitle p{font-family:kiaM;font-size:15px;padding-top:20px}
+.tempVideo .countVideo .actLine{border-top:2px solid #bb162b;margin-top:60px}
+.tempVideo .countVideo .actLine .youtubeAct{width:100%;height:445px}
+.tempVideo .countVideo .actLine .videoTxt{height:130px;padding:20px;overflow-y:scroll;background:#fff;color:#666}
+@media all and (max-width:1024px){.pipLayout.tempVideo{min-height:0}
+.tempVideo .countVideo{max-width:100%;min-height:0}
+.tempVideo .countVideo .subTitle h4{font-family:kiaB;font-size:45px;line-height:45px}
+.tempVideo .countVideo .subTitle p{font-family:kiaM;font-size:13px;padding-top:20px}
+.tempVideo .countVideo .actLine{position:relative;padding-top:50%;margin-top:25px}
+.tempVideo .countVideo{padding:110px 35px 0 35px;margin:0}
+.tempVideo .countVideo .actLine .youtubeAct{position:absolute;top:0;left:0;width:100%;height:100%;padding-bottom:170px;box-sizing:border-box}
+.tempVideo .countVideo .actLine .videoTxt{position:relative;z-index:99}
+}
+@media all and (max-width:767px){.pipLayout.tempVideo{width:100%;min-height:0;background:#fff !important;padding-bottom:10px}
+.pipLayout.tempVideo .textArea h3{color:#000}
+.tempVideo .countVideo{min-height:0;padding:60px 0 0 0;margin:0}
+.tempVideo .countVideo .subTitle{display:none}
+.tempVideo .countVideo .actLine{margin-top:0}
+}

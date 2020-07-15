@@ -1,0 +1,408 @@
+/*
+ *  2014.12.02  zt
+ *  kia main.js 
+ * 
+ */
+
+$(document).ready(function() {
+   if($(".main_inner").length){
+      mainInit();
+   }
+   $("video").each(function(){
+	    $(this).get(0).play();
+   });
+});
+
+var mainInit = function(){
+    var SUPPORT_CSS = $.support.transition, viewportWidth, mainNum=0, mainMaxNum=1, mainMaxNum = $(".main_wrap").length;
+    var lastWindowHeight = 800, lastWindowWidth = 800;
+	var MpcMode = false;
+    $(window).resize(function() {
+            if($(window).height()!=lastWindowHeight || $(window).width()!=lastWindowWidth){
+                lastWindowHeight = $(window).height();
+                lastWindowWidth = $(window).width();
+                mainResize();
+            }
+     }).resize();
+
+	 $(window).ready(function(){
+		var urlPath=window.location.href;	
+		
+		if($(".main-type-cpnt").eq(0).find(".stinger_banner").html() != undefined){
+    		$('.stinger_banner').show();
+    	}
+		
+		if(urlPath.indexOf("#stopRolling")>-1){
+			autoPlay(false);
+		}else{
+			autoPlay(true);
+		}
+        
+      });
+
+	var autoPlayKey;
+	function autoPlay(evt){
+	  //console.log("auto : "+MpcMode);
+	  pagingMsg = "<span>"+(mainNum+1)+"</span>/"+mainMaxNum;
+	  $(".main_inner .pagingNum").html(pagingMsg);
+
+	  clearInterval(autoPlayKey);
+	  mainPageHide();
+	  if(evt == true){
+		mainPageShow();
+
+		autoPlayKey = setInterval(function(){
+		  //$("a.mainNext").addClass("autoPlay").trigger("click");
+		  //e.stopPropagation();
+		  //e.preventDefault();
+		  var idx = mainNum+1;
+		  if(idx == mainMaxNum){
+			  idx = 0;
+		  }
+
+		  $(".main_wrap").css("display","none");
+		  $(".main_wrap").eq(idx).css("display","block");
+
+		  //$(".mainCenter .paging ul > li").removeClass("on");
+		  //$(".mainCenter .paging ul").find("li:eq("+idx+")").addClass("on");
+
+		  /*
+		  $(".main_wrap").eq(idx).siblings(".main_wrap").css("position","absolute").stop().clearQueue().animate({
+			  "margin-left":"-100%"
+		  },500,function(){
+			$(this).hide();
+		  });
+		  $(".main_wrap").eq(idx).show().css("position","relative").css("margin-left","100%").stop().clearQueue().animate({
+			  "margin-left":"0%"
+		  },500);
+		  */
+		  
+		  /* S : 161223 */
+		  /* 주석처리
+		  $(this).on("keydown", function(e){
+			  if(e.keyCode == 9){
+				  e.stopPropagation();
+				  e.preventDefault();
+				  $(".playVisual").focus();
+				  $(this).off("keydown");
+			  }
+		  });
+		  /* E : 161223 */
+		  initMainTile(idx);  
+		},7000);
+		$("a.playVisual").addClass("on");
+		$("a.stopVisual").removeClass("on");
+	  }else{
+		$("a.playVisual").removeClass("on");
+		$("a.stopVisual").addClass("on");
+	  }
+	}
+	/*
+	$("#content:parent").click(function(){
+      autoPlay(false);
+    });
+	
+	
+	$("#content:parent").on("focusin",function(){
+		$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").stop().show();
+    });
+	*/
+        
+
+	$("a.playVisual").on("click",function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        autoPlay(true);
+    });
+    $("a.stopVisual").on("click",function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        autoPlay(false);
+    });
+        
+    $("a.mainNext").on("click", function(e){
+        //e.stopPropagation();
+        e.preventDefault();
+        var idx = mainNum+1;
+        if(idx == mainMaxNum){
+            idx = 0;
+        }
+
+        $(".main_wrap").css("display","none");
+        $(".main_wrap").eq(idx).css("display","block");
+        //$(".mainCenter .paging ul > li").removeClass("on");
+        //$(".mainCenter .paging ul").find("li:eq("+idx+")").addClass("on");
+
+		/*
+        $(".main_wrap").eq(idx).siblings(".main_wrap").css("position","absolute").stop().clearQueue().animate({
+              "margin-left":"-100%"
+          },500,function(){
+            $(this).hide();
+          });
+          $(".main_wrap").eq(idx).show().css("position","relative").css("margin-left","100%").stop().clearQueue().animate({
+              "margin-left":"0%"
+          },500);
+		  */
+
+
+        $(this).on("keydown", function(e){
+            if(e.keyCode == 9){
+                e.stopPropagation();
+                e.preventDefault();
+                $(".mainPrev").focus();
+				//$(".playVisual").focus();
+                $(this).off("keydown");
+            }
+        });
+        initMainTile(idx);               
+    });
+    
+     $("a.mainPrev").on("click", function(e){
+        //e.stopPropagation();
+        e.preventDefault();
+        var idx = mainNum-1;
+        if(idx < 0){
+            idx = mainMaxNum-1;
+        }
+
+        $(".main_wrap").css("display","none");
+        $(".main_wrap").eq(idx).css("display","block");
+        //$(".mainCenter .paging ul > li").removeClass("on");
+        //$(".mainCenter .paging ul").find("li:eq("+idx+")").addClass("on");
+
+		/*
+        $(".main_wrap").eq(idx).siblings(".main_wrap").css("position","absolute").stop().clearQueue().animate({
+              "margin-left":"100%"
+          },500,function(){
+            $(this).hide();
+          });
+          $(".main_wrap").eq(idx).show().css("position","relative").css("margin-left","-100%").stop().clearQueue().animate({
+              "margin-left":"0%"
+          },500);
+		  */
+
+
+        
+        initMainTile(idx);
+    });
+    
+    $(".share a.btnShare").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        if($(this).siblings(".shareList").css("display") == "none"){
+            $(this).siblings(".shareList").css("display","block");    
+        }else{
+            $(this).siblings(".shareList").css("display","none");    
+        }
+    });
+   
+    $(".mainRolling").each(function(i,e){
+        clickFnc(this);
+        swipeFnc(this);
+    });
+        
+    var mainSwipe = new onSwipeFnc(".main_wrap .mainCenterWrap .mainCenter");
+     mainSwipe.moveEnd = function(evt, dir, phase, swipetype, distance){
+         if(phase == "end"){
+              if(dir == "right"){
+                  var idx = mainNum-1;
+                  if(idx < 0) {idx =0;}
+                  $("a.mainPrev").trigger("click");
+              }else if(dir == "left"){
+                  var idx = mainNum+1;
+                  if(idx > mainMaxNum) {idx = mainMaxNum;}
+                  $("a.mainNext").trigger("click");
+              }
+          }        
+      };
+    
+    function clickFnc(target){
+        $(target).find(".paging ul > li > a ").on("click", function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            var idx = $(this).parent().index();
+            if(viewportWidth > MOBILE_WIDTH){
+                var ob = $(this).parent().parent().parent().siblings(".listWrap"); 
+                var oldOb = $(this).parent().parent().find("li.on").index();
+                var newOb = idx;
+
+                if(oldOb != newOb) {
+                    ob.find("ul li").eq(oldOb).css({transform: "rotateY(180deg)","display":"none"});
+                    ob.find("ul li").eq(newOb).css({transform: "","display":"block"});
+                    ob.find("ul").css("animation", "maintile 0.5s linear 0s").css("-webkit-animation", "maintile 0.5s linear 0s").css("-o-animation", "maintile 0.5s linear 0s").css("-ms-animation", "maintile 0.5s linear 0s");
+                    setTimeout(function() {
+                        ob.find("ul").attr("style", "");
+                        ob.find("ul").css("animation", "").css("-webkit-animation", "").css("-o-animation", "").css("-ms-animation", "");
+                    }, 500);
+                }
+            }else{
+              
+                $(this).parent().parent().parent().siblings(".listWrap").find("ul > li").css({"display":"none"});
+                $(this).parent().parent().parent().siblings(".listWrap").find("ul > li").eq(idx).css({transform: "rotateY(0)","display":"block"});
+            }
+            $(this).parent().siblings().removeClass("on");
+            $(this).parent().addClass("on");
+        });
+    }
+    
+    function swipeFnc(target){
+        var localglobalSwipe = new onSwipeFnc(target);
+        localglobalSwipe.moveEnd = function(evt, dir, phase, swipetype, distance){
+            var targetNum = $(target).find(".paging ul > li.on").index();
+            var targetMaxNum = $(target).find(".paging ul > li").length;
+             if(phase == "end"){
+                  if(dir == "right"){
+                      var idx = targetNum-1;
+                      if(idx < 0){idx =targetMaxNum-1;}
+                      $(target).find(".paging ul > li:eq("+ idx +") > a").trigger("click");
+                  }else if(dir == "left"){
+                      var idx = targetNum+1;
+                      if(idx > targetMaxNum-1){idx = 0;}
+                      $(target).find(".paging ul > li:eq("+ idx +") > a").trigger("click");
+                  }
+              }        
+        };
+    } 
+      
+    function initMainTile(idx){
+       var $divTile = $(".main_wrap").eq(idx).find("> div");
+       var delay = 0;
+       var delay_kv = 0;
+       var tempBoxWidth = 307, tempBoxHeight = 262;
+       if(viewportWidth < TABLET_WIDTH){
+           tempBoxWidth = 153;
+           tempBoxHeight = 131;
+       }
+
+
+       $divTile.css("animation", "").css("-webkit-animation", "").css("-o-animation", "").css("-ms-animation", "");
+       if(SUPPORT_CSS && viewportWidth > MOBILE_WIDTH){
+           $divTile.each(function(i){
+                if(!$(this).hasClass("mainCenterWrap")) {
+                    delay=delay+0.05;
+                    $(this).css("animation", "maintile 0.5s linear "+delay+"s").css("-webkit-animation", "maintile 0.5s linear "+delay+"s").css("-o-animation", "maintile 0.5s linear "+delay+"s").css("-ms-animation", "maintile 0.5s linear "+delay+"s");
+                } else {
+                	
+					$(this).find(".mainCenter").hide().fadeIn(1000);
+					/*					
+                    var v = ($(this).width()/tempBoxWidth)+ 1;
+                    var h = ($(this).height()/tempBoxHeight)+ 1;
+                    var h2 = Math.floor(h/2);
+                    for(var j=1;j<=h;j++) {
+						for(var i=1;i<=v;i++) {
+		                    $(this).find(".mainCenter").append('<div class="ani ani'+i+'_'+j+'" style="position:absolute;left:'+((i-1)*tempBoxWidth)+'px;top:'+((j-1)*tempBoxHeight)+'px;width:'+tempBoxWidth+'px;height:'+tempBoxHeight+'px;"></div>');
+						}
+                    }
+                    for(var j=1;j<=h;j++) { // h
+                        for(var i=1;i<=v;i++) { // v
+                            var ob = $(".ani"+i+"_"+j);
+                            if(j<h2){
+                               j2 = h-j+1; 
+                            }else{
+                               j2 = j;  
+                            }
+                            delay_kv = (100*i) + (80*j2);
+                            ob.delay(delay_kv).animate({opacity:0}, 500);
+                        }
+                    }
+                    setTimeout(function() {$(".ani").remove();}, delay_kv+100);
+					*/
+                }
+            });
+        }else{
+             $divTile.each(function(i){
+                delay=delay+50;
+                $(this).css("animation", "").css("-webkit-animation", "").css("-o-animation", "").css("-ms-animation", "");
+                $(this).stop().css("opacity",0).delay(delay).animate({opacity:1}, 200, function() {
+                    $(this).css("opacity", 1);
+                });
+             });
+        }
+
+        mainNum = idx;
+        $(".main_inner .pagingNum > span").html(mainNum+1);
+    }
+    /*
+    function mainPageHide(){
+        $(".main_inner .pagingNum").stop().hide();
+        $("a.mainNext, a.mainPrev").off("mouseover").on("mouseover", function(e){
+            $(".main_inner .pagingNum").fadeIn();
+        });
+        $("a.mainNext, a.mainPrev").off("mouseout").on("mouseout", function(e){
+            $(".main_inner .pagingNum").fadeOut();
+        });
+    }
+	*/
+    function mainPageHide(){
+		var MPC;
+		//$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").stop().hide();
+		//$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").stop();
+		$(".main_inner .pagingNum, a.mainNext, a.mainPrev, a.playVisual, a.stopVisual").off("mouseover").on("mouseover focusin", function(e){
+			if(MpcMode == false){
+				clearTimeout(MPC);
+				$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").fadeIn();
+				//console.log("in");
+			}
+		});
+
+
+		$(".main_inner .pagingNum, a.mainNext, a.mainPrev, a.playVisual, a.stopVisual").off("mouseout").on("mouseout focusout", function(e){
+					//console.log(MpcMode);
+			if(MpcMode == false){
+				MPC = setTimeout(function(){
+					$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").fadeOut();
+					autoPlay(false);
+					//console.log("out");
+				},1500);
+			}
+		});
+	}
+    /*
+    function mainPageShow(){
+        $(".main_inner .pagingNum").stop().show();
+        $("a.mainNext, a.mainPrev").off("mouseover");
+        $("a.mainNext, a.mainPrev").off("mouseout");
+    }
+	*/
+	function mainPageShow(){
+        //$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").stop().show();
+		$(".main_inner .pagingNum, .main_inner a.playVisual, .main_inner a.stopVisual").stop().show();
+        $(".main_inner .pagingNum, a.mainNext, a.mainPrev, a.playVisual, a.stopVisual").off("mouseover");
+        $(".main_inner .pagingNum, a.mainNext, a.mainPrev, a.playVisual, a.stopVisual").off("mouseout");
+    }
+    
+	/*
+    function mainResize(){
+        document.body.style.overflow = "hidden";
+        viewportWidth = $(window).width();
+        document.body.style.overflow = "";
+        if(IE_VER < 9  && IE_VER !== false){
+            
+        }else{
+            if(viewportWidth > TABLET_WIDTH){
+                mainPageHide();
+            }else{
+                mainPageShow();
+            }    
+        }
+    }
+	*/
+
+	function mainResize(){
+        //console.log(MpcMode);
+        document.body.style.overflow = "hidden";
+        viewportWidth = $(window).width();
+        document.body.style.overflow = "";
+        if(IE_VER < 9  && IE_VER !== false){
+            
+        }else{
+            if(viewportWidth > TABLET_WIDTH){
+				MpcMode = false;
+                mainPageHide();
+            }else{
+				MpcMode = true;
+                mainPageShow();
+            }    
+        }
+    }
+}

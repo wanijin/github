@@ -244,19 +244,60 @@ $(function(){
 
 });
 
-
-var video = document.getElementById("kiaVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+//seciton08s
+function openTab(evt, sec08Name) {
+  var i, tabcontent08, tablinks08;
+  tabcontent08 = document.getElementsByClassName("sec08-content");
+  for (i = 0; i < tabcontent08.length; i++) {
+    tabcontent08[i].style.display = "none";
   }
-};
+  tablinks08 = document.getElementsByClassName("sec08-tablinks");
+  for (i = 0; i < tablinks08.length; i++) {
+    tablinks08[i].className = tablinks08[i].className.replace(" active", "");
+  }
+  document.getElementById(sec08Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+//section09
+
+$(function(){
+  $(".img1-right").click(function(){
+    $('.sec09-slide-img1').animate({marginLeft: "-950px"});
+    $('.img2-left').css('display','block');
+    $('.img2-right').css('display','block');
+    $('.img1-right').css('display','none');
+    $('.img3-left').css('display','none');
+  });
+  $(".img2-right").click(function(){
+    $('.sec09-slide-img1').animate({marginLeft: "-1900px"});
+    $('.img1-right').css('display','none');
+    $('.img2-left').css('display','none');
+    $('.img2-right').css('display','none');
+    $('.img3-left').css('display','block');
+  });
+  $(".img3-left").click(function(){
+    $('.sec09-slide-img1').animate({marginLeft: "-950px"});
+    $('.img1-right').css('display','none');
+    $('.img2-left').css('display','block');
+    $('.img2-right').css('display','block');
+    $('.img3-left').css('display','none');
+  });
+  $(".img2-left").click(function(){
+    $('.sec09-slide-img1').animate({marginLeft: "0"});
+    $('.img1-right').css('display','block');
+    $('.img2-left').css('display','none');
+    $('.img2-right').css('display','none');
+    $('.img3-left').css('display','none');
+  });
+
+})
+
+
+
+
 
 
 

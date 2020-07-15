@@ -1,0 +1,437 @@
+/*
+	@filename	: angular-common.js
+	@filedesc	: angular 공통 js
+	@date		: 2015.01.19
+	@author		: Jinwoo.Yuk
+*/
+
+/*****************************
+* define angular app
+******************************/
+var kwcmsApp = angular.module('kwcmsAppModuleApp', ['ngSanitize']);
+
+//reset stylish select
+kwcmsApp.directive('afterOptionElement', function ($timeout){
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			if (scope.$last === true) {
+				$timeout(function () {
+					$(".form_select").resetSS();
+				});
+			}
+		}
+	}
+});
+
+kwcmsApp.directive('afterRadioElement', function ($timeout){
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			if (scope.$last === true) {
+				$timeout(function () {
+					if($(".radio_box").length){
+						radioBoxInit();
+					}
+				});
+			}
+		}
+	}
+});
+
+kwcmsApp.directive('afterCheckboxElement', function ($timeout){
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			if (scope.$last === true) {
+				$timeout(function () {
+					if($(".check_box").length){
+						checkBoxInit();
+					}
+				});
+			}
+		}
+	}
+});
+
+kwcmsApp
+.filter("parseDate", function () {
+	return function (input) {
+		if(input!=""&&input!=null){
+			return new Date(input.replace(/-/g,"/").replace(".0",""));
+		}
+	};
+}).filter("commaNum", function() {
+	return function (num) {
+		if (typeof(num) == "number") {
+			num += "";
+		}
+		
+		if(num!=""&&num!=null){
+			var commanum = num.toString().split(/(?=(?:\d{3})+(?:\.|$))/g).join(',');
+			return commanum;
+		}
+	};
+}).filter('sanitize', ['$sce', function($sce) {
+	return function(htmlCode) {
+		if(htmlCode!=""&&htmlCode!=null){
+			var filterHtml = filterXSS(htmlCode).replace(/\n/g, '<br>');
+			return $sce.trustAsHtml(filterHtml);
+		}
+	};
+}]).filter('trusthtml', ['SanitizeService', function(SanitizeService) {
+	return function(htmlCode) {
+		var decodedHtml = "";
+		if(htmlCode!=""&&htmlCode!=null){
+			decodedHtml = SanitizeService.trusthtml(htmlCode);
+		}
+		return decodedHtml;
+	};
+}]).service("SanitizeService", function($sce){ //Service for sanitize
+	
+	var doSanitize = function(encodedText) {
+		var decodedHtml = "";
+		
+		if(encodedText) {
+			var filterHtml = "";
+			
+			filterHtml = encodedText.replace(/\\n/g, '<br>')
+			.replace(/&lt[;]?/g, '<').replace(/&gt[;]?/g, '>')
+			.replace(/&#39[;]?/g, '\'').replace(/&#40[;]?/g, '(').replace(/&#41[;]?/g, ')')
+			.replace(/&amp[;]?/g, '&').replace(/&#8211[;]?/g, '-')
+			/* .replace(/&#39[;]?/g, '"').replace(/&amp[;]?/g, '&').replace(/&#8211[;]?/g, '-') */
+			;
+			filterHtml = filterXSS(filterHtml);
+			decodedHtml = $sce.trustAsHtml(filterHtml);
+		}
+		return decodedHtml;
+	};
+	
+	var doHtmlDecodeSanitize = function (encodedText) {
+		var decodedHtml = "";
+		if (encodedText) {
+			decodedHtml = encodedText;
+			
+			//태그로 인식될 만한 문자는 모두 치환한다.
+			decodedHtml = decodedHtml.replace(/\</g, '&lt'); //< >> &lt
+			decodedHtml = decodedHtml.replace(/\>/g, '&gt'); //> >> &gt
+			decodedHtml = decodedHtml.replace(/\'/g, '\'');	 	
+			decodedHtml = decodedHtml.replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;'); //\t >> &nbsp; x 4
+			decodedHtml = decodedHtml.replace(/[\r]?\n/g, '&ltbr&gt'); //crlf >> &ltbr&gt
+			
+			//줄바꿈을 위해<br> 만 부활시킨다
+			decodedHtml = decodedHtml.replace(/&lt[;]?[br|BR|bR|Br]+[\s]?[\/]?&gt[;]?/g, '<br>');
+			
+			//xss filter
+			decodedHtml = filterXSS(decodedHtml);
+			
+			//String to Html
+			decodedHtml = $sce.trustAsHtml(decodedHtml);
+		}
+		return decodedHtml;
+	};
+	
+	return {
+		  sanitize : doSanitize
+		, trusthtml : doHtmlDecodeSanitize
+	};
+}).service("PopupService", function(){ //Service for popup
+
+	var popupOpen = function(/*String */ target){
+		$("." + target).show();
+		$(".dimmed").show();
+
+		var top = $(window).scrollTop();
+		var h1 = $(window).height();
+		var h2 = $("." + target + " .pop_con").outerHeight();
+		var headerHeight = $("#header").outerHeight();
+		if(h1 < GNB_VISIBLE_HEIGHT && $(window).width() > MOBILE_WIDTH){headerHeight = 0;}
+		var t;
+		if($(window).width() > MOBILE_WIDTH){
+		   t = top + h1/2 - h2/2 + headerHeight/2;
+		}else{
+			t = top + h1/2 - h2/2 - headerHeight;
+		}
+		if ( t < 41 ){ t = 41;}
+		$("." + target).css( { position:"absolute" , top:t  } );
+		$(".dimmed").css({"height":""});
+		var docH = $(document).height();
+		$(".dimmed").css({"height":docH,"position":"fixed"});
+
+		if($("*:focus").length > 0){
+		   tapIndexFnc.Init($("." + target));
+		}
+	};
+
+	var popupClose = function(/*String */ target) {
+		$("." + target).hide();
+		$(".dimmed").hide();
+		tapIndexFnc.Close();
+	};
+
+	return {
+		open	: popupOpen,
+		close	: popupClose
+	};
+}).service("HttpService", function ($http) {
+
+	var xmlRequest = function (params, callback, args) {
+
+		params.method = params.method.toUpperCase();
+
+		var setRequest = {
+			 method : params.method
+			, url : params.url
+		};
+
+		if (angular.equals(params.method, "GET")) {
+			setRequest.params = params.params;
+		} else if (angular.equals(params.method, "POST")) {
+			setRequest.data = $.param(params.params)
+			setRequest.headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+		}
+
+		$http(
+			setRequest
+		).success(function(data) {
+			callback(data, args);
+		});
+	};
+
+	//method alias
+	return {
+		http : xmlRequest
+	};
+});
+
+
+/*****************************
+* 색상별 차량 이미지 경로 생성
+* 1. carImgPath 의존 주입
+* 2. carImgPath.makePath(차량명, 색상코드) 호출
+******************************/
+kwcmsApp.factory('carImgPath',[function(){
+	var carColorStr	=	{
+		 "모닝": "car_all-new-morning"
+	    ,"JA모닝": "car_all-new-morning"
+		,"레이": "car_ray"		
+		,"프라이드": "car_pride"
+		,"프라이드5": "car_pride5"
+		,"쏘울": "car_soul"		
+		,"K5": "car_newk5"
+		,"K5HEV": "car_k5hev"				
+		,"K7": "car_2017k7"
+		,"K7HEV": "car_k7hev"		
+		,"카렌스": "car_newcarens"
+		,"카니발R": "car_newcarnival"
+		,"카니발": "car_carnival11"
+		,"카니발상품성개선": "car_carnival9"
+		,"그랜드카니발": "car_grand"
+		,"스포티지R": "car_sportager"		
+		,"스포티지": "car_sportageql"
+		,"쏘렌토": "car_sorento"
+		,"쏘렌토R": "car_sorentor"
+		,"모하비": "car_mohave"		
+		,"K9": "car_k9"
+		,"K3": "car_k3"
+		,"K3KOUP": "car_k3koup"
+		,"YP9": "car_carnival9"
+		,"YP11": "car_carnival11"
+		,"YP카니발": "car_carnival11" // 드라이빙센터 YP카니발 임시 처리
+		,"JF": "car_newk5" // k5 신규런칭으로 임시 수정		
+		,"QL" : "car_sportageql"//신형 스포티지
+		,"QL스포티지" : "car_sportageql"//신형 스포티지			
+		,"니로" : "car_niro"//니로 추가
+		,"스팅어" : "car_stinger"//스팅어 추가
+		,"쏘울EV" : "car_soul_ev"//쏘울 EV 추가
+		,"스토닉" : "car_stonic"//스토닉
+		,"BD" : "car_bdk3"//BD K3
+		,"RJ" : "car_rjk9"//BD K9
+		,"k3gt4도어" : "car_k3gt-4dr"//BD K9
+		,"k3gt5도어" : "car_k3gt-5dr"//BD K9
+		
+			
+	};
+
+	return {
+		/*
+		* @example
+		* carImgPath.makePath(SALE_CTY_HAN_NM, XRCL_CTY_NO, FILE_EXT);
+		*/
+		makePath : function(SALE_CTY_HAN_NM, XRCL_CTY_NO, FILE_EXT){
+			var carImagePath	=	"";
+			var carImagePathRoot=	"";
+			var carName =SALE_CTY_HAN_NM;
+			if(FILE_EXT == "PNG") {
+				carImagePathRoot=	"/content/dam/kwcms/kr/ko/images/byo/";
+				FILE_EXT = ".png";
+			} else {
+				carImagePathRoot=	"/content/dam/kwcms/kr/ko/images/driving/";
+				FILE_EXT = ".jpg";
+			}
+
+			var carNameArr	=	SALE_CTY_HAN_NM.split(" ");			
+			var carColorCode=	XRCL_CTY_NO;
+			if(carColorCode!=""&&carColorCode!=null) {
+				carColorCode	=	carColorCode.toLowerCase();
+				if(carColorCode=="c0") carColorCode="co";
+			}
+			if (carNameArr[0] == "프라이드" && carNameArr[2] == "5DR")
+			{
+				carImagePath	= carColorStr["프라이드5"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "프라이드UB")
+			{
+				carImagePath	= carColorStr["프라이드"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("K7")> -1 && carName.indexOf("HEV") > -1)
+			{   
+				carImagePath	= carColorStr["K7HEV"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("K5")> -1 && carName.indexOf("HEV") > -1)
+			{
+				carImagePath	= carColorStr["K5HEV"] + "_" + carColorCode + FILE_EXT;
+			}	
+			else if (carName.indexOf("스팅어")> -1)
+			{
+				carImagePath	= carColorStr["스팅어"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("쏘울")> -1 && carName.indexOf("EV") > -1)
+			{
+				carImagePath	= carColorStr["쏘울EV"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "카니발" && carNameArr[5] == "Long")
+			{
+				carImagePath	= carColorStr["그랜드카니발"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "카니발" && carNameArr[5] == "Short")
+			{
+				carImagePath	= carColorStr["카니발R"] + "_" + carColorCode + FILE_EXT;
+			}			
+			else if (carNameArr[0] == "K3" && carNameArr[1] == "2DR")
+			{
+				carImagePath	= carColorStr["K3KOUP"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "YP" && carNameArr[2] == "9인승")
+			{
+				carImagePath	= carColorStr["YP9"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "YP" && carNameArr[2] == "11인승")
+			{
+				carImagePath	= carColorStr["YP11"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "YP카니발" && carNameArr[2] == "9인승")
+			{
+				carImagePath	= carColorStr["YP9"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carNameArr[0] == "YP카니발" && carNameArr[2] == "11인승")
+			{
+				carImagePath	= carColorStr["YP11"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("카니발")> -1 && carName.indexOf("상품성개선") > -1)
+			{
+				carImagePath	= carColorStr["카니발상품성개선"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("GT")> -1 && carName.indexOf("4도어") > -1)
+			{
+				carImagePath	= carColorStr["k3gt4도어"] + "_" + carColorCode + FILE_EXT;
+			}
+			else if (carName.indexOf("GT")> -1 && carName.indexOf("5도어") > -1)
+			{
+				carImagePath	= carColorStr["k3gt5도어"] + "_" + carColorCode + FILE_EXT;
+			}
+			else
+			{
+				if (carColorStr[carNameArr[0]] != null){
+					var retvalue = "";
+					if (carNameArr[0]=="쏘울" && carColorCode=="3d"){
+						retvalue = carColorStr[carNameArr[0]] + "_a3d.png"; //쏘울 이미지 a3d, moning 3d
+					}else{
+						retvalue = carColorStr[carNameArr[0]] + "_" + carColorCode + FILE_EXT;
+					}
+					carImagePath	= retvalue;
+				}else{
+					carImagePath	= "_" + carColorCode + FILE_EXT;
+				}
+			}
+			return carImagePathRoot+carImagePath;
+		}
+	};
+}]).factory('calcDate',function(){
+	function getCalculatedDate(iYear, iMonth, iDay, seperator){
+		 var gdCurDate = new Date();
+		 gdCurDate.setYear( gdCurDate.getFullYear() + iYear );
+		 gdCurDate.setMonth( gdCurDate.getMonth() + iMonth );
+		 gdCurDate.setDate( gdCurDate.getDate() + iDay );
+
+		 var giYear = gdCurDate.getFullYear();
+		 var giMonth = gdCurDate.getMonth()+1;
+		 var giDay = gdCurDate.getDate();
+		 giMonth = "0" + giMonth;
+		 giMonth = giMonth.substring(giMonth.length-2,giMonth.length);
+		 giDay   = "0" + giDay;
+		 giDay   = giDay.substring(giDay.length-2,giDay.length);
+		 return giYear + seperator + giMonth + seperator +  giDay;
+	}
+	return{
+		minusDay	:	function(minusNum,seperator){
+			var nowDate = new Date();
+			var nowYear = nowDate.getFullYear();
+			var nowMonth = nowDate.getMonth() + 1;
+			var nowDay = nowDate.getDate();
+
+			if(nowMonth < 10)nowMonth = "0" + nowMonth;
+			if(nowDay < 10)nowDay = "0" + nowDay;
+
+			var newDate = new Date().getTime() - (minusNum * 24 * 60 * 60 * 1000);
+			nowDate.setTime(newDate);
+			var year = nowDate.getFullYear();
+			var month = nowDate.getMonth() + 1;
+			var day = nowDate.getDate();
+
+			if(month < 10)month = "0" + month;
+			if(day < 10)day = "0" + day;
+			return year+seperator+month+seperator+day;
+		},
+		periodSet	:	function(pType,minus,seperator,rtnFn){
+			var period	=	{
+				startViewDate:""
+				,endViewDate:""
+			};
+
+			if(pType	==	"fort"){
+				period.startViewDate	=	getCalculatedDate(0,0,0-minus,seperator);
+			}else if(pType	==	"month"){
+				period.startViewDate	=	getCalculatedDate(0,0-minus,0,seperator);
+			}else if(pType	==	"year"){
+				period.startViewDate	=	getCalculatedDate(0-minus,0,0,seperator);
+			}
+			period.endViewDate		=	getCalculatedDate(0,0,0,seperator);
+
+			return period;
+		},
+		greaterDate	:	function(dateGt, dateLs){
+			if(dateGt==""||dateLs=="") return;
+			dateGt	=	dateGt.toString().replace(/-/g,"/").replace(".0","");
+			dateLs	=	dateLs.toString().replace(/-/g,"/").replace(".0","");
+			var gtDate	=	new Date(dateGt);
+			var lsDate	=	new Date(dateLs);
+			return gtDate>lsDate;
+		},
+		statusDate	:	function(startDate, endDate){
+			if(startDate==""||endDate=="") return;
+			var code	=	"";		//P:진행중, F:종료, W:대기
+			startDate	=	new Date(startDate.replace(/-/g,"/").replace(".0",""));
+			endDate		=	new Date(endDate.replace(/-/g,"/").replace(".0",""));
+			var today	=	new Date();
+			if(today>endDate){
+				code	=	"F";
+			}else if(today<startDate){
+				code	=	"W";
+			}else{
+				code	=	"P";
+			}
+			return code;
+		}
+	};
+})

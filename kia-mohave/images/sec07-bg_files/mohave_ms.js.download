@@ -1,0 +1,259 @@
+document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147092796-1"></script>');
+document.write("<script>");
+document.write("window.dataLayer = window.dataLayer || [];");
+document.write("function gtag(){dataLayer.push(arguments);}");
+document.write("gtag('js', new Date());");
+document.write("gtag('config', 'UA-147092796-1');");
+document.write("</script>");
+
+$(document).ready(function(){
+	mohave_swiper();
+	mohave_clickEvent();
+	mohave_indicator();
+	mohave_scrollTop();
+});
+
+let windowWidth = window.innerWidth;
+
+/* 190906 1차수정 start */
+function mohave_swiper(){
+	var sectionSwiper03 = new Swiper('.section03-container', {
+		slidesPerView: 1,
+		simulateTouch: false,
+		observer: true,       //display:none,block 할때 필요
+		observeParents: true, //display:none,block 할때 필요
+		navigation: {
+			nextEl: '.mohave-btn-next01',
+			prevEl: '.mohave-btn-prev01',
+		},		
+	});
+
+	var sectionSwiper05 = new Swiper('.section05-container', {
+		slidesPerView: 1,
+		effect: 'fade',
+		simulateTouch: false,
+		observer: true,       //display:none,block 할때 필요
+		observeParents: true, //display:none,block 할때 필요
+		navigation: {
+			nextEl: '.mohave-btn-next02',
+			prevEl: '.mohave-btn-prev02',
+		},
+		 pagination: {
+        el: '.mohave-arrow-pagination',
+        clickable : true,
+      },
+		on: {
+			slideChangeTransitionEnd : function(){
+				var slideIndex = this.realIndex;
+				if(slideIndex == 0){
+					$('.mohave-section05-in .mohave-text').html(
+						'<p class="mohave-p1">고속도로 주행보조 (HDA)</p>' +
+						'<p class="mohave-p2">고속도로 주행 시 스스로 속도를 조절하여 앞차와의 거리를 자동으로 유지합니다. 장거리 주행이나 정체 상황에서 브레이크나 엑셀을 계속 밟아야 하는 피로감을 덜어줍니다. 또한 조향 제어를 통해 차로를 유지하며 주행하도록 도와주어 안정적인 드라이빙 환경을 제공합니다.</p>'
+					);
+				}else if(slideIndex == 1){
+					$('.mohave-section05-in .mohave-text').html(
+						'<p class="mohave-p1">전방 충돌방지 보조 (FCA)</p>' +
+						'<p class="mohave-p2">전방 차량 및 보행자와의 충돌 위험이 감지 될 경우 운전자에게 이를 경고하고, 필요시 브레이크 제어를 통해 충돌하지 않도록 도와줍니다.</p>'
+					);
+				}else if(slideIndex == 2){
+					$('.mohave-section05-in .mohave-text').html(
+						'<p class="mohave-p1">내비게이션 기반 스마트 크루즈 컨트롤 (NSCC)_안전구간, 곡선로</p>' +
+						'<p class="mohave-p2">고속도로 또는 자동차 전용도로 본선에서 스마트 크루즈 컨트롤 설정 주행 중 내비게이션의 도로 정보를 기반으로 필요시 안전구간, 곡선로 진입 전 감속 제어를 통해 주행 편의성을 높여드립니다. </p>'
+					);
+				}else if(slideIndex == 3){
+					$('.mohave-section05-in .mohave-text').html(
+						'<p class="mohave-p1">외부공기 유입 방지 제어</p>' +
+						'<p class="mohave-p2">내비게이션과 연동하여 차량의 터널 진입 및 비청정 예상 지역을 지날 때, 윈도우가 개방되어 있으면 자동으로 닫아주며, 공조 시스템을 내기 순환 모드로 전환함으로써 쾌적한 실내 공기 유지에 도움을 드립니다.</p>'
+					);
+				}
+			},
+		},
+	});
+
+	var sectionSwiper06 = new Swiper('.section06-container', {
+		slidesPerView: 1,
+		simulateTouch: false,
+		observer: true,       //display:none,block 할때 필요
+		observeParents: true, //display:none,block 할때 필요
+		navigation: {
+			nextEl: '.mohave-btn-next03',
+			prevEl: '.mohave-btn-prev03',
+		},
+		scrollbar: {
+			el: '.mohave-swiper-scrollbar',
+		},
+	});
+
+	if(windowWidth > 1040){
+		$('#mohaveVideo').get(0).play();
+	}else if(windowWidth <= 1040){
+		$('#mohaveVideo').get(0).pause();
+	}
+};//mohave_swiper
+/* 190906 1차수정 end */
+
+function mohave_clickEvent(){
+	$('.mohave-section02-in .mohave-img').click(function(){
+		let producBtn = $('.mohave-section02-in .mohave-img');
+		producBtn.removeClass("mohave-imgOn"); // sBtn 속에 (active)클래스를 삭제 한다.
+		$(this).addClass("mohave-imgOn"); // 클릭한 a에 (active)클래스를 넣는다.
+
+		if(windowWidth > 1040) {
+			let num = $(this).index();
+			if(num == 0){
+				$('.mohave-section02-in .mohave-text').html(
+					'모하비 전용 엠블럼 & 라디에이터 그릴' +
+					'<span>정통 SUV의 강인하고 당당한 풍채와 선이 굵고 기품있는 디자인이 최적의 조화를 이룹니다.</span>'
+				);
+			}else if(num == 1){
+				$('.mohave-section02-in .mohave-text').html(
+					'버티컬 큐브 리어 콤비네이션 램프'+
+					'<span>대담하면서도 하이테크한 버티컬 큐브 조형으로 모하비만의 새로운 아이덴티티를 창조합니다.</span>'
+				);
+			}else if(num == 2){
+				$('.mohave-section02-in .mohave-text').html(
+					'듀얼 트윈팁 데코 가니쉬'+
+					'<span>플래그십 SUV다운 웅장함과 고급감을 구현합니다.</span>'
+				);
+			}
+		}
+
+		$(window).resize(function (){
+			// width값을 가져오기
+			windowWidth = window.innerWidth;
+
+			if(windowWidth <= 1040) {
+				let num = $(this).index();
+				if(num == 0){
+					$('.mohave-section02-in .mohave-text').html(
+						'모하비 전용 엠블럼 & 라디에이터 그릴 '+ 
+						'<br/><span>정통 SUV의 강인하고 당당한 풍채와 선이 굵고 기품있는 디자인이 최적의 조화를 이룹니다.</span>'
+					);
+				}else if(num == 1){
+					$('.mohave-section02-in .mohave-text').html(
+						'버티컬 큐브 리어 콤비네이션 램프'+
+						'<br/><span>대담하면서도 하이테크한 버티컬 큐브 조형으로 모하비만의 새로운 아이덴티티를 창조합니다.</span>'
+					);
+				}else if(num == 2){
+					$('.mohave-section02-in .mohave-text').html(
+						'듀얼 트윈팁 데코 가니쉬'+
+						'<br/><span>플래그십 SUV다운 웅장함과 고급감을 구현합니다.</span>');
+				}
+			}
+		});
+	});
+
+	//video popup
+	$('i.mohave-i').click(function(){
+		$('#mohave-show01, .dim-bg').fadeIn(); //서서히 나타나게 하는 효과
+		$("#mohave-youtube-player").attr("src", "https://www.youtube.com/embed/0YEDEqmHy6A?controls=2&rel=0&autoplay=1;");
+	});
+
+	//mohave-section06 popup
+	$('.mohave-section06-in .mohave-img').click(function(){
+		var bg = $(this).css('background-image');
+		bg = bg.replace(/(url\(|\)|")/g, '');
+		$('#mohave-show02, .dim-bg').fadeIn(); //서서히 나타나게 하는 효과
+		$('.mohave-imgPoup img').attr('src', bg); //이미지를 교환
+	});
+
+	$('.mohave-close, .dim-bg').click(function(){
+		$("#mohave-show01, .dim-bg").fadeOut();
+		$("#mohave-youtube-player").attr("src",""); 
+		$('#mohave-show02, .dim-bg').fadeOut(); //서서히 나타나게 하는 효과		
+	});
+};//mohave_clickEvent
+
+function mohave_indicator(){
+	$('.mohave-indicator-in li a').click(function(){
+		if(windowWidth > 780){
+			$('html, body').stop().animate({scrollTop: $($(this).data("mohave_nav")).offset().top - 134}, 1000);
+		}else if(windowWidth <= 780){
+			$('html, body').stop().animate({scrollTop: $($(this).data("mohave_nav")).offset().top - 70}, 1000);
+		}
+	});
+
+	var aChildren = $("#mohave-indicator li").children(); // 목록 항목의 자식 찾기
+	var aArray = []; // 빈 배열을 만든다.
+	for (var i=0; i < aChildren.length; i++) {    
+	    var aChild = aChildren[i];
+	    var ahref = $(aChild).data("mohave_nav");
+	    aArray.push(ahref);
+	} // 이 for 루프는 속성 href 값으로 배열을 채 웁니다.
+
+	$(window).scroll(function(){
+		var windowPos = $(document).scrollTop(); // 페이지 상단에서 창의 오프셋을 가져옵니다.
+		var windowHeight = window.innerHeight; // 창 높이를 얻는다.
+		var docHeight = $(document).height();
+
+		for (var i=0; i < aArray.length; i++) {
+		    var theID = aArray[i];
+		    if(windowWidth > 780){
+		    	var divPos = $(theID).offset().top - 135; // 페이지 상단에서 div의 오프셋을 가져옵니다.
+		 	 }else if(windowWidth <= 780){
+		 	 	var divPos = $(theID).offset().top - 72; // 페이지 상단에서 div의 오프셋을 가져옵니다.	
+		 	 }
+		    var divHeight = $(theID).height(); // 문제가되는 div의 높이를 구하십시오.
+		    if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+		        $("a[data-mohave_nav='" + theID + "']").addClass("mohave-on");
+		    } else {
+		        $("a[data-mohave_nav='" + theID + "']").removeClass("mohave-on");
+		    }
+		}
+
+		if(windowPos + windowHeight == docHeight) {
+		    if (!$("#navbar li:last-child a").hasClass("mohave-on")) {
+		        var navActiveCurrent = $(".mohave-on").attr("href");
+		        $("a[href='" + navActiveCurrent + "']").removeClass("mohave-on");
+		        $("#navbar li:last-child a").addClass("mohave-on");
+		    }
+		}
+	});
+};//mohave_indicator
+
+/* 190904 1차수정 start */
+function mohave_scrollTop(){
+	function fadeIn() {
+		// 창 뷰포트의 높이 가져 오기
+		var windowHeight = window.innerHeight
+
+		// 스크롤 상단 위치 설정
+		var scrollTopPos = $(document).scrollTop();
+
+		// 스크롤 하단 위치 설정
+		var scrollBottomPos = $(document).scrollTop() + windowHeight;
+
+
+		// 애니메이션의 트리거 포인트 설정
+		var scrollBottomTrigger = scrollBottomPos - (windowHeight / 2);
+
+		// 이 고유 한 요소의 스크롤 위치 가져 오기
+		var scrollPosSec1 = $('#mohave-intro').offset().top - 100;		
+		var scrollPosSec2 = $('#mohave-event').offset().top - 100;
+		var scrollPosSec3 = $('#mohave-section01').offset().top;
+
+		// 첫 번째 요소에 대한 애니메이션 트리거
+		if(scrollBottomTrigger >= scrollTopPos) {
+			$('.mohave-indicator-in').addClass('mohave-color');			
+		};
+
+		// 두 번째 요소에 대한 애니메이션 트리거
+		if(scrollBottomTrigger >= scrollPosSec2) {
+			$('.mohave-indicator-in').addClass('mohave-color');
+		};
+
+		// 세 번째 요소에 대한 애니메이션 트리거
+		if(scrollBottomTrigger >= scrollPosSec3) {
+			$('.mohave-indicator-in').removeClass('mohave-color');
+		};
+	}
+
+	// 문서가 준비되면이 함수를 실행하십시오.
+	fadeIn();
+
+	// 사용자가 스크롤 할 때이 함수를 실행하십시오.
+	$(window).scroll(function() {
+		fadeIn();
+	});
+};//mohave_scrollTop
+/* 190904 1차수정 end */

@@ -25,6 +25,7 @@
         });
     });
 </script>
+
 <body>
 <section id="fullpage">
 <div class="section">
@@ -813,58 +814,194 @@
     <!--section06 end-->
 </div>
 <div class="section">
-    <div class="section07">
-        <div class="sec07-video-bg">
-            <div class="container-fluid sec07-title-bg">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sec07-title">
+    <div class="section07 container-fluid">
+        <div class="sec07-bg">
+            <div class="row">
+                <div class="sec07-title col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="sec07-border"></div>
                     <h1>최첨단 안전 신기술 DRIVE WISE 기본화</h1>
-                    <h1>고급스러움과 다이내믹함을 더해주는 커스터마이징 패키지</h1>
-                    <p>고속도로 주행 보조 (HDA)</p>
+                    <h1 class="sec07-2">고급스러움과 다이내믹함을 더해주는<br> 커스터마이징 패키지</h1>
+                </div>
+                <div class="sec07-con col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="sec07-con-detail col-lg-6">
+                        <div class="sec07-con-1">
+                            <img src="images/sec07-con-1.webp" alt="RCCA" class="sec07-image">
+                            <div class="overlay">
+                                <div class="sec07-text">후측방 교차충돌방지 보조 (RCCA)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" sec07-con-detail col-lg-6">
+                        <div class="sec07-con-2">
+                            <img src="images/sec07-con-2.webp" alt="BCA" class="sec07-image">
+                            <div class="overlay">
+                                <div class="sec07-text">후측방 충돌방지 보조(BCA)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec07-con-detail col-lg-6">
+                        <div class="sec07-con-3">
+                            <img src="images/sec07-con-3.webp" alt="Avatar" class="sec07-image">
+                            <div class="overlay">
+                                <div class="sec07-text">[LED 라이팅 패키지]<br> 테일게이트 램프<br>
+                                <p>테일게이트 부위에 LED 램프를 부착하여 야외 활동 및 야간 사용 시 유용한 상품입니다.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec07-con-detail col-lg-6">
+                        <div class="sec07-con-4">
+                            <img src="images/sec07-con-4.webp" alt="Avatar" class="sec07-image">
+                            <div class="overlay">
+                                <div class="sec07-text">[LED 라이팅 패키지]<br>
+                                풋무드 램프<br>
+                                <p>미등 작동 시 실내 바닥 부위에 점등되어 은은한 실내 분위기를 연출해주는 상품입니다.</p></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid sec07-con">
-                <div class="row sec07-con">
-                    <div class="col-xs-12 col-sm-3 sec07-con-detail">
-                        <div class="sec07-con-1">
-                            <img src="images/sec07-con-1.webp" alt="Avatar" class="image">
-                            <div class="overlay">
-                            <div class="text">후측방 교차충돌방지 보조 (RCCA)
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 sec07-con-detail">
-                        <div class="sec07-con-2">
-                            <img src="images/sec07-con-2.webp" alt="Avatar" class="image">
-                            <div class="overlay">
-                            <div class="text">Hello World</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 sec07-con-detail">
-                        <div class="sec07-con-3">
-                            <img src="images/sec07-con-3.webp" alt="Avatar" class="image">
-                            <div class="overlay">
-                            <div class="text">Hello World</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 sec07-con-detail">
-                        <div class="sec07-con-4">
-                            <img src="images/sec07-con-4.webp" alt="Avatar" class="image">
-                            <div class="overlay">
-                            <div class="text">Hello World</div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- row end -->
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section08">
+        <div class="container sec08-contents">
+            <div class="sec08-tab">
+                <div class="sec08-tab-title">INTELLIGENCE DRIVING</div>
+                <button class="sec08-tablinks" onclick="openTab(event, 'sec08-1')" id="defaultOpen">고속도로 주행보조 (HDA)</button>
+                <button class="sec08-tablinks" onclick="openTab(event, 'sec08-2')">전방 충돌방지 보조 (FCA)</button>
+                <button class="sec08-tablinks" onclick="openTab(event, 'sec08-3')">스마트 크루즈 컨트롤 (NSCC)</button>
+                <button class="sec08-tablinks" onclick="openTab(event, 'sec08-4')">외부공기 유입 방지 제어</button>
+              </div>
+              
+              <div id="sec08-1" class="sec08-content">
+                <img src="images/sec08-img1.jpg" alt="고속도로 주행보조 (HDA)" class="sec08-img-1">
+                <h3>고속도로 주행보조 (HDA)</h3>
+                <p>고속도로 주행 시 스스로 속도를 조절하여 앞차와의 거리를 자동으로 유지합니다. 장거리 주행이나 정체 상황에서 브레이크나 엑셀을 계속 밟아야 하는 피로감을 덜어줍니다. 또한 조향 제어를 통해 차로를 유지하며 주행하도록 도와주어 안정적인 드라이빙 환경을 제공합니다.</p>
+              </div>
+              
+              <div id="sec08-2" class="sec08-content">
+                <img src="images/sec08-img2.webp" alt="전방 충돌방지 보조 (FCA)" class="sec08-img-2">
+                <h3>전방 충돌방지 보조 (FCA)</h3>
+                <p>전방 차량 및 보행자와의 충돌 위험이 감지 될 경우 운전자에게 이를 경고하고, 필요시 브레이크 제어를 통해 충돌하지 않도록 도와줍니다.</p> 
+              </div>
+              
+              <div id="sec08-3" class="sec08-content">
+                <img src="images/sec08-img3.webp" alt="고속도로 주행보조 (HDA)" class="sec08-img-3">
+                <h3>내비게이션 기반 스마트 크루즈 컨트롤 (NSCC)_안전구간, 곡선로</h3>
+                <p>고속도로 또는 자동차 전용도로 본선에서 스마트 크루즈 컨트롤 설정 주행 중 내비게이션의 도로 정보를 기반으로 필요시 안전구간, 곡선로 진입 전 감속 제어를 통해 주행 편의성을 높여드립니다.</p>
+              </div>
+              <div id="sec08-4" class="sec08-content">
+                <img src="images/sec08-img4.jpg" alt="고속도로 주행보조 (HDA)" class="sec08-img-3">
+                <h3>외부공기 유입 방지 제어</h3>
+                <p>내비게이션과 연동하여 차량의 터널 진입 및 비청정 예상 지역을 지날 때, 윈도우가 개방되어 있으면 자동으로 닫아주며, 공조 시스템을 내기 순환 모드로 전환함으로써 쾌적한 실내 공기 유지에 도움을 드립니다.</p>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section09">
+        <div class="container">
+            <div class="sec09-title">
+                <h2>제원</h2>
+            </div>
+            <ul class="sec09-carimg text-center container">
+                <li class="sec09-slide-img1">
+                    <span class="img1-right"><p>></p></span>
+                    <img src="images/sec09-slide-img-1.webp">
+                </li>
+                <li class="sec09-slide-img2">
+                    <span class="img2-left"><p><</p></span>
+                    <span class="img2-right"><p>></p></span>
+                    <img src="images/sec09-slide-img-2.webp">
+                </li>
+                <li class="sec09-slide-img3">
+                    <span class="img3-left"><p><</p></span>
+                    <img src="images/sec09-slide-img-3.webp">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section10">
+        <div class="sec10-video-bg ">
+            <div class="container-fluid sec10-con">
+                <div class="sec10-top">
+
                 </div>
+                <div class="sec10-bottom">
+                    <div class="sec10-carimg-bg"></div>
+                    <div class="container">
+                        <div class="col-lg-12 sec10-carimg">
+                            <img src="images/sec10-mohave.webp">
+                        </div>
+                        <div class="col-lg-3 sec10-bottom-txt">
+                            <h3>Customer Service</h3>
+                            <ul class="custom list-inline">
+                                <li><a href="https://www.kia.com/kr/customer-service/experience-kia/faq-list.html">FAQ</a></li>
+                                <li><a href="https://www.kia.com/kr/customer-service/online-counsel/default.html">온라인상담</a></li><br>
+                                <li><a href="https://www.kia.com/kr/customer-service/like/like-list.html">칭찬알림방</a></li>
+                                <li><a href="https://www.kia.com/kr/customer-service/defect-relapse/defect-relapse.html">하자재발통보</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 sec10-bottom-txt">
+                            <h3>Business Info</h3>
+                            <ul class="sec10-info">
+                                <li>사업자 기아자동차㈜</li>
+                                <li>대표 송호성, 최준영</li>
+                                <li>사업자등록번호 119-81-02316</li>
+                                <li>06797 서울특별시 서초구 헌릉로 12 (양재동)</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 sec10-bottom-txt">
+                            <h3>Award</h3>
+                            <div class="row">
+                                <div class="col-sm-6 sec10-mark-info">
+                                    <div class="col-sm-4 sec10-mark">
+                                        <img src="images/sec10_mark01.webp" alt="mark-1">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>20년 한국 산업의 서비스 품질지수 우수 콜센터 선정 (17년 연속)</p>
+                                    </div>
+                                    <div class="col-sm-4 sec10-mark">
+                                        <img src="images/sec10_mark02.webp" alt="mark-2">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>18년 판매서비스만족도 전 산업 및 국산자동차 부문 1위(5년 연속)</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 sec10-mark-info">
+                                    <div class="col-sm-4 sec10-mark">
+                                        <img src="images/sec10_mark03.webp" alt="mark-3">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>19년 한국산업의 서비스 품질지수 자동차 A/S부문 1위(6년 연속)</p>
+                                    </div>
+                                    <div class="col-sm-4 sec10-mark">
+                                        <img src="images/sec10_mark04.webp" alt="mark-4">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>19년 국가고객만족도(NCSI) RV(4년 연속), 경형(5년 연속), 준중형부문 1위</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center copy">
+                            <p>Ⓒ KIA MOTORS CORP. ALL RIGHTS RESERVED. 2020. Jeon Sookjin Kia Mohave site project webdesign</p>
+                        </div>
+                    </div>
+                    <!-- sec10-container end -->
+                </div>
+                <!-- sec10-bottom end -->
             </div>
         </div>
     </div>
 </div>
 </section>
-
 <script src="js/js.js"></script>
 <script src="js/jquery.fullpage.js"></script>
+
 </body>
 </html>

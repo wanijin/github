@@ -1,0 +1,883 @@
+/*
+ *  2015.01.23  zt
+ *  kia gnb.js 
+ * 
+ */
+
+$(document).ready(function() {
+   //gnb
+   if($("#header").length){
+      gnbInit();
+   }
+   
+   //푸터
+   if($(".info_fms").length){
+      footerInit();
+   }
+   
+   //탑버튼
+   if($('#footer .go_top').length){
+     gotopBtnInit();
+   }
+   
+   /* S : 180223 */
+   //메인카톡버튼
+   gotalkBtnInit();
+   /* E : 180223 */
+   
+ //GNB 고정여부를 위한 화면 크기
+   getBrowserHeight();
+});
+
+//gnb 고정여부 기준 
+var gnbStdHeight=820;
+var gnbFlag =false;
+function getBrowserHeight() {
+	if($(window).height()>gnbStdHeight){
+		gnbFlag=true;
+		$(".gnb_area .dth_pip .car_grid .grid_u").css({"height":"600px","overflow-y":"scroll"}); // 1909 height 644-> 600
+	}else{
+		gnbFlag=false;
+		$(".gnb_area .dth_pip .car_grid .grid_u").css({"height":"auto","overflow":"hidden"});
+	}
+};
+var gnbInit = function(){
+    var viewportWidth, isMobile = false, isTablet = false, carTab = 0, repeatNum = 5, lastWindowHeight = 800, lastWindowWidth = 800;
+    $(window).resize(function() {
+        if($(window).height()!=lastWindowHeight || $(window).width()!=lastWindowWidth){
+            lastWindowHeight = $(window).height();
+            lastWindowWidth = $(window).width();
+            gnbResize();
+        }
+        getBrowserHeight();
+    }).resize();    
+    
+    /* s:1909 search */
+    $(".util_search .view_sch").on("click", function(e){ // 1909_v2
+        e.preventDefault(); // 1909_v2
+        $(".u_sch_box").fadeToggle(300);
+        $(".gnb_side").fadeToggle(300);
+        $(this).toggleClass('view');
+    });
+
+    /* e:1909 search */
+    
+    //depth1
+    /* S : 180808 */
+    $(".dth1_a").on("click", function(e){
+        var hasSub = $(this).siblings(".dth2_u").length;
+        if(hasSub){
+            e.stopPropagation();
+            e.preventDefault();
+            $(this).next(".dth2_u").slideUp();
+            $(".dth2_u").slideUp();
+            $(".dth2_l").removeClass("dth_on");
+            $(".dth2_u").removeClass("add");
+            $(".dth2_a").removeClass("add");
+
+            if($(this).parent().hasClass("dth_on")){
+                if(isMobile){
+                    $(".dth1_l").removeClass("dth_on");
+                    dimOpen();
+                }else{
+                    gnbClose();    
+                }
+            }else{
+                $(".gnb_area").addClass("open");
+                $(".dth1_l").removeClass("dth_on");
+                $(this).next(".dth2_u").slideDown();
+                $(this).parent().addClass("dth_on");
+                $(this).next(".dth2_u").slideDown();
+                dimOpen();
+                if($(this).siblings(".dth_pip").length){
+                    $(".car_tab .form_chk:eq(0) input:radio").trigger("click");
+                }    
+            }    
+        }
+    });
+    
+    //depth2
+    $(".dth2_a").on("click", function(e){
+        var hasSub = $(this).siblings(".dth3_u").length;
+        if(hasSub){
+            e.stopPropagation();
+            e.preventDefault();
+            if($(this).parent().hasClass("dth_on")){
+                $(this).next(".dth3_u").slideUp();
+                $(this).parent().removeClass("dth_on");
+                $(this).removeClass("add");
+                $(".dth2_u").removeClass("add");
+            }else{
+            	$(".dth2_a").removeClass("add");// 1909 add
+                $(".dth2_u").find(".dth2_u").slideUp(); // 1909 add
+                $(".dth2_u").find(".dth2_l").removeClass("dth_on"); // 1909 add
+                $(".dth2_u").addClass("add"); // 1909 add
+                $(this).addClass("add");// 1909 add
+                $(this).next(".dth3_u").slideDown();
+                $(this).parent().addClass("dth_on");
+            }    
+        }
+    });
+    /* E : 180808 */
+    
+    /* S : 161223 */
+    $(".gnb_nav .dth1_l:last-child .dth2_u .dth2_l:last-child").on("focusin",function(){
+        $(this).on("keydown",function(e){
+            if(e.keyCode == 9){
+               //console.log("out");
+                $(this).closest(".dth1_l").removeClass("dth_on");
+                $(".gnb_area").removeClass("open");   
+                $(".gnb_dimmed").hide();
+            }
+        });
+    });
+    $(".gnb_area h2").on("click",function(){
+        //console.log($(this).next(".util_area").is("display"));
+        if($(this).next(".util_area").hasClass("on") == false){
+            $(this).next(".util_area").addClass("on");
+        }else{
+            $(this).next(".util_area").removeClass("on");
+        }
+    });
+    /* E : 161223 */
+    
+    $("a.util_a:eq(0)").on("focus", function(e){
+        if($(window).width() > MOBILE_WIDTH || (IE_VER < 9  && IE_VER !== false)){
+            gnbClose();
+        }
+    });
+    
+    $("a.lg_a").on("focus", function(e){
+         gnbClose();
+    });
+    
+    $(".dth1_a").on("mousedown", function(e){
+        $(this).data("mouseDown", true);
+    });
+    
+    $(".dth1_a").on("mouseup", function(e){
+        $(this).removeData("mouseDown");
+    });
+    /*
+    $(".dth1_a").on("focus", function(e){
+         if ($(this).data("mouseDown")){
+             return;
+         }
+        var hasSub = $(this).siblings(".dth2_u").length;
+        if(hasSub){
+            e.stopPropagation();
+            e.preventDefault();
+            $(".gnb_area").addClass("open");
+            $(".dth1_l").removeClass("dth_on");
+            $(this).parent().addClass("dth_on");
+            dimOpen();
+            if($(this).siblings(".dth_pip").length){
+                $(".car_tab .form_chk:eq(0) input:radio").trigger("click");
+            }    
+        }
+    });
+    20190404 */
+    $(".gnb_dimmed").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        gnbClose();
+    });
+   
+   $(".snb_dimmed").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        snbClose();
+    });
+    
+   /* S : 180808 */
+   $("a.open_gnb").on("click", function(e){
+       e.stopPropagation();
+       e.preventDefault();
+       if($(".gnb_area").hasClass("open")){
+           gnbClose(); 
+           //$("a.open_gnb").removeClass("open");
+       }else{
+           if(isMobile){
+               $(".gnb_area").slideDown().addClass("open");
+           }else{
+               $(".gnb_area").addClass("open");
+           }
+           $("a.open_gnb").addClass("open");
+           //$(".gnb_area").slideDown().addClass("open");
+           //$(".gnb_area").addClass("open");
+           dimOpen();
+       }
+   });
+   /* E : 180808 */
+    
+    //cartab radio button click
+    $(".car_tab input:radio").on("click", function(e){
+        var idx = $(this).parent().index();
+        carGridSet(idx);
+    });
+    
+    var $subOn = $(".sdth1_l.sdth_open"); 
+    $("a.sdth1_a").on("click", function(e){
+        //snb서브메뉴있을시
+        $(".sdth1_l").removeClass("sdth_open");
+        if($(this).siblings(".sdth2_u").length){
+            e.preventDefault();
+            if($(this).parent().hasClass("sdth_on")){
+                $(".sdth1_l").removeClass("sdth_on");
+                if(!isTablet){
+                    snbClose();    
+                }else{
+                    $subOn.addClass("sdth_open");
+                }
+            }else{
+                $(".sdth1_l").removeClass("sdth_on");
+                $(this).parent().addClass("sdth_on");    
+                snbDimOpen();
+            }
+        }else{
+        	if(!isTablet){        		
+            	snbClose();
+            }else{
+            	//기아 렌터카 snb 용 예외처리
+            	if(!($subOn.attr("id")!=null&&$subOn.attr("id").indexOf("snb_rent")>-1)){
+            		$subOn.addClass("sdth_open");
+    			}
+            }   
+            $(".sdth1_l").removeClass("sdth_on");
+            $(this).parent().addClass("sdth_on");
+        }
+       
+    });
+    
+     //snb type1
+    $(".snb_tit > a.open_snb").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        if($(this).hasClass("open")){
+            $(this).removeClass("open");    
+            $(".snb_nav").removeClass("open");
+            snbClose();
+        }else{
+            $(this).addClass("open");    
+            $(".snb_nav").addClass("open");
+            if(isTablet){
+                snbDimOpen();    
+            }            
+        }         
+    });
+    
+    //snb type2
+    $(".snb_area > a.open_snb").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        if($(this).hasClass("open")){
+            $(this).removeClass("open");    
+            $(".snb_nav").removeClass("open");
+            snbClose();
+        }else{
+            $(this).addClass("open");    
+            $(".snb_nav").addClass("open");
+            if(isTablet){
+                snbDimOpen();    
+            }
+        }
+    });
+    
+    $(".sales_kit > a.kit").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        if($(this).parent().hasClass("open")){
+            $(this).parent().removeClass("open");    
+            //snbClose();
+        }else{
+            $(this).parent().addClass("open");    
+            //snbDimOpen();    
+        }
+    });
+    
+    function dimOpen(){
+        $(".gnb_dimmed").css("height",0);
+        var docH; 
+        if(IE_VER < 9  && IE_VER !== false){
+            docH = $(document).height()-94;
+        }else{
+            if(isMobile){
+                docH= $(document).height()-41;    
+            }else{
+                docH = $(document).height()-90;
+            }    
+        }
+        snbClose();
+        $(".gnb_dimmed").css({"height":docH});
+        $(".gnb_dimmed").show(); 
+    }
+
+    /* S : 180808 */
+    function gnbClose(){
+        $(".dth1_l").removeClass("dth_on");
+        $(".dth2_u").hide();
+        if(isMobile){
+            $(".gnb_area").slideUp().removeClass("open");
+        }else{
+            $(".gnb_area").removeClass("open");            
+        }
+        //$(".gnb_area").slideUp().removeClass("open");
+        $("a.open_gnb").removeClass("open");
+        $(".gnb_dimmed").hide();
+        $(".dth2_u").removeClass("add");// 1909 add
+        $(".dth2_a").removeClass("add");// 1909 add
+    }
+    /* E : 180808 */
+        
+    function snbDimOpen(){
+        $(".snb_dimmed").css("height",0);
+        var docH = $(document).height();
+        $(".snb_dimmed").css({"height":docH,"top":0});
+        $(".snb_dimmed").show(); 
+    }
+    
+              
+    function snbClose(){
+        $(".snb_area > a.open_snb").removeClass("open");
+        $(".snb_tit > a.open_snb").removeClass("open");
+        //$(".sales_kit").removeClass("open");
+        $(".snb_nav").removeClass("open");
+      //기아 렌터카 snb 용 예외처리
+        if(!($subOn.attr("id")!=null&&$subOn.attr("id").indexOf("snb_rent")>-1)){
+        	$subOn.addClass("sdth_open");
+		}		
+        $(".sdth1_l").removeClass("sdth_on");
+        $(".snb_dimmed").hide();
+    }
+        
+    //gnb 차량 li blank 숨기기 모바일,타블렛,웹 리사이즈시를 위해 기본적으로 4개의 grid_l.blank가 들어가야함
+    function noCarLiHide(idx){
+        var repeatNum = idx;
+        $(".car_grid:eq("+carTab+") .grid_u").each(function(i,e){
+            var calLen = $(this).find("li.grid_l:not(.blank)").length;
+            var nocarLen = $(this).find("li.blank").length;
+            var hideLiLen;
+            if(calLen % repeatNum == 0){
+                hideLiLen =  ((calLen % repeatNum) + nocarLen);    
+            }else{
+                hideLiLen =  ((calLen % repeatNum) + nocarLen)-repeatNum;
+            }
+            
+            $(this).find("li.blank").show();
+            for(var i =0;i<hideLiLen;i++){
+                $(this).find("li.blank").eq(i).hide();
+            }
+        });
+    };
+    
+    //차량 모션
+    function carGridSet(idx){
+        $(".car_grid").removeClass("on");
+        $(".car_grid:eq("+idx+")").addClass("on");
+        carTab = idx;
+        noCarLiHide(repeatNum);
+        
+        var $carGrid = $(".grid_u:eq("+idx+") li.grid_l .grid_box");
+        var delay = 0;
+        var carGridLen = $carGrid.length-1;
+        if(viewportWidth < MOBILE_WIDTH){
+            $carGrid.css({"transform":""});
+            return;
+         }
+        TweenMax.killAll();
+        $carGrid.each(function(i){
+            delay=delay+0.06;
+            TweenMax.fromTo($(this), 0.4, {transformPerspective:500, rotationY:360}, {transformPerspective:500, rotationY:0, delay:delay, onComplete:rotateEnd, onCompleteParams:[$(this)]} );
+        });
+        function rotateEnd(self){
+            $(self).css({"transform":""});
+        }
+    }
+
+
+    function gnbResize(){
+        document.body.style.overflow = "hidden";
+        viewportWidth = $(window).width();
+        document.body.style.overflow = "";
+        
+        if(IE_VER < 9 && IE_VER !== false){ 
+             if($(window).height() < GNB_VISIBLE_HEIGHT ) {
+             	if(gnbFlag){
+             		$("#header").css("position","fixed");
+             	}else{
+             		$("#header").css("position","absolute");
+             	}	 
+                $(".gnb_dimmed").css("position","absolute");
+                }
+                if(viewportWidth < 990){
+                    $(".gnb_dimmed").css({"width":990});    
+                }else{
+                    $(".gnb_dimmed").css({"width":"100%"});
+                }
+        }else{
+            if(viewportWidth > TABLET_WIDTH){
+                isMobile  = false;
+                isTablet = false;
+                $(".gnb_area").show();
+                if($(".gnb_area").hasClass("open")){
+                    gnbClose();
+                }
+                if(gnbFlag){
+             		$("#header").css("position","fixed");
+             	}else{
+             		$("#header").css("position","absolute");
+             	}                          
+                $(".gnb_dimmed").css("position","absolute");
+                
+                repeatNum = 5; 
+            }else if(viewportWidth <= TABLET_WIDTH && viewportWidth > MOBILE_WIDTH){
+                isMobile  = false;
+                isTablet = true;
+                $(".gnb_area").show();
+                if($(".gnb_area").hasClass("open")){
+                    gnbClose();
+                }
+                $("#header").css("position","absolute");
+                $(".gnb_dimmed").css("position","absolute");
+                repeatNum = 3; 
+            }else{
+                isMobile  = true;
+                isTablet = true;
+                if(!$(".gnb_area").hasClass("open")){
+                    $(".gnb_area").hide();
+                }
+                $(".gnb_dimmed").css({"width":"100%"});
+                $("#header").css("position","relative");
+                $(".gnb_dimmed").css("top","relative");
+                repeatNum = 2; 
+            }
+            if($(".snb_wrap").length){
+                snbPosSet();
+            }
+            noCarLiHide(repeatNum);
+        }
+    }
+    
+    if($(".snb_wrap").length){
+        //snb_wrap 테블릿 모바일에서 상단고정
+        $(window).scroll(function(event) {
+            snbPosSet();
+       });
+    }
+    
+    /* S : 181206 */
+    function snbPosSet(){
+        var scrTop = $(window).scrollTop();
+        //console.log(scrTop);
+        var scroTopKey;
+        if($(".top-banner").length <= 0) {
+            //console.log("없다");
+            scroTopKey = 0;
+        } else {
+            scroTopKey = $(".top-banner").height();
+        }
+
+        if(isMobile){
+            if(scrTop > (41 + scroTopKey) ){
+             $(".snb_wrap").css({"position":"fixed","top":3});
+             $(".m_indicator").css({"position":"fixed","top":37}); //170914
+             $("#content").css({"padding-top":38});
+           }else{
+             $(".snb_wrap").css({"position":"relative","top":0});
+             $(".m_indicator").css({"position":"absolute","top":37}); //170914
+             $("#content").css({"padding-top":""});
+           }
+        }else if(isTablet){
+            if(scrTop > (85 + scroTopKey) ){
+             $(".snb_wrap").css({"position":"fixed","top":0});
+             $(".m_indicator").css({"position":"fixed","top":45}); //170914
+           }else{
+             $(".snb_wrap").css({"position":"absolute","top":90});
+             $(".m_indicator").css({"position":"absolute","top":135}); //170914
+           }
+            $("#content").css({"padding-top":""});
+        }else{
+        	if(gnbFlag){
+             		$(".snb_wrap").css({"position":"fixed","top":90});
+             	}else{
+             		$(".snb_wrap").css({"position":"absolute","top":90});
+             	}        	
+            $("#content").css({"padding-top":""});
+        }
+    }
+    /* E : 181206 */
+   
+    changeH2();
+};
+
+//wddo gnb 히든 h2 텍스트 변경
+var changeH2 = function () {
+    
+    var c_tit = setReplace($('div.content_title > h3.con_tit').text().toLowerCase(), ' ', '');
+    var choose;
+    var gnb = $('.gnb_area');
+    var hidden = $('h2.hidden');
+    
+    //웹접근성 관련 수정 H2태그 예외처리 class="hidden noGnbJs"
+    if(!hidden.hasClass("noGnbJs")){
+	    //2뎁스에서 찾기
+	    var t;
+	    gnb.find('.dth2_a').each(function () {
+	        t = setReplace($(this).text().toLowerCase(), ' ', '');
+	        if ( c_tit === t ) {
+	            choose = $(this);
+	            return $(this);
+	        } 
+	    })
+	
+	    var oneText = '';
+	    if (typeof choose !== 'undefined') { //존재하면
+	        oneText = choose.closest('.dth1_l').find('> a').text();
+	    } else { //존재하지 않으면
+	        if ($('.snb_wrap').length > 0) { //쇼룸 네비가 존재하면
+	            if($('h2.snb_tit').find("img").length > 0){ //snb_wrap이 쇼룸일때
+	                oneText = $('.dth1_l:first').find('> a').text(); 
+	            }else{
+	                oneText = $('h2.snb_tit').text(); //snb_wrap이 쇼룸이 아닐때
+	            }
+	        } else {
+	            oneText = 'Util Menu';
+	        }
+	    }
+	    
+	    hidden.text(oneText);
+    }
+
+    function setReplace(str, oldSubStr, newSubStr) {
+        return str.split(oldSubStr).join(newSubStr);
+    }
+};
+
+
+var footerInit = function(){
+// 20170419 메인 쿠키관련 팝업 제거 J.H.KIM
+//   var cookiePopupdata = kiaGetCookie("kiaCookiePopup");  
+//   if(cookiePopupdata !== "done") {
+//       $(".cookie").show();      
+//       $("#mainCookiePopCloseBtn").focus();  
+//   }
+   
+   function cookiePopupCloseTrigger(){
+    $(".cookie a.closeBtn").trigger("click"); 
+   }
+   
+   //쿠키수집팝업에서 개인정보취급방침 클릭시
+   $(".cookie .desc2 a.click").on("click", function(e){
+       e.stopPropagation();
+       e.preventDefault();
+       $(".privacy a.policy_a").trigger("click");
+   });
+   
+   //쿠키창내의 개인정보 취급방침
+   $(".cookie a.click").on("click", function(){
+       $(".cookie").hide();
+       kiaSetCookie("kiaCookiePopup","done",9999999);
+       $("#mainKiaLogo").focus(); 
+   });
+   
+   //쿠키수집팝업 닫기
+   $(".cookie a.closeBtn").on("click", function(e){
+       e.stopPropagation();
+       e.preventDefault();
+       $(".cookie").hide();
+       kiaSetCookie("kiaCookiePopup","done",9999999);
+       $("#mainKiaLogo").focus(); 
+   });
+   
+    
+    
+    //패밀리사이트
+    $("a.fms_box").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        if($(".fms_wrp").hasClass("fms_open")){
+            $(".fms_wrp").removeClass("fms_open");
+            $(".fms_box").removeClass("fms_open"); // 1909_v1 add
+        }else{
+            $(".fms_wrp").addClass("fms_open");
+            $(".fms_box").addClass("fms_open"); // 1909_v1 add
+        }
+    });
+    
+    $("a.fms_x").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $(".fms_wrp").removeClass("fms_open");
+        $(".fms_box").removeClass("fms_open"); // 1909_v1 add
+    });
+    
+    //다른곳 클릭시 닫힘 스크립트 추가 03.13
+    if($("a.fms_box").length){
+        $(document).bind('click.fms_box',function(){
+           if($(".fms_wrp").hasClass("fms_open")){
+                $(".fms_wrp").removeClass("fms_open");
+                $(".fms_box").removeClass("fms_open"); // 1909_v1 add
+            }
+        });
+    }
+};
+
+
+var privacyPopInit = function(){
+    var privacyPop = new OpenDimPop($("#privacyPolicy"));
+    var useTermsPop = new OpenDimPop($("#useTerms"));
+    
+    //이용약관 
+    /*$(".terms a.policy_a").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        //useTermsPop.open();  //로컬작업을 위해 팝업만 띄움
+        $.ajax({
+          url: useTermsUrl,
+          type: "GET",
+          success : function (data) {
+              var body =  $(data);
+              $("#useTerms .pop_terms .scroll_box ").html(body);
+              useTermsPop.open();    
+          }
+        });
+    });*/
+    
+    //개인정보취급 처리방침      
+    $(".privacy a.policy_a").on("click", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $("#privacyPolicy .tab_li:eq(0) a").trigger("click");
+
+        //홈페이지
+        $.ajax({
+          url: privacyUrl,
+          type: "GET",
+          success : function (data) {
+              var body =   $(data);
+              $("#privacyPolicy .tab_body:eq(0) .scroll_box .terms_wrap").html(body);
+              $('.pop_tit').text("개인정보처리방침");
+              privacyPop.open();
+              setTimeout(privacyfocus, 250);
+          }
+        });
+    });
+
+    //개인정보창 띄울시 포커스 이동 추가 03.06
+    function privacyfocus(){
+        if (IE_VER < 9 && IE_VER !== false) {
+            $(document.body).addClass('ieFix').removeClass('ieFix');
+        }
+        $("#privacyPolicy .closeBtn").focus();
+    }
+    
+    $("#privacyPolicy .tab_li:eq(1) a").on("click", function(e){
+        //전체
+        $.ajax({
+          url: privacyAllUrl,
+          type: "GET",
+          success : function (data) {
+              var body =  $(data);
+              $("#privacyPolicy .tab_body:eq(1) .scroll_box .terms_wrap").html(body);
+          }
+        });
+    });
+    
+    //////////////////////////////
+    // 20150522 추가 영상정보처리기기 운영 관리 방침
+    
+    //현재 kr/main.html 내에 Gloabl 변수로 아래 두개가 선언되어 있습니다.
+     
+    //var privacyAllUrl = "/kr/etc/privacy_policy/privacy-policy-all.html";  //개인정보취급처리방침(전체) 주소
+	//var privacyUrl = "/kr/etc/privacy_policy/privacy-policy.html";  //개인정보취급처리방침 주소
+	
+	//var privacyMovUrl = 추가 될 영상정보처리기기 운영 관리 방침 주소를 선언해주세요.
+    $("#privacyPolicy .tab_li:eq(2) a").on("click", function(e){
+        //전체
+        $.ajax({
+          url: privacyMovUrl,
+          type: "GET",
+          success : function (data) {
+              var body =  $(data);
+              $("#privacyPolicy .tab_body:eq(2) .scroll_box .terms_wrap").html(body);
+          }
+        });
+    });
+    
+    /////////////////////////// -- 20150522 
+    
+    //개인정보취급처리방침 년도 변경시
+    $("#privacyPolicy .history select").on("change", function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        var historyUrl = $(this).val();
+        if(historyUrl.length > 0){
+            $.ajax({
+              url: historyUrl,
+              type: "GET",
+              success : function (data) {
+                  //var body =  getBodyChild(data);
+                  var body = $(data);
+                  $("#privacyPolicy .tab_body.current .scroll_box .terms_wrap").html(body);
+              }
+            });
+        }
+    });
+    
+  //ajax호출시 body내용 불러옴
+    function getBodyChild(ajaxHtmlResult) {
+          ajaxHtmlResult = ajaxHtmlResult.replace(/(<\/?)html( .+?)?>/gi,'$1NOTHTML$2>', ajaxHtmlResult);
+          ajaxHtmlResult = ajaxHtmlResult.replace(/(<\/?)body( .+?)?>/gi,'$1NOTBODY$2>', ajaxHtmlResult);
+          return $(ajaxHtmlResult).find('notbody').html();
+   }
+   
+   //개인정보취급처리방침 전체내에서 레이어 팝업 호출
+   var lastWindowHeight = 800 , lastWindowWidth = 800 ,layerID;
+   $("#privacyPolicy").on("click",".clause a:not(.closeBtn)", function(e){
+       var isLayer = $(this).attr("href").indexOf("layer");
+       if(isLayer != -1){
+           e.preventDefault();
+           layerID= $(this).attr("href");
+           privacyLayerPopupPosSet();
+       }
+   });
+   
+   $("#privacyPolicy").on("click",".clause a.closeBtn", function(e){
+       e.preventDefault();
+       $(this).parent().hide();
+       if ($("*:focus").length > 0) {
+           tapIndexFnc.Close();
+       }
+   });
+   
+   function privacyLayerPopupPosSet(){
+       var top = $(window).scrollTop(), h1 = $(window).height();
+       var h2, t;
+       var headerHeight = $("#header").outerHeight();
+       var privacyTop = $("#privacyPolicy").position().top;
+       if (h1 < GNB_VISIBLE_HEIGHT && $(window).width() > MOBILE_WIDTH) { headerHeight = 0; }
+       $(layerID).show();
+       h2 = $(layerID).outerHeight();
+       
+      t = top -privacyTop + h1/2 - h2/2 - headerHeight;
+           
+       var w1 = $("#privacyPolicy").width();
+       var w2 = $(layerID).width();
+       var popleft = w1/2 - w2/2 -10;
+       if ( t <  0 ){ t = 0 }
+       $(layerID).css( { position:"absolute" , top:t  ,left:popleft} );
+       if($("*:focus").length > 0){
+          tapIndexFnc.Init($(layerID));
+       }
+   }
+   
+   $(window).resize(function() {
+       if($(window).height()!=lastWindowHeight || $(window).width()!=lastWindowWidth){
+           lastWindowHeight = $(window).height();
+           lastWindowWidth = $(window).width();
+           if(layerID){
+               $(layerID).hide();
+               tapIndexFnc.Close();    
+           }
+       }
+       getBrowserHeight();
+   }).resize();
+}
+
+/* S : 180223 */
+function gotalkBtnInit(){
+    var url = document.location.href;
+    var minMheck = url.indexOf("main.html");
+    var positionTag = $("#footer .go_top");
+    var inHtml = "<div class='talk_link'><a href='https://api.happytalk.io/api/kakao/chat_open?yid=%40%EA%B8%B0%EC%95%84%EC%9E%90%EB%8F%99%EC%B0%A8%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0&site_id=4000000116&category_id=63962&division_id=63967?utm_source=kmc_kr&utm_medium=website&utm_campaign=kia_kakao' target='_blank' title='새창 - 카카오톡 상담하기' onclick=\"fnExternalLink('main|kakao_cs')\"><span class='hidden'>카카오톡 상담하기</span></a></div>"
+    if(minMheck != -1){ // 메인
+        $(positionTag).before(inHtml);
+        $(window).resize(function() {
+            ainAct();
+        });
+
+        $(window).scroll(function() {
+            ainAct();
+        });
+    }
+
+    function ainAct(){
+        //console.log($(positionTag).is(":visible"));
+        if($(positionTag).is(":visible")){ // 밀기
+            $(".talk_link").css("right","60px");
+        }else{ // 당기기
+            $(".talk_link").css("right","15px");
+        }
+    }
+}
+/* E : 180223 */
+
+function gotopBtnInit(){
+    if (IE_VER < 9 && IE_VER !== false) {
+        $("#footer .go_top").hide();
+    }else{
+        function footerResizeFnc(){
+             document.body.style.overflow = "hidden";
+             viewportWidth = $(window).width();
+             document.body.style.overflow = "";
+            if (viewportWidth < MOBILE_WIDTH) {
+                 if(scrollTop > 10){
+                     $("#footer .go_top").show();
+                 }else{
+                     $("#footer .go_top").hide();
+                 } 
+            } else { 
+                $("#footer .go_top").hide();
+            }
+        }
+        
+        var mainLastWidth = 800,mainLastHeight =800,scrollTop,viewportWidth;
+        $(window).resize(function() {
+            if($(window).height()!=mainLastHeight || $(window).width()!=mainLastWidth){
+                mainLastWidth = $(window).height();
+                mainLastHeight = $(window).width();
+                footerResizeFnc();
+            }
+            getBrowserHeight();
+        }).resize();
+        
+         $("#footer .go_top").fadeOut();
+         
+         $(window).scroll(function(e) {
+             scrollTop = $(window).scrollTop();
+             if (viewportWidth < MOBILE_WIDTH) {
+                 if(scrollTop > 10){
+                     $("#footer .go_top").show();
+                 }else{
+                     $("#footer .go_top").hide();
+                 } 
+            } else { 
+                $("#footer .go_top").hide();
+            } 
+         });
+         
+        $("#footer .go_top").on("click", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $("body,html").stop().animate({"scrollTop": 0}, 0.1);
+        });
+        
+        
+    }
+}
+
+function kiaSetCookie(name, value, expirehours){
+    var todayDate = new Date();
+    todayDate.setHours(todayDate.getHours() + expirehours);
+    document.cookie = name + "=" + escape(value) + ";path=/;expires=" + todayDate.toGMTString() + ";";
+}
+
+function kiaGetCookie(name) {
+    var  cookiedata =  document.cookie;
+    var index = cookiedata.indexOf(name + "=");
+    if(index == -1) return null;
+    index = cookiedata.indexOf("=", index) + 1; 
+    var endstr = cookiedata.indexOf(";", index);
+    if(endstr == -1) endstr = cookiedata.length;
+  return unescape(cookiedata.substring(index, endstr));  
+}
