@@ -1,0 +1,33 @@
+.header-logo{
+    width: 200px;
+}
+
+.sec01-contents-bg{
+    width: 100%;
+    background-color: #fff;
+}
+
+.intro{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.intro p{
+    font-size: 14px;
+}
+
+.rome-icon{
+    width: 40%;
+}
+
+.bus-icon{
+    width: 40%;
+}
+
+.tiket-icon{
+    width: 40%;
+}
+
+.snap-icon{
+    width: 40%;
+}

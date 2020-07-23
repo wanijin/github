@@ -1,0 +1,27 @@
+xml이란?
+
+w3c에서 제안한 마크업 언어
+
+html은 데이터를 보여주는 목적이지만, 데이터를 저장하고 전달할 목적으로 쓴다.
+
+데이터 저장?
+
+API?
+https://openweathermap.org/API
+wanijin@naver.com
+dark0416
+
+-24 kr
+
+
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+->http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=fcd8e55ab63dddb556ed042f51b901bc
+http:// cityname -> seoul, your api key -> 아래의 키값을 저장
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={your api key}
+
+key
+fcd8e55ab63dddb556ed042f51b901bc

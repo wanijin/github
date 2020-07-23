@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <div id="weather_info">
+        <div id="date"></div>
+        <h1 class="city"></h1>
+        <section>
+            <p class="w_id"></p>
+            <i class="icon wi main-icon"></i>
+            <div class="box-shadow"></div>
+            <aside>
+                <p class="temp"></p>
+                <div class="temp-info">
+                    <p class="description"></p>
+                    <div class="temp-m">
+                        <i class="wi wi-thermometer-internal"></i>
+                        <div class="temp-sub">
+                            <p class="temp_max">max</p>
+                            <p class="temp_min">min</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="weather">
+                <div class="humidity-info">
+                    <img src="images/humidity.png" alt="습도아이콘">
+                    <div class="humidity"></div>
+                </div>
+                <div class="wind-info">
+                    <img src="images/wind.png" alt="바람아이콘">
+                    <div class="wind"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <img class="load_img" src="images/loding.gif" width="50">
+    </div>
+
+    <script>
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=Gimpo-si&exclude=daily&appid=fcd8e55ab63dddb556ed042f51b901bc';
+
+        // var url = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.623611&lon=126.714172&exclude=minutely&daily&appid=fcd8e55ab63dddb556ed042f51b901bc';
+
+        $('#weather_info .load_img').show();
+
+        $.getJSON(url, function(data) {
+            var sys = data.sys;         // 국가명, 일출/일몰
+
+            var wind = data.wind; 
+            var wind_speed = data.wind.speed;
+            var cloud = data.clouds.all;
+            
+            var city = data.name;               // 도시명
+            var weather = data.weather;         // 날씨 객체
+            var main = data.main;               // 온도 기압 관련 객체
+            var wmain = weather[0].main;        // 구름 상태(Cloudiness)
+            var w_id = weather[0].id;           // 날씨상태 id 코드
+            var de = weather[0].description;
+            var icon = weather[0].icon;         // 날씨 아이콘 정보
+            var country = sys.country;          // 국가명
+            var temp = main.temp;               // 현재 온도
+            var temp_min = main.temp_min;       // 최저 온도
+            var temp_max = main.temp_max;       // 최고 온도
+            var humidity = main.humidity;
+            var icon_url = 'http://openweathermap.org/img/w/' + icon;
+
+            // 아이콘 불러오기
+            var nowTimestamp = Math.floor(Date.now() / 1000);
+                var weatherClass = 'wi wi-owm-';
+                // weatherClass += (nowTimestamp >= data.sunrise &&nowTimestamp <= data.sunset ? 'day' : 'night');
+                weatherClass += (+weather[0].id);
+
+                $("#weather_info .icon").addClass(weatherClass);
+
+
+            $('#weather_info>.city').html(city);
+            // $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
+            $('#weather_info .w_id').html(wmain);
+            $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg &nbsp' + 'min');
+            $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg &nbsp' + 'max');
+            $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
+
+            $('#weather_info .wind').html(parseInt(wind.speed)+'mi');
+            $('#weather_info .humidity').html(parseInt(humidity)+'%');
+
+            $('#weather_info .description').html(de);
+
+            $('#weather_info .load_img').hide();
+
+            
+        })
+        .fail(function(){
+            alert("loading error");
+        });
+
+        // 날짜
+        todayIs();
+ 
+        function todayIs() {
+            var today = new Date();
+            var week = new Array('Sunday', 'Monday', 'Thesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; // Jan is 0
+            var month = new Array('January', 'February', 'March', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+            var yyyy = today.getFullYear();
+    
+            if(dd<10){
+                dd = '0'+dd
+            }
+            if(mm<10){
+                mm = '0'+mm
+            }
+    
+            today = week[today.getDay()] + '&nbsp' + dd + '&nbsp' + month[today.getMonth()];
+            //alert(today);
+            document.getElementById("date").innerHTML = today;
+            //$('#date').text(today);
+        }
+        setInterval(PrintTime(), 10000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+var weather = new XMLHttpRequest();
+var city = "London";
+var prov = "GB";
+function testFunction (){
+     var city = document.getElementById("city").value;
+     var prov = document.getElementById("state").value;
+     weather.open("GET", "http://api.wunderground.com/api/YOURAPIID/conditions/q/" + prov + "/" + city + ".json", false);
+     weather.send(null);
+     var r = JSON.parse(weather.response);
+
+     var dis = "Current location: " + r.current_observation.display_location.full + "  <p>";
+     var temp = r.current_observation.temp_c + "  <p>";
+     var wind = r.current_observation.wind_string + "  <p>";
+     var humid = r.current_observation.relative_humidity +"   <p>";
+     function getWeather(id, res) {
+       document.getElementById(id).innerHTML = res;
+     }
+
+     getWeather("weather", dis);
+     getWeather("temp", temp);
+     getWeather("wind", wind);
+     getWeather("humid", humid);
+    //alert ('gey')
+}
