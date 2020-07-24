@@ -293,7 +293,13 @@ $(function(){
     $('.img3-left').css('display','none');
   });
 
-})
+});
+
+// $(window).resize(function() {
+//   if($(window).width() >768) {
+//     $('#sec09').css('height','none');
+//   }
+// });
 
 
 
