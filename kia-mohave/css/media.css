@@ -71,6 +71,8 @@
     }
 
     /* sec04-center image */
+
+    .modal{left: 6%;}
     .sec04-outside-bg{
         height: 30vw;
     }
@@ -136,7 +138,7 @@
     /* sec05-title */
     .sec05-title{
         height: 10vw;
-        margin-top: 5%;
+        margin-top: 3%;
         margin-bottom: 1%;
     }
 
@@ -230,6 +232,59 @@
     .space-img-3{
         top: -90%;
     }
+
+    /* section06 */
+    .sec06-title>h1{
+        font-size: 2em;
+        margin-top: 1%;
+    }
+
+    /* section07 */
+    .sec07-title>h1{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .sec07-title>h1>br{
+        display: none;
+    }
+
+    .overlay {width: 90%; margin: 0 auto;}
+
+    .sec07-con-1:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-2:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-3:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-4:hover .overlay {
+        height: 100%;
+      }
+
+      .sec07-text{font-size: 12px; width: 90%;}
+
+      .sec07-text p{font-size: 9px;}
+
+    /* section08 */
+    .sec08-tab{
+        height: 600px;
+    }
+
+
+      .sec09-slide-img1, .sec09-slide-img2, .sec09-slide-img3{
+          margin-top: 0;
+      }
+
+    /* section10 */
+    .section10{ background-position: 0 -200px;}
+    .sec10-bottom-txt-award{display: none;}
+    .sec10-bottom-txt{text-align: center;}
 }
 
 @media(max-width: 990px){
@@ -345,8 +400,8 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 6%;
+        padding-bottom: 6%;
     }
 
     .sec05-inside{
@@ -407,6 +462,64 @@
     .space-img-2{top: 0;}
     .space-img-3{top: 0;}
     .space-img-4{top: 0;}
+
+    /* section07 */
+    .sec07-title h1{font-size: 1.9em; text-align: center;}
+
+    .sec07-border{
+        border-bottom: 3px solid rgb(202, 25, 25);
+        margin: 0 auto;
+    }
+
+    .sec07-con{margin-top: 0;}
+
+    /* section08 */
+    .sec08-tab-title{
+        font-size: 23px;
+        margin-top: 0;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .sec08-tab button{
+        padding: 15px 10px;
+        font-size: 13px;
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+    .sec08-tab{
+        height: auto;
+        float: top;
+        width: 100%;
+    }
+
+    .sec08-content{
+        padding: 0;
+        width: 100%;
+    }
+
+    .sec08-contents{padding-top: 15%;}
+
+    .overlay {width: 92%; margin: 0 auto;}
+
+    .sec07-text{font-size: 18px; width: 90%;}
+
+    .sec07-text p{font-size: 13px;}
+
+    /* section09 */
+    #sec09{height: 0 !important;}
+    .section09{display: none !important;}
+
+    /* section10 */
+    .section10{background-position: 0 -150px;}
+    .sec10-mark-info{display: none;}
+    .sec10-bottom-none{display: none;}
+    .sec10-top{height: 70vh;}
+    .sec10-bottom{height: 30vh;}
+    .sec10-bottom-txt{text-align: center;}
+    .sec10-carimg>img{top: -170px;}
 }
 
 @media(max-width: 768px){
@@ -580,10 +693,12 @@
     .sec01_title p:last-child{font-size:1.2em; margin-top: 2%;}
 
     /* section02 */
+    .sec02-logo{margin-top: 15%;}
     .main-info-bg{padding: 0;}
-    .sec02-logo>img{margin-top: 5%;}
+    .main-info img{margin: 5%;}
+    .sec02-logo>img{margin-top: 0; width: 50%;}
     .tab-car-img img{width: 120%; margin-left:-10%;}
-    .tab-car-color-text h4{margin-top: 10%; font-size: 1.3em;}
+    .tab-car-color-text h4{margin-top: -5%; font-size: 1.3em;}
     .tab-car-color>ul {
         display: flex;
         justify-content: center;
@@ -597,6 +712,7 @@
     /* section03 */
     .sec03-bg{
         background-position: 50% -40px;
+        height: 70vh;
     }
 
     .sec03-title{
@@ -614,6 +730,10 @@
     .sec03-bottom-con-1 img{
         width: 100%;
     }
+
+    .modal-txt>h3 {font-size: 1.5em;}
+
+    .modal{top: 20%; left: 0;}
 
     /* section04 */
     /* sec04-title */
@@ -655,7 +775,7 @@
     .mohave-outdesign img {width: 110%;}
 
     .sec04-modal{
-        top: 5%;
+        top: 20%;
         left: 0;
     }
 
@@ -699,9 +819,9 @@
     /* section06-------------------------------------------------- */
     .sec06-title>h1{font-size: 1.8em;}
 
-    .tablink{
-        font-size: 10px;
-    }
+    .tablink{font-size: 10px;}
+
+    .sec06-title>h1 {margin-top: 15%;}
 
     .per-con, .conv-con, .space-con{
         height: 100vw;
@@ -714,7 +834,7 @@
     .space-con img{width: 190%;}
     /* Performance */
     .per-txt-1>h4, .per-txt-2>h4, .per-txt-3>h4, .per-txt-4>h4, .per-txt-5>h4{
-        font-size: 1px;
+        font-size: 1em;
     } 
 
     .per-txt-1>h1, .per-txt-2>h1, .per-txt-3>h1, .per-txt-4>h1, .per-txt-5>h1{
@@ -744,7 +864,7 @@
     /* Convenience */
 
     .conv-txt-1>h4, .conv-txt-2>h4, .conv-txt-3>h4, .conv-txt-4>h4, .conv-txt-5>h4, .conv-txt-6>h4, .conv-txt-7>h4{
-        font-size: 1px;
+        font-size: 15px;
     } 
 
     .conv-txt-1>h1, .conv-txt-2>h1, .conv-txt-3>h1, .conv-txt-4>h1, .conv-txt-5>h1, .conv-txt-6>h1, .conv-txt-7>h1{
@@ -779,7 +899,7 @@
 
     /* space */
     .space-txt-1>h4, .space-txt-2>h4, .space-txt-3>h4, .space-txt-4>h4{
-        font-size: 1px
+        font-size: 1em;
     }
 
     .space-txt-1>h1, .space-txt-2>h1, .space-txt-3>h1, .space-txt-4>h1{
@@ -804,7 +924,185 @@
 
     .column-s{width: 25%;}
 
-    .tabbar{padding-top: 20%;}
+    .tabbar{padding-top: 0;}
 
+    /* section07 */
+
+    .sec07-title{
+        font-size: 0.7em;
+        padding: 2%;
+    }
+
+    .sec07-title h1{font-size: 1.8em; line-height: 0;}
+
+    .sec07-2{display: none;}
+
+    .sec07-con{margin-top: 0;}
+
+    .sec07-image {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .sec07-text{font-size: 15px;}
+
+    .sec07-text p{font-size: 12px;}
+
+    .overlay {width: 60%; margin: 0 auto;}
+
+    .sec07-con-1:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-2:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-3:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-4:hover .overlay {
+        height: 100%;
+      }
+
+      .sec07-text{font-size: 12px; width: 90%;}
+
+      .sec07-text p{font-size: 9px;}
+
+    /* section08 */
+
+    .sec08-tab button{
+        font-size: 13px;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .sec08-content{margin-top: 15px;}
+
+    .sec08-content h3{text-align: center;}
+
+    .sec08-content p{line-height: 25px;}
+
+    /* section10 */
+
+    .sec10-carimg>img{
+        width: 90%;
+        top: -120px;
+        left: 5%;
+    }
+
+    .sec10-bottom-txt h3{display: none;}
+    .sec10-info{font-size: 10px;}
+    .copy{margin-top: 0; font-size: 10px;}
+
+    .custom{margin-top: 10px;}
+}
+
+
+@media (max-width: 370px){
+
+    /* section03 */
+    .sec03-title-txt>h1{font-size: 3em; margin-top: 10px;}
+
+    .sec03-bg{height: 64vh;}
+
+    /* section04 */
+    .sec04-title>h1{font-size: 1.5em;}
+
+    .sec04-border{
+        margin: 1% 0;
+        width: 60px;
+        border-bottom: 2px solid rgb(202, 25, 25);}
+
+    .sec04-title>h4{font-size: 0.8em;}
+
+    .sec04-outside-choice{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    /* section05 */
+    .sec05-title>h1{font-size: 1.5em;}
+
+    .sec05-border{
+        margin: 1% 0;
+        width: 60px;
+        border-bottom: 2px solid rgb(202, 25, 25);}
+
+    .sec05-title>h4{font-size: 0.8em;}
+
+    /* section06 */
+    .sec06-title>h1{font-size: 1.5em; margin-top: 1%;}
+
+    .sec06-border{
+        margin: 1% auto;
+        width: 60px;
+        border-bottom: 2px solid rgb(202, 25, 25);}
+
+    /* section07 */
+
+    .sec07-title>h1{font-size: 1.5em; margin-top: 5%;}
+
+    .sec07-border{
+        margin: 1% auto;
+        width: 60px;
+        border-bottom: 2px solid rgb(202, 25, 25);}
+
+    .sec07-image{width: 55%;}
+
+    .overlay {width: 50%; margin: 0 auto;}
+
+    .sec07-con-1:hover .overlay {
+        height: 100%;
+        bottom: 0;
+      }
+    
+      .sec07-con-2:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-3:hover .overlay {
+        height: 100%;
+      }
+    
+      .sec07-con-4:hover .overlay {
+        height: 100%;
+      }
+
+      .sec07-text{font-size: 12px; width: 90%;}
+
+      .sec07-text p{font-size: 9px;}
+
+    /* section08 */
+
+    .sec08-contents{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sec08-tab-title{padding: 10px;}
+
+    .sec08-content{margin-top: 0;}
+
+    .sec08-content h3{font-size: 20px; margin-top: 10px;}
+
+    .sec08-content p{padding: 0 10px; font-size: 12px;}
+
+    .sec08-tab button{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* section10 */
+
+    .sec10-top{height: 65vh;}
+
+    .sec10-bottom{height: 35vh;}
+
+    .custom{margin-top: 5%; font-size: 10px;}
+
+    .sec10-info{font-size: 9px;}
 
 }

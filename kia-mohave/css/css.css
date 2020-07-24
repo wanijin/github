@@ -257,6 +257,7 @@
     margin: 0 auto;
     padding: 0;
 }
+
 .sec03-bottom-con{
     padding: 0;
     margin: 0 auto;
@@ -1207,7 +1208,7 @@ transition: all 0.5s;
   }
 
   .sec07-con-1, .sec07-con-2, .sec07-con-3, .sec07-con-4{
-    width: 100%;
+    width: 100%; cursor: pointer;
   }
 
   .sec07-image {
@@ -1284,7 +1285,6 @@ transition: all 0.5s;
 }
 .sec08-tab {
     float: right;
-    border: 1px solid #ccc;
     background-color: #000;
     width: 30%;
     height: 650px;
@@ -1348,7 +1348,6 @@ transition: all 0.5s;
 }
 
 .sec09-carimg{
-    width: 85%;
     margin: 0 auto;
     display: flex;
     list-style: none;
@@ -1370,9 +1369,12 @@ transition: all 0.5s;
 }
 
 .sec09-slide-img1, .sec09-slide-img2, .sec09-slide-img3{
-    position: relative;
     margin-top: 10%;
+    width: 100%;
+    position: relative;
 }
+
+/* .img1{width: 100%;} */
 
 .img1-right{
     position: absolute;
@@ -1396,8 +1398,6 @@ transition: all 0.5s;
     top: 45%;
     display: none;
 }
-
-
 
 /* section10------------------------------------------- */
 
