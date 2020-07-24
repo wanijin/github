@@ -28,6 +28,7 @@ body{
     background: -moz-linear-gradient(-45deg,  rgba(242,173,114,1) 0%, rgba(208,69,110,1) 100%);
     background: -webkit-linear-gradient(-45deg,  rgba(242,173,114,1) 0%,rgba(208,69,110,1) 100%);
     background: linear-gradient(135deg,  rgba(242,173,114,1) 0%,rgba(208,69,110,1) 100%);
+    overflow: hidden;
 }
 
 h1{
