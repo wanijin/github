@@ -27,7 +27,8 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	
   </head>
   <body>
     
@@ -41,17 +42,17 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Rome</a></li>
-	          <li class="nav-item"><a href="places.html" class="nav-link">GiudeTour</a></li>
-	          <li class="nav-item"><a href="hotel.html" class="nav-link">Tikets</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Snap</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">로마의 즐길거리</a></li>
+	          <li class="nav-item"><a href="places.html" class="nav-link">가이드 투어</a></li>
+	          <li class="nav-item"><a href="hotel.html" class="nav-link">티켓</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">스냅샷</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/index_mainimg-3.jpg');">
+    <div class="hero-wrap js-fullheight main-background">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
@@ -92,439 +93,248 @@
 		</div>
 		</div>
 	</section>
-    <!-- <section class="ftco-section justify-content-end ftco-search">
-    	<div class="container-wrap ml-auto">
-    		<div class="row no-gutters">
-          <div class="col-md-12 nav-link-wrap">
-            <div class="nav nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Flight</a>
-
-              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Hotel</a>
-
-              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Car Rent</a>
-            </div>
-          </div>
-          <div class="col-md-12 tab-wrap">
-            
-            <div class="tab-content p-4 px-5" id="v-pills-tabContent">
-
-              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-              	<form action="#" class="search-destination">
-              		<div class="row">
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">From</label>
-	              				<div class="form-field">
-	              					<div class="icon"><span class="icon-my_location"></span></div>
-					                <input type="text" class="form-control" placeholder="From">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Where</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control" placeholder="Where">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check In</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkin_date" placeholder="Check In">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check Out</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkout_date" placeholder="From">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Travelers</label>
-              					<div class="form-field">
-	              					<div class="select-wrap">
-			                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-			                      <select name="" id="" class="form-control">
-			                      	<option value="">1</option>
-			                        <option value="">2</option>
-			                        <option value="">3</option>
-			                        <option value="">4</option>
-			                        <option value="">5</option>
-			                      </select>
-			                    </div>
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-self-end">
-              				<div class="form-group">
-              					<div class="form-field">
-					                <input type="submit" value="Search" class="form-control btn btn-primary">
-					              </div>
-				              </div>
-              			</div>
-              		</div>
-              	</form>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-              	<form action="#" class="search-destination">
-              		<div class="row">
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check In</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkin_date" placeholder="Check In">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check Out</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkout_date" placeholder="From">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Guest</label>
-              					<div class="form-field">
-	              					<div class="select-wrap">
-			                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-			                      <select name="" id="" class="form-control">
-			                      	<option value="">1</option>
-			                        <option value="">2</option>
-			                        <option value="">3</option>
-			                        <option value="">4</option>
-			                        <option value="">5</option>
-			                      </select>
-			                    </div>
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-self-end">
-              				<div class="form-group">
-              					<div class="form-field">
-					                <input type="submit" value="Search" class="form-control btn btn-primary">
-					              </div>
-				              </div>
-              			</div>
-              		</div>
-              	</form>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-effect-tab">
-              	<form action="#" class="search-destination">
-              		<div class="row">
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Where</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control" placeholder="Where">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check In</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkin_date" placeholder="Check In">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-items-end">
-              				<div class="form-group">
-              					<label for="#">Check Out</label>
-              					<div class="form-field">
-	              					<div class="icon"><span class="icon-map-marker"></span></div>
-					                <input type="text" class="form-control checkout_date" placeholder="From">
-					              </div>
-				              </div>
-              			</div>
-              			<div class="col-md align-self-end">
-              				<div class="form-group">
-              					<div class="form-field">
-					                <input type="submit" value="Search" class="form-control btn btn-primary">
-					              </div>
-				              </div>
-              			</div>
-              		</div>
-              	</form>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section> -->
-
-    <!-- <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">See our latest vacation ideas</h2>
-          </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="destination-entry img" style="background-image: url(images/destination-1.jpg);">
-        			<div class="text text-center">
-        				<h3>Beachfront Scape</h3>
-        			</div>
-        		</a>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="destination-entry img" style="background-image: url(images/destination-2-1.jpg);">
-        			<div class="text text-center">
-        				<h3>Group Holidays</h3>
-        			</div>
-        		</a>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="destination-entry img" style="background-image: url(images/destination-3.jpg);">
-        			<div class="text text-center">
-        				<h3>City Breaks</h3>
-        			</div>
-        		</a>
-        	</div>
-        </div>
-    	</div>
-    </section>
-		
-		<section class="ftco-about d-md-flex">
-    	<div class="one-half img" style="background-image: url(images/about.jpg);"></div>
-    	<div class="one-half ftco-animate">
-        <div class="heading-section ftco-animate ">
-          <h2 class="mb-4">The Best Travel Agency</h2>
-        </div>
-        <div>
-  				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-  			</div>
-    	</div>
-    </section> -->
-
     <section class="ftco-section services-section bg-light">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon">
+              <div class="icon text-center">
 				  <span class="travel-icon">
 					  <img src="images/icon-rome.png" alt="rome-icon" class="rome-icon">
 				  </span>
 			  </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Special Activities</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+              <div class="media-body text-center">
+                <h3><a href="#" class="iconlink">로마의 즐길거리</a></h3>
               </div>
             </div>      
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon">
-				<span class="travel-icon">
+              <div class="icon text-center">
+				<span class="travel-icon text-center">
 					<img src="images/icon-bus.png" alt="bus-icon" class="bus-icon">
 				</span>
 			</div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Travel Arrangements</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+              <div class="media-body text-center">
+                <h3><a href="#" class="iconlink">가이드투어</a></h3>
+				<!-- <p>
+					<a href="#" class="icon-sublink">시티투어</a> /
+					<a href="#" class="icon-sublink">종일투어</a> /
+					<a href="#" class="icon-sublink">하프투어</a>
+				</p> -->
               </div>
             </div>    
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon">
+              <div class="icon text-center">
 				<span class="travel-icon">
 					<img src="images/icon-tiket.png" alt="tiket-icon" class="tiket-icon">
 				</span>
 			</div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Private Guide</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+              <div class="media-body text-center">
+                <h3><a href="#" class="iconlink">티켓</a></h3>
+                <p>
+					<!-- <a href="#" class="icon-sublink">입장권 및 패스권</a>  /
+					<a href="#" class="icon-sublink">쿠폰정보</a> -->
+				</p>
               </div>
             </div>      
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
-              <div class="icon">
+              <div class="icon text-center">
 				<span class="travel-icon">
 					<img src="images/icon-snap.png" alt="snap-icon" class="snap-icon">
 				</span>
 			</div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Location Manager</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
+              <div class="media-body text-center">
+                <h3><a href="#" class="iconlink">스냅촬영</a></h3>
               </div>
             </div>      
           </div>
         </div>
       </div>
-    </section>
-    
-    <section class="ftco-section">
+	</section>
+
+	<section class="ftco-section">
     	<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
+				<div class="row justify-content-center pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Most Popular Destination</h2>
+            <h2 class="pb-3 recommend-title ftco-animate">노랑투어가 추천하는 로마</h2>
           </div>
-        </div>    		
-    	</div>
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-1.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">Paris, Italy</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$200</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<p class="days"><span>2 days 3 nights</span></p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Discover</a></span>
+		</div>
+		<button class="tablink tiket-menu ftco-animate" onclick="openPage('tiket', this, '#fff')">티켓</button>
+		<div class="tablink-border ftco-animate">|</div>
+		<button class="tablink guidetour-menu ftco-animate" onclick="openPage('guidetour', this, '#fff')" id="defaultOpen">가이드투어 및 스냅</button>
+		<!-- https://www.myrealtrip.com/offers?city=Roma&country=Italy&group_category=experience&categories%5B%5D=ticket -->
+		<div id="tiket" class="tabcontent">
+			<div class="row">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-01.jpg);">
+						<div class="recommend-tiket-txt-b p-3 text-center">
+							<h6>우선 입장권</h6>
+							<h4>바티칸 박물관 & 시스티나 성당</h4>
+							<p class=text-center>우선입장 티켓을 이용해서 바티칸 박물관과 시스티나 성당 내부로 빠르게 입장하세요!</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
     						</p>
-    					</div>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
     				</div>
     			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-2.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">Paris, Italy</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$200</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<p class="days"><span>2 days 3 nights</span></p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Discover</a></span>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-02.jpg);">
+						<div class="recommend-tiket-txt-w p-3 text-center">
+							<h6>셔틀버스 탑승권</h6>
+							<h4>참피노 공항 →<br> 떼르미니 역</h4>
+							<p class=text-center>참피노 공항에 도착 시, 떼르미니 기차역 셔틀 버스 운행을 예약티켓으로 값 비싼 택시비를 절약하세요.</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
     						</p>
-    					</div>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
     				</div>
     			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-3.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">Paris, Italy</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$200</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<p class="days"><span>2 days 3 nights</span></p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Discover</a></span>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-03.jpg);">
+						<div class="recommend-tiket-txt-b p-3 text-center">
+							<h6>버스로 로마를 여행하다</h6>
+							<h4>로마 빅버스 투어</h4>
+							<p class=text-center>영원의 도시 로마를 즐기는 가장 쉽고 편안한 방법 ‘로마 빅버스 투어’</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
     						</p>
-    					</div>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
     				</div>
     			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-4.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">Paris, Italy</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$200</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<p class="days"><span>2 days 3 nights</span></p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Discover</a></span>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-04.jpg);">
+						<div class="recommend-tiket-txt-w p-3 text-center">
+							<h6>Museo a Galleria Borghese</h6>
+							<h4>보르게세 미술관</h4>
+							<p class=text-center>
+								보르게세 미술관을 방문해 카라바조의 예술 작품을 포함한 여러 예술 걸작을 눈에 담아보세요!</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
     						</p>
-    					</div>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
     				</div>
     			</div>
     		</div>
     	</div>
+		<!-- ------------------------------------------- -->
+		<div id="guidetour" class="tabcontent">
+			<div class="row">
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-01.jpg);">
+						<div class="recommend-tiket-txt-w p-3 text-center">
+							<h6>야경 시티 투어</h>
+							<h4>로마 낭만 콘서트</h4>
+							<p class=text-center>사랑하는 가족, 연인, 그리고 친구와 함께하는 소중한 여행.</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-02.jpg);">
+						<div class="recommend-tiket-txt-b p-3 text-center">
+							<h6>소수그룹/로마시내 종일투어</h6>
+							<h4>하루만에 로마 정복</h4>
+							<p class=text-center>투어콘서트와 함께 위대한 로마의 영광을 만나보세요~!</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star-o"></i>
+    						</p>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-03.jpg);">
+						<div class="recommend-tiket-txt-w p-3 text-center">
+							<h6>10주년 50% 할인이벤트</h6>
+							<h4>바티칸 집중투어</h4>
+							<p class=text-center>종교도 역사도 미술도 노랑투어와 함께라면 즐거울 수 있습니다!</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    						</p>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate">
+    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-04.jpg);">
+						<div class="recommend-tiket-txt-b p-3 text-center">
+							<h6>로마스냅</h6>
+							<h4>추억을 간직하세요</h4>
+							<p class=text-center>
+							편안한 분위기에서 함께 로마를 걸으며 사진을 담아요.
+							추억을 만들고 예쁜 사진을 남기실 수 있도록 도와드릴게요!</p>
+							<p class="rate">
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    							<i class="icon-star"></i>
+    						</p>
+						</div>
+						<div class="recommend-tiket-overlay">
+							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+						</div>
+    				</div>
+    			</div>
+    		</div>
+		</div>   		
     </section>
-
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+	
+	<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/index_mainimg-1.jpg);" data-stellar-background-ratio="0.5">
     	<div class="container">
     		<div class="row justify-content-center">
     			<div class="col-md-10">
@@ -549,7 +359,7 @@
 		            <div class="block-18 text-center">
 		              <div class="text">
 		                <strong class="number" data-number="87000">0</strong>
-		                <span>Hotels</span>
+		                <span>Tiket</span>
 		              </div>
 		            </div>
 		          </div>
@@ -557,7 +367,7 @@
 		            <div class="block-18 text-center">
 		              <div class="text">
 		                <strong class="number" data-number="56400">0</strong>
-		                <span>Restaurant</span>
+		                <span>Snap shot</span>
 		              </div>
 		            </div>
 		          </div>
@@ -566,462 +376,90 @@
         </div>
     	</div>
     </section>
-
-
-    <section class="ftco-section">
-    	<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4"><strong>Popular</strong> Hotels</h2>
-          </div>
-        </div>    		
-    	</div>
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-1.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">New Orleans, Hotel</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price per-price">$40<br><small>/night</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-2.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">New Orleans, Hotel</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price per-price">$40<br><small>/night</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-3.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">New Orleans, Hotel</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price per-price">$40<br><small>/night</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-4.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">New Orleans, Hotel</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price per-price">$40<br><small>/night</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-5.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">New Orleans, Hotel</a></h3>
-		    						<p class="rate">
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star"></i>
-		    							<i class="icon-star-o"></i>
-		    							<span>8 Rating</span>
-		    						</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price per-price">$40<br><small>/night</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section testimony-section">
+	<section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2 class="mb-4">Our satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          <div class="col-md-7 text-center heading-section heading-section-black ftco-animate">
+            <h2 class="mb-4">여행 후기</h2>
           </div>
         </div>
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
+                <div class="testimony-wrap p-4 pb-6">
                   <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
+                    <p class="mb-5">저와 제 일행은 미리 예약을 못해 민박집 사장님의 도움으로 급하게 투어에 참여하게 되었습니다.
+					불구하고 너무 흔쾌히 받아주셔서 감사합니다.  천지창조, 피에타 등 많은 작품이 아직도 생생히 기억나네요.</p>
+                    <p class="name">Rose lily</p>
                     <span class="position">Marketing Manager</span>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
+                <div class="testimony-wrap p-4 pb-6">
                   <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
+                    <p class="mb-5">사람이 많은곳에서 본인을 빨리 찾을수 있게 하기 위함인지 .. 찐한파랑색 바지를 입고 계셨어요 ㅎㅎ 지하철을 타러가는 중간중간 주의사항과 안내말을 수신기를 통해 전해주셨어요 ! </p>
+                    <p class="name">Anny</p>
                     <span class="position">Interface Designer</span>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
+                <div class="testimony-wrap p-4 pb-6">
                   <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
+                    <p class="mb-5">혼자 여행중인 여자사람이에요~
+						외톨이가 되면 어쩌지 걱정을 많이했는데, 유쾌하고 재미있게 설명해주신 가이드분과, 여행정보도 공유하며 좋은 인연이 된 같이 투어들은 분들 덕분에 좋은 추억 만들었어요
+						</p>
+                    <p class="name">titi</p>
                     <span class="position">UI Designer</span>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                <div class="testimony-wrap p-4 pb-6">
+                  <div class="user-img mb-5" style="background-image: url(images/person_4.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
+                    <p class="mb-5">저와 제 일행은 미리 예약을 못해 민박집 사장님의 도움으로 급하게 투어에 참여하게 되었습니다.
+					 너무 흔쾌히 받아주셔서 감사합니다.  천지창조, 피에타 등 많은 작품이 아직도 생생히 기억나네요.</p>
+					 <p class="name">Mark Web</p>
                     <span class="position">Web Developer</span>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
+                <div class="testimony-wrap p-4 pb-6">
                   <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-5">혼자 여행중인 여자사람이에요~
+						외톨이가 되면 어쩌지 걱정을 많이했는데, 유쾌하고 재미있게 설명해주신 가이드분과, 여행정보도 공유하며 좋은 인연이 된 같이 투어들은 분들 덕분에 좋은 추억 만들었어요
+						</p>
                     <p class="name">Mark Web</p>
                     <span class="position">System Analyst</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section">
-    	<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Recommended Restaurants</h2>
-          </div>
-        </div>    		
-    		<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/restaurant-1.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<h3><a href="#">Luxury Restaurant</a></h3>
-    						<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    							<span>8 Rating</span>
-    						</p>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Discover</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/restaurant-2.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<h3><a href="#">Luxury Restaurant</a></h3>
-    						<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    							<span>8 Rating</span>
-    						</p>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="destination">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/restaurant-3.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<h3><a href="#">Luxury Restaurant</a></h3>
-    						<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    							<span>8 Rating</span>
-    						</p>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="destination d-md-flex flex-column-reverse">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/restaurant-4.jpg);">
-    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-link"></span>
-    						</div>
-    					</a>
-    					<div class="text p-3">
-    						<h3><a href="#">Luxury Restaurant</a></h3>
-    						<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    							<span>8 Rating</span>
-    						</p>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-    							<span class="ml-auto"><a href="#">Book Now</a></span>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2><strong>Tips</strong> &amp; Articles</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text">
-              	<span class="tag">Tips, Travel</span>
-                <h3 class="heading mt-3"><a href="#">8 Best homestay in Philippines that you don't miss out</a></h3>
-                <div class="meta mb-3">
-                  <div><a href="#">October 3, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text">
-              	<span class="tag">Culture</span>
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <div class="meta mb-3">
-                  <div><a href="#">October 3, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text">
-              	<span class="tag">Tips, Travel</span>
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <div class="meta mb-3">
-                  <div><a href="#">October 3, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-		
-		<section class="ftco-section-parallax">
-      <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <h2>Subcribe to our Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-              <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-8">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
-                    </div>
-                  </form>
                 </div>
               </div>
             </div>
@@ -1035,7 +473,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Adventure</h2>
+              <h2 class="ftco-heading-2"><img src="images/footer-logo.png" alt="footer-logo" srcset=""></h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -1100,7 +538,6 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -1118,6 +555,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/js.js"></script>
     
   </body>
 </html>
