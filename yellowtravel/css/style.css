@@ -12,6 +12,8 @@
 
 @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 :root {
   --blue: #007bff;
@@ -65,7 +67,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6315,6 +6317,11 @@ button.bg-dark:focus {
 .py-5 {
   padding-bottom: 8rem !important; }
 
+.pb-6,
+.py-6{
+  padding-bottom: 5rem !important;
+}
+
 .pl-5,
 .px-5 {
   padding-left: 3rem !important; }
@@ -7277,7 +7284,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #fff;
   font-size: 16px;
   line-height: 1.8;
@@ -7293,10 +7300,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #f9be37; }
+  color: #ffd800; }
   a:hover {
     text-decoration: none;
-    color: #f9be37;
+    color: #ffd800;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -7374,12 +7381,12 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-      background: #f9be37;
-      border: 1px solid #f9be37; }
+      background: #ffb100;
+      border: 1px solid #ffb100; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
-    border-color: #f9be37; }
+    border-color: #ffb100; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #f9be37; }
+    color: #ffd800; }
   .ftco-navbar-light .navbar-toggler {
     border: none;
     color: rgba(255, 255, 255, 0.5) !important;
@@ -7398,7 +7405,7 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #f9be37 !important; }
+      color: #ffd800 !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
       background: #f9be37;
@@ -7442,7 +7449,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.9rem !important;
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #f9be37 !important; }
+        color: #ffb100 !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -7629,7 +7636,8 @@ h1, h2, h3, h4, h5,
     display: inline-block; }
 
 .bg-light {
-  background: #f8faff !important; }
+  background: #158fb4 !important; 
+}
 
 .bg-primary {
   background: #f9be37; }
@@ -7797,7 +7805,7 @@ h1, h2, h3, h4, h5,
     font-weight: 400; }
     .intro h3 span {
       font-weight: 700;
-      color: #f9be37; }
+      color: #ffd800; }
 
 .ftco-about .one-half {
   width: 100%;
@@ -8295,7 +8303,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -8441,7 +8449,7 @@ textarea.form-control {
 .heading-section h2 {
   font-size: 40px;
   font-weight: normal;
-  font-family: "Abril Fatface", cursive; }
+  font-family: 'GmarketSansMedium'; }
   @media (max-width: 767.98px) {
     .heading-section h2 {
       font-size: 28px; } }
@@ -8467,7 +8475,7 @@ textarea.form-control {
 
 .testimony-section {
   position: relative;
-  background: #08c299; }
+  background: #eee; }
   .testimony-section .owl-carousel {
     margin: 0; }
   .testimony-section .owl-carousel .owl-stage-outer {
@@ -8495,7 +8503,7 @@ textarea.form-control {
       .testimony-section .owl-nav .owl-prev span:before,
       .testimony-section .owl-nav .owl-next span:before {
         font-size: 30px;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.3);
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
@@ -8504,7 +8512,7 @@ textarea.form-control {
       .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
       .testimony-section .owl-nav .owl-next:hover span:before,
       .testimony-section .owl-nav .owl-next:focus span:before {
-        color: #fff; }
+        color: #c8c8c8; }
     .testimony-section .owl-nav .owl-prev {
       left: 50%;
       margin-left: -80px; }
@@ -8529,27 +8537,27 @@ textarea.form-control {
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.4); }
       .testimony-section .owl-dots .owl-dot.active {
-        background: #fff; }
+        background: #c8c8c8; }
 
 .testimony-wrap {
   display: block;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.8); }
   .testimony-wrap .user-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     position: relative;
     margin-top: -75px;
-    border: 6px solid #08c299; }
+    border: 6px solid #158fb4; }
     .testimony-wrap .user-img .quote {
       position: absolute;
       bottom: -10px;
       right: 0;
       width: 40px;
       height: 40px;
-      background: #f9be37;
+      background: #ffd800;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -8560,7 +8568,7 @@ textarea.form-control {
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 0;
-    color: #fff; }
+    color: rgba(0, 0, 0, 0.8); }
   .testimony-wrap .position {
     font-size: 13px; }
 
@@ -8604,17 +8612,17 @@ textarea.form-control {
     right: 0;
     content: '';
     z-index: -1;
-    opacity: .9;
-    background: #08c29a;
-    background: -moz-linear-gradient(-45deg, #08c29a 0%, #16ddb2 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, #08c29a), color-stop(100%, #16ddb2));
-    background: -webkit-linear-gradient(-45deg, #08c29a 0%, #16ddb2 100%);
-    background: -o-linear-gradient(-45deg, #08c29a 0%, #16ddb2 100%);
-    background: -ms-linear-gradient(-45deg, #08c29a 0%, #16ddb2 100%);
-    background: -webkit-linear-gradient(315deg, #08c29a 0%, #16ddb2 100%);
-    background: -o-linear-gradient(315deg, #08c29a 0%, #16ddb2 100%);
-    background: linear-gradient(135deg, #08c29a 0%, #16ddb2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08c29a', endColorstr='#16ddb2', GradientType=1 ); }
+    opacity: .7;
+    background: #5f6dee;
+    background: -moz-linear-gradient(-45deg, #5f6dee 0%, #16ddb2 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #5f6dee), color-stop(100%, #16ddb2));
+    background: -webkit-linear-gradient(-45deg, #5f6dee 0%, #16ddb2 100%);
+    background: -o-linear-gradient(-45deg, #5f6dee 0%, #16ddb2 100%);
+    background: -ms-linear-gradient(-45deg, #5f6dee 0%, #16ddb2 100%);
+    background: -webkit-linear-gradient(315deg, #5f6dee 0%, #16ddb2 100%);
+    background: -o-linear-gradient(315deg, #5f6dee 0%, #16ddb2 100%);
+    background: linear-gradient(135deg, #5f6dee 0%, #16ddb2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6dee', endColorstr='#16ddb2', GradientType=1 ); }
 
 .ftco-counter {
   padding: 6em 0; }
@@ -8622,13 +8630,14 @@ textarea.form-control {
     .ftco-counter {
       background-position: center center !important; } }
   .ftco-counter .text strong.number {
-    font-family: "Abril Fatface", cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 40px;
+    font-weight: bold;
     color: #fff; }
   .ftco-counter .text span {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 1); }
   @media (max-width: 767.98px) {
     .ftco-counter .counter-wrap {
       margin-bottom: 20px; } }
@@ -8714,7 +8723,7 @@ textarea.form-control {
     color: white; }
 
 .block-6 {
-  margin-bottom: 40px; }
+  margin-bottom: 0; }
   .block-6 .media-body p {
     font-size: 16px; }
 

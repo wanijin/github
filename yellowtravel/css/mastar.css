@@ -2,6 +2,10 @@
     width: 200px;
 }
 
+.main-background{
+    background: url('../images/index_mainimg-3.jpg');
+}
+
 .sec01-contents-bg{
     width: 100%;
     background-color: #fff;
@@ -14,20 +18,154 @@
 
 .intro p{
     font-size: 14px;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
-.rome-icon{
-    width: 40%;
+/* 아이콘링크 */
+
+.rome-icon, .bus-icon, .tiket-icon, .snap-icon{
+    width: 30%;
+    margin-bottom: 1rem;
 }
 
-.bus-icon{
-    width: 40%;
+.iconlink{
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
-.tiket-icon{
-    width: 40%;
+/* 추천 여행지 */
+
+.recommend-title{
+    font-weight: bold;
 }
 
-.snap-icon{
-    width: 40%;
+.tablink {
+    background-color: #fff;
+    color: #555;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  .tablink:hover {
+    background-color: #eee;
+    transition: all 0.5s;
+    color: #555;
+    font-weight: 500;
+  }
+
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+
+  .tablink:last-child{
+      border-left: 5px solid #555;
+  }
+  
+  .tiket-menu {color: #555;}
+  .guidetour-menu {color: #555;}
+
+  .tablink-border{float: right; line-height: 60px; font-size: 20px;}
+
+  /* 추천 여행지 - 가이드투어 */
+
+  .recommend-tiket-images{
+      width: 100%;
+      height: 550px;
+      background-size: cover;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .recommend-tiket-images:hover .recommend-tiket-overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      transition: all 0.5s;
+  }
+
+  .recommend-tiket-images:hover .recommend-tiket-overlay-p{
+      display: block;
+      width: 50%;
+      margin: 100% auto;
+      line-height: 35px;
+      border: 1px solid #fff;
+  }
+
+  .recommend-tiket-overlay-p:hover{
+      background-color:#fff;
+      color: #000;
+      border: 1px solid #fff;
+      transition: all 0.5s;
+      font-weight: bold;
+  }
+
+  .recommend-tiket-overlay-p{
+      text-align: center;
+      display: none;
+  }
+
+.recommend-tiket-txt-w{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .recommend-tiket-txt-w h6{
+        font-weight: 100;
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .recommend-tiket-txt-w h4{
+      font-weight: 550;
+      color: #fff;
+    }
+
+    .recommend-tiket-txt-w p{
+      font-size: 12px;
+    }
+
+
+.recommend-tiket-txt-b{
+color: #181818;
+font-family: 'Roboto', sans-serif;
+}
+
+    .recommend-tiket-txt-b h6{
+      font-weight: 100;
+      margin-top: 25px;
+      font-size: 15px;
+  }
+
+    .recommend-tiket-txt-b h4{
+        font-weight: 550;
+        color: #181818;
+    }
+
+    .recommend-tiket-txt-b p{
+        font-size: 12px;
+    }
+
+/* 방문 */
+
+.heading-section-black h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'GmarketSansMedium';
+}
+
+.pbw-5{
+    padding-bottom: 5rem !important;
 }
