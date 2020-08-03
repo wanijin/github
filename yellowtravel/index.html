@@ -31,8 +31,7 @@
 	
   </head>
   <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html"><img src="images/header-logo.png" alt="yellow travel" class="header-logo"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,18 +41,18 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">로마의 즐길거리</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About Rome</a></li>
 	          <li class="nav-item"><a href="places.html" class="nav-link">가이드 투어</a></li>
 	          <li class="nav-item"><a href="hotel.html" class="nav-link">티켓</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">스냅샷</a></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	</nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight main-background">
-      <div class="overlay"></div>
+    <div class="hero-wrap js-fullheight main-background backgroundTransition">
+      <!-- <div class="overlay"></div> -->
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate mb-5 pb-5 text-center text-md-left" data-scrollax=" properties: { translateY: '70%' }">
@@ -100,7 +99,7 @@
             <div class="media block-6 services d-block">
               <div class="icon text-center">
 				  <span class="travel-icon">
-					  <img src="images/icon-rome.png" alt="rome-icon" class="rome-icon">
+					<a href="#" class="iconlink"><img src="images/icon-rome.png" alt="rome-icon" class="rome-icon"></a>
 				  </span>
 			  </div>
               <div class="media-body text-center">
@@ -112,7 +111,7 @@
             <div class="media block-6 services d-block">
               <div class="icon text-center">
 				<span class="travel-icon text-center">
-					<img src="images/icon-bus.png" alt="bus-icon" class="bus-icon">
+					<a href="#" class="iconlink"><img src="images/icon-bus.png" alt="bus-icon" class="bus-icon"></a>
 				</span>
 			</div>
               <div class="media-body text-center">
@@ -129,7 +128,7 @@
             <div class="media block-6 services d-block">
               <div class="icon text-center">
 				<span class="travel-icon">
-					<img src="images/icon-tiket.png" alt="tiket-icon" class="tiket-icon">
+					<a href="#" class="iconlink"><img src="images/icon-tiket.png" alt="tiket-icon" class="tiket-icon"></a>
 				</span>
 			</div>
               <div class="media-body text-center">
@@ -145,7 +144,7 @@
             <div class="media block-6 services d-block">
               <div class="icon text-center">
 				<span class="travel-icon">
-					<img src="images/icon-snap.png" alt="snap-icon" class="snap-icon">
+					<a href="#" class="iconlink"><img src="images/icon-snap.png" alt="snap-icon" class="snap-icon"></a>
 				</span>
 			</div>
               <div class="media-body text-center">
@@ -160,7 +159,7 @@
 	<section class="ftco-section">
     	<div class="container">
 				<div class="row justify-content-center pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
+          <div class="col-md-12 heading-section text-center ftco-animate">
             <h2 class="pb-3 recommend-title ftco-animate">노랑투어가 추천하는 로마</h2>
           </div>
 		</div>
@@ -170,65 +169,71 @@
 		<!-- https://www.myrealtrip.com/offers?city=Roma&country=Italy&group_category=experience&categories%5B%5D=ticket -->
 		<div id="tiket" class="tabcontent">
 			<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-01.jpg);">
-						<div class="recommend-tiket-txt-b p-3 text-center">
-							<h6>우선 입장권</h6>
-							<h4>바티칸 박물관 & 시스티나 성당</h4>
-							<p class=text-center>우선입장 티켓을 이용해서 바티칸 박물관과 시스티나 성당 내부로 빠르게 입장하세요!</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    						</p>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images" style="background-image: url(images/ticket-01.jpg);background-position: bottom;">
+						<div class="t-overlay-1">
+							<div class="recommend-tiket-txt-b p-3 text-center">
+								<h6>우선 입장권</h6>
+								<h4>바티칸 박물관 & 시스티나 성당</h4>
+								<p class=text-center>우선입장 티켓을 이용해서 바티칸 박물관과 시스티나 성당 내부로 빠르게 입장하세요!</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-o"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
 						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+					</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images" style="background-image: url(images/ticket-02.jpg);background-position: bottom;">
+						<div class="t-overlay-2">
+							<div class="recommend-tiket-txt-w p-3 text-center">
+								<h6>셔틀버스 탑승권</h6>
+								<h4>참피노 공항 →<br> 떼르미니 역</h4>
+								<p class=text-center>참피노 공항에 도착 시, 떼르미니 기차역 셔틀 버스 운행을 예약티켓으로 값 비싼 택시비를 절약하세요.</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-o"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
 						</div>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-02.jpg);">
-						<div class="recommend-tiket-txt-w p-3 text-center">
-							<h6>셔틀버스 탑승권</h6>
-							<h4>참피노 공항 →<br> 떼르미니 역</h4>
-							<p class=text-center>참피노 공항에 도착 시, 떼르미니 기차역 셔틀 버스 운행을 예약티켓으로 값 비싼 택시비를 절약하세요.</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
-						</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-03.jpg);">
-						<div class="recommend-tiket-txt-b p-3 text-center">
-							<h6>버스로 로마를 여행하다</h6>
-							<h4>로마 빅버스 투어</h4>
-							<p class=text-center>영원의 도시 로마를 즐기는 가장 쉽고 편안한 방법 ‘로마 빅버스 투어’</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images b-position-1" style="background-image: url(images/ticket-03.jpg);">
+						<div class="t-overlay-1">
+							<div class="recommend-tiket-txt-b p-3 text-center">
+								<h6>버스로 로마를 여행하다</h6>
+								<h4>로마 빅버스 투어</h4>
+								<p class=text-center>영원의 도시 로마를 즐기는 가장 쉽고 편안한 방법 ‘로마 빅버스 투어’</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
 						</div>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/ticket-04.jpg);">
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+    				<div class="recommend-tiket-images b-position-2" style="background-image: url(images/ticket-04.jpg);">
 						<div class="recommend-tiket-txt-w p-3 text-center">
 							<h6>Museo a Galleria Borghese</h6>
 							<h4>보르게세 미술관</h4>
@@ -252,85 +257,93 @@
 		<!-- ------------------------------------------- -->
 		<div id="guidetour" class="tabcontent">
 			<div class="row">
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-01.jpg);">
-						<div class="recommend-tiket-txt-w p-3 text-center">
-							<h6>야경 시티 투어</h>
-							<h4>로마 낭만 콘서트</h4>
-							<p class=text-center>사랑하는 가족, 연인, 그리고 친구와 함께하는 소중한 여행.</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
-						</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-02.jpg);">
-						<div class="recommend-tiket-txt-b p-3 text-center">
-							<h6>소수그룹/로마시내 종일투어</h6>
-							<h4>하루만에 로마 정복</h4>
-							<p class=text-center>투어콘서트와 함께 위대한 로마의 영광을 만나보세요~!</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star-o"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images b-position-3" style="background-image: url(images/recommend-01.jpg);">
+						<div class="r-overlay-1">
+							<div class="recommend-tiket-txt-w p-3 text-center">
+								<h6>야경 시티 투어</h>
+								<h4>로마 낭만 콘서트</h4>
+								<p class=text-center>사랑하는 가족, 연인, 그리고 친구와 함께하는 소중한 여행.</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-o"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
 						</div>
     				</div>
     			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-03.jpg);">
-						<div class="recommend-tiket-txt-w p-3 text-center">
-							<h6>10주년 50% 할인이벤트</h6>
-							<h4>바티칸 집중투어</h4>
-							<p class=text-center>종교도 역사도 미술도 노랑투어와 함께라면 즐거울 수 있습니다!</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
-						</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-3 ftco-animate">
-    				<div class="recommend-tiket-images" style="background-image: url(images/recommend-04.jpg);">
-						<div class="recommend-tiket-txt-b p-3 text-center">
-							<h6>로마스냅</h6>
-							<h4>추억을 간직하세요</h4>
-							<p class=text-center>
-							편안한 분위기에서 함께 로마를 걸으며 사진을 담아요.
-							추억을 만들고 예쁜 사진을 남기실 수 있도록 도와드릴게요!</p>
-							<p class="rate">
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    							<i class="icon-star"></i>
-    						</p>
-						</div>
-						<div class="recommend-tiket-overlay">
-							<p class="recommend-tiket-overlay-p">자세히 보기</p>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images" style="background-image: url(images/recommend-02.jpg);background-position: bottom;">
+						<div class="r-overlay-2">
+							<div class="recommend-tiket-txt-b p-3 text-center">
+								<h6>소수그룹/로마시내 종일투어</h6>
+								<h4>하루만에 로마 정복</h4>
+								<p class=text-center>투어콘서트와 함께 위대한 로마의 영광을 만나보세요~!</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-o"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
 						</div>
     				</div>
     			</div>
-    		</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images" style="background-image: url(images/recommend-03.jpg);background-position: bottom;">
+						<div class="r-overlay-3">
+							<div class="recommend-tiket-txt-w p-3 text-center">
+								<h6>10주년 50% 할인이벤트</h6>
+								<h4>바티칸 집중투어</h4>
+								<p class=text-center>종교도 역사도 미술도 노랑투어와 함께라면 즐거울 수 있습니다!</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
+						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-3 ftco-animate r-pb">
+					<div class="recommend-tiket-images" style="background-image: url(images/recommend-04.jpg);background-position: bottom;">
+						<div class="r-overlay-2">
+							<div class="recommend-tiket-txt-b p-3 text-center">
+								<h6>로마스냅</h6>
+								<h4>추억을 간직하세요</h4>
+								<p class=text-center>
+								편안한 분위기에서 함께 로마를 걸으며 사진을 담아요.
+								추억을 만들고 예쁜 사진을 남기실 수 있도록 도와드릴게요!</p>
+								<p class="rate">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+								</p>
+							</div>
+							<div class="recommend-tiket-overlay">
+								<p class="recommend-tiket-overlay-p">자세히 보기</p>
+							</div>
+						</div>
+    				</div>
+    			</div>
+			</div>
 		</div>   		
     </section>
 	
@@ -470,64 +483,49 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
+        <div class="row">
+          <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><img src="images/footer-logo.png" alt="footer-logo" srcset=""></h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+              <h2 class="ftco-heading-2"><img src="images/footer-logo.png" alt="footer-logo" class="footer-logo"></h2>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Online enquiry</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
-                <li><a href="#" class="py-2 d-block">General enquiries</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Refund policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Experience</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Beach</a></li>
-                <li><a href="#" class="py-2 d-block">Adventure</a></li>
-                <li><a href="#" class="py-2 d-block">Wildlife</a></li>
-                <li><a href="#" class="py-2 d-block">Honeymoon</a></li>
-                <li><a href="#" class="py-2 d-block">Nature</a></li>
-                <li><a href="#" class="py-2 d-block">Party</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
+          <div class="col-md-8">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              <ul class="footermenu-line">
+	                <li><a href="#"><span class="text">회사소개</span></a></li>
+	                <li><a href="#"><span class="text">찾아오시는길</span></a></li>
+					<li><a href="#"><span class="text">개인정보취급방침</span></a></li>
+					<li><a href="#"><span class="text">이용약관</span></a></li>
+					<li><a href="#"><span class="text">여행약관</span></a></li>
 	              </ul>
 	            </div>
             </div>
           </div>
-        </div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 footer-d-line"></div>
+			<div class="ftco-footer-widget mb-4">
+            	<div class="block-23 mb-3">
+	              <ul>
+					<li><a href="#" class="footer-name"><span class="text"></span>(주) Yellow Travel</a></li>
+	                <li class="footer-text"><span class="icon icon-home"></span><span class="text-con">사업자등록번호 : 777-77-77777   |   통신판매업신고 : 2020-김포시-2020호   |   관광사업자등록번호 : 2020-20호   |   대표이사 전숙진   |   TEL : 02-0000-0000</span></li>
+	                <li class="footer-text"><a href="#"><span class="icon icon-map-marker"></span><span class="text-con">김포시 옹주구 옹주로2길 37-11(한강동 442-36) 4층</span></a></li>
+	                <li class="footer-text"><a href="#"><span class="icon icon-envelope"></span><span class="text-con">wanijin@naver.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+		</div>
+		<!-- https://useiconic.com/open 아이콘 리스트 참고 -->
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by JeonSookjin</a></p>
           </div>
         </div>
       </div>
