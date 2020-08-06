@@ -3,7 +3,7 @@
 .section01{
     background-image: url(../../images/sec01-bg.png) !important;
     background-size: cover;
-    /* height: 70rem; */
+    background-position: top center;
 }
 
 .p-3{
@@ -92,6 +92,7 @@
     background-size: cover !important;
     background-repeat: no-repeat;
     width: 100%;
+    background-position: top center;
 }
 
 .section03-title{
@@ -404,9 +405,9 @@
 
     /* section03 */
 
-    .sec03-title p{font-size: 0.5rem;}
+    .sec03-title p{font-size: 0.7rem;}
 
-    .sec03-title h2{font-size: 1rem;}
+    .sec03-title h2{font-size: 1.2rem;}
 
     .sec03-title1{color: #ff8400;}
 
@@ -426,11 +427,11 @@
 
     .sec03-count{font-size: 0.8rem; width: 4rem;}
 
-    .sec03-txt1-d{font-size: 0.5rem;}
+    .sec03-txt1-d{font-size: 0.8rem;}
 
-    .sec03-txt1{margin-top: 0.5rem; padding-left: 0.5rem;}
+    .sec03-txt1{margin-top: 1rem; padding-left: 0.5rem;}
 
-    .sec03-box-txt{font-size: 0.3rem; border-radius: 7px;}
+    .sec03-box-txt{font-size: 0.5rem; border-radius: 7px;}
     
     .sec03-txt2-d{margin-bottom: 0.3rem;}
 
@@ -438,7 +439,7 @@
 
     .no-pb{padding-bottom: 0;}
 
-    .sec03-detail-text{padding-bottom: 2rem;}
+    .sec03-detail-text{padding-bottom: 3rem;}
 
     ul.icons li .icon:before{font-size: 1rem;}
 
