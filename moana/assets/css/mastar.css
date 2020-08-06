@@ -1,0 +1,449 @@
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.section01{
+    background-image: url(../../images/sec01-bg.png) !important;
+    background-size: cover;
+    /* height: 70rem; */
+}
+
+.p-3{
+    padding: 1rem 2rem;
+}
+
+.mastar-p{
+    color: #000;
+}
+
+.pb-3{
+    padding-bottom: 3rem;
+}
+
+.pb-7{
+    padding-bottom: 7rem;
+}
+
+
+.moana-logo{
+    display: flex
+}
+
+.mohana-content{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.moana-logo>img{
+    margin: 0 auto;
+    margin-top: 25rem;
+    background-repeat: inherit;
+    width: 50%;
+}
+
+.mohana-content-title{
+    color: #ff8400;
+    font-family: 'TmonMonsori';
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.header-title h2{
+    color: #fff;
+    text-shadow: #FC0 1px 0 1em;
+    font-family: 'TmonMonsori';
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.coversong-txt{
+    margin: 0 auto;
+    width: 50% !important;
+}
+
+.video-bg{
+    padding-top: 5rem;
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+}
+.moanavidio1{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.moanavidio1-txt{
+    padding-top: 1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.moanavidio1-txt h3{
+    margin: 0;
+}
+
+.section02{
+    background: none;
+}
+
+/* section03---------------------------------------------- */
+.section03{
+    background-image: url(../../images/sec02-bg.jpg);
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.section03-title{
+    width: 80%;
+    display:flex;
+    padding: 15rem 0 0 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec03-title{
+    text-align: center;
+}
+
+.sec03-title h2{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.sec03-title1{
+    margin-top: 1rem !important;
+    font-style: italic;
+}
+
+.sec03-title2{
+    color: #006397;
+    font-style: italic;
+    margin-bottom: 1rem !important;
+}
+
+.sec03-title p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.sec03-present-txt{
+    color: #006397 !important;
+    font-weight: 600;
+    margin-top: 0.5rem !important;
+    text-shadow: rgb(255, 255, 255) 1px 1px 0.5rem !important;
+}
+
+.sec03title-img-right{
+    width: 25%;
+}
+
+.sec03title-img-left{
+    width: 20%;
+    margin-top: 3rem !important;
+}
+
+/* section03 - detail */
+
+.sec03-detail-text{
+    width: 70%;
+    padding-top: 10rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-bottom: 25rem;
+}
+
+.sec03-button{
+    width: 170px !important;
+    background-color: #ff8400 !important;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    height: 60px;
+    font-weight: 600;
+}
+
+.sec03-txt1{
+    margin-top: 3rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sec03-count{
+    width: 10rem;
+    font-size: 1.7rem;
+}
+
+.sec03-count{
+    width: 10rem;
+    font-size: 1.7rem;
+}
+
+.sec03-txt1-d{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #181818;
+}
+
+.sec03-box-txt{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sec03-box{
+    width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+@media screen and (max-width: 1345px) {
+    .moana-logo>img{
+        width: 45%;
+    }
+
+    .mohana-content-title{
+        padding-top: 6rem;
+    }
+
+    .sec03-detail-text{
+        padding-bottom: 23.5rem;
+    }
+
+    .section03-title{
+        padding-top: 13rem;
+    }
+
+    .sec03-button{
+        height: 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .moana-logo>img{
+        margin-top: 20rem;
+    }
+    
+    .section03-title{
+        padding-top: 11rem;
+    }
+
+    .sec03-title h2{
+        font-size: 2.5rem;
+    }
+
+    .sec03-title1, .sec03-title2{
+        margin: 0 !important;
+    }
+
+    .sec03title-img-right{
+        width: 23%;
+    }
+
+    .sec03-detail-text{
+        padding-top: 5rem;
+        padding-bottom: 13rem;
+    }
+
+    .sec03-txt1{
+        margin-top: 1rem;
+    }
+
+    .no-paddintop{
+        padding-top: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .moana-logo>img{
+        margin-top: 13rem;
+    }
+
+    .header-title h2{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .mohana-content-title{
+        padding-top: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .video-bg{
+        padding-top: 3rem;
+    }
+
+    .moanavidio1-txt h3{
+        font-size: 1rem;
+    }
+
+    .pb-7{
+        padding-bottom: 4rem;
+    }
+    
+    .sec03title-img-left, .sec03title-img-right{
+        display: none;
+    }
+
+    .section03-title{
+        padding-top: 7rem;
+        justify-content:center;
+    }
+
+    .sec03-title p{
+        font-size: 1rem;
+    }
+
+    .sec03-title h2{
+        font-size: 2rem;
+    }
+
+    .sec03-detail-text{
+        width: 75%;
+        padding-top: 3rem;
+        padding-bottom: 9.5rem;
+    }
+
+    .sec03-button{
+        font-size: 1.2rem;
+        width: 130px !important;
+        height: 40px;
+        line-height: 0 !important;
+    }
+
+    .sec03-count{
+        font-size: 1.2rem;
+    }
+
+    .sec03-txt1-d{
+        font-size: 1rem;
+    }
+
+    .sec03-box-txt{
+        font-size: 0.9rem;
+        border-radius:10px;
+    }
+
+    .sec03-txt2-d{
+        margin-bottom: 1rem;
+    }
+
+    .p-3{
+        padding: 0.5rem 1rem;
+    }
+
+    .copyright{
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 536px) {
+
+    body{
+        padding-top: 3rem;
+    }
+
+    .p-3{
+        padding: 0.5rem 0.5rem;
+    }
+
+    .pb-3{
+        padding-bottom: 1.5rem;
+    }
+
+    .pb-7{
+        padding-bottom: 1.5rem;
+    }
+
+    .moana-logo>img{
+        margin-top: 6rem;
+    }
+
+    .header-title h2{
+        font-size: 0.5rem;
+        margin-top: 0.7rem;
+    }
+
+    .mohana-content-title{
+        padding-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .video-bg{
+        padding-top: 1rem;
+    }
+
+    .moanavidio1{
+        width:95%;
+    }
+
+    .moanavidio1-txt{
+        width: 95%;
+        padding-top: 0.5rem;
+    }
+
+    .moanavidio1-txt h3{
+        font-size: 0.8rem;
+    }
+
+    .moanavidio1-txt p{
+        font-size: 0.7rem;
+    }
+
+    /* section03 */
+
+    .sec03-title p{font-size: 0.5rem;}
+
+    .sec03-title h2{font-size: 1rem;}
+
+    .sec03-title1{color: #ff8400;}
+
+    .section03-title{padding-top: 2.5rem;}
+
+    .sec03-button{
+        font-size: 0.7rem;
+        width: 70px !important;
+        height: 20px;
+        margin-bottom: 0 !important;
+    }
+
+    .sec03-detail-text{
+        padding-top: 1rem;
+        width: 90%;
+    }
+
+    .sec03-count{font-size: 0.8rem; width: 4rem;}
+
+    .sec03-txt1-d{font-size: 0.5rem;}
+
+    .sec03-txt1{margin-top: 0.5rem; padding-left: 0.5rem;}
+
+    .sec03-box-txt{font-size: 0.3rem; border-radius: 7px;}
+    
+    .sec03-txt2-d{margin-bottom: 0.3rem;}
+
+    .sec03-present-txt{margin-top: 0 !important;}
+
+    .no-pb{padding-bottom: 0;}
+
+    .sec03-detail-text{padding-bottom: 2rem;}
+
+    ul.icons li .icon:before{font-size: 1rem;}
+
+    ul{margin-bottom: 1rem;}
+
+    .copyright{font-size: 0.5rem !important; margin-bottom: 1.5rem !important;}
+    
+}
