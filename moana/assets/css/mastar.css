@@ -89,7 +89,7 @@
 /* section03---------------------------------------------- */
 .section03{
     background-image: url(../../images/sec02-bg.jpg);
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat;
     width: 100%;
 }
