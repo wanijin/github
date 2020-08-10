@@ -1,4 +1,5 @@
 
+/* Home-------------------------------------------------------- */
 .header-logo{
     width: 200px;
 }
@@ -80,7 +81,7 @@
   .tablink-border{float: right; line-height: 60px; font-size: 20px;}
 
   
-  /* 추천 여행지 - 가이드투어 */
+  /* 추천 여행지 탭 - 가이드투어 */
 
   .recommend-tiket-images{
       width: 100%;
@@ -212,7 +213,7 @@ font-family: 'Roboto', sans-serif;
     }
 }
 
-/* abour rome ------------------------------------------------------- */
+/* 로마 즐기기 ------------------------------------------------- */
 
 .index-bg{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#020061+0,000000+99&0+0,0.8+99 */
@@ -260,8 +261,6 @@ height: 100%;
 .align{
     text-align: justify;
 }
-
-
 
 @media (max-width: 990px){
 
@@ -426,3 +425,13 @@ height: 100%;
         margin-left: 0;
     }
   }
+
+/* 가이드투어 ------------------------------------------------- */
+.guidetour-wrap{
+    width: 100%;
+    height: 400px !important;
+    position: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
