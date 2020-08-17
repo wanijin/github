@@ -20,7 +20,7 @@ function openPage(pageName,elmnt,color) {
 
 
   // index > sevice-icon icon & textcolor hover
-  
+$(function(){
   $('.service-icon>div:nth-child(1)').mouseover(function(){
     $('.service-icon>div:nth-child(1) img').attr('src','images/icon-rome-y.png');
     $('.service-icon>div:nth-child(1) a').css('color','#ffd800');
@@ -56,4 +56,6 @@ function openPage(pageName,elmnt,color) {
     $('.service-icon>div:nth-child(4) img').attr('src','images/icon-snap.png');
     $('.service-icon>div:nth-child(4) a').css('color','#fff');
   });
-    
+  
+
+});

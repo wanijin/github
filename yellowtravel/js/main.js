@@ -86,7 +86,7 @@
 
 		$('.single-slider').owlCarousel({
 			animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
+	    	animateIn: 'fadeIn',
 			autoplay: true,
 			loop: true,
 			items:1,
@@ -94,6 +94,7 @@
 			stagePadding: 0,
 			nav: true,
 			dots: true,
+			autoHeight: true,
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive:{
 				0:{
@@ -106,6 +107,20 @@
 					items: 1
 				}
 			}
+		});
+
+		$('.submain-slider').owlCarousel({
+			autoplay: true,
+			autoplaySpeed: 1300,
+			autoplayTimeout:5000,
+			loop: true,
+			autoplayHoverPause:true,
+			items:1,
+			margin: 0,
+			stagePadding: 0,
+			nav: true,
+			dots: true,
+			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 		});
 
 	};
