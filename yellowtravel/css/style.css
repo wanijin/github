@@ -7573,7 +7573,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-top: -10px;
-      color: #f9be37 !important;
+      color: #c8c8c8 !important;
       -moz-transition: all 0.7s ease;
       -o-transition: all 0.7s ease;
       -webkit-transition: all 0.7s ease;
@@ -7929,7 +7929,7 @@ h1, h2, h3, h4, h5,
       padding-left: 2px;
       font-size: 10px; }
     .destination .text .one {
-      width: calc(100% - 70px); }
+      width: 100%; }
     .destination .text .two {
       width: 70px;
       text-align: right; }
@@ -7953,15 +7953,15 @@ h1, h2, h3, h4, h5,
           .destination .text .bottom-area span:last-child {
             margin-left: 5px; } }
         .destination .text .bottom-area span:last-child a {
-          background: #08c299;
+          background: #407cd6;
           color: #fff;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
           -ms-border-radius: 4px;
           border-radius: 4px;
-          padding: 3px 5px; }
+          padding: 7px 10px; }
           .destination .text .bottom-area span:last-child a:hover {
-            background: #08c299;
+            background: #5f6dee;
             color: #fff; }
 
 .destination-entry {
@@ -8209,10 +8209,10 @@ h1, h2, h3, h4, h5,
         display: none; } }
 
 .form-control {
-  height: 52px !important;
+  height: 35px !important;
   background: #fff !important;
   color: #000000 !important;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
@@ -8874,16 +8874,16 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #08c299;
+      color: #407cd6;
       text-align: center;
       display: inline-block;
       width: 40px;
       height: 40px;
       line-height: 40px;
       border-radius: 50%;
-      border: 1px solid #08c299; }
+      border: 1px solid #407cd6; }
     .block-27 ul li.active a, .block-27 ul li.active span {
-      background: #08c299;
+      background: #407cd6;
       color: #fff;
       border: 1px solid transparent; }
 
@@ -9181,7 +9181,7 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.8); }
 
 .sidebar-wrap {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   .sidebar-wrap .heading {
     font-size: 18px;
     text-transform: uppercase; }

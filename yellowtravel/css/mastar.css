@@ -429,9 +429,213 @@ height: 100%;
 /* 가이드투어 ------------------------------------------------- */
 .guidetour-wrap{
     width: 100%;
-    height: 400px !important;
+    height: 500px !important;
     position: inherit;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
+
+.guidetour_main_bg-1{
+    background-position: center -450px;
+}
+
+.guidetour_main_bg-2{
+    background-position: center -100px;
+}
+
+.guidetour_main_bg-3{
+    background-position: center -300px;
+}
+
+.m-guidetour-wrap-title h1{
+    font-family: 'GmarketSansMedium' !important;
+    font-size: 60px;
+    color: #ffd800;
+    line-height: 60px;
+}
+
+.m-guidetour-wrap-title p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+}
+
+.guidetour-wrap-txt{
+    height: 500px !important;
+    display: flex;
+    align-items: center;
+}
+
+.m-guidetour-wrap-title .btn.btn-primary{
+    background: none !important;
+    border: 1px solid #fff !important;
+    color: #fff !important
+}
+
+.m-guidetour-btn{
+    padding-top: 1rem;
+}
+
+.form-title{
+    font-weight: 600;
+}
+
+.m-p-3{
+    padding: 1rem 0 !important;
+}
+
+.recommend-tiket-txt-gb{
+    color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recommend-tiket-txt-gb h6{
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.recommend-tiket-txt-gb h4{
+    font-weight: 550;
+}
+
+.m-guidetour-textbox{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.destination:hover .guidetour-thema-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: all 0.5s;
+}
+
+.m-no-mb{
+    margin-bottom: 0;
+}
+
+.m-no-p{
+    padding: 0 !important;
+}
+
+.submain-slider .owl-nav {
+    position: absolute;
+    top: 100%;
+    width: 100%; }
+    .submain-slider .owl-nav .owl-prev,
+    .submain-slider .owl-nav .owl-next {
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      margin-top: -10px;
+      outline: none !important;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      opacity: 0; }
+      .submain-slider .owl-nav .owl-prev span:before,
+      .submain-slider .owl-nav .owl-next span:before {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.1);
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .submain-slider .owl-nav .owl-prev:hover span:before, .submain-slider .owl-nav .owl-prev:focus span:before,
+      .submain-slider .owl-nav .owl-next:hover span:before,
+      .submain-slider .owl-nav .owl-next:focus span:before {
+        color: rgba(0, 0, 0, 0.3); }
+        .submain-slider .owl-nav .owl-prev {
+      left: 50%;
+      margin-left: -80px; }
+      .submain-slider .owl-nav .owl-next {
+      right: 50%;
+      margin-right: -80px; }
+  
+      .submain-slider:hover .owl-nav .owl-prev,
+      .submain-slider:hover .owl-nav .owl-next {
+    opacity: 1; }
+  
+    .submain-slider:hover .owl-nav .owl-prev {
+    left: 50%;
+    margin-left: -80px; }
+  
+    .submain-slider:hover .owl-nav .owl-next {
+    right: 50%;
+    margin-right: -80px; }
+
+    .submain-slider .owl-dots{
+        position: absolute;
+        top: 90%;
+        left: 45%;
+    }
+
+    .submain-slider .owl-dots {
+        text-align: center; }
+        .submain-slider .owl-dots .owl-dot {
+          width: 10px;
+          height: 10px;
+          margin: 5px;
+          border-radius: 50%;
+          background: #e6e6e6;
+          position: relative; }
+          .submain-slider .owl-dots .owl-dot:after {
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: 0;
+            bottom: 0;
+            width: 14px;
+            height: 14px;
+            content: '';
+            border: 1px solid #e6e6e6;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%; }
+            .submain-slider .owl-dots .owl-dot.active {
+            background: #b3b3b3; }
+
+            .submain-slider .owl-height{
+                height: 500px !important;
+            }
+            .submain-slider .owl-stage-outer{
+                height: 500px !important;
+            }
+
+            .submain-slider .owl-stage{
+                height: 500px !important;
+            }
+
+            .submain-slider .owl-item{
+                opacity: 1 !important;
+            }
+
+
+/* 티켓 --------------------------------------------------------------- */
+
+.tiket_main_bg-1{
+    background-position: center -600px;
+}
+
+.tiket_main_bg-2{
+    background-position: center -100px;
+}
+
+.guidetour_main_bg-3{
+    background-position: center -500px;
+}
+
+.m-tiket-lineheight{
+    line-height: 72px;
+}
+
