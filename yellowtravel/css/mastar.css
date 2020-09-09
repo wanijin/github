@@ -639,3 +639,163 @@ height: 100%;
     line-height: 72px;
 }
 
+/* 스냅샷--------------------------------------------------------- */
+.m-jumbotron{margin-bottom: 0 !important;}
+.m-bg{
+    background-color: #fff;
+    padding-top: 3rem;
+}
+
+.snap_grid-item {
+    width:30%;
+    margin:30px 1%;
+    border-radius: 10px;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.snap_grid-item > img { width:100%; }
+
+.card{
+    border:0 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+  }
+
+  .card p{
+      margin-bottom: 0.2rem;
+  }
+
+.snap_caption{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    position: relative;
+}
+
+    .avatar {
+        vertical-align: middle;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+.snap-bold{font-weight: bold;}
+
+.card {
+    position: relative;
+    border-radius: 0.5rem;
+  }
+  
+  .card .tooltiptext {
+    visibility: hidden;
+    width: 130px;
+    background-color: rgba(85,85,85, 0.9);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding-top: 1rem;
+  }
+  
+  .card .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(85,85,85, 0.9) transparent transparent transparent;
+  }
+  
+  .card:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 0.5rem;
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info ul{
+    margin-left: -15%;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+}
+
+.gallery-item-likes {
+    margin-right: 1rem;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 2rem;
+    color: rgba(255,255,255,.5);
+}
+
+.fa-clone,
+.fa-comment {
+    transform: rotateY(180deg);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  .snap-hart{
+      padding-top: 10%;
+  }
+      
+      
+      @media all and (max-width:800px){
+        .snap_grid-item { width:48%; margin:30px 1%;}
+      }
