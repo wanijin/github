@@ -57,39 +57,31 @@
       <div class="ftco-animate">
         <div class="submain-slider owl-carousel owl-dots">
             <div class="item">
-                <div class="tiket_main_bg-1" style="background-image: url(images/tiket_mainimg-1.jpg);">
+                <div class="tiket_main_bg-1" style="background-image: url(images/snapshot-mainimg-01.jpg);">
                     <div class="container slider-text js-fullheight align-items-center justify-content-start guidetour-wrap-txt" data-scrollax-parent="true">
                         <div class="col-md-9 ftco-animate text-center text-md-left" data-scrollax=" properties: { translateY: '70%' }">
-							<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Tiket</h1>
-                          	<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">노랑투어가 당신의 로마 여행을 간편하게 만들어 드립니다.</p>
+							              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Snap shot</h1>
+                          	<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">여행을 와서 인생샷을 찍다</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="tiket_main_bg-2" style="background-image: url(images/tiket_mainimg-2.jpg);">
-                    <div class="container m-guidetour-wrap-title js-fullheight align-items-center justify-content-start guidetour-wrap-txt" data-scrollax-parent="true">
+                <div class="tiket_main_bg-2" style="background-image: url(images/snapshot-mainimg-02.jpg); background-position: center -150px;">
+                  <div class="container slider-text js-fullheight align-items-center justify-content-start guidetour-wrap-txt" data-scrollax-parent="true">
                         <div class="col-md-9 ftco-animate text-center text-md-left" data-scrollax="properties: { translateY: '70%' }">
-							<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">우선 입장권</p>
-							<h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">바티칸 박물관 &<br>시스티나 성당</h1>
-							<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">우선입장 티켓을 이용해서 바티칸 박물관과 시스티나 성당 내부로 빠르게 입장하세요!</p>
-							<div class="form-group m-guidetour-btn">
-								<input type="submit" value="자세히보기" class="btn btn-primary px-4">
-							</div>
+                          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Snap shot</h1>
+                          <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">여행을 와서 인생샷을 찍다</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="guidetour_main_bg-3" style="background-image: url(images/tiket_mainimg-3.jpg);">
+                <div class="guidetour_main_bg-3" style="background-image: url(images/snapshot-mainimg-03.jpg); background-position: center -200px; background-size: cover;">
                     <div class="container m-guidetour-wrap-title js-fullheight align-items-center justify-content-start guidetour-wrap-txt" data-scrollax-parent="true">
                         <div class="col-md-9 ftco-animate text-center text-md-left" data-scrollax="properties: { translateY: '70%' }">
-							<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">버스로 로마를 여행하다</p>
-							<h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">로마 빅버스 투어</h1>
-							<p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">영원의 도시 로마를 즐기는 가장 쉽고 편안한 방법 ‘로마 빅버스 티켓을 구매하시고 로마를 투어하세요’</p>
-							<div class="form-group m-guidetour-btn">
-								<input type="submit" value="자세히보기" class="btn btn-primary px-4">
-							</div>
+                          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Snap shot</h1>
+                          <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">여행을 와서 인생샷을 찍다</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +96,8 @@
         <div class="snap-grid text-center" id="m-grid">
           <!-- card1 -->
           <div class="snap_grid-item card gallery-item" id="ma-grid">
-            <a class="group1" href="images/small-sanpshot_img-01.jpg" title="Me and my grandfather on the Ohoopee.">
+            <!-- <a class="iframe" href="플러그인모음/f-instagram-master/f-instagram-master/detail-page.html" title="Me and my grandfather on the Ohoopee."> -->
+              <a class="iframe" href="detail-page.html" title="Me and my grandfather on the Ohoopee.">
             <img src="images/sanpshot_img-01.jpg" alt="스냅샷이미지-01" style="width:100%; cursor:pointer" class="gallery-image">
               <div class="gallery-item-type">
                 <span class="visually-hidden"></span>
@@ -551,7 +544,7 @@
     $(".ajax").colorbox();
     $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
     $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-    $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+    $(".iframe").colorbox({iframe:true, width:"65%", height:"80%", scrolling:false});
     $(".inline").colorbox({inline:true, width:"50%"});
     $(".callbacks").colorbox({
       onOpen:function(){ alert('onOpen: colorbox is about to open'); },

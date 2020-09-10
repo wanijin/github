@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <title>Yellow Travel</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/insta.css">
+    <link rel="stylesheet" href="css/detail-page.css">
+    <link rel="shortcut icon" href="images/header-logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- <link rel="stylesheet" href="css/mastar.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+
+</head>
+<body>
+
+
+<section id="container">
+    <header id="header">
+        <section class="h_inner">
+            <h1 class="logo">
+                <img src="images/header-logo.png" alt="logo" style="width: 70%;">
+            </h1>
+            <div class="search_field">
+                <input type="text" placeholder="검색" tabindex="0">
+                <div class="fake_field">
+                    <span class="sprite_small_search_icon"></span>
+                    <span>검색</span>
+                </div>
+            </div>
+            <div class="right_icons">
+                <a href="new_post.html"><div class="sprite_camera_icon"></div></a>
+                <a href="follow.html"><div class="sprite_heart_icon_outline"></div></a>
+                <a href="profile.html"><div class="sprite_user_icon_outline"></div></a>
+            </div>
+        </section>
+    </header>
+
+
+    <div id="main_container">
+        <section class="b_inner">
+            <div class="contents_box item">
+                <article class="contents cont01">
+                    <div class="img_section">
+                        <img src="images/sanpshot_img-01.jpg" alt="강병욱 작가">
+                    </div>
+                    <div class="detail--right_box">
+                        <header class="top">
+                            <div class="user_container">
+                                <div class="profile_img">
+                                    <img src="images/photographer-01.jpg" alt="강병욱 작가">
+                                </div>
+                                <div class="user_name">
+                                    <div class="nick_name">강병욱</div>
+                                    <div class="country">Italy,rome</div>
+                                </div>
+                            </div>
+                            <div class="sprite_more_icon">
+                                <ul class="more_detail">
+                                    <li>팔로우</li>
+                                    <li>수정</li>
+                                    <li>삭제</li>
+                                </ul>
+                            </div>
+
+                        </header>
+                        <section class="scroll_section">
+                            <div class="admin_container">
+                                <div class="admin">
+                                    <img src="images/photographer-06.jpg" alt="user">
+                                </div>
+                                <div class="comment">
+                                    <span class="user_id">Kindtiger</span>시간당 얼마정도 하나요?
+                                    <div class="time">2시간</div>
+                                </div>
+                            </div>
+
+                            <div class="user_container-detail">
+                                <div class="user">
+                                    <img src="images/photographer-05.jpg" alt="user">
+                                </div>
+                                <div class="comment kang">
+                                    <span class="user_id">in0.lee</span>너무 예뻐요~~~!!!!
+                                    <div class="sprite_small_heart_icon_outline"></div>
+
+                                    <div class="time">2시간
+                                        <span class="try_comment">답글 달기</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        </section>
+
+
+                        <div class="bottom_icons">
+                            <div class="left_icons">
+                                <div class="heart_btn">
+                                    <div class="sprite_heart_icon_outline" data-name="heartbeat"></div>
+                                </div>
+                                <div>
+                                    <div class="sprite_bubble_icon"></div>
+                                </div>
+                                <div>
+                                    <div class="sprite_share_icon" data-name="share"></div>
+                                </div>
+                            </div>
+
+                            <div class="right_icon">
+                                <div class="sprite_bookmark_outline" data-name="book-mark"></div>
+                            </div>
+                        </div>
+
+                        <div class="count_likes">
+                            좋아요
+                            <span class="count">25</span>
+                            개
+                        </div>
+
+                        <div class="commit_field">
+                            <input type="text" placeholder="댓글달기..">
+                            <div class="upload_btn">게시</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    
+
+
+    <div class="del_pop">
+        <div class="btn_box">
+            <div class="del">삭제</div>
+            <div class="cancel">취소</div>
+        </div>
+   </div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script>
+$(function(){
+    $('#more').click(function(){
+    $('.more_detail').css('display','block');
+    });
+
+    $('.heart_btn>.sprite_heart_icon_outline').click(function(){
+        $('.heart_btn>.sprite_heart_icon_outline').css({'background':'url(images/background01.png)', 'background-repeat' : 'no-repeat', 'background-position':'-26px -261px'});
+    });
+
+    $('.sprite_bookmark_outline').click(function(){
+        $('.right_icon>.sprite_bookmark_outline').css({'background':'url(images/background01.png)', 'background-repeat' : 'no-repeat', 'background-position':'-185px -286px'});
+    });
+
+    $('.sprite_small_heart_icon_outline').click(function(){
+        $('.kang .sprite_small_heart_icon_outline').css({'background':'url(images/background01.png)', 'background-repeat' : 'no-repeat', 'background-position':'-323px -284px'});
+    });
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+        //Examples of how to assign the Colorbox event to elements
+        $(".group1").colorbox({rel:'group1'});
+        $(".group2").colorbox({rel:'group2', transition:"fade"});
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+        $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+        $(".callbacks").colorbox({
+            onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+            onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+            onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+            onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+            onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+        });
+
+        $('.non-retina').colorbox({rel:'group5', transition:'none'})
+        $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+        
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+            $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>
