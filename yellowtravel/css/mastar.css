@@ -46,7 +46,7 @@
 .tablink {
     background-color: #fff;
     color: #555;
-    float: right;
+    float: left;
     border: none;
     outline: none;
     cursor: pointer;
@@ -54,6 +54,7 @@
     font-size: 17px;
     width: 20%;
     border-radius: 10px;
+    margin-left: 1.5%;
   }
   
   .tablink:hover {

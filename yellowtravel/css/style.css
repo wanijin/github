@@ -12,6 +12,13 @@
 
 @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+@font-face {
+  font-family: 'IBMPlexSansKR-Text';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
@@ -7327,10 +7334,19 @@ h1, h2, h3, h4, h5,
       background: #ffffff !important;
       position: relative;
       top: 0; } }
+
+      
+                
+            
+                
+                
+                
+                
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 15px;
+    font-family: 'IBMPlexSansKR-Text';
+    font-size: 16px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 20px;
